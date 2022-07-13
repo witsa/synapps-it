@@ -16,7 +16,7 @@ L'acteur jauge permet de représenter graphiquement par un arc de cercle coloré
 
 ## Personnalisation
 
-Il est possible de la personnaliser en changeant les couleurs
+E' possibile personalizzare cambiando i colori
 - de l'aiguille
 - de l'arc avant l'aiguille
 - de l'arc après l'aiguille.
