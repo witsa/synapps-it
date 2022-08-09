@@ -1,15 +1,14 @@
 ---
-title: Pour aller plus loin
-parent: Guide de démarrage
+Titolo: Per approfondire
+Genitore: Guida introduttiva
 nav_order: 8
 ---
 
-[◀ Commander une ressource](./command-redy.md){: .btn }
+[◀ Comandare una risorsa](./command-redy.md){: .btn }
 
 ------
 
-# Pour aller plus loin
+# Per approfondire
 
-Pour découvrir Synapps Studio, le mieux est d'explorer ses fonctionnalités en l'utilisant. N'hésitez pas à faire des essais, consulter la communauté et à partager avec elle vos trouvailles ou vos questions.
-
-Si vous voulez allez plus loin, nous vous invitons à consulter la documentation des  [concepts](../concepts/). Aussi, si vous êtes à l'aise avec le JavaScript, vous pouvez consulter l'API des scripts Synapps.
+Il modo migliore per scoprire Synapps Studio è quello di esplorare le sue funzionalità utilizzandolo. Sentitevi liberi di provarlo, consultate la comunità e condividete con loro le vostre scoperte o domande.
+Se volete approfondire, vi invitiamo a consultare la documentazione [concepts](../concepts/). Inoltre, se vi sentite a vostro agio con JavaScript, potete dare un'occhiata alle API di script di Synapps.
