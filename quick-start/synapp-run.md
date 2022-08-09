@@ -34,7 +34,7 @@ Avviare un'istanza di **REDY-PC** (versione `13.2.0` o successiva).
 ## Esecuzione
 
 Passiamo ora all'esecuzione del synapp:
- - Accedere al menu "Esegui" scegliere l'opzione "Esecuzione". <br>Raccourci clavier **Ctrl+R**
+ - Accedere al menu "Esegui" scegliere l'opzione "Esecuzione". <br>Scelta rapida da tastiera **Ctrl+R**
 
 ![SynApps](../assets/quick-start/synapp-run/03.png)
 
@@ -42,10 +42,10 @@ Si apre la scheda di esecuzione:
 
 ![SynApps](../assets/quick-start/synapp-run/04.png)
 
-È possibile ora testare il synapp utilizzando il menu.
+È possibile ora testare il synapp.
 
 > Un altro modo per visualizzare il synapp è aprirlo nel browser.
-In questo caso scegliere l'opzione "Esegui nel browser...". <br>Raccourci clavier **Ctrl+Shift+R**
+In questo caso scegliere l'opzione "Esegui nel browser...". <br>Scelta rapida da tastiera **Ctrl+Shift+R**
 
 # Prossima tappa
 Adesso è il momento di fare [i primi passi con il designer delle scene](./designer-first-step.md).
