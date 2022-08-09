@@ -4,52 +4,52 @@ parent: Guide de démarrage
 nav_order: 3
 ---
 
-[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
+[◀ Creare un progetto](./first-project){: .btn } [Designer: primi passi ▶](./designer-first-step){: .btn }
 
 --------------
 
-# Exécution de la synapp
+# Esecuzione del synapp
 
-Dans l'étape précédente, nous avons créé un projet avec le modèle "Tablette et Bureau". Cela a généré un projet avec un contenu pré-défini et adapté aux tailles des tablettes et bureau.
-Le contenu est pret à être exécuté.
+Nella fase precedente, abbiamo creato un progetto con il modello "Tablet e Desktop". Questo ha generato un progetto con contenuti predefiniti e adattati alle dimensioni degli schermi di tablet e desktop.
+Il contenuto è pronto per essere eseguito.
 
-## Hôte
+## Hosts
 
-Lorsqu'une **synapp** s'exécute dans Studio, elle doit se connecter à une ULI.
+Per eseguire un **synap** in Studio, è necessario connettersi a una ULI.
 
-Dans la section de gestion des **hôtes** du projet, il est possible d'enregistrer les moyens de se connecter à une ULI.
+Nella sezione di gestione **host** del progetto, è possibile effettuare la memorizzazione dei dati di connessione a una ULI..
 
-Tout nouveau projet démarre avec un hôte pré-défini. Il pointe vers `http://127.0.0.1`. Ainsi, le projet s'attend à la présence d'un **REDY-PC** et qu'il puisse se connecter avec l'utilisateur administrateur par défaut `admin`.
+Ogni nuovo progetto si avvia con un host predefinito. Punta a `http://127.0.0.1`. Pertanto, il progetto si aspetta che sia presente un **REDY-PC** e che sia in grado di connettersi con l'utente amministratore predefinito `admin`.
 
-Tout ceci est paramétrable (voir la section consacrée à la gestion des hôtes et des synapps - *todo*).
+Tutto questo è configurabile (si veda la sezione sulla gestione degli host e dei synapp).
 
 ![SynApps](../assets/quick-start/synapp-run/01.png)
 
-Lancez une instance de **REDY-PC** (une version `13.2.0` ou ultérieur).
+Avviare un'istanza di **REDY-PC** (versione `13.2.0` o successiva).
 
 ![SynApps](../assets/quick-start/synapp-run/02.png)
 
-> N'oubliez pas d'activer l'adds **Intravision**. C'est ce qui vous permettra plus tard de publier la synapp dans le paramétrage.
+> Non dimenticare di attivare il componente aggiuntivo **Intravision**. Questo è ciò che consentirà in seguito di pubblicare ed eseguire il synapp nella ULI.
 
-## Exécution
+## Esecuzione
 
-Passons maintenant à l'exécution de la synapp :
- - Rendez-vous dans le menu d'application et choisissez l'option "Exécution". <br>Raccourci clavier **Ctrl+R**
+Passiamo ora all'esecuzione del synapp:
+ - Accedere al menu "Esegui" scegliere l'opzione "Esecuzione". <br>Raccourci clavier **Ctrl+R**
 
 ![SynApps](../assets/quick-start/synapp-run/03.png)
 
-L'onglet d'exécution s'est ouvert :
+Si apre la scheda di esecuzione:
 
 ![SynApps](../assets/quick-start/synapp-run/04.png)
 
-Vous pouvez tester la synapp en utilisant le menu.
+È possibile ora testare il synapp utilizzando il menu.
 
-> Un autre manière de visualiser la synapp est de l'ouvrir dans votre navigateur.
-Dans ce cas choisissez l'option "Exécuter dans le navigateur...". <br>Raccourci clavier **Ctrl+Shift+R**
+> Un altro modo per visualizzare il synapp è aprirlo nel browser.
+In questo caso scegliere l'opzione "Esegui nel browser...". <br>Raccourci clavier **Ctrl+Shift+R**
 
-# Prochaine étape
-Maintenant, vous allez effectuer [vos premiers pas avec le designer de scène](./designer-first-step.md).
+# Prossima tappa
+Adesso è il momento di fare [i primi passi con il designer delle scene](./designer-first-step.md).
 
 -----------------
 
-[◀ Création d'un projet](./first-project){: .btn } [Designer : Premiers pas ▶](./designer-first-step){: .btn }
+[◀ Creare un progetto](./first-project){: .btn } [Designer: primi passi ▶](./designer-first-step){: .btn }
