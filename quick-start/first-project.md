@@ -4,106 +4,104 @@ parent: Guide de démarrage
 nav_order: 2
 ---
 
-[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }
+[◀ Installazione](./install){: .btn } [Esecuzione ▶](./synapp-run){: .btn }
 
 -------------
 
 {% include table_of_content.html %}
 
-# Création d'un projet Studio
+# Creazione di un progetto Studio
 
-## Lancement de Synapps Studio
+## Avvio di Synapps Studio
 
-Vous allez ouvrir pour la première fois **Synapps Studio** en double cliquant son icône installé sur votre poste (dans le *menu démarrer* ou sur votre bureau).
+Per aprire Synapps Studio per la prima volta, fare un doppio clic sull'icona creata sul computer (nel menu di *avvio* o sul desktop).
 
 ![SynApps](../assets/icon-studio.png)
 
-La fenêtre de Synapps Studio s'est affichée :
+Viene visualizzata la finestra Synapps Studio:
 ![SynApps](../assets/quick-start/first-project/01.png)
 
 
-## Accès restreint
+## Accesso limitato
 
-> Pendant toute la phase d'**accès retreint**, une clé d'agrément est requise pour activer Synapps Studio.
+> Durante l'intera fase di **accesso limitato**, per attivare Synapps Studio sarà necessaria una chiave di abilitazione.
 
 ![SynApps](../assets/quick-start/first-project/12.png)
 
-> Par la suite, cette limitation sera levée.
+> Questa limitazione sarà eliminata in futuro.
 
-## Création d'un projet *"Bonjour le monde!"*
+### Creazione del progetto *"Hello-World"*
 
-Nous allons créer un premier projet de démonstration, de sa construction jusqu'à son installation dans un REDY-PC.
+Procederemo creando un primo progetto d'esempio, dalla sua definizione alla sua installazione in un REDY-PC.
 
-Mais abordons deux éléments importants :
+Ma affrontiamo due elementi importanti:
 
-### Concept : La Synapp et le Projet
+### Concetto: il Synapp e il progetto
 
-Nous surnommons **synapp** une application construite avec Studio.
+Chiamiamo **synapp** un'applicazione costruita con Studio.
 
-Studio permet de construire un projet qui compile l'ensemble des ressources pour produire et distribuer une application.
-Chaque synapp est le fruit d'un projet Studio.
+Studio consente di creare un progetto che compila tutte le risorse per produrre e distribuire un'applicazione.
+Ogni synapp è il risultato di un progetto di Studio.
 
-Il faut l'envisager Studio comme un outil de montage vidéo :
+Si dovrebbe pensare a Studio come a uno strumento di editing video:
 
 ![Répertoire de montage vidéo](../assets/quick-start/first-project/02.png)
 
-Un projet réunit les différents rushs vidéo, musiques et autres ressources qui sont utilisés pour suivre un scenario et enfin produire un film.
+Un progetto raccoglie le diverse riprese video, la musica e altre risorse che vengono utilizzate per seguire uno scenario e produrre infine un film.
 
-Chaque projet est matérialisé dans un *dossier du système*. Il contient les fichiers de paramétrages des interfaces, la documentation, les fichiers de programmations, les images et les textes qui permettent de construire la synapp.
+Ogni progetto è contenuto in una *cartella di sistema* che contiene i file di impostazione dell'interfaccia, la documentazione, i file di programmazione, le immagini e i testi che consentono di costruire il synapp.
 
 ![Répertoire de projet](../assets/quick-start/first-project/03.png)
 
-C'est ce que nous allons créer de suite.
+### Creazione del progetto
 
-### Création du projet
-
-Pour créer votre premier projet, cliquez sur "Nouveau projet..." :
+Per creare il primo progetto, nel menu "File" fare clic su "Nuovo progetto...":
 
 ![SynApps](../assets/quick-start/first-project/04.png)
 
-La fenêtre de création de projet s'est affichée :
+Viene visualizzata la finestra di creazione del progetto:
 
 ![SynApps](../assets/quick-start/first-project/05.png)
 
-Sélectionnez le modèle de projet "Tablette et bureau" :
+Selezionare il modello di progetto "Tablet e Desktop":
 
 ![SynApps](../assets/quick-start/first-project/06.png)
 
-Choisissez un emplacement dans votre système de fichier qui va contenir votre projet en cliquant sur le bouton suivant :
+Scegliere la cartella del PC che conterrà il progetto facendo clic sul pulsante "Scegli":
 
 ![SynApps](../assets/quick-start/first-project/07.png)
 
-> ⚠️ **ATTENTION**<br>
-> N'utiliser pas de lecteur réseau pour accueillir votre projet. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur.
+> ⚠️ **NOTA**<br>
+> Non utilizzare un'unità di rete per memorizzare il progetto. Attualmente Studio non funziona correttamente con questo tipo di lettore.
 
-Rendez-vous dans le répertoire dans lequel celui du projet sera créé.
+Accedere alla cartella in cui verrà creata la cartella del progetto.
 
 ![SynApps](../assets/quick-start/first-project/08.png)
 
-De retour dans la fenêtre de création, donnez un nom à votre projet :
+Nella finestra di creazione, attribuire un nome al progetto:
 
 ![SynApps](../assets/quick-start/first-project/09.png)
 
-Ce sera aussi le nom du répertoire qui contiendra tous les éléments de votre projet.
+Questo sarà anche il nome della cartella che conterrà tutti gli elementi del progetto.
 
-Vous n'avez plus qu'à cliquer sur le bouton "Créer".
+Non resta che fare clic sul pulsante "Crea".
 
 ![SynApps](../assets/quick-start/first-project/10.png)
 
-Félicitation ! Votre premier projet est créé !
+Congratulazioni! Il tuo primo progetto è stato creato!
 
 ![SynApps](../assets/quick-start/first-project/11.png)
 
-### Accueil de Projet
+### Home page del progetto
 
-Vous visualisez à présent le *Lisez-moi* du projet qui fait office de documentation de ce dernier. Par défaut, vous pourrez y lire des informations sur le modèle de projet employé et comment l'utiliser pour alimenter votre synapp.
+A questo punto viene visualizzata la sezione *Leggimi* del progetto, che funge da documentazione per il progetto stesso. Per impostazione predefinita, sarà possibile consultare le informazioni relative al modello di progetto utilizzato e come utilizzarlo per popolare il proprio synapp.
 
-> Le *Lisez-moi* est bien sûr modifiable. Le format d'écriture est un standard dans la rédaction de documentation : Le [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
+> La sezione *Leggimi* è evidentemente modificabile. Il formato di scrittura è uno standard nella scrittura della documentazione: il [`markdown`](https://fr.wikipedia.org/wiki/Markdown).
 
 
-# Prochaine étape
-Maintenant, vous allez réaliser la [première exécution](./synapp-run) de la synapp du projet.
+# Prossima tappa
+A questo punto è possibile procedere alla [prima esecuzione](./synapp-run) de la synapp du projet.
 
 -------------------
 
-[◀ Installation](./install){: .btn } [Exécution ▶](./synapp-run){: .btn }
+[◀ Installazione](./install){: .btn } [Esecuzione ▶](./synapp-run){: .btn }
