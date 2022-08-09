@@ -4,31 +4,31 @@ parent: Guide de démarrage
 nav_order: 1
 ---
 
-[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
+[◀ Guida introduttiva](./index){: .btn } [Creare un progetto ▶](./first-project){: .btn }
 
 --------------------
 
-# Installation de Synapps Studio
+# Installazione di Synapps Studio
 
-Avant tout, il va falloir installer une version de Synapps Studio sur votre poste.
+Prima di tutto, è necessario installare una versione di Synapps Studio sul computer.
 
 
-Dernière version : [1.1.2](https://github.com/witsa/synapps/releases/download/1.1.2/synapps-studio-setup.zip)
+Ultima versione: [1.1.2](https://github.com/witsa/synapps/releases/download/1.1.2/synapps-studio-setup.zip)
 
-- Téléchargez le fichier zip.
-- Ouvrir le fichier zip et exécutez le fichier synapps-studio-setup.exe
-- Ignorer le message de protection :
+- Scaricare il file zip.
+- Aprire il file zip ed eseguire il file synapps-studio-setup.exe
+- Ignorare il messaggio di protezione:
 
 ![SynApps](../assets/install-warning-message.png)
 
 ![SynApps](../assets/install-warning-message-2.png)
 
-- Suivez ensuite les instructions de l'installeur windows.
+- Seguire le istruzioni del programma di installazione di Windows.
 
 
-# Prochaine étape
-Maintenant, vous pouvez ouvrir Studio et [créer votre premier projet](./first-project).
+# Prossima tappa
+Ora potete aprire Studio e [creare il vostro primo progetto](./first-project).
 
 --------------------
 
-[◀ Guide de démarrage](./index){: .btn } [Création d'un projet ▶](./first-project){: .btn }
+[◀ Guida introduttiva](./index){: .btn } [Creare un progetto ▶](./first-project){: .btn }
