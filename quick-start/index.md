@@ -4,19 +4,19 @@ has_children: true
 nav_order: 3
 ---
 
-# Guide de démarrage
+# Guida introduttiva
 
-En suivant ce guide, vous pourrez prendre en main de l'outil Synapps Studio et appréhender des concepts fondamentaux de la solution.
+Seguendo questa guida, sarete in grado di familiarizzare con lo strumento Synapps Studio e di comprendere i concetti fondamentali della soluzione.
 
-> Vous aurez besoin qu'un version récente de **REDY-PC** tourne sur votre système.
+> E' necessario che una versione recente di **REDY-PC** sia in esecuzione sul vostro PC.
 
-> 📌 **REMARQUE**<br>
-> Synapps Studio est compatible avec les **REDY** de version supérieure à `13.2.0`. Mais pour profiter des dernières fonctionnalités, il sera nécessaire d'utiliser une version `14.2.1`.
+> 📌 **NOTA**<br>
+> Synapps Studio è compatibile con le versioni **REDY** superiori a `13.2.0`, aa per sfruttare le ultime funzionalità, sarà necessario utilizzare la versione `14.2.1` o superiore.
 
-# Première étape
-Commençons par [se procurer et installer Synapps Studio](./install)
+# Prima tappa
+Iniziamo con [ottenere e installare Synapps Studio](./install)
 
 
 --------------
 
-[Installation ▶](./install){: .btn }
+[Installazione ▶](./install){: .btn }
