@@ -1,17 +1,17 @@
 ---
-title: Commander une ressource
-parent: Guide de démarrage
+title: Comandare una risorsa
+parent: Guida introduttiva
 nav_order: 7
 ---
 
-[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more){: .btn }
+[◀ Visualizzazione di uno stato](./display-redy-data.md){: .btn } [Per approfondire ▶](./and-more){: .btn }
 
 ------
 
 {% include table_of_content.html %}
 
 
-# Commander une ressource
+# Comandare una risorsa
 
 Vous avez vu précédemment comment afficher l'état d'une ressource avec une liaisons de type *Fournisseur de variable*. Il est tout à fait possible d'utiliser la même méthode en activant l'écriture version une liaison du champ *Valeur* de la sa variable ``SetPoint``. Mais ce n'est pas cette méthode que nous verrons ici.
 Dans la plupart des cas, lorsque vous devrez réaliser une commande, il sera plus facile et donc judicieux d'utiliser le *Reflet* d'une ressource.
