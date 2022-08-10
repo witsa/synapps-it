@@ -4,204 +4,201 @@ parent: Guide de démarrage
 nav_order: 4
 ---
 
-[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+[◀ Esecuzione](./synapp-run){: .btn } [Pubblicazione ▶](./synapp-publish){: .btn }
 
 ----------------
 
 {% include table_of_content.html %}
 
-# Premiers pas avec le Designer de scène
+# Primi passi con il Designer delle scene
 
-Nous allons modifier le projet de manière à afficher un message de bienvenue en accueil.
+Procediamo a modificare il progetto per visualizzare un messaggio di benvenuto nell'area dedicata.
 
-Mais d'abord, voyons quelques concepts :
+Ma prima, esaminiamo alcuni concetti:
 
-## La scène
+## La scena
 
-Une synapp est composée de page que nous appelons **scène**.
+Un synapp è composto da pagine che chiamiamo **scene**.
 
-L'application est constituée d’une ou plusieurs scènes que l’utilisateur affiche en navigant de l’une vers l’autre.
+L'applicazione è costituita da una o più scene che l'utente visualizza navigando da una all'altra.
 
 ![SynApps](../assets/scenes-nav.png)
 
-## Ouverture du designer de scène
+## Apertura del Designer
 
-Nous allons sélectionner une des scènes du projet. Affichons l'arborescence des scènes du projet :
+Selezionare una delle scene del progetto. Verrà visualizzato l'albero delle scene del progetto:
 
 ![SynApps](../assets/quick-start/designer-first-steps/01.png)
 
-La scène avec le ![SynApps](../assets/start-scene-icon.png) est la celle que la synapp va afficher en premier : c'est la **scène de démarrage**. Mais ce n'est pas celle-ci que nous allons modifier ici.
+La scena con l'icona ![SynApps](../assets/start-scene-icon.png) è quella che il synapp visualizzerà per prima: è la **scena di avvio**. Ma non è questa ad essere modificata in questa sede.
 
-Sélectionnez la scène **Accueil** pour afficher son **designer**.
+Selezionare la scena **Accueil** per visualizzare il suo **designer**..
 
 ![SynApps](../assets/quick-start/designer-first-steps/02.png)
 
-- Au centre se trouve l'**aperçu** de la scène <span style="color: red;">**A**</span>.
-- En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs**  <span style="color: red;">**B**</span>.
-- Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche  <span style="color: red;">**C**</span>.
+- Al centro viene visualizzata l'**anteprima** della scena <span style="color: red;">**A**</span>.
+- Sotto l'elenco delle scene, a sinistra, si trova la **listaa degli attori** che appartengono alla scena selezionata.  <span style="color: red;">**B**</span>.
+- A destra vengono visualizzati i **parametri** dell'oggetto selezionato nel pannello di sinistra attraverso un pannello chiamato **ispettore*.  <span style="color: red;">**C**</span>.
 
-## L'acteur
+## L'attore
 
-Chaque scène contient les instructions et la programmation des éléments d'interface appelées [**acteurs**](/synapps/concepts/actor/) qui vont du plus simple des boutons d'action à l'acteur qui affiche le détail d'un reflet.
-Les acteurs permettent de construire et d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.
+Ogni scena contiene le istruzioni e la programmazione degli elementi dell'interfaccia chiamati [**attori**](/synapps/concepts/actor/) che vanno dal più semplice dei pulsanti di azione a un attore che visualizza i dettagli di un riflesso.
+Gli attori possono essere utilizzati per costruire e strutturare qualsiasi tipo di interfaccia, dai formulari ai dashboard.
 
 ![SynApps](../assets/scene-actors.png)
 
-Ils sont organisés sous forme d'arborescence :
+Sono organizzati in una struttura ad albero:
 
 ![SynApps](../assets/quick-start/designer-first-steps/04.png)
 
 
-Le premier acteur, l'**acteur principal** de la scène, `stack1` ici est de type [**Empilement**](/synapps/concepts/actor-types/layout-stack.md).
+Il primo attore, l'attore **principale** della scena, `stack1` qui è di tipo [**Impilamento**](/synapps/concepts/actor-types/layout-stack.md).
+È un attore di impaginazione. Il suo ruolo è quello di disporre, di collocare sull'interfaccia, gli attori che essa conterrà. Nel caso di una pila, gli attori vengono impilati verticalmente per impostazione predefinita.
 
-C'est un acteur de disposition. Son role est de disposer, de placer sur l'interface, les acteurs qu'il va contenir. Dans le cas d'un empilement, il va empiler les acteurs verticalement par défaut.
-D'autres types de disposition existent *([voir doc](/synapps/concepts/actor-types/#layout))*.
+Aggiungere ora un attore [**Testo**](/synapps/concepts/actor-types/display-text.md) all'impilamento.
 
-Nous allons ajouter un acteur [**Texte**](/synapps/concepts/actor-types/display-text.md) à l'empilement.
+### Aggiungere
 
-### Ajout
+Per aggiungere un attore, fare clic con il tasto destro del mouse su `stack1`. Appare il menu contestuale per le azioni sugli attori.
 
-Pour ajouter un acteur, vous allez effectuer un clic droit sur `stack1`. Le menu contextuel d'action sur les acteurs va s'afficher.
-
-> **Remarque :** La gestion des scènes s'effectue également par l'intermédiaire d'un menu contextuel sur les éléments de l'arborescence.
+> **Nota:** La gestione delle scene si effettua anche tramite un menu contestuale sulle voci dell'albero.
 
 ![SynApps](../assets/quick-start/designer-first-steps/05.png)
 
-Choisissez *Ajouter un acteur...*. Le panneau de choix de nouvel acteur va s'afficher.
+Scegliere *Aggiungere l'attore...*. Viene visualizzato il pannello di selezione che rappresenta gli attori disponibili.
 
 ![SynApps](../assets/quick-start/designer-first-steps/06.png)
 
 
-Cliquez sur l'acteur *Texte* qui se trouve dans la section *Affichage*.
+Fare clic sull'attore *Testo* nella sezione *Visualizzazione*.
 
-L'acteur `text2` a été ajouté dans l'arborescence :
+L'attore `testo2` è stato aggiunto all'albero:
 
 ![SynApps](../assets/quick-start/designer-first-steps/07.png)
 
-Dans l'aperçu, l'acteur se retrouve empilé en dessous de `text1`.
+Nell'anteprima, l'attore è impilato sotto `testo1`.
 
 ![SynApps](../assets/quick-start/designer-first-steps/08.png)
 
-### Suppression
+### Cancellazione
 
-Nous allons supprimer le premier acteur qui va être inutile ici, toujours à l'aide du menu contextuel d'acteur.
+Per eliminare il primo attore, che in questo caso non serve a nulla, si utilizza ancora una volta il menu contestuale dell'attore.
 
-Cliquez droit sur l'acteur `text1` et choisissez *Supprimer*.
+Fare clic con il pulsante destro del mouse sull'attore `text1` e scegliere *Cancella*.
 
-L'acteur à disparu :
+L'attore è scomparso:
 
 ![SynApps](../assets/quick-start/designer-first-steps/09.png)
 
-Et dans l'aperçu :
+E nell'anteprima:
 
 ![SynApps](../assets/quick-start/designer-first-steps/11.png)
 
 
-### Modification
+### Modifica
 
-Nous allons positionner le texte au centre de la scène. Il s'affichera en dessous de celui qui est deja présent.
+Procediamo ora a posizionare il testo al centro della scena. Verrà visualizzato sotto il testo esistente.
 
-Si ce n'est pas déjà le cas, sélectionner l'acteur `text2`.
+Qualora non fosse già selezionato, selezionare l'attore `text2`.
 
-> **Remarque :** vous pouvez aussi sélectionner un acteur en cliquant simplement sur son aperçu.
+> **Nota:** è possibile selezionare un attore anche facendo clic sulla sua panoramica..
 
-Concentrons nous sur l'inspecteur :
+Soffermiamoci sull'ispettore:
 
 ![SynApps](../assets/quick-start/designer-first-steps/12.png)
 
-Déroulez la partie *Disposition*.
+Aprire la sezione *Layout*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/13.png)
 
-Cette section permet de gérer la disposition de l'acteur dans son acteur parent. ici, vous pouvez changer l'alignement de l'acteur et choisir *centré* verticalement et horizontalement.
+Questa sezione consente di gestire la disposizione dell'attore rispetto al suo attore padre. A questo punto è possibile modificare l'allineamento dell'attore e scegliere *centrato* in verticale e in orizzontale.
 
 ![SynApps](../assets/quick-start/designer-first-steps/14.png)
 
-Et dans l'aperçu :
+E nell'anteprima:
 
 ![SynApps](../assets/quick-start/designer-first-steps/15.png)
 
-> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/quick-start/designer-first-steps/10.png)<br>Raccourci **Ctrl+Z** / **Ctrl+Shift+Z**
+> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/quick-start/designer-first-steps/10.png)<br>Scelta rapida da tastiera **Ctrl+Z** / **Ctrl+Shift+Z**
 
-Profitons-en pour jeter un oeil sur les autres sections offertes par l'inspecteur de l'acteur.
+Diamo un'occhiata alle altre sezioni disponibili nella finestra dell'ispettore dell'attore.
 
-Nous allons maintenant changer le contenu du texte :
+Ora modificheremo il contenuto testuale del nostro attore:
 
-Cela se passe dans la section *Spécifiques*.
+Questa operazione va eseguita nella sezione *Specifico*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/16.png)
 
-Comme son nom l'indique, cette section varie en fonction du type d'acteur qui est sélectionné.
+Come suggerisce il nome, questa sezione varia a seconda del tipo di attore selezionato.
 
-Ici, nous pouvons modifier le texte affiché par l'acteur en cliquant sur le bouton avec un stylo. Le panneau d'édition de texte s'affiche :
+In questo caso è possibile modificare il testo visualizzato dall'attore facendo clic sul pulsante con una penna. Viene visualizzato il pannello di modifica del testo:
 
 ![SynApps](../assets/quick-start/designer-first-steps/17.png)
 
-Saisissons `Salut le monde!` à la place de `Text`. Puis cliquons sur le bouton pour sauver notre saisie.
+Digitiamo `Hello World' invece di `Text'. Cliccare poi sul pulsante per salvare quanto inserito.
 
-> **Astuce :** Raccourci pour sauver la saisie **Ctrl+S**
+> **Suggerimento** Scelta rapida da tastiera per salvare il testo inserito: **Ctrl+S**
 
-Nous pouvons fermer le panneau en cliquant ailleurs ou directement sur la croix, en haut à droite. Le texte a changé dans l'aperçu.
+Possiamo chiudere il pannello facendo clic altrove o direttamente sulla croce in alto a destra. La modifica è visibile nell'anteprima.
 
 ![SynApps](../assets/quick-start/designer-first-steps/18.png)
 
 
-## Sauvegarde et Exécution
+## Salvataggio ed esecuzione
 
-Nous allons sauvegarder les modifications réalisées en cliquant sur le bouton dédié dans la barre d'action au dessus de l'aperçu de la scène.
+Per salvare le modifiche apportate, fare clic sul pulsante dedicato nella barra delle azioni sopra l'anteprima della scena.
 
-> **Astuce :** Raccourci pour sauver la scène **Ctrl+S**
+> **Suggerimento** Scelta rapida da tastiera per salvare la scena: **Ctrl+S**
 
-Maintenant, si nous exécutons la synapp, nous pourrons voir :
+Ora, se si esegue il synapp, si può vedere:
 
 ![SynApps](../assets/quick-start/designer-first-steps/19.png).
 
-> **Astuce :** Raccourci pour exécuter la synapp dans Studio **Ctrl+R**. Raccourci pour exécuter la synapp dans le navigateur **Ctrl+Shift+R**
+> **Suggerimento** Scelta rapida da tastiera per eseguire il synapp all'nterno di: **Ctrl+R**. Scelta rapida da tastiera per eseguire il synapp nel navigatore: **Ctrl+Shift+R**
 
 
-## Encore quelques modifications
+## Ancora qualche modifica
 
-### Utilisation de librairie
-
-Nous allons maintenant changer la couleur du texte. Pour cela, nous allons nous intéresser à la section *Texte* de l'inspecteur et plus particulièrement au champ *Couleur*.
+### Uso della biblioteca
+Cambiare il colore del testo. A tale scopo, prenderemo in esame la sezione *Testo* dell'ispettore e più precisamente il campo *Colore*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/20.png).
 
-Ce champ attend une [couleur CSS](/script-api/global.html#CssColorString){:target="_blank"} qu'il est possible de saisir ou de choisir à l'aide du sélecteur proposé. Nous pouvons en essayer plusieurs et visualiser le résultat.
+Questo campo si aspetta un [colore CSS](/script-api/global.html#CssColorString){:target="_blank"} che può essere digitato oppure scelto utilizzando il selettore a disposizione. Possiamo provarne diversi e visualizzare il risultato.
 
 ![SynApps](../assets/quick-start/designer-first-steps/26.png).
 
-Nous allons utiliser la **librairie** de couleur définie dans la synapp et en profiter pour aborder le sujet de la **liaison**.
+Utilizzeremo la **libreria** di colori definita nel synapp e coglieremo l'occasione per affrontare il tema del **collegamento**.
 
-La simplicité d'édition des interfaces repose entre autres sur ce concept. Les champs des acteurs peuvent être liés à d'autres éléments de l'application, un autre acteur, une couleur, un texte, une image et une donnée dans l’ULI...
+La semplicità delle interfacce di editing si basa, tra l'altro, su questo concetto. I campi degli attori possono essere collegati ad altri elementi dell'applicazione, a un altro attore, a un colore, a un testo, a un'immagine e ai dati dell'ULI...
 
-Cliquons sur le bouton d'option de champ sur la droite, en forme d'engrenage et choisissez *Lier à...*.
+Fare clic sul pulsante a forma di ingranaggio posto a destra del campo *Colore* e scegliere *Collegamento a...*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/21.png).
 
-Le panneau d'édition de liaison s'affiche alors.
+Viene quindi visualizzato il pannello di modifica dei collegamenti.
 
 ![SynApps](../assets/quick-start/designer-first-steps/22.png).
 
-Pour l'instant, aucune liaison n'est définie. Mais si nous ouvrons le menu déroulant, nous pourrons observer les sources de liaisons possibles. Choisissez *Librairies/Couleur*.
+Al momento non sono stati definiti collegamenti. Ma se apriamo il menu a tendina, verranno visualizzate le possibili fonti di collegamento. Scegliere *Librerie/Colore*.
 
-L'interface a changé :
+L'interfaccia è cambiata:
 
 ![SynApps](../assets/quick-start/designer-first-steps/23.png).
 
-Dans le champ *Couleur* qui est apparu, nous allons pouvoir choisir une des couleurs définies dans la librairie :
+Nel campo *Colore* che è apparso, si può scegliere uno dei colori definiti nella libreria::
 
 ![SynApps](../assets/quick-start/designer-first-steps/24.png).
 
-Choisissons `themeColor` et cliquons sur le bouton *Lier à...* en bas pour valider la création de la liaison.
+Scegliare `themeColor` e cliccare sul pulsante *Collegamento a...* per validare la creazione del link.
 
 ![SynApps](../assets/quick-start/designer-first-steps/25.png).
 
-> **Remarque :** La [librairie de couleur](../concepts/colors.md), comme toutes les autres librairies est accessible dans la rubrique dédiée ![SynApps](../assets/libraries.png).
+> **Nota:** La [Libreria dei colori](../concepts/colors.md), come tutte le altre librerie è accessibile nella sezione dedicata![SynApps](../assets/libraries.png).
 
-## Prochaine étape
-[Publier la synapp dans le REDY-PC](./synapp-publish).
+## Prossima tappa
+[Pubblicare il synapp nel REDY-PC](./synapp-publish).
 
 ---------------------
 
-[◀ Exécution](./synapp-run){: .btn } [Publication ▶](./synapp-publish){: .btn }
+[◀ Esecuzione](./synapp-run){: .btn } [Pubblicazione ▶](./synapp-publish){: .btn }
