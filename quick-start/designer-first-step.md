@@ -1,6 +1,6 @@
 ---
-title: "Designer : Premiers pas"
-parent: Guide de démarrage
+title: "Designer: Primi passi"
+parent: Guida introduttiva
 nav_order: 4
 ---
 
@@ -16,7 +16,7 @@ Procediamo a modificare il progetto per visualizzare un messaggio di benvenuto n
 
 Ma prima, esaminiamo alcuni concetti:
 
-## La scena
+## Le scene
 
 Un synapp è composto da pagine che chiamiamo **scene**.
 
@@ -26,7 +26,7 @@ L'applicazione è costituita da una o più scene che l'utente visualizza navigan
 
 ## Apertura del Designer
 
-Selezionare una delle scene del progetto. Verrà visualizzato l'albero delle scene del progetto:
+Cliccare sull'icona *Scene* per visualizzare visualizzato la struttura ad albero delle scene del progetto:
 
 ![SynApps](../assets/quick-start/designer-first-steps/01.png)
 
@@ -42,7 +42,7 @@ Selezionare la scena **Accueil** per visualizzare il suo **designer**..
 
 ## L'attore
 
-Ogni scena contiene le istruzioni e la programmazione degli elementi dell'interfaccia chiamati [**attori**](/synapps/concepts/actor/) che vanno dal più semplice dei pulsanti di azione a un attore che visualizza i dettagli di un riflesso.
+Ogni scena contiene le istruzioni e la programmazione degli elementi dell'interfaccia chiamati [**attori**](/synapps/concepts/actor/) GLi attori permettono di rappresentare dal più semplice dei pulsanti di azione ai dettagli di un riflesso complesso.
 Gli attori possono essere utilizzati per costruire e strutturare qualsiasi tipo di interfaccia, dai formulari ai dashboard.
 
 ![SynApps](../assets/scene-actors.png)
@@ -80,7 +80,7 @@ Nell'anteprima, l'attore è impilato sotto `testo1`.
 
 ![SynApps](../assets/quick-start/designer-first-steps/08.png)
 
-### Cancellazione
+### Cancellare
 
 Per eliminare il primo attore, che in questo caso non serve a nulla, si utilizza ancora una volta il menu contestuale dell'attore.
 
@@ -90,20 +90,20 @@ L'attore è scomparso:
 
 ![SynApps](../assets/quick-start/designer-first-steps/09.png)
 
-E nell'anteprima:
+E lanteprima presenta la nuova impaginazione della scena:
 
 ![SynApps](../assets/quick-start/designer-first-steps/11.png)
 
 
-### Modifica
+### Modificare
 
-Procediamo ora a posizionare il testo al centro della scena. Verrà visualizzato sotto il testo esistente.
+Procediamo ora a posizionare il testo al centro della scena.
 
 Qualora non fosse già selezionato, selezionare l'attore `text2`.
 
-> **Nota:** è possibile selezionare un attore anche facendo clic sulla sua panoramica..
+> **Nota:** è possibile selezionare un attore anche facendo clic sulla sua panoramica.
 
-Soffermiamoci sull'ispettore:
+Soffermiamoci sull'ispettore, che contiene tutti i parametri dell'attore selezionaot, suddivisi in sezioni logiche:
 
 ![SynApps](../assets/quick-start/designer-first-steps/12.png)
 
@@ -111,7 +111,7 @@ Aprire la sezione *Layout*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/13.png)
 
-Questa sezione consente di gestire la disposizione dell'attore rispetto al suo attore padre. A questo punto è possibile modificare l'allineamento dell'attore e scegliere *centrato* in verticale e in orizzontale.
+Questa sezione consente di gestire la disposizione dell'attore rispetto al suo attore padre. Qui è possibile modificare l'allineamento dell'attore e scegliere *centrato* in verticale e in orizzontale.
 
 ![SynApps](../assets/quick-start/designer-first-steps/14.png)
 
@@ -119,7 +119,7 @@ E nell'anteprima:
 
 ![SynApps](../assets/quick-start/designer-first-steps/15.png)
 
-> **Remarque :** Les actions réalisées dans le designer sont *annulables*. <br>![SynApps](../assets/quick-start/designer-first-steps/10.png)<br>Scelta rapida da tastiera **Ctrl+Z** / **Ctrl+Shift+Z**
+> **Nota:** Le operazioni eseguite nel designer sono *annullabili*. <br>![SynApps](../assets/quick-start/designer-first-steps/10.png)<br>Scelta rapida da tastiera **Ctrl+Z** / **Ctrl+Shift+Z**
 
 Diamo un'occhiata alle altre sezioni disponibili nella finestra dell'ispettore dell'attore.
 
@@ -135,7 +135,7 @@ In questo caso è possibile modificare il testo visualizzato dall'attore facendo
 
 ![SynApps](../assets/quick-start/designer-first-steps/17.png)
 
-Digitiamo `Hello World' invece di `Text'. Cliccare poi sul pulsante per salvare quanto inserito.
+Digitare `Hello World' invece di `Text'. Cliccare poi sul pulsante per salvare quanto inserito.
 
 > **Suggerimento** Scelta rapida da tastiera per salvare il testo inserito: **Ctrl+S**
 
@@ -160,7 +160,7 @@ Ora, se si esegue il synapp, si può vedere:
 ## Ancora qualche modifica
 
 ### Uso della biblioteca
-Cambiare il colore del testo. A tale scopo, prenderemo in esame la sezione *Testo* dell'ispettore e più precisamente il campo *Colore*.
+E' possibile cambiare il colore del testo. A tale scopo, prendiamo in esame la sezione *Testo* dell'ispettore e più precisamente il campo *Colore*.
 
 ![SynApps](../assets/quick-start/designer-first-steps/20.png).
 
@@ -168,7 +168,7 @@ Questo campo si aspetta un [colore CSS](/script-api/global.html#CssColorString){
 
 ![SynApps](../assets/quick-start/designer-first-steps/26.png).
 
-Utilizzeremo la **libreria** di colori definita nel synapp e coglieremo l'occasione per affrontare il tema del **collegamento**.
+E' anche possibile utilizzare la **libreria** di colori definita nel synapp. Cogliamo l'occasione per affrontare il tema del **collegamento**.
 
 La semplicità delle interfacce di editing si basa, tra l'altro, su questo concetto. I campi degli attori possono essere collegati ad altri elementi dell'applicazione, a un altro attore, a un colore, a un testo, a un'immagine e ai dati dell'ULI...
 
@@ -186,7 +186,7 @@ L'interfaccia è cambiata:
 
 ![SynApps](../assets/quick-start/designer-first-steps/23.png).
 
-Nel campo *Colore* che è apparso, si può scegliere uno dei colori definiti nella libreria::
+Nel campo *Colore* che è apparso, si può scegliere uno dei colori definiti nella libreria:
 
 ![SynApps](../assets/quick-start/designer-first-steps/24.png).
 
