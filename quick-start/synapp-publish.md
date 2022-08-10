@@ -13,7 +13,7 @@ nav_order: 5
 
 # Prima pubblicazione su un REDY
 
-Non resta che vedere come pubblicare il synapp del progetto su un REDY che ospiterà il sysapp.
+Non resta che vedere come pubblicare il synapp del progetto sul REDY che ospiterà il sysapp.
 
 Selezioanre l'icona *Hosts* nella cartella *Progetto* ![SynApps](../assets/project.png).
 
