@@ -44,29 +44,29 @@ Creare un collegamento di tipo *Fornitore di variabili* per alimentare la propri
 
 ![Ressource](../assets/quick-start/display-redy-data/08.gif)
 
-Cette liaison permet d'indiquer la donnée qui nous intéresse à un élément de synapp qui joue le role d'intermédiaire : *un fournisseur de donnée*.
-C'est un acteur d'un type spécial : il n'est pas afficher. Son objectif est de fournir les données aux autres acteurs.
+Il collegamento consente di legare i dati che ci interessano a un elemento synapp che funge da intermediario: *un fornitore di dati*.
+Si tratta di un tipo speciale di attore: non viene visualizzato. Il suo scopo è fornire dati agli altri attori.
 
-Dans chaque projet, un fournisseur est déjà présent : le fournisseur global `resources`. Nous allons le regarder de plus prés un peu plus bas.
+In ogni progetto è già presente un fornitore: il fornitore `global resources`. Lo vedremo più da vicino qui di seguito.
 
-En attendant, choisissez le dans le champ *Clé parent*.
+Nel frattempo selezionalo nel campo *Chiave padre*.
 
 ![Ressource](../assets/quick-start/display-redy-data/09.gif)
 
-Maintenant, vous allez lui indiquer la ressource qu'il doit aller chercher dans le champ **Chemin relatif**.
+Ne campo **Cammino relativo** indicare quale risorsa deve andare a cercare nel REDY.
 
 ![Ressource](../assets/quick-start/display-redy-data/10.gif)
 
-Vous pouvez observer que le chemin saisi est relatif au chemin défini dans `resources`.
+Si può notare che il percorso inserito è relativo al percorso definito in `resources`.
 
-En réalité, nous indiquons simplement au fournisseur de données `resources` qu'en plus de la variable `:easy.RESS`, il devra aller chercher la variable `:easy.RESS.R00001`.
+In realtà, stiamo semplicemente dicendo al fornitore di dati `resources' che, oltre alla variabile `:easy.RESS`, deve recuperare anche la variabile `:easy.RESS.R00001`.
 
-Mais plus précisément, c'est l'état de la ressource qui nous intéresse. Il faut dont l'indiquer :
+In realtà, è lo stato della risorsa che ci interessa. È necessario precisarlo::
 
 ![Ressource](../assets/quick-start/display-redy-data/11.gif)
 
 
-Voila qui est fait. Il ne reste plus qu'à valider votre réglage pour voir directement le résultat dans l'aperçu.
+Ecco, questo è tutto. Non resta che convalidare l'impostazione per vedere il risultato direttamente nell'anteprima.
 
 ![Ressource](../assets/quick-start/display-redy-data/12.gif)
 
