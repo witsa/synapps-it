@@ -1,46 +1,46 @@
 ---
-title: Affichage d'un état
-parent: Guide de démarrage
+title: Visualizzare uno stato
+parent: Guida introduttiva
 nav_order: 6
 ---
 
-[◀ Publication](./synapp-publish){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }
+[◀ Pubblicazione](./synapp-publish){: .btn } [Comandare una risorsa ▶](./command-redy.md){: .btn }
 
 ------------------
 
 {% include table_of_content.html %}
 
 
-# Affichage l'état d'une ressource
+# Visualizzazione dello stato di una risorsa
 
-Votre synapp va devoir forcément présenter des données des ressources ou variables du paramétrage du REDY. Contrairement aux synoptiques, la page ne va pas se charger et se rafraîchir avec les données. Elle va charger les données et les rafraîchir **séparément**.
+Nei progetti synapp abbiamo la necessità di visualizzare dati che appartengono a risorse e variabili definite nella parametrizzazione del REDY.
 
-Ce que vous allez voir ici est l'une des méthodes pour **obtenir et afficher l'état d'une ressource** : la liaison de type *Fournisseur de variable* vers l'état de la.
+Di seguito è illustrato uno dei metodi per **ottenere e visualizzare lo stato di una risorsa**.  Tale metodo utilizza il collegamento di tipo *Fornitore di variabili*.
 
-> 📌 **REMARQUE**<br>
-D'autres méthodes existent. Elles impliquent l'utilisation d'[**acteurs fournisseurs de données**](../concepts/actor-types/redy-wos-variable-source.md) notion à voir dans les concepts.
+> 📌 **NOTA**<br>
+Esistono altri modi per ottenere lo stato di una risorsa. Questi prevedono l'utilizzo di [**attori fornitori di dati**](../concepts/actor-types/redy-wos-variable-source.md). I dettagli sono disponibili nella sezione Concetti.
 
-## Préparation de la ressource
+## Preparazione della risorsa
 
-Tout d'abord, dans votre paramétrage vous allez ajouter une ressource **consigne analogique**. Rendez-vous dans le paramétrage pour en créer une de ce type.
+A titolo di esempio procediamo alla creazione di una risorsa di tipo **consegna analogica**. Aprire la parametrizzazione del REDY per la creazione della risorsa.
 
 ![Ressource](../assets/quick-start/display-redy-data/01.png)
 
-Configurez la comme ceci :
+Configurare la risorsa come in figura:
 
 ![Ressource](../assets/quick-start/display-redy-data/02.png)
 
-- Libellé : `Consigne température`
-- Nombre de décimale : `0`
-- Valeurs limites : entre `20` et `30`
-- Unité personnalisée : `°C`
+- Descriozione: `Setpoint di temperatura`
+- Numero di decimali: `0`
+- Valori limite: tra `20` e `30`
+- Unità personalizzate: `°C`
 
 
-## Liaison de type *Fournisseur de variable*
+## Collegamento di tipo *Fornitore di variabili*
 
-Rendez-vous dans Studio sur le designer de la scène *Accueil*.
+Passare in Studio, nella progettazione della scena *Accueil*.
 
-Vous allez créer une liaison de type *Fournisseur de variable* pour alimenter la propriété *Contenu* de l'acteur `text1`.
+Creare un collegamento di tipo *Fornitore di variabili* per alimentare la proprietà *Contenuto* presente nella sezione *Specifico* dell'attore `text1`.
 
 ![Ressource](../assets/quick-start/display-redy-data/08.gif)
 
