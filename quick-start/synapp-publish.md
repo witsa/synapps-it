@@ -1,6 +1,6 @@
 ---
-title: Publication
-parent: Guide de démarrage
+title: Pubblicazione
+parent: Guida introduttiva
 nav_order: 5
 ---
 
@@ -11,44 +11,44 @@ nav_order: 5
 {% include table_of_content.html %}
 
 
-# Première publication dans un REDY
+# Prima pubblicazione su un REDY
 
-Il ne reste plus qu'à voir comment publier la synapp de votre projet.
+Non resta che vedere come pubblicare il synapp del progetto su un REDY che ospiterà il sysapp.
 
-Rendez-vous dans la rubrique *projet* ![SynApps](../assets/project.png) et la *gestion des hôtes*.
+Selezioanre l'icona *Hosts* nella cartella *Progetto* ![SynApps](../assets/project.png).
 
 ![SynApps](../assets/quick-start/synapp-publish/01.png)
 
-Sélectionnez le seul hôte défini ou bien celui sur lequel vous désirez publier si vous en avez définis plusieurs.
+Selezionare l'host sul quale volete pubblicare il synapp se ne sono presenti più di uno.
 
 ![SynApps](../assets/quick-start/synapp-publish/02.png)
 
-## Connexion à l'hôte
+## Connessione all'host
 
-Il va falloir se connecter à l'hôte sélectionné. Pour celà, cliquez sur bouton vert *Se connecter*.
+Per poter trasferire la synapps è necessario collegarsi all'host desiderato. Una volta selezionato l'Host, fare clic sul pulsante verde *Effettuare il login*.
 
-Une fois connectée, l'interface présente maintenant le bouton dédié à la publication.
+Una volta collegata, l'interfaccia mostra il pulsante dedicato alla pubblicazione.
 
 ![SynApps](../assets/quick-start/synapp-publish/03.png)
 
 
-> **Remarque :** Si vous définissez un utilisateur qui n'est pas au moins *installateur* ou si l'*adds Intravision* n'est pas activée, vous ne pourrez pas publier la synapp dans l'hôte.
+> **Nota:** Se si definisce un utente con diritti inferiorri all'*installatore* oppure la ADD *Intravision* non è attiva nel REDY host, non sarà possibile pubblicare il synapp.
 
-## Publication
+## Pubblicazione
 
-Appuyez sur le bouton *Publier* et la progression du déploiement s'affichera :
+Premete il pulsante *Pubblica*. Il sysapp viene trasferito sur REDY e viene visualizzato l'avanzamento dell'operazione in corso:
 
 ![SynApps](../assets/quick-start/synapp-publish/04.png)
 
-Si tout se passe bien, l'interface montrera la synapp correspondante au projet publiée dans l'hôte.
+Se tutto si svolge correttamente, l'interfaccia mostrerà il synapp corrispondente al progetto pubblicato nell'host.
 
 ![SynApps](../assets/quick-start/synapp-publish/05.png)
 
-> **Remarque :** Chaque projet permet de définir une synapp, avec un identifiant unique. Ainsi, Studio est capable de reconnaître la synapp publiée comme correspondante à celle du projet en cours.
+> **Nota:** Ogni progetto consente di definire un synapp con un identificatore unico. In questo modo, Studio è in grado di riconoscere il synapp pubblicato come corrispondente al progetto corrente.
 
-# Prochaine étape
-Maintenant, vous allez [afficher l'état d'une ressource du REDY](./display-redy-data.md) dans la scène.
+# Prossima tappa
+A questo punto vediamo come [visualizzare lo stato di una risorsa REDY](./display-redy-data.md) in una scena.
 
 --------------
 
-[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
+[◀ Designer: Primi passi](./designer-first-step){: .btn } [Visualizzare uno stato ▶](./display-redy-data.md){: .btn }
