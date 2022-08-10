@@ -1,6 +1,6 @@
 ---
-title: Exécution
-parent: Guide de démarrage
+title: Esecuzione
+parent: Guida introduttiva
 nav_order: 3
 ---
 
@@ -15,11 +15,11 @@ Il contenuto è pronto per essere eseguito.
 
 ## Hosts
 
-Per eseguire un **synap** in Studio, è necessario connettersi a una ULI.
+Per eseguire un **synapp** in Studio, è necessario connettersi a una ULI.
 
-Nella sezione di gestione **host** del progetto, è possibile effettuare la memorizzazione dei dati di connessione a una ULI..
+Nella sezione di gestione **host** del progetto, è possibile effettuare la memorizzazione dei dati di connessione a una o più ULI.
 
-Ogni nuovo progetto si avvia con un host predefinito. Punta a `http://127.0.0.1`. Pertanto, il progetto si aspetta che sia presente un **REDY-PC** e che sia in grado di connettersi con l'utente amministratore predefinito `admin`.
+Ogni nuovo progetto si avvia con un host predefinito che punta all'indirizzo `http://127.0.0.1`. Il progetto si aspetta che sia presente un **REDY-PC** e che sia in grado di connettersi con l'utente amministratore predefinito `admin`.
 
 Tutto questo è configurabile (si veda la sezione sulla gestione degli host e dei synapp).
 
