@@ -13,67 +13,67 @@ nav_order: 7
 
 # Comandare una risorsa
 
-Vous avez vu précédemment comment afficher l'état d'une ressource avec une liaisons de type *Fournisseur de variable*. Il est tout à fait possible d'utiliser la même méthode en activant l'écriture version une liaison du champ *Valeur* de la sa variable ``SetPoint``. Mais ce n'est pas cette méthode que nous verrons ici.
-Dans la plupart des cas, lorsque vous devrez réaliser une commande, il sera plus facile et donc judicieux d'utiliser le *Reflet* d'une ressource.
+Si è visto in precedenza come visualizzare lo stato di una risorsa con una connessione di tipo *Fornitore di variabili*. È possibile utilizzare il medesimo meccanismo, abilitando la scrittura del campo appropriato della risorsa.
+Nella maggior parte dei casi però, quando si deve eseguire un comando, sarà più semplice ed immediato usare il *Riflesso* della risorsa.
 
-## Création de reflet
+## Creazione di un riflesso
 
-Tout d'abord, dans votre paramétrage vous allez déclarer un reflet dans la ressource consigne analogique que vous avez créée dans l'étape précédente.
+Per poter utilizzare il riflesso di una risorsa è necessario che questo sia attivato nella parametrizzazione del REDY. Come prima cosa è andiamo a definire il riflesso della risorsa consegna creata nella durante la tappa precedente.
 
-Rendez-vous dans le paramétrage de la ressource, onglet identité. Nous allons déclarer son reflet de type *Analogique*. Cela permet de rendre disponible dans le REDY cette ressource sous la forme d'un objet avec des propriétés bien connues comme ses limites, son unité, ...
-Il sera disponible pour la communication avec Synapps ou plus généralement par l'API du REDY.
+Andare nei parametri della risorsa, scheda Identità. Definiamo in riflesso della risorsa di tipo *Riflesso Analogico*. Questa operazione permette di rendere la risorsa disponibile come un oggetto con proprietà conosciute.
+Il riflesso è ora disponibile per la comunicazione con Synapps e più in generale con le API del REDY.
 
-> N'oublier pas de rendre le reflet commandable.
+> Non dimenticare di rendere il riflesso comandabile.
 
 ![Reflet](../assets/quick-start/command-redy/03.gif)
 
-> 📌 **REMARQUE**<br>
-Toutes les ressources ont un ou des types de reflet possibles. Au moins le reflet état est disponible et permet à minima d'afficher l'état de la ressource. Les autres sont à chaque fois plus spécialisé (reflet analogique, reflet de type digital, vanne, pompe, ...).
+> 📌 **NOTA**<br>
+Tutte le risorse hanno uno o più tipi di riflessione possibili. Come minimo è disponibile il riflesso 'stato', che consente di visualizzare lo stato della risorsa. Gli altri tipi di strumenti sono più complessi e specifici al tipo di risorsa (riflesso analogico, riflesso digitale, valvola, pompa, ...).
 
 
-## Acteur détails de reflet
+## Attore Dettaglio del riflesso
 
-Rendez-vous dans Studio sur le designer de la scène *Accueil*.
+In Studio, aprire la schena *Accueil*.
 
-- Supprimez l'acteur texte avec la liaison avec fournisseur de donnée.
-- Ajouter un acteur qui se trouve dans la rubrique REDY, **Détails de reflet**.
+- Cancella re l'attore testo con il collegamanto al fornitore di dati creato in precedenza.
+- Aggiungere l'attore **Dettagli del riflesso** disponibile nella sessione REDY dell'elenco degli attori.
 
 ![Reflet](../assets/quick-start/command-redy/04.png)
 
-Vous visualisez ce nouvel acteur dans l’aperçu :
+Il nuovo attore è visibile nella preview:
 
 ![Reflet](../assets/quick-start/command-redy/05.png)
 
-Cette acteur permet de visualiser un reflet.
+L'attore appena creato permette di visualizzare un riflesso.
 
-Vous allez lui indiquer celui que vous venez de déclarer grâce à sa propriété *Reflet* et son explorateur de ressource :
+Procediamo ora ad assegnare all'attore creato il riflesso appena definito sull risorsa di tipo consegnaa attraverso il campo *Riflesso* presente nella sessione *Specifico* dell'attore:
 
 ![Reflet](../assets/quick-start/command-redy/06.gif)
 
-> L'acteur va maintenant se charger d'afficher l'état commandable de la ressource et la mettre à jour (par défaut toutes les 30 secondes).
+> L'attore si occuperà ora di visualizzare e modificare lo stato della risorsa (per impostazione predefinita ogni 30 secondi)..
 
-Pour voir comment configurer cet acteur,  [c'est ici](../concepts/actor-types/redy-reflect-details.md).
+Per vedere come configurare questo attore [clicca qui](../concepts/actor-types/redy-reflect-details.md).
 
-Vous remarquerez que l'on retrouve les bornes de valeur de la ressource ainsi que son unité.
+Da notare che vengono mostrati i limiti dei valori della risorsa e la sua unità di misura.
 
-## Réalisez une commande
+## Eseguire un comando
 
-Après avoir sauvegardé la scène, exécutez la synapp. Vous allez maintenant modifier la valeur, soit en tapant directement dans la zone de saisie, soit en glissant le curseur.
+Dopo aver salvato la scena, eseguire la synapp. Il valore può essere modificato digitando direttamente il campo di immissione o utilizzando il cursore che appare a destra.
 
 ![Reflet](../assets/quick-start/command-redy/07.gif)
 
 
-Dans tous les cas, vous verrez que des boutons de validation apparaissent.
+In ogni caso, appariranno dei pulsanti di convalida.
 
-> Tant qu'une modification est en cours, l'état n'est pas mis à jour sur l'interface.
+> Finché è in corso una modifica, lo stato della risorsa non viene aggiornato.
 
-Si vous cliquez sur *Annuler*, l'état revient à sa valeur en cours. Sinon, la commande est envoyée.
+Se si fa clic su *Annulla*, lo stato torna al valore iniziale, confermando il comando viene inviato.
 
 ![Reflet](../assets/quick-start/command-redy/08.gif)
 
 
-> 📌 **REMARQUE**<br>
-L'acteur a d'autres modes de commande : un mode automatique et un mode manuel.
+> 📌 **NOTA**<br>
+L'attore dispone di altre modalità di controllo: una modalità automatica e una modalità manuale.
 
 ---------
-[◀ Affichage d'un état](./display-redy-data.md){: .btn } [Pour aller plus loin ▶](./and-more){: .btn }
+[◀ Visualizzazione di uno stato](./display-redy-data.md){: .btn } [Per approfondire ▶](./and-more){: .btn }
