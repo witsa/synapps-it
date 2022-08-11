@@ -1,6 +1,6 @@
 ---
-title: Installation
-parent: Guide de démarrage
+title: Installazione
+parent: Guida introduttiva
 nav_order: 1
 ---
 
