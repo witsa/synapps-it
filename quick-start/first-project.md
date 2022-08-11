@@ -1,6 +1,6 @@
 ---
-title: Création d'un projet
-parent: Guide de démarrage
+title: Creazione di un progetto
+parent: Guida introduttiva
 nav_order: 2
 ---
 
