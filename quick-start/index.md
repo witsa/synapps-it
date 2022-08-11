@@ -14,7 +14,7 @@ Seguendo questa guida, sarai in grado di familiarizzare con lo strumento Synapps
 > Synapps Studio è compatibile con le versioni **REDY** superiori a `13.2.0`, ma per sfruttare le ultime funzionalità, è necessario utilizzare la versione `14.2.1` o superiore.
 
 # Prima tappa
-Iniziamo con [ottenere e installare Synapps Studio](./install)
+Iniziamo con [scaricare e installare Synapps Studio](./install)
 
 
 --------------
