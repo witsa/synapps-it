@@ -1,24 +1,24 @@
 ---
-title: "Fournisseurs de donnée"
-parent: "Projet"
-grand_parent: Concepts
+title: "Fornitore di dati"
+parent: "progetto"
+grand_parent: concetti
 nav_order: 8
 ---
 
-# Fournisseurs de donnée globaux
+# Fornitore globale di dati
 
-Cette sous-section est dédiée à la définition d'acteurs [fournisseurs de ressource](../actor-types/redy-resource-source.md), [de variable](../actor-types/redy-wos-variable-source.md) et [de variable relative](../actor-types/redy-wos-relative-variable-source.md) qui pourront être utilisés dans tous le projet.
+Questa parte è dedicata alla definizione degli attori [firnitori di risorsa,](../actor-types/redy-resource-source.md), [variabile](../actor-types/redy-wos-variable-source.md) e [variabile relativa](../actor-types/redy-wos-relative-variable-source.md) che possono essere utilizzati nel progetto.
 
-Il sont disponibles par liaison de type *fournisseur de variable* ou dans le champ clé parent des acteurs fournisseur de variable relative.
+Sono disponibili attraverso un collegamento di tipo *fornitore di variabili* o nel campo 'chiave padre'' di attori di tipo Fornitore variabile relativa.
 
-Un acteur fournisseur de variable est toujours défini à la création d'un projet. Il pointe sur `easy.RESS`. Il sert à faciliter la définition de liaisons de type *fournisseur de variable*.
+Un attore Fornitore di variabili è sempre predefinito al momento della creazione del progetto e punta a `easy.RESS`. Viene utilizzato per facilitare la definizione di collegamenti di tipo *Fornitore variabile*..
 
->⚠️ **ATTENTION**<br>
-A moins d'avoir une bonne raison, *ne supprimez pas cet acteur*.
+>⚠️ **ATTENZIONE**<br>
+A meno che non si abbia una buona ragione, *non cancellare questo attore*..
 
 # Designer
 
-Le designer reprend complètement celui d'une scène, à la différence prés qu'il n'y a pas d’aperçu.
+Questi attori non appaiono nell'anteprima del Designer.
 
 # Particularité
 
