@@ -36,7 +36,7 @@ Configurare la risorsa come in figura:
 - Unità personalizzate: `°C`
 
 
-## Collegamento di tipo *Fornitore di variabili*
+## Collegamento al *Fornitore di variabili*
 
 Passare in Studio, nella progettazione della scena *Accueil*.
 
@@ -97,4 +97,4 @@ Maintenant, vous allez [commander une ressource dans le REDY](./command-redy.md)
 
 ---------------------
 
-[◀ Publication](./synapp-publish){: .btn } [Commander une ressource ▶](./command-redy.md){: .btn }
+[◀ Pubblicazione](./synapp-publish){: .btn } [Comandare una risorsa ▶](./command-redy.md){: .btn }
