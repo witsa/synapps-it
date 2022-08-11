@@ -4,7 +4,7 @@ parent: Guida introduttiva
 nav_order: 5
 ---
 
-[◀ Designer : Premiers pas](./designer-first-step){: .btn } [Affichage d'un état ▶](./display-redy-data.md){: .btn }
+[◀ Designer: Primi passi](./designer-first-step){: .btn } [Visualizzare uno stato ▶](./display-redy-data.md){: .btn }
 
 ------------
 
