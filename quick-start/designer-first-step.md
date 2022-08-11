@@ -12,9 +12,9 @@ nav_order: 4
 
 # Primi passi con il Designer delle scene
 
-Procediamo a modificare il progetto per visualizzare un messaggio di benvenuto nell'area dedicata.
+Andiamo ora a modificare il progetto per visualizzare un messaggio di benvenuto nell'area dedicata.
 
-Ma prima, esaminiamo alcuni concetti:
+Prima di procedere affrontiamo alcuni concetti:
 
 ## Le scene
 
@@ -26,7 +26,7 @@ L'applicazione è costituita da una o più scene che l'utente visualizza navigan
 
 ## Apertura del Designer
 
-Cliccare sull'icona *Scene* per visualizzare visualizzato la struttura ad albero delle scene del progetto:
+Cliccare sull'icona *Scene* per visualizzare la struttura ad albero delle scene del progetto:
 
 ![SynApps](../assets/quick-start/designer-first-steps/01.png)
 
