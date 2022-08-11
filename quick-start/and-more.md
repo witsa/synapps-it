@@ -1,6 +1,6 @@
 ---
-Title : Per approfondire
-Parent : Guida introduttiva
+title : Per approfondire
+parent : Guida introduttiva
 nav_order: 8
 ---
 
