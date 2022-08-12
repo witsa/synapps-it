@@ -1,93 +1,91 @@
 ---
-title: "Hôte"
-parent: "Projet"
-grand_parent: Concepts
+title: "Host"
+parent: "Progetto"
+grand_parent: Concetti
 nav_order: 6
 ---
 
 {% include table_of_content.html %}
 
-# Dans le Runtime
+# Nel Runtime
 
-Dans la synapp, l'hôte est l'objet qui définit son hébergeur et qui contient les données exploitables.
+Per Synapps, l'host è il sistema che ospita ed esegue il synapp una volta terminato e pubblicato. Contiene gli elementi necessari in temmini di dati e parametrizzazione.
 
-Cela pourra être :
+L'host può essere:
 
 - un REDY
 - un REDY-PC
-<!-- - *bientôt* un serveur HighWay -->
+<!-- - *prossimamente* un server HighWay -->
 
-L'objet hôte est accessible par liaison et par script. Il est porté par le magasin de données de la synapp.
+L'oggetto host è accessibile tramite link e script.
 
-Il contient la [session](../session.md) et permet sa gestion, par script.
+Contiene la [sessione](../session.md) e ne consente la gestione, tramite script.
 
-> L'hôte est un objet essentiel à l'exécution d'une synapp.
+> L'host è un oggetto essenziale per l'esecuzione di un synapp.
 
-# Dans Studio
+# In Studio
 
-Dans un projet, les hôtes sont gérés dans la section *Projet/Hôtes*.
+In un progetto, gli host sono gestiti nella sezione *Progetto/Host*.
 
 ![Hôtes](../../assets/hosts.png)
 
-Il est possible de définir plusieurs hôtes dans un même projet mais un seul sera actif en même temps et servira à la visualisation dans le designer ou à l'exécution dans le navigateur.
+È possibile definire più host in un progetto, ma uno solo di essi sarà attivo e verrà utilizzato per la visualizzazione nel designer o per l'esecuzione del synapp nel browser.
 
-Aussi, en basculant de l'un à l'autre, il sera possible de visualiser une synapp exploitant différents REDY par exemple ou bien juste changer d'utilisateur sur un même REDY.
+Passando da un host ad un'altro, è possibile visualizzare un synapp su REDY diversi o simulare il funzionamento cambiando tipo di utente sullo stesso REDY.
 
-C'est dans cet onglet qu'il est possible publier la synapp dans un hôte.
+È in questa scheda che è possibile pubblicare il synapp in un host.
 
 ![Hôtes](../../assets/concepts/host-01.png)
 
-## Création d'un hôte
+## Creazione di un host
 
-Lorsque que vous créez un hôte, il faut renseigner son domaine et un les identifiants pour s'y connecter. Studio pourra alors l'utiliser comme hôte actif pour l'exécution et la prévisualisation, s'il vous le désirer.
+Quando si crea un host, è necessario inserire il dominio e i dati di accesso. Studio sarà poi in grado di utilizzarlo come host attivo per scopi di runtime e di anteprima, se lo si desidera.
 
-## Informations
+## Informazioni
 
-Les informations d'un hôte sont récupérées dès la première connection. Elles renseignent sur sa nature, ses options, ainsi que sur le profil utilisateur.
+Le informazioni su un host vengono recuperate alla prima connessione. Le informazioni fornite riguardano la natura dell'host, le sue opzioni e il profilo dell'utente.
 
-## Publication
+## Pubblicazione
 
-La synapp doit être publiée dans l'hôte pour qu'elle soit accessible par les utilisateurs.
+Il synapp deve essere pubblicato nell'host per essere fruibile dagli utenti.
 
-Studio s'occupe de transformer le projet et ce qu'il contient en un morceau de paramétrage, dans l'hôte.
+Studio si occupa di trasformare il progetto e i suoi contenuti in un componente della parametrizzazione nell'host.
 
 ![Hôtes](../../assets/concepts/host-02.png)
 
-Bien sur, si vous définissez plusieurs hôtes dans le projet, vous pourrez gérez la publication d'une même synapp sur autant d'hôtes.
+Se nel progetto si definiscono più host, si potrà gestire la pubblicazione dello stesso synapp su tutti gli host.
 
-> ⚠️ **ATTENTION**<br> N'oubliez pas qu'un profil d'*installateur* au minimum et l'*adds Intravision* sont requis pour pouvoir publier (ou gérer) un synapp sur un *REDY*.
+> ⚠️ **ATTENZIONE**<br> Ricorda che per pubblicare (o gestire) un synapp su un *REDY* è necessari un profilo minimo di *Installatore* e l'*ADD Intravision*.
 
-Choisissez un hôte.
+Scegliere un host.
 
 ![Hôtes](../../assets/quick-start/synapp-publish/02.png)
 
-Connectez vous. Vous verrez les informations de l'hôte dans la colonne centrale.
+Una volta fatto il login le informazioni sull'host sono riportate nella colonna centrale.
 
-Aussi, dans la colonne de droite, vous verrez la partie dédiée à la gestion des synapps de l'hôte.
-
-Dans le haut se trouve la zone dédiée à la synapp correspondant au projet publiée dans le REDY. En dessous, vous pourrez afficher et gérer les autres synapp publiée dans le REDY.
+Nella colonna di destra, si trova l'area dedicata alla gestione dei synapp presenti nell'host.
 
 ![Hôtes](../../assets/quick-start/synapp-publish/03.png)
 
-> ⚠️ **ATTENTION**<br> Chaque synapp est identifiée par le GUID du projet. Mais sur le REDY, c'est son *label* qui l'identifie. Donc faite attention à ne pas écraser une synapp déjà publiée.
+> ⚠️ **ATTENZIONE**<br> Studio identifica ogni synapp attraverso il GUID del progetto. Nel REDY è la *label* che identifica i synapp. È quindi necessario fare attenzione affinché non si sovrascriva un synapp già pubblicato col medesimo *label*.
 
-A chaque publication, un numéro de *build* est inscrit. En réalité, c'est la date à laquelle la synapp a été publiée.
+Per ogni pubblicazione, viene inserito un numero di *build*. Di fatto, questa numero è formato dalla la data in cui è avvenuta la pubblicazione.
 
 ![Hôtes](../../assets/quick-start/synapp-publish/05.png)
 
-Vous pouvez aller voir comment se passe la publication dans l'étape qui la concerne dans le [démarrage rapide](../../quick-start/synapp-publish.md).
+È possibile vedere come effettuare la pubblicazione nella [Guida introduttiva](../../quick-start/synapp-publish.md).
 
-### La synapp dans le paramétrage
+### Il synapp nella parametrizzazione
 
-La synapp dans un REDY se traduit par un noeud dans le *paramétrage* :
+Il synapp in un REDY corrisponde a un nodo della *parametrizzazione*:
 
 ![Hôtes](../../assets/quick-start/synapp-publish/06.png)
 
-Il contient toute une arborescence que le runtime de Synapps sait interpréter.
+Contiene l'intera struttura ad albero che il runtime Synapps è in grado di interpretare.
 
 ![Hôtes](../../assets/quick-start/synapp-publish/07.png)
 
 
-> ⚠️ **ATTENTION**<br> Surtout, ne changez rien dans cette arborescence. Laissez Synapps Studio gérer ce paramétrage.
+> ⚠️ **ATTENZIONE**<br> La struttura ad albero non deve essere modificata. Lasciare che Synapps Studio gestisca questa parte della parametrizzazione.
 
-> 📌 **REMARQUE**<br> N'oubliez pas de sauvegarder le paramétrage après avoir publier la synapp.
+> 📌 **NOTA**<br> Si raccomanda di salvare le impostazioni dopo aver pubblicato il synapp.
