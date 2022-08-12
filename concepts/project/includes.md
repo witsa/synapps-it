@@ -1,31 +1,29 @@
 ---
-title: "Inclusions"
-parent: "Projet"
-grand_parent: Concepts
+title: "Inclusione"
+parent: "Progetto"
+grand_parent: Concetti
 nav_order: 8
 ---
 
-Les inclusions offrent la possibilité de charger des fichiers à l'ouverture d'une synapp.
+Le inclusioni offrono la possibilità di caricare i file all'apertura di un synapp.
 
 {% include table_of_content.html %}
 
-# Les inclusions à l'exécution
+# Inclusioni all'esecuzione
 
-Il est possible d'intégrer des fichiers source dans une synapp. Ils seront charger dans l'ordre de définition, l'un après l'autre. Ensuite, la [scène principale](../scene.md#scène-de-démarrage) s'affiche.
+È possibile includere file sorgenti in un synapp. Verranno caricati nell'ordine di definizione, uno dopo l'altro. Quindi viene visualizzata la [scena principale](../scene.md#scène-de-démarrage) s'affiche.
 
-Cela permet de charger des librairies `Javascript` ou `CSS` qui seront utilisées dans vos scènes.
+Questo permette di caricare le librerie `Javascript` o `CSS` che verranno utilizzate nelle scene.
 
-Les fichiers inclus sont soient *distants* soit *locaux*. Les fichiers distants sont chargés depuis l'adresse fournie lors de leur définition. Les fichiers locaux font partie du paramétrage de la synapp.
+I file inclusi possono essere *remoti* o *locali*. I file remoti vengono caricati dall'indirizzo fornito al momento della loro definizione. I file locali fanno parte della configurazione del synapp.
 
-# Gestion des inclusions
+# Gestione delle inclusioni
 
-Vous pouvez gérer les inclusions dans la section *Projet/Inclusions*.
+È possibile gestire le inclusioni nella sezione *Progetto/Inclusione*.
 
-Pour l'instant, il n'y a pas de designer pour cette partie. Il faudra éditer un fichier JSON de configuration.
+Per il momento non esiste un designer per questa parte. È necessario modificare un file JSON di configurazione che contiene l'elenco delle inclusioni da caricare. Ogni inclusione è definita da un oggetto JSON,
 
-Il se compose de la liste des inclusions à charger. Chaque inclusion est définie par un objet JSON,
-
-- pour un fichier JS distant :
+- per un file JS remoto :
 
 
 ```json
@@ -48,13 +46,13 @@ Il se compose de la liste des inclusions à charger. Chaque inclusion est défin
   }
 ```
 
-Dans ce cas, le fichier `nom-du-fichier.js` doit être dans le répertoire `includes` de la synapp.
+In questo caso, il file `filename.js` deve trovarsi nella cartella `includes` del synapp.
 
-Pour des fichiers CSS, il suffit d'indiquer `"css"` pour le champ `type`.
+Per i file CSS, basta specificare `"css"` per il campo `type`.
 
-## Exemple d'inclusion de la librairie Leaflet
+## Esempio di inclusione della libreria Leaflet
 
-Voici un exemple de configuration qui charge la librairie API de cartographie [Leaflet](https://leafletjs.com/reference.html) au démarrage de la synapp :
+Ecco un esempio di configurazione che carica la libreria API di cartografia [Leaflet](https://leafletjs.com/reference.html) all'avvio di synapp:
 
 
 ```json
@@ -72,9 +70,9 @@ Voici un exemple de configuration qui charge la librairie API de cartographie [L
   }
 ]
 ```
-# Exemple d'inclusion dans 1view
+# Esempio di inclusione in 1view
 
-Le code source qui gère les scènes d'exploitation dans le modèle de projet **1view** est un exemple d'inclusion de fichiers `JavaScript` :
+Il codice sorgente che gestisce le scene operative nel modello di progetto **1view** è un esempio di inclusione di file `JavaScript`:
 
 ```json
 
@@ -101,4 +99,5 @@ Le code source qui gère les scènes d'exploitation dans le modèle de projet **
 
 ```
 
-Dans le dossier `includes` du projet, vous trouverez les 3 fichiers inclus.
+Nella cartella `includes` del progetto si trovano i 3 file inclusi.
+.
