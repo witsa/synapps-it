@@ -1,91 +1,90 @@
 ---
-title: "Icônes"
-parent: "Projet"
-grand_parent: Concepts
+title: "Icone"
+parent: "Progetto"
+grand_parent: Concetti
 nav_order: 7
 ---
 
 {% include table_of_content.html %}
 
-# Gestion des icônes dans Synapps Studio
+# Gestione delle icone in Synapps Studio
 
-Les icônes de la synapp permettent de personnaliser, de caractériser votre application.
+Le icone Synapps consentono di personalizzare e conferire carattere alla propria applicazione.
 
-Ce sont des images carrées, de type `png`. Ils sont de différentes tailles pour correspondre aux attentes du navigateur et appareil mobile. Ils sont 11 au totale.
+Sono immagini quadrate, di tipo `png`. Hanno dimensioni diverse per adattarsi alle esigenze del browser e dei dispositivi portatili. In totale sono 11.
 
-Par défaut, les icônes de votre synapp sont le logo de Synapps.
+## Logo del synapp
 
-## Logo de la synapp
+L'icona principale è quella che verrà utilizzata come logo del synapp. Si tratta dell'icona che viene visualizzata nello *splash screen*, cioè all'avvio del synapp, durante il suo caricamento. E' anche l'icona che lo rappresenta quando si visualizza un elenco di synapp.
 
-L'icône incontournable est celle qui va servir de logo à la synapp. C'est elle qui est affichée en *splash screen* c'est à dire au démarrage de la synapp, pendant son chargement. c'est aussi lui qui la représente lorsqu'on affiche une liste de synapp.
+La dimensione di questa icona è `255x255`.
 
-La taille de cette icône est `255x255`.
+## Icone per il browser
 
-## Icônes pour le navigateur
+Le icone di dimensioni `16x16` e `32x32` sono utilizzate dai browser per illustrare i preferiti e le schede.
 
-Les icônes de tailles `16x16` et `32x32` sont utilisées par les navigateurs pour illustrer les favoris et les onglets.
+## Altre icone
 
-## Autres icônes
-
-Tous les autres icônes sont utilisées par les mobiles lorsque la synapp est installée dessus en *progressive web app* (PWA). Voir la procédure([TODO]).
+Tutte le altre icone sono utilizzate da dispositivi mobili quando la synapp è installata su di essi in *progressive web app* (PWA). Vedere la procedura ([TODO]).
 
 
-## Poids des icônes
+## Peso delle icone
 
-Dans l'absolu, il vaut mieux que les icônes soient légères : quelques `ko` ou dizaines de `ko`. C'est surtout valable pour les 3 principales icônes. Les autres ne seront chargées qu'une seule fois.
+Nel complesso, è meglio che le icone siano leggere: pochi KByte. Questo vale soprattutto per le 3 icone principali. Le altre vengono caricate una sola volta.
 
-## Accès aux icônes
+## Accesso alle icone
 
-Les icônes se situent dans la sous section "icônes" de la section "Projet".
+Le icone si trovano nella sottosezione "icone" della sezione "Progetto".
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconsAccess.PNG)
 
-## Barre d'outil des icônes
+## Barra degli strumenti delle icone
 
-La barre d'outil des icônes est visible tout en haut de la fenêtre de gestion des icônes.
+La barra degli strumenti delle icone è visibile nella parte superiore della finestra di gestione delle icone.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconsToolBar.PNG)
 
-L'icône de rafraîchissement sert à actualiser les icônes qui auraient pû être changer dans le dossier des icônes.
+L'icona di aggiornamento viene utilizzata per ricaricare le icone che potrebbero essere state modificate nella cartella delle icone.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/refresh.PNG)
 
-L'icônes de suppression permet de réinitialiser toutes les icônes à celles de base fournies par Synapps.
+L'icona Elimina consente di ripristinare tutte le icone a quelle di base fornite da Synapps.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/deleteAll.PNG)
 
-Enfin, le dernier bouton permet d'ouvrir directement le dossier ou se situent les icônes.
+Infine, l'ultimo pulsante consente di aprire direttamente la cartella in cui si trovano le icone.
 
-## Modification / Réinitialisation / Génération des icônes
+## Modifica / Reset / Generazione di icone
 
-L'interface d'une icône se présente ainsi :
+L'interfaccia di un'icona si presenta così:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/icon.PNG)
 
-### Afin de modifier une icône, il y a deux possibilités :
+### Per modificare un'icona, esistono due possibilità:
 
-- Cliquer sur l'icône permet de définir manuellement l'icône que l'on souhaite associé à la taille définie.
+- Facendo clic sull'icona è possibile definire manualmente l'icona che si desidera associare alla dimensione definita.
 
-- Utiliser le bouton `Ouvrir le dossier des icônes du projet ...` et remplacer l'icône souhaitée.
->⚠️ **ATTENTION**<br>
->Pour la seconde méthode, il est nécessaire de remplacer l'icône souhaité avec une image et de lui donner le MEME NOM que l'icône à remplacer.
+- Utilizzare il pulsante `Apri cartella icone progetto...` e sostituire l'icona desiderata.
 
-### Pour réinitialiser une icône vers l'icône de base de Synapps Studio :
+>⚠️ **ATTENZIONE**<br>
+>Nel secondo metodo, è necessario sostituire l'icona desiderata con un'immagine e darle lo STESSO NOME dell'icona da sostituire.
 
-Il suffit de cliquer sur le bouton de suppression en haut de l'interface de l'icône.
+### Per ripristinare un'icona all'icona di base di Synapps Studio:
+
+È sufficiente fare clic sul pulsante di cancellazione nella parte superiore dell'interfaccia dell'icona.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconToolBar.PNG)
 
-### Pour générer une icône automatiquement à partir d'une image :
+### Per generare automaticamente un'icona da un'immagine:
 
-Dans un premier temps, il est nécessaire de déposer une image en haut à droit de la fenêtre a l'aide d'un clic sur la zone prévue à cet effet.
+Innanzitutto, è necessario posizionare un'immagine nell'angolo in alto a destra della finestra, facendo clic sull'apposita area.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGen.PNG)
 
-Une fois l'image déposée, il est possible de générer des icônes pour toutes les tailles d'icônes à l'aide du bouton situé au dessus de l'interface du générateur d'icône.
+Una volta caricata l'immagine, è possibile generare icone per tutte le dimensioni utilizzando il pulsante sopra l'interfaccia del generatore di icone.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
 
-Il est également possible de générer l'image adaptée pour une seule icône à l'aide du bouton situé au dessus de l'interface d'une icône.
+È anche possibile generare l'immagine appropriata per una singola icona utilizzando il pulsante sopra l'interfaccia delle icone.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
