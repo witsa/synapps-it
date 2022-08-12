@@ -28,7 +28,7 @@ Per saperne di più sui [modelli di progetto](./project-model.md).
 > **Evitare di duplicare un progetto** per non creare problemi al momento della pubblicazione del synapp e nella gestione delle password degli host. Se lo avete fatto, per ripristinare la situazione, modificate a mano il `Guid' di uno dei due progetti nel file di figurazione, preferibilmente prima di aprirlo con Studio.
 >
 > Per duplicare correttamente un progetto, è sufficiente esportarlo come modello e creare il nuovo progetto a partire da quest'ultimo.
-> 
+
 ## Aprire un progetto
 
 Per aprire un progetto fare clic sul pulsante **Apri progetto** nel menu **File** e cercate la cartella che lo contiene.
@@ -70,7 +70,7 @@ Nella sottosezione [hosts] (./hosts.md), si possono definire le ULI a cui colleg
 
 ## Fornitori di dati
 
-DIn questa sottosezione si possono definire i [fornitori dei dati globali](./global-data-sources.md) che saranno utilizzati dal proprio synapp.
+In questa sottosezione si possono definire i [fornitori dei dati globali](./global-data-sources.md) che saranno utilizzati dal proprio synapp.
 
 
 ## Icone
