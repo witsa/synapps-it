@@ -1,107 +1,107 @@
 ---
-title: "Projet"
-parent: Concepts
+title: "Progetto"
+parent: Concetti
 has_children: true
 nav_order: 1
 ---
 
 {% include table_of_content.html %}
 
-# Le projet
+# Il progetto
 
-Le projet représente l'ensemble des éléments qui permettent de réaliser une synapp. Le projet se matérialise pas un dossier dans votre système de fichier. Il continent tous les fichiers de configuration de la synapp, les définitions de scènes, de composites, des librairies, les images, etc.
+Il progetto è l'insieme degli elementi che permettono la realizzazione di un synapp. Il progetto è materializzato da una cartella nel file system. Contiene tutti i file di configurazione del synapp, le definizioni delle scene, dei compositi, delle librerie, delle immagini, ecc.
 
 ![Répertoire de projet](../../assets/quick-start/first-project/03.png)
 
-## Création d'un projet
+## Creazione di un progetto
+Per creare un nuovo progetto, fare clic sul pulsante **Nuovo progetto** nel menu **File**.
 
-Pour créer un nouveau projet, il vous suffit de cliquer sur le bouton **Nouveau projet** dans le menu **Fichier**.
+Viene visualizzata l'interfaccia di selezione del progetto di base.
 
-L'interface de choix de projet de base s'affichera alors.
+È possibile scegliere se creare un progetto dai modelli di Studio o utilizzare un file come modello.
 
-Vous aurez le choix de créer un projet à partir des modèles de base de Studio ou bien utiliser un fichier modèle.
+Per saperne di più su [creazione di un progetto](../../quick-start/first-project.md).
 
-Pour en savoir plus sur la [création de projet](../../quick-start/first-project.md).
+Per saperne di più sui [modelli di progetto](./project-model.md).
 
-Pour en savoir plus sur les [modèles de projet](./project-model.md).
-
-> ⚠️ **ATTENTION**<br>
-> **Ne dupliquez pas un projet.** Vous produiriez des problèmes lors de la publication de la synapp et dans la gestion des mots de passe de vos hôtes. Si vous l'avez fait, pour récupérer la situation, modifiez à la main dans le fichier de figuration, le `guid` d'un des deux projets, de préférence avant de l'ouvrir avec Studio.
+> ⚠️ **ATTENZIONE**<br>
+> **Evitare di duplicare un progetto** per non creare problemi al momento della pubblicazione del synapp e nella gestione delle password degli host. Se lo avete fatto, per ripristinare la situazione, modificate a mano il `Guid' di uno dei due progetti nel file di figurazione, preferibilmente prima di aprirlo con Studio.
 >
-> Pour dupliquer un projet correctement un projet, il faut tout simplement l'exporter sous forme de modèle et créer le nouveau projet à partir de celui-ci.
-## Ouvrir un projet
+> Per duplicare correttamente un progetto, è sufficiente esportarlo come modello e creare il nuovo progetto a partire da quest'ultimo.
+> 
+## Aprire un progetto
 
-Pour ouvrir un projet présent sur votre système, cliquez sur le bouton **Ouvrir projet** dans le menu **Fichier** et allez chercher le dossier qui le contient.
+Per aprire un progetto fare clic sul pulsante **Apri progetto** nel menu **File** e cercate la cartella che lo contiene.
 
-## Voir le dossier du projet
+## Visualizzare la cartella del progetto
 
-Pour afficher le dossier du projet ouvert, il suffit de cliquer sur le bouton **Ouvrir le dossier du projet...** dans le menu **Projet**
+Per visualizzare la cartella di progetto aperta, è sufficiente fare clic sul pulsante **Apri cartella di progetto...** nel menu **Progetto**.
 
 
-# la section projet
+# La sezione del progetto
 
-La section *Projet* dans Synapps Studio permet de définir les éléments essentiels à l'exécution de l'application et à sa construction.
+La sezione *Progetto* di Synapps Studio consente di definire gli elementi essenziali per l'esecuzione e la costruzione dell'applicazione.
 
-## Généralités
+## Generale
 
-Dans la sous section *Généralités* de la section *Projet*, vous pouvez définir les éléments essentiels de celui-ci.
+Nella sezione *Generale* della sezione *Progetto* è possibile definire gli elementi essenziali del progetto.
 
-### Nom du projet
-Vous pouvez changer ici le nom de votre projet.
+### Nome del progetto
+Qui è possibile modificare il nome del progetto.
 
-### Nom et label de la synapp
-Dans la partie *Identité de la synapp*, vous pouvez définir le nom de la synapp qui apparaîtra dans le REDY, ainsi que le *label* qui sera utilisé pour la récupération de la synapp dans le REDY.
+### Nome ed etichetta del synapp
+Nella sezione *Identità del synapp*, si può definire il nome del synapp che apparirà nel REDY, nonché l'*etichetta* che verrà usata per richiamare il synapp nel REDY.
 
-### Numéro de version
-Vous pouvez renseigner un numéro de version pour vous aider à suivre les évolution du projet en cours.
+### Numero di versione
+È possibile inserire un numero di versione per tenere traccia dell'evoluzione del progetto corrente.
 
-### Langues de la synapp
-Dans la partie *Divers*, vous pouvez définir les langues qui seront supportées par votre synapp.
+### Lingue del synapp
+Nella sezione *Vari*, è possibile definire le lingue che saranno supportate dal proprio synapp.
 
-Exemple : `fr,es,en` pour indiquer que le *français*, l'*espagnol* et l'*anglais* seront supportés. Le format attendu est le même que celui de la liste des langues disponibles sur [Liste des codes ISO 639-1](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1).
+Esempio: `fr,es,en` per indicare che saranno supportati *francese*, *spagnolo* e *inglese*. Il formato previsto è lo stesso dell'elenco delle lingue disponibili in [List of ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
-### Style global de la synapp
-Dans la partie *Style global*, vous avez la possibilité de définir la couleur de fond de la synapp. Vous pourrez également définir la couleur d'avant plan , c'est à dire, la couleur *par défaut* des textes de la synapp.
+### Stile globale del synapp
+Nella sezione *Stile globale* è possibile definire il colore di sfondo e il colore di default del testo del synapp.
 
-## Hôtes
+## Hosts
 
-Dans la sous-section des [hôtes](./hosts.md), vous pouvez définir les ULI sur lesquels vous pourrez vous connecter pour élaborer votre synapp.
-C'est dans cette section aussi que vous pouvez publier votre synapp dans une ULI.
+Nella sottosezione [hosts] (./hosts.md), si possono definire le ULI a cui collegarsi per costruire il proprio synapp.
+È anche in questa sezione che si può pubblicare il proprio synapp in una ULI.
 
-## Fournisseurs de données
+## Fornitori di dati
 
-Dans cette sous-section, vous pouvez définir les [fournisseurs de données globaux](./global-data-sources.md) qui seront utilisés par votre synapp.
+DIn questa sottosezione si possono definire i [fornitori dei dati globali](./global-data-sources.md) che saranno utilizzati dal proprio synapp.
 
-## Icônes
 
-Vous avez la possibilité de définir [icônes](./icons.md) de votre synapp dans la sous-section dédiée.
+## Icone
 
-## Inclusions
+È possibile definire le [icone](./icons.md) del proprio synapp nella sottosezione dedicata.
 
-Dans la sous-section [inclusions](./includes.md), vous pouvez définir les sources `Javascript` et `CSS` qui seront incluses au chargement de votre synapp.
+## Inclusione
 
-## Lisez-moi
+Nella sottosezione [inclusione](./includes.md) si possono definire i sorgenti `Javascript` e `CSS` che saranno inclusi al caricamento del synapp..
 
-Cette sous section vous permettra de renseigner et prendre connaissance des informations essentielles de votre projet. C'est une documentation que vous pouvez rédiger vous même.
+## Leggimi
 
-> Dans chaque modèle de projet, le *lisez-moi* vous donnera les éléments importants qui le caractérisent et vous expliquera comment le personnaliser.
+Questa sottosezione consente di compilare e leggere le informazioni essenziali sul progetto. È la documentazione che è possibile scrivere autonomamente..
 
-La rédaction du *lisez-moi* s'effectue dans un éditeur intégré dans le language `markdown`, très simple à prendre en main. [`Pour en savoir plus`](https://fr.wikipedia.org/wiki/Markdown)
+> In ogni modello di progetto, il *readme* fornisce gli elementi importanti che lo caratterizzano e spiega come personalizzarlo.
 
-# Exécution du projet
+Il *readme* è scritto nel linguaggio `markdown` in un editor incorporato molto facile da usare. [Per ulteriori informazioni, consultare il sito] (https://fr.wikipedia.org/wiki/Markdown)
 
-Dans le menu **Exécuter**, vous pouvez ouvrir un onglet qui exécutera votre synapp (`Ctrl+R`).
+# Esecuzione del progetto
 
-Vous pouvez aussi exécuter votre synapp dans votre navigateur (`Ctrl+Shift+R`).
+Dal menu **Esegui** è possibile il synapp in una cartella (`Ctrl+R`).
+È anche possibile eseguire il proprio synapp nel browser (`Ctrl+Shift+R`).
 
-## Changement d'hôte
+## Cambiare l'host
 
-Dans le menu *Exécution*, vous pouvez changer l'hôte actif grâce au menu déroulant en bas à droite de l'interface de Studio.
+Se il syapp è eseguito in una cartella è possibile cambiare l'host attivo utilizzando il menu che si trova nella fascia blu nella parte bassa dell'interfaccia di Studio
 
-Par exemple, en créant plusieurs hôtes qui pointent sur le même REDY mais avec des utilisateurs différents, vous pourrez visualiser le comportement de votre synapp en fonction des utilisateurs.
+Ad esempio, creando diversi host che puntano allo stesso REDY ma con utenti diversi, si potrà vedere il comportamento del proprio synapp a seconda dei diritti dell'utente selezionato.
 
-## Changement de langue de prévisualisation
+## Modifica della lingua di anteprima
 
-Si vous avez déclarer que votre synapp supporte plusieurs langues, le menu déroulant en bas à gauche lorsque vous exécutez votre synapp vous permettra de changer sa langue.
+Se si è dichiarato che il proprio synapp supporta diverse lingue è è possibile cambiare la lingua utilizzata dal menu che si trova nella fascia blu nella parte bassa dell'interfaccia di Studio.
 
-Vous pouvez à tout moment changer cette langue également dans le menu *Exécution*.
+È inoltre possibile cambiare questa lingua in qualsiasi momento nel *menu di Esegui*.
