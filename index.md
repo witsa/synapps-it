@@ -3,7 +3,7 @@ title: Accueil
 nav_order: 1
 ---
 
-Documentation de la solution Synapps
+Documentazione della soluzione Synapps
 ====================================
 
 ![logo_256px](assets/logo_256px.png)
@@ -21,93 +21,78 @@ Documentation de la solution Synapps
 
 {% include table_of_content.html %}
 
-## **Synapps**: Construisez des apps **multi-plateformes** avec le **REDY**
+## **Synapps**: Realizzate applicazioni multipiattaforma con il **REDY**
 
-Synapps est une **nouvelle solution** de WIT avec un **nouvel outil** de construction d'applications web avec le REDY. Il respecte les **standards** du WEB pour à profiter des fonctionnalités modernes des navigateurs comme, entre autres, la capacité à s'adapter aux différentes tailles d'écrans et smartphones.
+Synapps è una soluzione WIT che, utilizzando un **nuovo strumento** permette di realizzare applicazioni web accessibili attraverso il REDY. Le applicazioni create rispettano gli **standard** del WEB per sfruttare le caratteristiche dei browser moderni, come la capacità di adattarsi a schermi di dimensioni diverse e agli smartphone..
 
 
 ![Browsers](assets/browsers.png)
 ![Multi-platforms](assets/multi-platforms.png)
 
-> Il ne s'agit pas d'une simple évolution des synoptiques mais d'une **rupture** complète dans la façon de construire des applications !
+> Non si tratta di una semplice evoluzione dei sinottici, ma di una vera e propria **svolta** nel modo di costruire le applicazioni!
 
 ![WhomeApp](assets/WHomeApp.gif)
 
-**Tous les acteurs** du bâtiment (occupants, gestionnaires, exploitants, …) équipés par nos gammes d'ULIs REDY sont ciblés par les applications générées par Synapps : Synapps s'inscrit dans une démarche **Smart Building** et **Smart Water** et à pour ambition de répondre à ces **nouveaux usages**
-
-## Synapps Studio : outil de *construction* et de *déploiement*.
+## Synapps Studio : lo strumento di *costruzione* e *distribuzione*.
 
 ![studio](assets/studio-001.png)
 
-Véritable environnement de développement intégré (IDE), Synapps Studio est l'outil de *construction* et de *déploiement*.
-Avec Studio,
- - vous construisez votre application WEB avec des outils d'édition d'interface simples et intuitifs,
- - vous tester l'exécution de l'application sur des ULIs.
- - vous déployer votre application dans des ULIs.
+Vero e proprio ambiente di sviluppo integrato (IDE), Synapps Studio è lo strumento per *costruire* e *distribuire*.
+
+Synapps Studio permette  di:
+ - realizzare l'applicazione WEB con strumenti di modifica dell'interfaccia semplici e intuitivi,
+ - testare l'esecuzione dell'applicazione sulle ULI.
+ - distribuire l'applizazione su più ULI
 
 
-### Quelques fonctionnalités
-  - Editeur visuel d'interface
-  - Copier/coller partout
-  - Construction de librairies de couleurs, images, constantes.
-  - Construction de nouveaux acteurs à partir d'autres : Les Composites.
-  - Support Multi-langue.
-  - Gestion de style.
-  - Entièrement programmable, sur une base évènementielle en **Javascript**. Une API de référence est disponible.
-    - Utilisation de **HTML** et **CSS**
+### Alcune caratteristiche
+  - Editor dell'interfaccia visiva
+  - Copia/incolla ovunque
+  - Creazione di librerie di colori, immagini e costanti.
+  - Creazione di nuovi attori a partire da altri: compositi.
+  - Supporto multilingue.
+  - Gestione dello stile.
+  - Completamente programmabile, su base event-driven in **Javascript**. È disponibile un'API di riferimento.
+  - Uso di **HTML** e **CSS**
 
 
-## Démarrage Rapide
+## Avvio Rapido
 
-Vous trouverez un [guide de démarrage](./quick-start) pour une première prise en main de l'outils et appréhender les concepts de la solution.
+Per iniziare a utilizzare lo strumento e a comprendere i concetti della soluzione, è disponibile una [guida introduttiva](./quick-start)..
 
 ## Rejoignez la communauté des créateurs Synapps Studio
 
-Les fonctionnalités de Studio encouragent le
-partage de vos créations. Copier/coller dans
-un mail un modèle de projet, un acteur, une
-scène ou un composite n’a jamais été aussi
-simple. De plus, Studio vous permet de
-documenter les fonctionnalités de vos
-créations afin qu’elles soient facilement
-réutilisables par d’autres créateurs.
+Le caratteristiche di Studio incoraggiano la condivisione di
+delle proprie creazioni. 
+Copiare e incollare un modello di progetto, 
+un attore, una scena o un composito in un messaggio
+di posta elettronica non è mai stato così facile.
+Inoltre, Studio consente di documentare 
+le caratteristiche delle creazioni in modo che possano essere facilmente
+riutilizzabili da altri utilizzatori.
 
 
-### Discussions et échanges
+### Discussioni e scambi
 
-La plateforme de [discussion de GitHub](https://github.com/witsa/synapps/discussions) est ouverte à tous les utilisateurs pour poser des questions, proposer des idées, partager vos création ou tout simplement discuter de la solution.
+La piattaforma di [discussione di GitHub](https://github.com/witsa/synapps/discussions) è aperta a tutti gli utenti per porre domande, proporre idee, condividere la propria creazione o semplicemente discutere la soluzione.
 
-Pour y participer, créer un compte GitHub si vous n'en avez pas déjà un.
+Per partecipare, create un account GitHub se non ne avete già uno.
 
-> 💡 **ASTUCE**<br> [Une discussion](https://github.com/witsa/synapps/discussions) en particulier porte sur les mise à jour de cette documentation. Vous y trouverez aussi la liste des rubriques à venir.
+> 💡 **SUGGERIMENTO**<br> [Una discussione](https://github.com/witsa/synapps/discussions) in particolare si concentra sugli aggiornamenti di questa documentazione. Troverete anche un elenco dei prossimi argomenti.
 >
-> **Abonnez vous à ses notifications et vous serez prévenu des nouveautés.**
+> **Iscrivetevi alle sue notifiche e sarete informati sulle ultime novità.**
 
 
-### Problèmes et demandes d'évolution
+### Problemi e richieste di evoluzione
 
 [![GitHub](assets/github.png)](https://github.com/witsa/synapps/issues){:target="_blank"}
 
-La plateforme [GitHub Issues](https://github.com/witsa/synapps/issues) de la solution
-Synapps permet aux créateurs de partager
-des retours de leur usage, facilement.
-Posez une question, proposez une
-fonctionnalité ou communiquez un
-dysfonctionnement : la communauté des
-créateurs vous répondra.
-Captures d’écran, extrait de code, fichiers
-joints pourront enrichir vos retours et vos
-réponses.
+La piattaforma [GitHub Issues](https://github.com/witsa/synapps/issues) della soluzione Synapps 
+consente ai creatori di condividere facilmente problemi e feedback.
+Fai una domanda, proponi una funzionalità o
+o segnala un malfunzionamento: la comunità
+la cominità potrà fornirti rapidamente una risposta.
 
-Essayer d'être le plus **exhaustif** possible et communiquer, quand c'est possible, étapes de reproduction d'un bug, copies d'écrans et description détaillée!
+Cerca di essere il più **esaustivo** possibile e comunica, quando possibile, i passaggi per riprodurre un bug, gli screenshot e la descrizione dettagliata!
 
-Dans un second temps, vous pouvez également contacter le **support** WIT
-
-
----------------------
-
-## Le précurseur de Studio : Maker
-
-La documentation de Synapps Maker, l'éditeur précurseur de Synapps Studio est toujours accessible. Il reste disponible pour la maintenance des Synapps de première génération.
-
-[Voir la Documentation Synapps Maker](./maker/README.md){: .btn .btn-blue }
+In un secondo momento, sarà possibile contattare il **supporto** di WIT.
