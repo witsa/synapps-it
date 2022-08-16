@@ -1,37 +1,37 @@
 ---
-title: "Modèle de projet"
-parent: "Projet"
-grand_parent: Concepts
+title: "Modelli di progetto"
+parent: "Progetto"
+grand_parent: Concetti
 ---
 
 # Modèle de projet
 
 Lorsque vous créez un nouveau projet, vous devez choisir un modèle à partir duquel démarrer.
 
-## Modèle inclus
+## I modelli
 
-Studio propose 4 modèles de projet :
+Studio consente di creare un nuovo progetto synapp a partire da modelli predefiniti. I modelli predefiniti sono disponibili una volta terminata l'installazione.
 
-- Défaut : Parfait pour démarrer avec un projet presque vide.
-- Tablette / Bureau : Pour partir avec un gabarit de synapp adapté à l'affichage sur tablette et PC.<br>Un menu de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display-screen.md) est au centre.
-- Smartphone : Pour partir avec un gabarit adapté à l'affichage sur smartphone.<br>Un menu escamotable de navigation est placé à gauche et le contenu principal dans un acteur [écran](../actor-types/display-screen.md) est pleine page. Les tailles de texte et de boutons sont adaptées aux caractéristiques des smartphones.
-- 3 parties : Adapté pour tablette et PC, c'est un gabarit de synapp qui est divisé en un menu de navigation à gauche, une partie centrale de contenu principal et une partie droite de contenu secondaire.
-- 1 view : La nouvelle application d'exploitation qui utilise les reflets et les ensembles définis dans le REDY.
+- Predefinito: Perfetto per iniziare un progetto quasi da zero.
+- Tablet / Desktop: Per iniziare con un modello di synapp adattato alla visualizzazione su tablet e PC.<br>Un menu di navigazione è posizionato a sinistra e il contenuto principale in un attore [Schermo](../actor-types/display-screen.md) al centro.
+- Smartphone: Per iniziare un modello adattato alla visualizzazione su smartphone.<br>Un menu di navigazione a scomparsa è posizionato a sinistra e il contenuto principale in un attore [schermo](../actor-types/display-screen.md) a pagina intera. Le dimensioni del testo e dei pulsanti sono adattate alle caratteristiche degli smartphone.
+- 3 parti: utilizzabile su tablet e PC, questo modello synapp è suddiviso in un menu di navigazione a sinistra, una sezione centrale di contenuti principali e una sezione a destra di contenuti secondari..
+- 1 view : La nuova applicazione operativa che utilizza i riflessi e gli insiemi definiti nel REDY.
 
 
 ![SynApps](../../assets/quick-start/first-project/06.png)
 
-## Fichier modèle
+## File modello
 
-En plus des modèles inclus dans Studio, vous pouvez fabriquez vos propres modèles de projet ou utiliser des modèles de projets produits par d'autres créateurs.
+Oltre ai modelli inclusi in Studio, è possibile creare modelli di progetto personalizzati o utilizzare modelli di progetto prodotti da altri utenti.
 
-Dans le menu *Fichier*, vous avez une option qui permet de générer un modèle à partir du projet ouvert.
+A partire dal progetto attualmente aperto in Studio è possibile generare un modello grazie alla funzione 'Esporta un modello' presente nel menu 'File'.
 
-Cela produit un fichier, d'extension `.spt` qui contient tout ce qu'il faut pour générer un nouveau projet à partir du votre. Bien entendu, les hôtes définis dans votre projet n'y figurent pas.
+Questo produce un file, con estensione `.spt`, che contiene tutto ciò che serve per generare un nuovo progetto a partire da quello che si è creato. Naturalmente, gli host definiti nel progetto non sono inclusi.
 
-Ce fichier est partageable.
+E' possibile condivide il file .spt.
 
-Pour créer un projet à partir d'un fichier modèle, il suffit de choisir cette option dans l'interface de création de projet et d'aller chercher le fichier modèle dans le champ dédié. Le reste se passe exactement comme dans les autres créations.
+Per creare un progetto da un file modello, scegliere questa opzione nell'interfaccia di creazione del progetto e richiamare il file modello nel campo dedicato. Il resto avviene esattamente come nelle altre creazioni.
 
 
-> Pour plus de détails sur la création d'un projet, allez voir l'[étape concernée](../../quick-start/first-project.md#création-du-projet) dans le guide de démarrage.
+> Per maggiori dettagli sulla creazione di un progetto, vedere la sezione [primo progetto](../../quick-start/first-project.md#création-du-projet) nella guida introduttiva.
