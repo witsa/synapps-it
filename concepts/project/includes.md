@@ -11,19 +11,19 @@ Le inclusioni offrono la possibilità di caricare i file all'apertura di un syna
 
 # Inclusioni all'esecuzione
 
-È possibile includere file sorgenti in un synapp. Verranno caricati nell'ordine di definizione, uno dopo l'altro. Quindi viene visualizzata la [scena principale](../scene.md#scène-de-démarrage) s'affiche.
+Synapps Studio permette di includere file sorgente in un synapp. I file definiti verranno caricati in modo sequenziale nell'ordine con cui sono stati definiti. In seguito a questa operazione viene visualizzata la [scena principale](../scene.md#scène-de-démarrage) s'affiche.
 
-Questo permette di caricare le librerie `Javascript` o `CSS` che verranno utilizzate nelle scene.
+Questa funzionalità permette di caricare ad esempio le librerie `Javascript` o `CSS` che saranno poi utilizzate nelle scene.
 
-I file inclusi possono essere *remoti* o *locali*. I file remoti vengono caricati dall'indirizzo fornito al momento della loro definizione. I file locali fanno parte della configurazione del synapp.
+I file inclusi possono essere *remoti* o *locali*. I file remoti vengono caricati a partire dall'indirizzo fornito al momento della loro definizione. I file locali fanno parte della configurazione del synapp.
 
 # Gestione delle inclusioni
 
 È possibile gestire le inclusioni nella sezione *Progetto/Inclusione*.
 
-Per il momento non esiste un designer per questa parte. È necessario modificare un file JSON di configurazione che contiene l'elenco delle inclusioni da caricare. Ogni inclusione è definita da un oggetto JSON,
+Per il momento non esiste un designer dedicato a queste funzioni. È necessario modificare un file JSON di configurazione che contiene l'elenco delle inclusioni da caricare. Ogni inclusione è definita da un oggetto JSON,
 
-- per un file JS remoto :
+- per un file JS remoto:
 
 
 ```json
@@ -35,25 +35,24 @@ Per il momento non esiste un designer per questa parte. È necessario modificare
   }
 ```
 
-- pour un fichier JS local :
+- per un file JS locale:
 
 ```json
    {
-    "fileName": "nom-du-fichier.js",
+    "fileName": "NomeFile.js",
     "description": "Base 1view",
     "type": "js",
     "isRemote": false
   }
 ```
 
-In questo caso, il file `filename.js` deve trovarsi nella cartella `includes` del synapp.
+In questo caso, il file `NomeFile.js` deve trovarsi nella cartella `includes` del synapp.
 
 Per i file CSS, basta specificare `"css"` per il campo `type`.
 
 ## Esempio di inclusione della libreria Leaflet
 
-Ecco un esempio di configurazione che carica la libreria API di cartografia [Leaflet](https://leafletjs.com/reference.html) all'avvio di synapp:
-
+Di seguito è riportato un esempio di configurazione che carica la libreria API della cartografia [Leaflet](https://leafletjs.com/reference.html) all'avvio di synapp:
 
 ```json
  [
@@ -99,5 +98,5 @@ Il codice sorgente che gestisce le scene operative nel modello di progetto **1vi
 
 ```
 
-Nella cartella `includes` del progetto si trovano i 3 file inclusi.
+I 3 file inclusi devono trovarsi nella cartella `includes` contenuta nella cartella definita al momento della creazione del progetto in Synapps Studio.
 .
