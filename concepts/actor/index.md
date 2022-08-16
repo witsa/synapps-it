@@ -11,79 +11,79 @@ nav_order: 4
 
 {% include table_of_content.html %}
 
-# Acteur
+# Attore
 
-## Définition
+## Definizione
 
-L'acteur est la brique fondamentale de construction de l'interface. Les nombreux types d'acteur et leurs spécificités vont vous permettre d’articuler n’importe quel type d’interface, du formulaire au tableau de bord.
+L'attore è l'elemento fondamentale dell'interfaccia. I numerosi tipi di attore e le loro specificità vi permetteranno di realizzare qualsiasi tipo di interfaccia, dai moduli ai dashboard..
 
-Les acteurs sont organisés sous forme d'arborescence pour constituer ce qu'on appelle la [scène](../scene.md).
+Gli attori sono organizzati in una struttura ad albero che forma quella che è definita come [scena](../scena.md).
 
 ![SynApps](../../assets/concepts/actor/01.png)
 
 ![SynApps](../../assets/concepts/actor/02.png)
 
-## Les types d'acteur
+## Categoria
 
-Un acteur possède un type qui va déterminer son comportement.
+Un attore appartiene ad una categorie che ne determina il comportamento.
 
 - voir [les types d'acteur](../actor-types/)
 
-## Les Propriétés
+## Proprietà
 
-Tous les acteurs partagent des propriétés. Chaque acteur possède des propriétés spécifiques à son type.
+Gli attori possiedono una serie di proprietà comuni. Inoltre ogni attore presenta delle proprietà specifiche alla categoria a cui appartiene.
 
-Ces propriétés représentent l'état de l'acteur. Elles commandent son aspect, son comportement.
+Queste proprietà rappresentano lo stato dell'attore. Ne controllano l'aspetto e il comportamento.
 
-Chaque propriété à une valeur par défaut. Cette dernière est définie par le [style de l'acteur](../actor-style.md).
+Ogni proprietà ha un valore predefinito. Il valore è definito dallo [stile dell'attore](../actor-style.md).
 
-L'inspecteur est la partie du *designer* qui permet de paramétrer, de programmer, de lier les propriétés d'un acteur.
+Lo strumento *Ispettore dele proprietà* è la parte del *designer* che consente di impostare, programmare e collegare le proprietà di un attore.
 
 ![SynApps](../../assets/concepts/actor/03.png)
 
-### Catégories
+### Categorie
 
-Dans l'inspecteur, les propriétés sont rangées par catégorie :
+Nell'ispettore, le proprietà sono organizzate per categoria:
 
-- [**Spécifiques**](../actor-types/index.md)
+- [**Specifico**](../actor-types/index.md)
 
-Les propriétés propres au type de l'acteur. Pour les visiter, se rendre sur la page du [type d'acteur](../actor-types/index.md).
+Sono le proprietà specifiche del tipo di attore. Per i dettagli andare alla pagina [Tipi di attore] (../actor-types/index.md).
 
-- [**Aspect**](./category-aspect.md)
+- [**Aspetto**](./category-aspect.md)
 
-Les propriétés relatives à l'aspect de l'acteur comme sa couleur de fond ou bien sa visibilité.
+Proprietà relative all'aspetto dell'attore, come il colore di sfondo o la visibilità.
 
-- [**Texte**](./category-text.md)
+- [**Testo**](./category-text.md)
 
-Les propriétés relatives au texte qui sera contenu dans l'acteur ou ses enfants. Certaines propriétés comme la taille ou la couleur de la police sont transmises par *héritage* aux acteurs enfants.
+Proprietà relative al testo che sarà contenuto nell'attore o nei suoi figli. Alcune proprietà, come la dimensione o il colore dei caratteri, vengono trasmesse agli attori figli per *ereditarietà*.
 
--  [**Disposition**](./category-disposition.md)
+-  [**Layout**](./category-disposition.md)
 
-Les propriétés qui paramètrent la disposition de l'acteur dans son parent. La nature de ses propriétés dépendent du type de disposition auquel appartient le parent.
+Proprietà che definiscono la posizione dell'attore rispetto all'attore che lo contiene. La natura di queste proprietà dipende dal tipo di disposizione a cui appartiene il genitore.
 
-- [**Tailles**](./category-size.md)
+- [**Taglie**](./category-size.md)
 
-Les propriétés relatives à la taille de l'acteur.
+Proprietà relative alle dimensioni dell'attore.
 
-- [**Espaces**](./category-space.md)
+- [**Spazi**](./category-space.md)
 
 Les propriétés relatives à l'espacement entre les acteurs et les coins de la scène.
 
-- [**Bordures**](./category-border.md)
+- [**Bordi**](./category-border.md)
 
-Les propriétés relatives aux bordures de l'acteur et l'arrondi de ses coins.
+Le proprietà relative ai bordi dell'attore e all'arrotondamento degli angoli.
 
-- [**Effets**](./category-effect.md)
+- [**Effetti**](./category-effect.md)
 
-Les propriétés relatives aux transformations géométrique (échelle, translation, rotation) ou les ombres portées ou l'affichage de bulle d'aide.
+Proprietà relative alle trasformazioni geometriche (scala, traslazione, rotazione) o alle ombreggiature o alla visualizzazione dei suggerimenti.
 
-### Valeur héritée
+### Valori ereditati
 
-Certaines propriétés peuvent hériter leur valeur de la propriété d'un parent de l'acteur. C'est le cas par exemple de la taille de police. Il est alors possible de définir les valeurs de ces propriétés une fois pour toute au plus haut dans l'arborescence des acteurs pour en faire bénéficier tous les enfants.
+Alcune proprietà possono ereditare il loro valore dalla proprietà di un genitore dell'attore. È il caso, ad esempio, della dimensione dei caratteri. È quindi possibile definire i valori di queste proprietà una volta per tutte all'inizio dell'albero degli attori, in modo che tutti i figli possano beneficiarne.
 
-### Évènement de modification
+### Evento di modifica
 
-Chaque propriété déclenche un évènement de modification lorsque sa valeur change. Il y a 4 types de modification :
+Quando il suo valore cambia, ogni proprietà genera un evento di modifica. Esistono 4 tipi di modifica:
 - **Aucune** Pas de modification particulière
 - **Style** Modification qui entraîne un calcul des styles CSS de l'acteur.
 - **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
