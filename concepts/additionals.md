@@ -6,7 +6,7 @@ nav_order: 7
 
 {% include table_of_content.html %}
 
-# Parametro aggiuntivo
+# Parametri Aggiuntivi
 
 I parametri aggiuntivi sono proprietà come quelle che associate agli attori, ma che è possibile aggiungere anche ad altri oggetti Synapps.
 
