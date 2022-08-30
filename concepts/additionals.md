@@ -6,15 +6,15 @@ nav_order: 7
 
 {% include table_of_content.html %}
 
-# Proprietà aggiuntive
+# Parametro aggiuntivo
 
-Le proprietà aggiuntive  sono proprietà come quelle che si trovano sugli attori, ma che è possibile aggiungere anche ad altri oggetti Synapps.
+I parametri aggiuntivi sono proprietà come quelle che associate agli attori, ma che è possibile aggiungere anche ad altri oggetti Synapps.
 
-Il vantaggio è che, una volta creata, questa nuova proprietà è disponibile nell'inspettore dell'oggetto a cui appartiene.
+Il vantaggio è che, una volta creata, questa nuova proprietà è visibile nell'inspettore dell'oggetto a cui appartiene.
 
-Gli attori, le scene e i compositi possono ospitare proprietà aggiuntive. È così che si creano i parametri della scena e le proprietà specifiche di un composito.
+Gli attori, le scene e i compositi possono ospitare parametri aggiuntivi. È così che si creano i parametri della scena e le proprietà specifiche di un composito.
 
-Un Aggiuntivo può essere la sede o la fonte di un [binding](./binding.md). Può essere utilizzato in uno script. Dà anche origine a [eventi di cambio di valore delle proprietà](./scripts/actor-life-cycle.md#property-value-change-of-actor).
+Un Parametro Aggiuntivo può essere la sede o la fonte di un [collegamento](./binding.md). Può essere utilizzato in uno script. Dà anche origine a [eventi di cambio di valore delle proprietà](./scripts/actor-life-cycle.md#property-value-change-of-actor).
 
 ## Parametri comuni
 
@@ -47,7 +47,7 @@ Nel caso di proprietà aggiuntive di tipo attore e composito, è possibile speci
 
 Nel caso di un parametro di Scena, è possibile stabilire se questo deve apparire nell'URL. Vedi la sezione che spiega i [parametri di una scena](./scene.md#paramètres-de-scène)
 
-## Tipo si aggiuntivo
+## Tipo di aggiuntivo
 
 Esistono diversi tipi di parametri aggiuntivi:
 
@@ -63,60 +63,60 @@ Permette di creare una proprietà per l'inserimento di un numero.
 
 - Taglia
 
-Permet d'obtenir une propriété pour saisir une taille. Ressemble à la propriété *Nombre* mais permet en plus de gérer les unités de type taille.
+Consente di definire una proprietà per inserire una dimensione. Assomiglia alla proprietà *numero*.
 
-Il est possible de définir la valeur neutre.
+È possibile impostare il valore neutro.
 
-Voir [la section qui explique les unités de taille](./sizes.md)
+Consultare [la sezione che descrive le unità delle taglie](./sizes.md)
 
-- Booléen
+- Booleano
 
-Permet d'obtenir une propriété avec un bouton à bascule.
+Consente di ottenere una proprietà con un pulsante.
 
-- Image
+- Immagine
 
-Permet d'obtenir une propriété pour ajouter une image.
+Consente definire un parametro per aggiungere un'immagine.
 
-- Couleur
+- Colore 
 
-Permet d'obtenir une propriété pour saisir une couleur.
+Consente definire un parametro per inserire un colore.
 
-- Icône
-Permet d'obtenir une propriété pour obtenir la clé d'une icône de la bibliothèque de Synapps.
+- Icona
+- 
+Crea una proprietà che permette di ottenere la chiave di un'icona dalla libreria Synapps.
 
 <!-- ![image](https://user-images.githubusercontent.com/35595723/124151000-646ede80-da92-11eb-8003-4235f467aaa1.png) -->
 
-- Date
+- Data
 
-Permet d'obtenir une propriété pour saisir une date avec en option une date minimum et une date maximum.
+Fornisce una parametro per inserire una data con una data minima e massima opzionale.
 
-- Sélection simple **ALPHA**
+- Selezione semplice **ALPHA**
 
-Permettra dans un avenir proche la saisie d'un option parmi une liste.
+Nel prossimo futuro sarà possibile selezionare un'opzione da un elenco.
 
-- Sélection multiple **ALPHA**
+- Selezione multipla **ALPHA**
 
-Permettra dans un avenir proche la saisie de plusieurs options parmi une liste.
+Nel prossimo futuro sarà possibile effettuare una scelta multipla da un elenco.
 
-- Acteur
+- Attore
 
-Permet de choisir la clé d'un acteur parmi ceux de la scène ou du composite courant. Une option permet d'activer ou pas la possibilité de choisir l'acteur actuel. Il est possible de filtrer les acteurs disponibles par leur type.
+Permette la scelta della chiave di un attore tra quelle presenti nella scena o nel composito corrente. Un'opzione consente di attivare o meno la possibilità di scegliere l'attore corrente. È possibile filtrare gli attori disponibili in base al loro tipo.
 
-- Scène
+- Scena
 
-Permet de choisir la clé d'une scène parmi celles de la synapp. Une option permet d'activer ou pas la possibilité de choisir la scène actuelle.
+Permette la selezione della chiave di una scena tra quelle del synapp. Un'opzione consente di attivare o meno la possibilità di scegliere la scena corrente.
 
-- Composite
+- Composito
 
-Permet de choisir la clé d'un composite parmi ceux de la synapp. Une option permet d'activer ou pas la possibilité de choisir le composite actuel.
+Permette la scelta della chiave di un composito tra quelle del synapp. Un'opzione consente di attivare o meno la possibilità di scegliere il composito corrente.
 
+- Percorso variabile
 
-- Chemin de variable
+Consente di scegliere il percorso di una variabile REDY. Diverse opzioni consentono di affinare le possibilità visualizzate dall'esploratore di variabili.
 
-Permet de choisir un chemin de variable REDY. Plusieurs options permettent d'affiner les possibilités affichée par l'explorateur de variable.
+### Parametri aggiuntivi complementari
 
-### Additionnelles de complément
+In alcuni tipi di attori,  parametri aggiuntivi possono essere utilizzati per completare le definizioni delle proprietà. Questo è il caso, ad esempio, di attori di contenuto come [Pulsante](./actor-types/input-button.md), dove è possibile completare dei caratteri jolly con parametri aggiuntivi.
 
-Dans certains types d'acteur, des additionnelles peuvent être utilisées pour compléter des définitions de propriétés. C'est le cas pas exemple des acteurs à contenu comme le [bouton](./actor-types/input-button.md) ou il est possible de compléter des jokers par les valeurs d'additionnelle.
-
-Les paramètres de scènes sont renseignés par des addtionnelles également dans les acteur écran pour paramétrer la scène choisie.
+I parametri delle scene vengono inoltre aggiunti agli attori dello schermo per impostare la scena prescelta.
