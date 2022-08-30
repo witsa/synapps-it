@@ -1,9 +1,9 @@
 ---
-title: Concepts
+title: Concetti
 has_children: true
 nav_order: 4
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 ![SynApps](../assets/under-progress.gif)
