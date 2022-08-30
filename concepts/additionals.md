@@ -1,66 +1,67 @@
 ---
-title: "Additionnelles"
-parent: Concepts
+title: "Aggiuntivo"
+parent: Concetti
 nav_order: 7
 ---
 
 {% include table_of_content.html %}
 
-# Additionnelles
+# Proprietà aggiuntive
 
-Les additionnelles sont des propriétés comme vous pouvez en retrouver sur les acteurs mais qu'il est possible d'ajouter sur des objets de Synapps.
-L'avantage ici est, qu'une fois créée, cette nouvelle propriété est disponible dans l'inspecteur de l'objet auquel elle appartient.
+Le proprietà aggiuntive  sono proprietà come quelle che si trovano sugli attori, ma che è possibile aggiungere anche ad altri oggetti Synapps.
 
-Les acteurs, les scènes et les composites peuvent accueillir des additionnelles. C'est ainsi que l'on crée des paramètres de scène et les propriétés spécifiques d'un composite.
+Il vantaggio è che, una volta creata, questa nuova proprietà è disponibile nell'inspettore dell'oggetto a cui appartiene.
 
-Un additionnelle peut être le siège ou la source d'une [liaison](./binding.md). Elle peut être utilisée dans un script. Elle donne lieu également aux [évènements de changement de valeur de propriété](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur).
+Gli attori, le scene e i compositi possono ospitare proprietà aggiuntive. È così che si creano i parametri della scena e le proprietà specifiche di un composito.
 
-## Options communes
+Un Aggiuntivo può essere la sede o la fonte di un [binding](./binding.md). Può essere utilizzato in uno script. Dà anche origine a [eventi di cambio di valore delle proprietà](./scripts/actor-life-cycle.md#property-value-change-of-actor).
 
-### Clé
-Une additionnelle est identifiée grace à sa clé. Elle doit être unique sur l'objet auquel elle appartient.
+## Parametri comuni
 
-### Nom
-Dans l'inspecteur, vous pouvez définir le nom qui apparaîtra en face de la propriété créée. Si vous ne le définissez pas, c'est sa clé qui sera utilisée en guise de nom.
+### Chiave
+Un aggiuntivo è identificato attraverso la sua chiave, che deve essere unica e specifica all'oggetto al quale appartiene.
 
-### Description
+### Nome
+Nell'ispettore è possibile definire il nome che apparirà davanti alla proprietà creata. Se non viene impostato, la sua chiave verrà utilizzata come nome.
 
-Vous pouvez définir une description de l'additionnelle pour aider à comprendre son rôle. Elle s'affiche au survol du nom de la propriété et dans le cas du type *texte* en impression dans la zone de saisie vide.
+### Descrizione
 
-### Aide
-Vous pouvez définir un texte d'aide qui s'affiche en dessous de l'additionnelle.
+È possibile descrivere la proprietà aggiuntiva per aiutare a capirne la funzione. La descrizione vene visualizzata al passaggio del mouse sul nome della proprietà.
 
-### Vide accepté ?
+### Aiuto
+Si può definire un testo di aiuto che viene visualizzato sotto la proprietà.
 
-Cette option permet d'indiquer si l'additionnelle peut être vide ou pas.
+### Vuoto accettato?
 
-### Lecture seule ?
+Questa opzione consente di indicare se l'aggiuntivo può essere vuoto o meno.
 
-Parfois, vous voudrez que l'additionnelle ne soit pas éditable dans le designer. Cette option permet de désactiver l'édition.
+### Sola lettura?
 
-### Modification
+In alcuni casi è richiesto che la proprietà aggiuntiva non sia modificbile. Questa opzione consente di disabilitare la modifica.
 
-Dans le cas des additionnelles sur acteur et composite, il est possible de spécifier le type de modification que l'additionnelle entraîne dans son cycle de vie. Voir dans la section qui explique [les modifications](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur)
+### Modifica
 
-### Présent dans l'URL ?
+Nel caso di proprietà aggiuntive di tipo attore e composito, è possibile specificare il tipo di modifica che il componente aggiuntivo causa nel suo ciclo di vita. Vedere la sezione che spiega le [modifiche]](./scripts/actor-life-cycle.md#changement-de-valeur-de-propriété-dun-acteur)
 
-Dans le cas d'un paramètre de scène, il est possible d'indiquer s'il doit apparaitre ou pas dans l'URL. Voir dans la section qui explique les [paramètres de scène](./scene.md#paramètres-de-scène)
+### Presente nell'URL ?
 
-## Types d'additionnelle
+Nel caso di un parametro di Scena, è possibile stabilire se questo deve apparire nell'URL. Vedi la sezione che spiega i [parametri di una scena](./scene.md#paramètres-de-scène)
 
-Il existe plusieurs type d'additionnelle :
+## Tipo si aggiuntivo
 
-- Texte
+Esistono diversi tipi di parametri aggiuntivi:
 
-Permet d'obtenir une propriété pour saisir du texte.
+- Testo
 
-- Nombre
+Permette di creare una proprietà per l'inserimento di un testo.
 
-Permet d'obtenir une propriété pour saisir un nombre.
+- Numero
 
-Il est possible de définir aussi un maximum et un minimum, ainsi que le pas lors d'un changement de valeur par glissement. Il est possible d'ajouter une unité informative.
+Permette di creare una proprietà per l'inserimento di un numero.
 
-- Taille
+È possibile anche definire un massimo e un minimo, nonché il passo quando si cambia il valore trascinandolo. È possibile aggiungere un'unità.
+
+- Taglia
 
 Permet d'obtenir une propriété pour saisir une taille. Ressemble à la propriété *Nombre* mais permet en plus de gérer les unités de type taille.
 
