@@ -1,166 +1,165 @@
 ---
-title: "Liaisons"
-parent: Concepts
+title: "Collegamento"
+parent: Concetti
 nav_order: 6
 ---
 
 {% include table_of_content.html %}
 
-# Liaisons
+# Collegamenti
 
-La liaison est un concept fort de la solution Synapps. En effet, grâce à elle, vous pouvez établir des comportements, des changements de propriété, simplement.
-En liant des propriétés d'objet de Synapps ensemble, vous pouvez automatiser des changements, utilisez des librairies, s'accorder avec les tailles de l'afficheur, etc.
+Il concetto di collegamento è un concetto importante nella soluzione Synapps. Infatti, grazie ad esso, è possibile stabilire comportamenti, modifiche di proprietà, in modo semplice.
+Collegando tra loro le proprietà degli oggetti Synapps, è possibile automatizzare le modifiche, utilizzare le librerie, far corrispondere le dimensioni dei display, ecc.
 
-## Définition
+## Definizione
 
-La liaison est un objet qui, une fois activé, surveille les changements d'une valeur sur une **source** pour les enregistrer immédiatement dans une propriété **cible** d'un acteur.
+Un collegamento rappresenta un oggetto che, quando viene attivato, sorveglia il cambiamento di un valore su una **sorgente** e lo registra immediatamente in una proprietà **target** di un attore.
 
-Seules les propriétés des acteurs peuvent être cible de liaison. En revanche, beaucoup d'éléments de Synapps peuvent être la source dans une liaison :
+Solo le proprietà degli attori possono essere target di collegamento. Viceversa, molti elementi di Synapps possono essere la fonte in un collegamento:
 
 - La [synapp](./synapp.md)
-- La [scène](./scene.md) ou le [composite](./composite.md) accueillant l'acteur cible
-- Un autre [acteur](./actor/index.md) ou lui-même
-- Un élément de librairie
-  - une [couleur](./colors.md)
-  - une [image](./pictures.md)
-  - une [constante](./constants.md)
-  - un [texte](./texts.md)
-- Un [fournisseur de variable REDY](#la-liaison-de-type-de-source-fournisseur-de-variable)
-- L'[hôte](./project/hosts.md)
-- La [session](./session.md)
-- L'[utilisateur](./user.md)
-- L'[afficheur](./user-agent.md)
-
-Exemple : *une liaison vers la **couleur A** de la librairie des couleurs définie sur la propriété **couleur de fond** d'un acteur*
+- La [scena](./scene.md) o il [composito](./composite.md) che ospita l'attore di destinazione
+- Un altro [attore](./actor/index.md) o se stesso
+- Un elemento della libreria
+  - un [colore](./colors.md)
+  - un'[immagine](./pictures.md)
+  - una [costante](./constants.md)
+  - un [testo](./texts.md)
+- Un [fonitore di variabili REDY](#il-tipo-di-collegmanto-al-provider-di-variabili)
+- L'[host](./project/hosts.md)
+- La [sessione](./session.md)
+- L'[utente](./user.md)
+- Il [display](./user-agent.md)
+- 
+Esempio: *un collegamento al **colore A** della libreria dei colori definito sulla proprietà **colore di sfondo** di un attore*
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/01.png)
 
-Un liaison peut aussi être paramétrée pour qu'elle surveille également la cible afin d'enregistrer ses changements dans la source en retour.
+Un collegamento può anche essere impostato in modo da monitorare il target per registrare nella sorgente eventuali cambiamenti.
 
-Exemple : *une liaison avec écriture active vers la propriété **couleur de fond** d'un acteur définie sur la propriété **couleur de fond** d'un autre acteur et inversement*
+Esempio: * un legame con scrittura attiva alla proprietà **colore di sfondo** di un attore impostato sulla proprietà **colore di sfondo** di un altro attore e viceversa*.
 ![La liaison vers une couleur de la librairie](../assets/concepts/bindings/02.png)
 
-## Créer une liaison
+## Creare un collegamento
 
-Pour créer une liaison, rendez-vous dans le menu d'option d'une propriété d'un acteur et cliquez sur *Lier à...*. Vous ouvrirez la fenêtre de définition de la liaison.
+Per creare un collegamento, aprire il menu delle opzioni di un parametro dell'attore e fare clic su *Collegamento a...*. Si aprirà la finestra di definizione del collegamento.
 
-Vous allez construire la liaison d'abord en définissant la source puis les options qui sont offertes par la nature de la source choisie.
+Il collegamento si costruisce definendo prima la fonte e poi le opzioni offerte dalla natura della fonte scelta.
 
-Dans l'exemple suivant, une liaison vers le *nom* de la synapp est créée sur la propriété *Contenu* d'un acteur *Texte*.
+Nell'esempio seguente, nella proprietà *Contenuto* di un attore *Testo* viene creato un collegamento al *nome* del synapp.
 
-![Création de liaison](../assets/concepts/bindings/01.gif)
+![Creazione di un collegamento](../assets/concepts/bindings/01.gif)
 
-En résumé, la liaison ici est définie comme suit :
+In sintesi, il collegamento è definito come segue:
 
-| Cible | Propriété cible | Source | Propriété source |
+| Target| Parametro del Target | Sorgente | Parametro sorgente |
 | ------ | ------------- | ------ | ------------- |
-| l'acteur *Texte* | *Contenu* | La synapp | *Nom* |
+| l'attore *Testo* | *Contenuto* | La synapp | *Nome* |
 
 
-Un autre exemple, cette fois ci avec une liaison vers la propriété *Couleur* d'un autre acteur :
+Ecco un altro esempio, questa volta con un collegamento alla proprietà *colore* di un altro attore:
 
-![Création de liaison](../assets/concepts/bindings/02.gif)
+![Creazione del collegmanto](../assets/concepts/bindings/02.gif)
 
-Observez le suivi de la couleur de l'acteur *Texte 2* lorsque celle de l'acteur *Texte 1* change.
+Osservare il cambiamento del colore dell'attore *Testo 2* al variare del colore dell'attore *Testo 1*.
 
-En résumé, la liaison cette fois ci est définie comme suit :
+In sintesi, il vincolo questa volta è definito come segue:
 
-| Cible | Propriété cible | Source | Propriété source |
+| Target | Parametro del Target | Sorgente | Parametro sorgente |
 | ------ | ------------- | ------ | ------------- |
-| l'acteur *Texte 2* | *Couleur* | l'acteur *Texte 1* | *Couleur* |
+| L'attore *Texte 2* | *colore* | l'attore *Texte 1* | *Colore* |
 
-### Chemin de la source
+### Percorso della fonte
 
-En réalité, lorsqu'on définit la source d'une liaison, on défini réellement deux choses :
-- par le type de source, on indique comment la liaison va chercher l'objet source. Nous apprendrons plus tard qu'elle la place dans son contexte de donnée.
-- ensuite, par le choix du champ source, on indique un le chemin qui mène à la valeur à surveiller.
+In realtà, quando definiamo la fonte di un collegamento, definiamo due cose:
+- Con il tipo di fonte, si indica come il collegamento cercherà l'oggetto di partenza. Più avanti scopriremo che lo colloca nel suo contesto di dati.
+- quindi, attraverso la scelta del campo sorgente, si indica il percorso che porta al valore da tenere sotto controllo.
 
-Intéressons nous plus particulièrement à ce chemin. Il est visible dans la fenêtre de définition de la liaison dans le champ *Chemin*.
+Analizziamo più da vicino questo percorso. che è visibile nella finestra di definizione del collegamento nel campo *Percorso*.
 
-Observez dans le deuxième exemple que ce chemin est `properties.color`. Ce chemin est le même qui permet d'accéder à la valeur par script.
+Nel secondo esempio, si noti che il percorso è `properties.color` è lo stesso che consente di accedere al valore tramite script.
 
-> 📌 **REMARQUE**<br>
-Il est tout à fait possible, si vous le connaissait, de définir un chemin qui n'a pas de correspondance dans la liste des champs disponible pour une source donnée.
+> 📌 **NOTA**<br>
+Se lo si conosce, è possibile definire un percorso che non ha alcuna corrispondenza nell'elenco dei campi disponibili per una determinata sorgente.
 
-### Activation de l'écriture
+### Attivazione della scrittura
 
-Si vous désirez que les changements de la cible soient écrits dans la source, vous devez activer l'écriture.
+Se si vuole che le modifiche apportate dal target vengano scritte nell'origine, è necessario abilitare l'opzione *Scrivere?*.
 
-C'est ce qui va permettre entre autre l'écriture dans une valeur de variable REDY dans la liaison de type *Fournisseur de variable*.
+In questo modo sarà possibile, tra l'altro, scrivere il valore di una variabile REDY attraverso il collegamento *Fornitore variabile*.
 
-Ceci est pratique également pour créer une liaison montante vers une source qui, elle, n'accepte pas de liaison. <br>Par exemple, il n'est pas possible de créer de liaison sur un paramètre de scène. En revanche, il est possible de créer une liaison sur propriété d'un acteur de la la scène et de le lier à un de ses paramètre avec l'écriture activée. Ainsi, lorsque la propriété va changer, le paramètre de la scène va changer aussi.
+Questo è anche utile per creare un uplink verso una sorgente che non accetta un collegamento. <br>Ad esempio, non è possibile creare un collegamento a un parametro di una scena. Al contrario, è possibile creare un collegamento sulla proprietà di un attore della scena e collegarlo a uno dei suoi parametri con la scrittura attivata. Pertanto, quando la proprietà cambia, cambia anche il parametro della scena.
 
-### Synchronisation de la source
+### Sincronizzazione della fonte
 
-Par défaut, une liaison active va lire la valeur de la source pour l'écrire dans la cible et surveiller les changements de la source pour le refaire à chaque fois.
+Per impostazione predefinita, un collegamento attivo leggerà periodicamente il valore dall'origine per riportarlo sulla destinazione.
 
-Il est possible de définir un autre comportement, désactiver cette synchronisation : il n'y aura qu'une seule écriture, la première.
+Si può definire una modalità diversa: disabilitando la sincronizzazione periodica, si otterrà una sola scrittura, la prima..
 
-Ceci est très pratique lorsqu'on se lie à une valeur qui ne va pas changer ou au contraire si elle change mais qu'on veut garder la valeur initiale.
+Questa soluzione è molto pratica quando ci si collega a un valore che non cambierà o, al contrario, a un valore che cambia ma di cui si vuole mantenere il valore iniziale.
 
-### Échec de la liaison
+### Errore nel collegamento
 
-Dans certain cas, il est possible lors de la création de la liaison, la source définie n'existe pas ou soit introuvable. Dans ce cas la liaison n'aboutit pas et la valeur restera à sa définition initiale.
+In alcuni casi, è possibile che al momento della creazione del collegamento la fonte definita non esista o non possa essere trovata. In questo caso il collegamento non andrà a buon fine e il valore rimarrà alla sua definizione iniziale.
 
-> 📌 **REMARQUE**<br>
-Pour l'instant, il n'y a pas encore de retour dans Studio qui indique ce type d'échec.
+> 📌 **NOTA**<br>
+Attualmente non esiste nessuna segnalazione in Studio che indichi questo tipo di errore.
 
-## Menu des options d'une liaison
+## Menu delle opzioni di un collegamento
 
-Un fois qu'une liaison est définie sur une propriété, le menu d'options s'enrichie de possibilités.
+Una volta definito un collegamento su una proprietà, il menu delle opzioni si arricchisce di possibilità.
 
-### Modifier une liaison
+### Modificare il link
 
-Vous pouvez à tout moment revenir sur la définition d'une liaison.
+È possibile tornare alla definizione di un collegamento in qualsiasi momento.
 
-### Supprimer une liaison
+### Cancellare il link
 
-Dans le menu d'option d'une propriété d'un acteur, cliquez sur *Supprimer la liaison* pour effacer la définition.
+DNel menu delle opzioni della proprietà dell' attore, fare clic su *Calcellare il link* per eliminare il collegamento esistente.
 
-Vous pouvez également choisir l'option *Aucune liaison* dans la liste des *Types de source* de l'édition de la liaison.
+Si può anche scegliere l'opzione *Nessun collegamento* dall'elenco *Tipi di fonte* nella modifica del collegamento..
 
-### Copier/Coller une liaison
+### Copiare/incollare un link
 
-Option très pratique, vous pouvez copier une liaison et la coller ailleurs. La définition est dans le presse papier, donc vous pouvez coller n'importe où.
+Un'opzione molto utile: è possibile copiare un link e incollarlo altrove. La definizione si trova negli appunti, per cui è possibile incollarla ovunque.
 
-### Montrer/Cacher la valeur initiale
+### Mostra/Nascondi valore iniziale
 
-Lorsque vous définissez une liaison sur une propriété, la valeur préalablement saisie demeure. Elle est utilisée pour initialiser la propriété.
+Quando si imposta un collegamento su una proprietà, il valore precedentemente immesso viene mantenuto. Serve per inizializzare la proprietà.
 
-Il est possible de l'afficher pour la visualiser ou même la modifier même apres que la liaison ait été créée. L'option *Montrer la valeur initiale* permet de faire cela.
+L'opzione *Mostra valore iniziale* permette di visualizzare e modificare questo valore anche dopo la creazione del collegamenti
 
-Pour la cacher, cliquez sur *Cacher la valeur initiale* dans le menu d'options.
+Per non visualizzar il valore, fare clic su *Nascondi valore iniziale* nel menu delle opzioni.
 
-## Scripts de transformation
+## Script di trasformazione
 
-Lorsque la valeur source est transmise à la cible, il est possible de lui appliquer un script de transformation. De la même façon, il est possible d'appliquer un script de transformation de la valeur cible lorsque l'écriture de la valeur source est activée. Voir ce dans la section [cycle de vie des acteurs](./scripts/actor-life-cycle.md#transformations-de-liaison).
+Quando il valore sorgente viene passato alla destinazione, è possibile associarvi uno script di trasformazione. Allo stesso modo, è possibile eseguire uno script di trasformazione sul valore di destinazione quando viene attivata la scrittura del valore di origine. Si veda la sezione [ciclo di vita dell'attore] (./scripts/actor-life-cycle.md#transformations-de-liaison).
 
-## La liaison de type de source *Fournisseur de variable*
+## Il collegamento al tipo di fonte *Fornitore variabile*
 
-Ce type de source permet de lier une propriété à un champ d'une variable de REDY par l'intermédiaire d'un [fournisseur de variable](./actor-types/redy-wos-variable-source.md).
+Questo tipo di origine consente di collegare una proprietà a un campo di una variabile REDY tramite un [fornitore di variabili](./actor-types/redy-wos-variable-source.md).
 
-Voir une illustration [ici](../quick-start/display-redy-data.md)
+Si veda un'illustrazione [qui](../quick-start/display-redy-data.md)
 
-A la manière d'un acteur [fournisseur de variable relative](./actor-types/redy-wos-relative-variable-source.md), il est possible d'aller chercher le champ d'une sous variable WOS d'une variable ou ressource définie dans un fournisseur parent.
+Come nel caso di un attore [fornitore variabile relativa](./actor-types/redy-wos-relative-variable-source.md), è possibile recuperare il campo di una sottovariabile WOS da una variabile o risorsa definita in un fornitore padre
 
-### Clé parent
+### Chiave del padre
 
-Ce champ permet d'indiquer le fournisseur parent. C'est lui qui va exécuter les requêtes de lecture et d'écriture. Si aucun  n'est fourni, c'est dans le contexte de donnée que le parent sera cherché.
+Questo campo viene utilizzato per indicare il fornitore di servizi genitore. È il fornitore che eseguirà le richieste di lettura e scrittura. Se non viene fornito nulla, il padre verrà ricercato tra le informazioni del contesto dei dati.
 
-### Chemin relatif
+### Percorso relativo
 
-Ce champ permet d'indiquer le chemin relatif par rapport à la variable parente de la variable WOS qui nous intéresse. Cela peut rester vide auquel cas la variable WOS sera celle définie par le parent.
+Questo campo consente di indicare il percorso relativo della variabile WOS di interesse rapportata alla variabile padre. Può essere lasciato vuoto, nel qual caso la variabile WOS sarà quella definita dal genitore.
 
-### Champ
+### Campo
 
-Cette option permet d'indiquer quel champ sera la source de la liaison. N'indiquez rien si vous désirez que la source soit la variable elle-même.
+Questo parametro consente di indicare quale campo sarà l'origine del collegamento. Lasciare vuoto se si desidera che l'origine sia la variabile stessa.
 
-### Mode de récupération
+### Modalità di recupero
 
-Indiquez ici si vous désirez que la donnée soit récupérée à chaque mise à jour du fournisseur parent ou seulement la première fois.
+Indicare se si desidera che i dati vengano recuperati ogni volta che il fornitore padre viene aggiornato o solo la prima volta.
 
+## Collegamento al tipo di sorgente *Contesto*
 
-## La liaison de type de source *Contexte*
+Questo collegamento non definisce effettivamente come trovare la fonte. Tenterà di farlo solo con ciò che trova nel suo contesto di dati.
 
-Cette liaison, en réalité, ne définit pas comment aller cherche la source. Elle va donc uniquement tenter de se réaliser avec ce qu'elle va trouver dans son contexte de donnée.
-
-Voir la section [Contexte de donnée](./data-context) pour plus de détails.
+Per maggiori dettagli, vedere la sezione [Contesto dei dati](./data-context) pour plus de détails.
