@@ -1,6 +1,6 @@
 ---
-title: Couleur de fond
-section: aspect
+title: Colore di sfondo
+section: aspetto
 propName: backgroundColor
 propPath: properties.backgroundColor
 scriptApiClass: Actor.BaseActorProperties
