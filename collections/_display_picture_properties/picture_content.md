@@ -1,6 +1,6 @@
 ---
-title: Image
-section: specifics
+title: Immagine
+section: specifico
 propName: content
 propPath: properties.content
 scriptApiClass: Actor.Display.ImageProperties
