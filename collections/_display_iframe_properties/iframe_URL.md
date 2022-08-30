@@ -1,6 +1,6 @@
 ---
 title: URL
-section: specifics
+section: specifico
 propName: url
 propPath: properties.url
 scriptApiClass: Actor.Display.IframeProperties
