@@ -1,3 +1,4 @@
-La valeur attendue est :
-- Soit une couleur native CSS ( la liste des couleurs est retrouvable [à cette adresse](https://www.w3schools.com/cssref/css_colors.asp).).
-- Une couleur `RGBA` au format `rgba(<rouge>,<vert>,<bleu>,<opacité>)`.
+Il valore atteso è:
+- un colore CSS nativo (l'elenco dei colori è disponibile [a questo indirizzo](https://www.w3schools.com/cssref/css_colors.asp).).
+oppure
+- Un colore `RGBA` nel formato `rgba(<rosso>,<verde>,<blu>,<opacità>)`.
