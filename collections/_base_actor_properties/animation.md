@@ -1,6 +1,6 @@
 ---
-title: Animation
-section: effects
+title: Animazione
+section: effetti
 propName: animation
 propPath: properties.animation
 scriptApiClass: Actor.BaseActorProperties
