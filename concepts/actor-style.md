@@ -1,37 +1,37 @@
 ---
-title: "Style d'acteur"
-parent: Concepts
+title: "Stile attore"
+parent: Concetti
 ---
 
 {% include table_of_content.html %}
 
-# Style d'un acteur
+# Stile di un attore
 
-## Définition
+## Definizione
 
-Les propriétés d'un [acteur](./actor.md) sont initialisées avec des valeurs par défaut. Ces dernières sont définies dans le style qu'utilise l'acteur.
-Au départ, un acteur utilise le style `default`. Mais il est possible d'établir d'autre style et changer les valeurs par défaut d'un acteur.
+Le proprietà di un [attore](./actor.md) vengono inizializzate con valori predefiniti. Queste sono definite secondo lo stile utilizzato dall'attore.
+Inizialmente, un attore utilizza lo stile `default`. E' possibile impostare altri stili per modificarne i valori predefiniti.
 
 ![SynApps](../assets/concepts/actor-style-01.png)
 
-Le changement de style s'effectue par script. *TODO lien vers doc*
+Il cambio di stile si effettua tramite script. *A_VENIRE collegamento al documento*
 
-La définition de style peut s'effectuer par script. *TODO lien vers doc*
+La définition de style peut s'effectuer par script. *A_VENIRE collegamento al documento*
 
-Un style est défini pour un type donné.
+Ogni tipo di dato prevede uno stile.
 
-Un style est toujours défini basé sur un autre (donc au moins celui par défaut!).
+Uno stile è sempre derivato da un altro (quindi almeno su quello predefinito!).
 
-## Dans Studio
+## In Studio
 
-### Gestion des Styles
+### Gestione degli stili
 
-La définition des styles d'acteur est une section à part entière dans Studio. Elle est actuellement encore à réaliser en JSON.
+La modifica degli stili degli attori è attualmente da realizzarsi in JSON.
 
 ![SynApps](../assets/styles.png)
 
 
-Voici un exemple de définition JSON de styles pour les empilements :
+Di seguito un esempio di definizione JSON dello stile di un attore Impilamento:
 ```json
 {
   "layout/stack": [
@@ -76,22 +76,20 @@ Voici un exemple de définition JSON de styles pour les empilements :
 
 ```
 
-Vous remarquerez la définition de `other-shadow` basé sur `shadow` qui hérite des définitions du second tout en redéfinissant `borderRadius` et `boxShadow`.
+Si noterà la definizione di `other-shadow` basata su `shadow` che eredita le definizioni di quest'ultimo, ridefinendo `borderRadius` e `boxShadow`.
 
-> A moyen terme, un designer sera dédié aux styles.
+### Utilizzo nel Designer
 
-### Utilisation dans le designer
-
-Dans chaque acteur, le champ **Style** permet de le changer pour un autre correspondant à son type.
+In ogni attore, il campo **Stile** permette il cambio con un altro appropriato al suo tipo.
 
 ![SynApps](../assets/concepts/actor-style-02.png)
 
-Regardez la couleur de fond :
+Osserva il colore dello sfondo:
 
 ![SynApps](../assets/concepts/actor-style-03.png)
 
-Elle est définie à sa valeur par défaut : aucune.
+È impostato sul valore predefinito: Nessuno.
 
-Après avoir changé de style pour `pink`, la valeur affichée du champ est passée à `pink`. Mais, ne vous y trompez pas : c'est sa valeur par défaut qui a changé. Si une couleur autre que la celle par défaut avait été définie, elle aurait été conservée.
+Dopo aver cambiato lo stile in `pink`, il valore visualizzato del campo viene impostato su `pink`. Tuttavia, non bisogna confondersi: è il suo valore predefinito che è cambiato. Se fosse stato impostato un colore diverso da quello predefinito, sarebbe stato mantenuto.
 
 ![SynApps](../assets/concepts/actor-style-04.png)
