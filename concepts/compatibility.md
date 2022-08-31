@@ -1,17 +1,17 @@
 ---
-title: "Compatibilité"
-parent: Concepts
+title: "Compatibilità"
+parent: Concetti
 ---
 
-# Compatibilités
+# Compatibilità
 
 ## Synapps Runtime
 
-Le moteur d'exécution de Synapps, le Runtime est compatible avec tous les navigateurs modernes.
+Il Runtime Synapps è compatibile con tutti i browser moderni.
 
-Voici un tableau des versions de navigateurs les plus anciennes que le runtime supporte :
+Di seguito è riportata una tabella delle versioni più vecchie del browser supportate dal runtime:
 
-| Navigateur | Version |
+| Navigatore | Versione|
 |----------- |---------|
 | Chrome     | 60      |
 | Firefox    | 55      |
@@ -20,7 +20,7 @@ Voici un tableau des versions de navigateurs les plus anciennes que le runtime s
 | Safari iOS | 11.3    |
 | Opera      | 47      |
 
-En ce qui concerne les appareils nomades, il faudra veiller à utiliser les version minimales suivantes :
+Per i dispositivi mobili le versioni in tabella rappresentano la versione minima utilizzabile:
 
 | Système    | Version |
 |------------|---------|
@@ -30,13 +30,13 @@ En ce qui concerne les appareils nomades, il faudra veiller à utiliser les vers
 
 ## Synapps Studio
 
-Synapps Studio fonctionne sur *Windows 10*. Il devrait fonctionner également sur *Windows 11*, des essais sont à venir.
+Synapps Studio funziona su *Windows 10* e successive versioni.
 
-Un PC de puissance moyenne suffit pour son exécution. Le périmètre des caractéristiques requises sont en cours de définition mais il apparaît déjà que Synapps Studio tournera convenablement sur des systèmes ayant
-- 8Go de RAM ou plus
-- processeurs à 4 cœurs ou plus
+Per la sua esecuzione è sufficiente un PC di media potenza. La configurazione minima richiesta è 
+- 8 GB di RAM o più
+- processori con 4 o più core.
 
-Il faudra bien entendu de l'espace libre sur votre disque dur pour accueillir les fichiers de projet.
+Naturalmente, è necessario avere sufficiente spazio libero sul disco rigido per ospitare i file del progetto.
 
-> ⚠️ **ATTENTION**<br>
-> N'utiliser pas de lecteur réseau pour accueillir vos projets. En effet, Studio ne fonctionne pas correctement pour l'instant avec ce type de lecteur.
+> ⚠️ **ATTENZIONE**<br>
+> Non utilizzate un'unità di rete per ospitare i vostri progetti. Attualmente Studio non funziona correttamente con questo tipo di unità.
