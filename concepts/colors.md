@@ -1,5 +1,5 @@
 ---
-title: "Libredia dei colori"
+title: "Libreria dei colori"
 parent: Concetti
 ---
 
