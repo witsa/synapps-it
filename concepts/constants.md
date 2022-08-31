@@ -1,58 +1,58 @@
 ---
-title: "Librairie de constantes"
-parent: Concepts
+title: "Libreria delle costanti"
+parent: Concetti
 ---
 
 {% include table_of_content.html %}
 
-# Librairie de constantes
+# Libreria delle costanti
 
-La librairie de constante permet de stocker des chaines afin de les utiliser au sein d'une synapp.
+La libreria delle costanti consente di memorizzare delle stringhe per poterle utilizzare all'interno di un synapp..
 
-## Accès à la librairie
+## Accesso alla libreria
 
-Les constantes se trouvent dans la section librairie à gauche de la fenêtre de Studio.
+Le costanti si trovano nella sezione Libreria sulla sinistra della finestra di Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
-A l'intérieur de cette section, vous pourrez trouver la liste des constantes disponibles.
+In questa sezione si trova l'elenco delle costanti disponibili.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
 
-## Création de donnée dans la librairie
+## Creazione di dati nella libreria
 
-Afin de créer de nouvelles constantes il faut cliquer sur le bouton d'ajout situé en bas à gauche de la fenêtre.
+Per creare nuove costanti, fare clic sul pulsante Aggiungi in basso a sinistra della finestra.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/addConstant.PNG)
 
-Une fenêtre s'ouvre alors et permet de saisir la `clé` et la `valeur` de la constante.
+Si apre una finestra che consente di inserire la "chiave" e il "valore" della costante..
 
 La `Clé` correspond à l'identifiant qui va être attribué à la constante.
 <br>
-La `Valeur` correspond à la valeur que prend la constante, cela doit être soit une chaîne de caractère soit un nombre SANS OPÉRATEUR ( +, -, *, /, etc ..).
+Il `Valore' è il valore che assume la costante, che deve essere una stringa o un numero SENZA OPERATORE ( +, -, *, /, etc..).
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newConstant.PNG)
 
-## Modification de donnée dans la librairie
+## Modifica dei dati nella libreria
 
-Pour modifier une donnée dans la libraire de constante, il faut cliquer directement sur la constante que l'on souhaite modifier.
+Per modificare i dati nella libreria delle costanti, fare clic direttamente sulla costante che si desidera modificare.
 
-L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `clé` ainsi qu'une nouvelle `valeur`.
+In questo modo si apre l'interfaccia di modifica, che consente di inserire una nuova "chiave" e un nuovo "valore".
 
 
-## Utilisation des constantes de la librairie dans une synapp
+## Utilizzo delle costanti della libreria in un synapp
 
-Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une synapp :
+Esistono due metodi per utilizzare i dati di una libreria all'interno di un synapp:
 
->- Accès grâce aux [liaisons](binding.md).
->- Accès via les [scripts](scripts/index.md).
+>- Il [collegamento](binding.md).
+>- Lo [script](scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#constants){:target="_blank"}
 
 
->Les constantes sont stockés sous format JSON avec la syntaxe suivante pour chaque constante :
+>Le costanti sono memorizzate in formato JSON con la seguente sintassi per ogni costante 
 >
->`"clé"` : `"valeur"`
+>`"chiave"` : `"Valore"`
 >
-> Le JSON est directement éditable depuis l'interface.
+> Il file JSON è modificabile direttamente dall'interfaccia..
