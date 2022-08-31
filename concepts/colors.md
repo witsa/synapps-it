@@ -1,61 +1,60 @@
 ---
-title: "Librairie de couleur"
-parent: Concepts
+title: "Libredia dei colori"
+parent: Concetti
 ---
 
 
 {% include table_of_content.html %}
 
-# Librairie de couleur
+# Libreria dei colori
 
-La librairie de couleur permet de stocker des codes couleurs afin de les utiliser au sein d'une synapp.
+La libreria dei colori consente di memorizzare i codici colore per poterli utilizzare all'interno di un synapp.
 
-Chaque projet démarre avec une librairie de couleur déjà fournie.
+Ogni progetto nasce con una libreria di colori già predisposta.
 
-## Accès à la librairie
+##Accesso alla libreria
 
-Les couleurs se trouvent dans la section librairie à gauche de la fenêtre Studio.
+I colori si trovano nella sezione della libreria a sinistra della finestra di Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
-A l'intérieur de cette section, vous pourrez trouver la liste des couleurs disponibles.
+All'interno di questa sezione si trova l'elenco dei colori disponibili.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
-## Création de donnée dans la librairie
+## Creazione di dati nella libreria
 
-Afin de créer de nouvelles variables couleur il faut cliquer sur le bouton d'ajout situé en bas à gauche de la fenêtre.
+Per creare nuove variabili cromatiche, fare clic sul pulsante Aggiungi in basso a sinistra della finestra.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/addColor.PNG)
 
-Une fenêtre s'ouvre alors et permet de saisir la `clé` et la `valeur` de la couleur.
+si apre una finestra che consente di inserire la `chiave' e il `valore' del colore.
 
-La `Clé` correspond à l'identifiant qui va être attribué à la variable couleur.
+La `Chave' è l'identificatore che verrà assegnato alla variabile colore.
 <br>
-La `Valeur` correspond à la valeur que prend la variable couleur, cela doit être soit [un code hexadécimal](https://htmlcolorcodes.com/fr/) soit l'un des [noms d'une couleur](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) soit un code RGB de format RGB(X,X,X).
-Une aide est également disponible directement lors de l'édition.
+Il `Valore` è il valore che assume la variabile colore, che deve essere [un codice esadecimale](https://htmlcolorcodes.com/fr/) o il [nome di un colore](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) oppure un codice RGB nel formato RGB(X,X,X).
+Un aiuto è disponibile durante la modifica.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newColor.PNG)
 
-## Modification de donnée dans la librairie
+## Modifica dei dati della libreria
 
-Pour modifier une donnée dans la libraire de couleur, il faut cliquer directement sur la variable que l'on souhaite modifier.
+PPer modificare i dati nella libreria dei colori, fare clic direttamente sulla variabile che si desidera modificare.
 
-L'interface de modification s'ouvre alors, permettant de saisir une nouvelle `clé` ainsi qu'une nouvelle `valeur`.
+A questo punto si apre l'interfaccia di modifica, che consente di inserire una nuova `chiave` e un nuovo `valore`.
 
+## Uso dei colori della libreria in una synapp
 
-## Utilisation des couleurs de la librairie dans une synapp
+Esistono due metodi per utilizzare i dati di una libreria all'interno di un synapp:
 
-Il y a deux méthodes pour utiliser une donnée issue d'une librairie au sein d'une synapp :
-
->- Accès grâce aux [liaisons](binding.md).
->- Accès via les [scripts](scripts/index.md).
+>- Attraverso un collegamento [liaisons](binding.md).
+>- Attraverso uno [scripts](scripts/index.md).
 >
 >[⚡ Synapps.Synapp.html#colors]({{ site.baseurl }}/script-api/Synapps.Synapp.html#colors){:target="_blank"}
 
 
->Les variables sont stockés sous format JSON avec la syntaxe suivante pour chaque couleur :
+>Le variabili sono memorizzate in formato JSON con la seguente sintassi per ogni colore:
 >
->`"clé"` : `"valeur"`
+>`"Chiave"` : `"valore"`
 >
-> Le JSON est directement éditable depuis l'interface.
+> il file JSON può essere modificato direttamente all'interno dell'interfaccia.
