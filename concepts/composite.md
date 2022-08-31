@@ -1,113 +1,109 @@
 ---
-title: "Composite"
-parent: Concepts
+title: "Compositi"
+parent: Concetti
 ---
 
 {% include table_of_content.html %}
 
-# Composite
+# Composito
 
-La solution permet de définir de nouveaux acteurs en réunissant et programmant d'autres acteurs. Ainsi assemblés ils forment ce qu'on appelle un *composite*.
+Raggruppando e programmando gli attori esistenti, Synapp Studio permette di creare nuovi attori. I nuovi attori cosi assemblati, formano quello che viene definito un *composito*.
 
-A la manière du jeu de lego où plusieurs pièces peuvent s’assembler pour en former une nouvelle, plus riche mais tout aussi simple à utiliser que les autres.
+I compositi sono riutilizzabili e possono essere condivisi tra gli utenti.
+Synapp Studio contiene un insieme di compositi che viene continuamente arricchito.
 
-Les composites sont réutilisables et partageables entre installateur.
-La solution contient un panel de composite qui est enrichi continuellement.
-
-> C’est une des forces majeures de la solution.
-
-Un composite est utilisable dans toutes les scènes et même dans un autre composite.
+Un composito può essere utilizzato in qualsiasi scena e anche all'interno di un altro composito.
 
  ![Composites](../assets/composite-actors.png)
 
-## Défini une fois, utilisable partout
+## Impostato una volta, utilizzabile ovunque
 
-Le composite permet de regrouper un ensemble d'acteur pour qu'il soit démultiplié dans vos scènes. Il est défini qu'une seule fois. Par conséquent, si vous réaliser un changement sur la défintion d'un composite, il sera répercuté sur toutes ses instances.
+Come detto, un composito è costituito da 2 o più attori per creare una nuova funzionalità o rappresentazione e può essere utilizzato all'infinito nelle scene. Pertanto, se si apporta una modifica alla definizione di un composito, questa si rifletterà su tutte le sue istanze.
 
-Imaginons que nous ayons à présenter un fond de plan. En superposition, une dizaine de blocs illustrent les zones de températures. Chacun d’eux est composé d’une icône de thermomètre et d’une valeur avec son unité, reliée à une donnée de l’ULI.
-Un composite est créé une seule fois en assemblant quelques acteurs, liaisons et programmation.
-Ensuite, c’est ce composite qui est utilisé comme acteur pour ajouter la dizaine de blocs sur le fond de plan.
-
-
-## Boite noire
-
-Lorsque vous ajoutez une instance de composite dans une scène, vous ne visualisez pas le détail de sa définition dans le plan des acteurs. Il va se comporter exactement comme les autres acteurs. C'est uniquement dans sa définition que vous pouvez accéder à ses "entrailles" et les modifier.
-
-## Propriétés spécifiques
-
-Un composite peut être paramétrable grâce à des propriétés spécifiques, comme n'importe quel acteur. Dans sa définition, il est possible d'ajouter des additionnelles qui vont jouer le rôle de propriété spécifique.
-
-> 💡 **ASTUCE**<br>
-Les valeurs que vous paramétrez dans sa définition serviront de valeurs par défaut pour les instances du composite.
-
-Dans la définition d'un composite, les propriétés spécifiques sont accessibles par liaison ou par script.
-
-## Fournisseur de donnée
-
-Vous pouvez utiliser tous les acteurs dans un composite, sauf lui-même bien sûr. Notamment, vous pouvez utilisez des fournisseurs de données pour accèder aux variables d'un REDY. L'avantage ici est qu'un composite ne s'affiche que lorsque la donnée à récupérer est disponible.
-
-Il est également possible d'utiliser des fournisseurs de variable relative. Ils pouront alors utiliser un fournisseur parent dans les [globaux](./project/global-data-sources.md) ou bien l'obtenir grâce au [contexte de donnée](./context.md).
-
-## Création d'un composite
-
-Rendez-vous dans la section dédiée à la gestion des composites de votre projet ![Composites](../assets/composites.png).
-
-Dans la partie du haut de la section, vous trouverez l'arborescence des composites. Pour en créer un nouveau, cliquez droit sur un dossier et choissisez un modèle de départ.
+Immaginiamo di dover rappresentare una mappa di sfondo. Su di essa sono sovrapposti una decina di blocchi che illustrano le zone di temperatura. Ognuno di questi è composto da un'icona a forma di termometro e da un valore con la sua unità, collegato a un determinato ULI.
+Sarà opportuno creare un unico composito assemblando una volta sola alcuni attori, collegamenti e programmazione.
+Successivamente sarà possibile utilizzare il composito come un attore aggiungendolo dieci volte alla nostra scena.
 
 
-> 💡 **ASTUCE**<br>
-> Nommez bien votre composite. C'est avec ce nom que vous l'identifirez dans la liste des acteurs à utiliser. Prochainement, il sera possible de renseigner un logo.
+## Scatola nera
+
+Quando si aggiunge un'istanza di composito a una scena, il dettaglio della sua definizione non viene visualizzato nella mappa degli attori. Il suo comportamento sarà identico a quello degli altri attori. È solo nella sua definizione che è possibile visualizzare e modificare la sua struttura. 
+
+## Proprietà specifiche
+
+Un composito può essere configurato con proprietà specifiche, come qualsiasi altro attore. Nella sua definizione, è possibile aggiungere dei parametri aggiuntivi svolgeranno il ruolo di proprietà specifiche..
+
+> 💡 **SUGGERIMENTO**<br>
+I valori definiti nel composito serviranno come valori predefiniti per le diverse istanze del composito.
+
+Nella definizione di un composito, le proprietà specifiche sono accessibili tramite collegamento o script.
+
+## Fornitore di dati
+
+In un composito è possibile utilizzare qualsiasi attore, tranne ovviamente se stesso. In particolare, è possibile utilizzare i fornitori di dati per accedere alle variabili di un REDY. Un composito viene visualizzato solo quando i dati da recuperare sono disponibili.
+
+È anche possibile utilizzare fornitori di variabili relative. Si può quindi usare un provider padre nei [[globals]](./project/global-data-sources.md) o ottenerlo dal [data context].(./context.md).
+
+## Creazione di un composito
+
+Accedere alla sezione del progetto dedicata alla gestione dei [Compositi](../assets/composites.png).
+
+Nella parte superiore della sezione si trova l'albero dei compositi. Per crearne uno nuovo, fare clic con il pulsante destro del mouse su una cartella e scegliere un modello di partenza.
+
+
+> 💡 **CONSIGLIO**<br>
+> Assegnare al proprio composito un nome parlante. In questo modo lo si riconoscerà facilmente nell'elenco degli attori. Prossimamente, sarà possibile inserire un logo.
 >
-> De la même manière, donnez une clé explicite à votre composite. Il sera plus facile aussi d'identifier votre instance de composite dans les scènes même si vous gardez la clé générée automatiquement.
+> Allo stesso modo, dare al composito una chiave esplicita. Sarà anche più facile identificare l'istanza del composito nelle scene, anche se si conserva la chiave generata automaticamente.
 
 
-Ensuite, vous verrez que la définition d'un composite est très semblable de celle d'une scène.
+la definizione di un composito è molto simile a quella di una scena.
 
-## Gestion des composites
+## Gestione dei compositi
 
-Vous pouvez gérer les composites d'un projet exactement comme vous pouvez le faire pour les [scènes](./scene.md). Vous pouvez donc ajouter/supprimer des dossiers, ajouter/supprimer des composites, les copier/coller, etc.
+Per gestire i compositi di un progetto si può procedere esattamente come per la gestione delle [scene](./scene.md). È quindi possibile aggiungere/rimuovere cartelle, aggiungere/rimuovere compositi, copiare/incollare, ecc.
 
-# Composites remarquables
+# Compositi di evidenza
 
-Dans ce qui suit, vous trouverez un ensemble de composites remarquables que vous pouvez librement copier/coller dans vos créations.
+Di seguito vengono presentati una serie di compositi degni di nota che è possibile copiare e incollare liberamente nelle proprie creazioni.
 
-## Représentation Bruleur, Vanne, Pompe simple et double
+## Rappresentazione di Bruciatori, Valvole Pompe singole e doppie
 
-Voici 4 composites pour afficher les représentations graphiques :
+Di seguito sono riportati 4 compositi per visualizzare:
 
-- Bruleur
-- Vanne
-- Pompe simple
-- Pompe double
+- Bruciatore
+- Valvola
+- Pompa singola
+- Doppia pompa
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/composites/ressources.gif)
 
 
-### Bruleur
+### Bruciatore
 
 {% include st/composites/burner.md %}
 
-### Vanne
+### Valvola
 
 {% include st/composites/valve.md %}
 
-### Pompe simple
+### Pompa semplice
 
 {% include st/composites/simple-pump.md %}
 
-### Pompe double
+### Pompa doppia
 
 {% include st/composites/dual-pump.md %}
 
-## Planning Hebdomadaire
+## Planning settimanale
 
-Un exemple de composite pour afficher et modifier une ressource Planning Hebdo. Les tailles des cellules sont configurables.
+Un esempio di un composito per visualizzare e modificare una risorsa planning settimanale. Le dimensioni delle celle sono configurabili.
 
-*Compatible tactile !*
+*Compatibile con il touchscreen!*
 
-> ✔️ **CONSEIL**<br>
-> Par défaut, les cellules font `1cmx1cm` pour qu'un doigt puisse y accéder. Si vous désirer un affichage plus
-> petit, choisissez `15px` comme largeur de cellule et laissez `1cm` comme hauteur.
+> ✔️ **CONSIGLIO**<br>
+> Per impostazione predefinita, le celle sono `1cmx1cm` in modo che un dito possa accedervi. Se si desidera una visualizzazione più
+> piccola, scegliere `15px` come larghezza della cella e lasciare `1cm` come altezza.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/composites/planning-hebdo.gif)
 
