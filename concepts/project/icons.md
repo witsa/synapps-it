@@ -83,7 +83,7 @@ Innanzitutto, è necessario posizionare un'immagine nell'angolo in alto a destra
 
 Una volta caricata l'immagine, è possibile generare icone per tutte le dimensioni utilizzando il pulsante sopra l'interfaccia del generatore di icone.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenReady.PNG)
 
 È anche possibile generare l'immagine appropriata per una singola icona utilizzando il pulsante sopra l'interfaccia delle icone.
 
