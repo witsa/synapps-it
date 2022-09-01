@@ -87,4 +87,4 @@ Una volta caricata l'immagine, è possibile generare icone per tutte le dimensio
 
 È anche possibile generare l'immagine appropriata per una singola icona utilizzando il pulsante sopra l'interfaccia delle icone.
 
-![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenready.png)
+![SynApps]( {{ site.baseurl }}/assets/concepts/icons/iconGenReadyV2.PNG)
