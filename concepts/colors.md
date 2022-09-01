@@ -14,7 +14,7 @@ Ogni progetto nasce con una libreria di colori già predisposta.
 
 ##Accesso alla libreria
 
-I colori si trovano nella sezione della libreria a sinistra della finestra di Studio.
+I colori sono accessibili nella sezione 'Biblioteche' a sinistra della finestra di Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
@@ -22,7 +22,7 @@ All'interno di questa sezione si trova l'elenco dei colori disponibili.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
-## Creazione di dati nella libreria
+## Aggiunta di un colore nella libreria
 
 Per creare nuove variabili cromatiche, fare clic sul pulsante Aggiungi in basso a sinistra della finestra.
 
@@ -30,16 +30,16 @@ Per creare nuove variabili cromatiche, fare clic sul pulsante Aggiungi in basso 
 
 si apre una finestra che consente di inserire la `chiave' e il `valore' del colore.
 
-La `Chave' è l'identificatore che verrà assegnato alla variabile colore.
+La `Chave' rappresenta l'identita assegnata alla variabile colore.
 <br>
 Il `Valore` è il valore che assume la variabile colore, che deve essere [un codice esadecimale](https://htmlcolorcodes.com/fr/) o il [nome di un colore](https://developer.mozilla.org/fr/docs/Web/CSS/color_value) oppure un codice RGB nel formato RGB(X,X,X).
 Un aiuto è disponibile durante la modifica.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newColor.PNG)
 
-## Modifica dei dati della libreria
+## Modifica di un colore della libreria
 
-PPer modificare i dati nella libreria dei colori, fare clic direttamente sulla variabile che si desidera modificare.
+Per modificare i dati nella libreria dei colori, fare clic direttamente sulla variabile che si desidera modificare.
 
 A questo punto si apre l'interfaccia di modifica, che consente di inserire una nuova `chiave` e un nuovo `valore`.
 
