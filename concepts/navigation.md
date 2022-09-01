@@ -27,6 +27,6 @@ Il campo [scène](./actor-types/display-screen.md#scene) dell'attore Schermo pu�
 
 Il pulsante di navigazione può essere utilizzato anche per impostare una scena. A tal fine, il Designer vi aiuterà: Selezionare la scena da visualizzare e se questa presenta dei parametri, il designer invita ad aggiungerli effettuare l'impostazione.
 
-### In un attore di scherm0
+### In un attore di schermo
 
 È possibile parametrare una scena visualizzata in un attore Schermo. [vedi qui](./actor-types/display-screen.md#scene)
