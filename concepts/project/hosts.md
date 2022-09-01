@@ -17,7 +17,7 @@ L'host può essere:
 - un REDY-PC
 <!-- - *prossimamente* un server HighWay -->
 
-L'oggetto host è accessibile tramite link e script.
+L'oggetto host è accessibile tramite collegamento e script.
 
 Contiene la [sessione](../session.md) e ne consente la gestione, tramite script.
 
@@ -29,7 +29,7 @@ In un progetto, gli host sono gestiti nella sezione *Progetto/Host*.
 
 ![Hôtes](../../assets/hosts.png)
 
-È possibile definire più host in un progetto, ma uno solo di essi sarà attivo e verrà utilizzato per la visualizzazione nel designer o per l'esecuzione del synapp nel browser.
+È possibile definire più host, ma uno solo di essi sarà attivo nel progetto e verrà utilizzato per la visualizzazione nel designer o per l'esecuzione del synapp nel browser.
 
 Passando da un host ad un'altro, è possibile visualizzare un synapp su REDY diversi o simulare il funzionamento cambiando tipo di utente sullo stesso REDY.
 
@@ -39,7 +39,7 @@ Passando da un host ad un'altro, è possibile visualizzare un synapp su REDY div
 
 ## Creazione di un host
 
-Quando si crea un host, è necessario inserire il dominio e i dati di accesso. Studio sarà poi in grado di utilizzarlo come host attivo per scopi di runtime e di anteprima, se lo si desidera.
+Quando si crea un host, è necessario inserire il dominio e le informazioni necessaro per l'accesso. Studio sarà poi in grado di usare l'host attivo per scopi di runtime e di anteprima, se lo si desidera.
 
 ## Informazioni
 
