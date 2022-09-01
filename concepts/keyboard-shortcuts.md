@@ -1,22 +1,22 @@
 ---
-title: "Raccourcis clavier"
-parent: Concepts
+title: "Tasti di scelta rapida"
+parent: Concetti
 ---
 
 
-# Liste des raccourcis clavier
+# Elenco dei tasti di scelta rapida
 
-| Contexte | Raccourci | Description |
+| Contesto | Tasti | Descrizione |
 | -------- | --------- | ----------- |
-| | `Ctrl+R` | Exécute la synapp |
-| | `Ctrl+Shift+R` | Exécute la synapp dans le navigateur |
-| | `Ctrl+E` | Affiche le dossier dans l'explorateur *Windows* |
-| | `Ctrl+Q` | Quitte Synapps Studio |
-| Designer | `Ctrl+S` | Sauvegarde les modifications |
-| Designer | `Ctrl+Z` | Annule la dernière modification |
-| Designer | `Ctrl+Shift+Z`, `Ctrl+Y` | Reproduit la modification annulée |
-| Éditeur de texte | `Ctrl+Z` | Annule la dernière saisie |
-| Éditeur de texte | `Ctrl+Shift+Z`, `Ctrl+Y` | Reproduit la saisie annulée |
-| Éditeur de texte | `Ctrl+Shift+F` | Formate le contenu |
-| Éditeur de texte | `Ctrl+S` | Sauvegarde le contenu |
-| Éditeur de texte | `Ctrl+P` | Ouvre le panneau de commande de l'Éditeur de texte |
+| | `Ctrl+R` | Esegue il synapp |
+| | `Ctrl+Shift+R` | Esegue il syap nel navigatore |
+| | `Ctrl+E` | Visualizza la cartella in Esplora risorse *Windows* |
+| | `Ctrl+Q` | Esce da Synapps Studio |
+| Designer | `Ctrl+S` | Salva le modifiche |
+| Designer | `Ctrl+Z` | Annulla l'ultima modifica |
+| Designer | `Ctrl+Shift+Z`, `Ctrl+Y` | Ripristina la modifica annullata |
+| Éditeur de texte | `Ctrl+Z` | Annulla l'ultimo inserimento |
+| Éditeur de texte | `Ctrl+Shift+Z`, `Ctrl+Y` | Ripristina l'inserimento annullato |
+| Éditeur de texte | `Ctrl+Shift+F` | Formatta contenuto |
+| Éditeur de texte | `Ctrl+S` | Salva contenuto |
+| Éditeur de texte | `Ctrl+P` | Apri il pannello di controllo dell'Editor di testo |
