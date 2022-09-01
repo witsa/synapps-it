@@ -11,7 +11,7 @@ La libreria delle costanti consente di memorizzare delle stringhe per poterle ut
 
 ## Accesso alla libreria
 
-Le costanti si trovano nella sezione Libreria sulla sinistra della finestra di Studio.
+Le costanti si trovano nella sezione Biblioteche sulla sinistra della finestra di Studio.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/library.PNG)
 
@@ -20,7 +20,7 @@ In questa sezione si trova l'elenco delle costanti disponibili.
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/libraryList.PNG)
 
 
-## Creazione di dati nella libreria
+## Creazione una costante nella libreria
 
 Per creare nuove costanti, fare clic sul pulsante Aggiungi in basso a sinistra della finestra.
 
@@ -34,7 +34,7 @@ Il `Valore' è il valore che assume la costante, che deve essere una stringa o u
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/libraries/newConstant.PNG)
 
-## Modifica dei dati nella libreria
+## Modifica di una costante nella libreria
 
 Per modificare i dati nella libreria delle costanti, fare clic direttamente sulla costante che si desidera modificare.
 
