@@ -1,5 +1,5 @@
 ---
-title: "Aggiuntivo"
+title: "Parametri Aggiuntivi"
 parent: Concetti
 nav_order: 7
 ---
