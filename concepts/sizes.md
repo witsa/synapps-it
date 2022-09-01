@@ -1,40 +1,40 @@
 ---
-title: "Tailles"
-parent: Concepts
+title: "Taglie e dimensioni"
+parent: Concetti
 ---
 
 {% include table_of_content.html %}
 
-# Tailles
+# Taglie e dimensioni
 
-Les propriétés de type tailles dans Synapps prennent comme valeur les tailles CSS. Ici, vous aurez un aperçu des différentes unités de grandeur et instructions utiles pour vos créations.
+Le proprietà di tipo Taglia pendono come valore le dimensoni CSS. In questa sezione troverete una panoramica delle diverse unità di misura e le istruzioni necessarie per il loro utilizzo nelle vostre creazioni.
 
-## Grandeurs et unités
+## Grandezze e unità di misura
 
-Une grandeur de type taille a toujours une unité. L'unité la plus connue est le pixel `px`. Mais il en existe bien d'autres que Studio reconnaît.
+Una grandezza di tipo taglia ha sempre un'unità. L'unità più nota è il pixel `px`. Ma ce ne sono molti altri che Studio riconosce.
 
-Il y a d'abord les unités de tailles fixes :
-- le pixel `px`,
-- le centimètre `cm`,
-- le pouce `in`.
+Innanzitutto, esistono unità di dimensioni fisse:
+- il pixel `px`,
+- il centimetro `cm`,
+- il pollice `in`.
 
-Ensuite il y a les unités relatives à la taille du texte :
-- le `em`,
-- le `rem`,
-- le `ch`.
+Poi ci sono le unità relative alle dimensioni del testo:
+- la `em`,
+- il `rem`,
+- il `ch`.
 
-Et enfin les unités relative à la taille du conteneur, de l'équipement ou bien de la fenêtre du navigateur :
-- le pourcentage `%`,
+E infine le unità di misura relative alle dimensioni del contenitore, dell'apparecchiatura o della finestra del browser:
+- la percentuale `%`,
 - `vw`,
 - `vh`,
 - `vmin`,
-- `vmax`,
+- `vmax`.
 
-### Le pixel `px`
+### Il pixel `px`
 
-Le pixel est une unité fixe, c'est à dire que pour un appareil et une échelle donnée, le pixel a toujours la même taille. C'est une unité facile à employer.
+Il pixel è un'unità fissa, il che significa che per un determinato formato e scala, il pixel ha sempre la stessa dimensione. È un'unità facile da usare.
 
-> 💡 **ASTUCE**<br>
+> 💡 **CONSIGLIO**<br>
 > Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout-canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout-view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
 
 Le pixel est défini comme étant le plus petit élément de l'écran mais suffisamment grand pour être visible.
