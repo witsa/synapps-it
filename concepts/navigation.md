@@ -7,26 +7,26 @@ parent: Concetti
 
 ## Navigazione semplice
 
-La synapp, lorsqu'elle démarre, affiche la scène de départ.
+Quando eseguita, la synapp visualizza la scena principale.
 
-Si votre synapp contient plusieurs scènes, vous pouvez naviguer entre elles simplement en utilisant des [acteurs boutons de navigation](./actor-types/input-nav-button.md).
+Se il synapp contiene diverse scene, si può navigare tra di esse semplicemente usando l'[attore Pulsante di navigazione](./actor-types/input-nav-button.md).
 
 ![SynApps](../assets/scenes-nav.png)
 
-> 📌 **REMARQUE**<br>
-Vous pouvez aussi naviguer par script. [⚡ `synapp.navigate(sceneKey,sceneParams)`]({{ site.baseurl }}/script-api/Synapps.Synapp.html#navigate){:target="_blank"}
+> 📌 **NOTA**<br>
+E' possibile navigare grazie ad uno script. [⚡ `synapp.navigate(sceneKey,sceneParams)`]({{ site.baseurl }}/script-api/Synapps.Synapp.html#navigate){:target="_blank"}
 
-## Navigation dans un acteur écran
+## Navigazione in un attore Schermo
 
-Si votre scène contient un [acteur écran](./actor-types/display-screen.md), vous pouvez le faire afficher une autre scène aussi grâce à un [acteur bouton de navigation](./actor-types/input-nav-button.md) en lui spécifiant le nom de l'acteur écran considéré.
+Se la scena contiene un [attore schermo](./actor-types/display-screen.md), è possibile fargli visualizzare un'altra scena grazie a un [attore Pulsante di navicazione](./actor-types/input-nav-button.md) specificando il nome dell'attore Schermo in questione.
 
-> 📌 **REMARQUE**<br>
-Le champ [scène](./actor-types/display-screen.md#scene) de l'acteur écran peut être défini manuelle par liaison ou par script.
+> 📌 **NOTA**<br>
+Il campo [scène](./actor-types/display-screen.md#scene) dell'attore Schermo può essere definito manualmente tramite collegamento o tramite script.
 
 ## Navigation paramétrée
 
-Un bouton de navigation peut également servir à paramètrer une scène. Pour cela, le designer vous aidera : Sélectionner la scène à afficher, si elle possède des paramètres, le designer vous invitera à les ajouter pour en faire le réglage.
+Il pulsante di navigazione può essere utilizzato anche per impostare una scena. A tal fine, il Designer vi aiuterà: Selezionare la scena da visualizzare e se questa presenta dei parametri, il designer invita ad aggiungerli effettuare l'impostazione.
 
-### Dans un acteur écran
+### In un attore di scherm0
 
-Il est possible de paramétrer une scène visualisée dans un acteur écran. [voir ici](./actor-types/display-screen.md#scene)
+È possibile parametrare una scena visualizzata in un attore Schermo. [vedi qui](./actor-types/display-screen.md#scene)
