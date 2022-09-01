@@ -15,8 +15,8 @@ parent: Concetti
 | Designer | `Ctrl+S` | Salva le modifiche |
 | Designer | `Ctrl+Z` | Annulla l'ultima modifica |
 | Designer | `Ctrl+Shift+Z`, `Ctrl+Y` | Ripristina la modifica annullata |
-| Éditeur de texte | `Ctrl+Z` | Annulla l'ultimo inserimento |
-| Éditeur de texte | `Ctrl+Shift+Z`, `Ctrl+Y` | Ripristina l'inserimento annullato |
-| Éditeur de texte | `Ctrl+Shift+F` | Formatta contenuto |
-| Éditeur de texte | `Ctrl+S` | Salva contenuto |
-| Éditeur de texte | `Ctrl+P` | Apri il pannello di controllo dell'Editor di testo |
+| Editor di testo | `Ctrl+Z` | Annulla l'ultimo inserimento |
+| Editor di testo | `Ctrl+Shift+Z`, `Ctrl+Y` | Ripristina l'inserimento annullato |
+| Editor di testo | `Ctrl+Shift+F` | Formatta contenuto |
+| Editor di testo | `Ctrl+S` | Salva contenuto |
+| Editor di testo | `Ctrl+P` | Apri il pannello di controllo dell'Editor di testo |
