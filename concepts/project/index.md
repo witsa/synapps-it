@@ -9,7 +9,7 @@ nav_order: 1
 
 # Il progetto
 
-Il progetto è l'insieme degli elementi che permettono la realizzazione di un synapp. Il progetto è materializzato da una cartella nel file system. Contiene tutti i file di configurazione del synapp, le definizioni delle scene, dei compositi, delle librerie, delle immagini, ecc.
+Il progetto è l'insieme degli elementi che permettono la realizzazione di un synapp. Il progetto è materializzato da una cartella nel file system che contiene tutti i file di configurazione del synapp, le definizioni delle scene, dei compositi, delle librerie, delle immagini, ecc.
 
 ![Répertoire de projet](../../assets/quick-start/first-project/03.png)
 
@@ -65,8 +65,8 @@ Nella sezione *Stile globale* è possibile definire il colore di sfondo e il col
 
 ## Hosts
 
-Nella sottosezione [hosts] (./hosts.md), si possono definire le ULI a cui collegarsi per costruire il proprio synapp.
-È anche in questa sezione che si può pubblicare il proprio synapp in una ULI.
+Nella sottosezione [Hosts] (./hosts.md), si possono definire le ULI a cui collegarsi per costruire il proprio synapp.
+In questa pagina è anche possibile pubblicare il proprio synapp in una ULI.
 
 ## Fornitori di dati
 
@@ -87,12 +87,12 @@ Questa sottosezione consente di compilare e leggere le informazioni essenziali s
 
 > In ogni modello di progetto, il *readme* fornisce gli elementi importanti che lo caratterizzano e spiega come personalizzarlo.
 
-Il *readme* è scritto nel linguaggio `markdown` in un editor incorporato molto facile da usare. [Per ulteriori informazioni, consultare il sito] (https://fr.wikipedia.org/wiki/Markdown)
+Il *readme* è scritto nel linguaggio `markdown` in un editor incorporato molto facile da usare. [Per ulteriori informazioni, consultare il sito](https://fr.wikipedia.org/wiki/Markdown)
 
 # Esecuzione del progetto
 
-Dal menu **Esegui** è possibile il synapp in una cartella (`Ctrl+R`).
-È anche possibile eseguire il proprio synapp nel browser (`Ctrl+Shift+R`).
+Il menu **Esegui** permette di avviare in una cartella (`Ctrl+R`).
+È inoltre possibile eseguire il synapp nel browser (`Ctrl+Shift+R`).
 
 ## Cambiare l'host
 
@@ -104,4 +104,4 @@ Ad esempio, creando diversi host che puntano allo stesso REDY ma con utenti dive
 
 Se si è dichiarato che il proprio synapp supporta diverse lingue è è possibile cambiare la lingua utilizzata dal menu che si trova nella fascia blu nella parte bassa dell'interfaccia di Studio.
 
-È inoltre possibile cambiare questa lingua in qualsiasi momento nel *menu di Esegui*.
+È inoltre possibile cambiare la lingua in qualsiasi momento nel menu *Esegui*.
