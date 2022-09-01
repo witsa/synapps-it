@@ -1,11 +1,11 @@
 ---
-title: "Navigation"
-parent: Concepts
+title: "Navigazione"
+parent: Concetti
 ---
 
-# La navigation dans une synapp
+# La navigazione in un synapp
 
-## Navigation simple
+## Navigazione semplice
 
 La synapp, lorsqu'elle démarre, affiche la scène de départ.
 
