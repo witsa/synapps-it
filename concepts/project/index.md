@@ -43,7 +43,6 @@ Per visualizzare la cartella di progetto aperta, è sufficiente fare clic sul pu
 La sezione *Progetto* di Synapps Studio consente di definire gli elementi essenziali per l'esecuzione e la costruzione dell'applicazione.
 
 ## Generale
-
 Nella sezione *Generale* della sezione *Progetto* è possibile definire gli elementi essenziali del progetto.
 
 ### Nome del progetto
@@ -91,7 +90,7 @@ Il *readme* è scritto nel linguaggio `markdown` in un editor incorporato molto 
 
 # Esecuzione del progetto
 
-Il menu **Esegui** permette di avviare in una cartella (`Ctrl+R`).
+Il menu **Esegui** permette di avviare il synapp in una cartella (`Ctrl+R`).
 È inoltre possibile eseguire il synapp nel browser (`Ctrl+Shift+R`).
 
 ## Cambiare l'host
