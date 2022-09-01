@@ -14,7 +14,7 @@ Studio consente di creare un nuovo progetto synapp a partire da modelli predefin
 
 - Predefinito: Perfetto per iniziare un progetto quasi da zero.
 - Tablet / Desktop: Per iniziare con un modello di synapp adattato alla visualizzazione su tablet e PC.<br>Un menu di navigazione è posizionato a sinistra e il contenuto principale in un attore [Schermo](../actor-types/display-screen.md) al centro.
-- Smartphone: Per iniziare un modello adattato alla visualizzazione su smartphone.<br>Un menu di navigazione a scomparsa è posizionato a sinistra e il contenuto principale in un attore [schermo](../actor-types/display-screen.md) a pagina intera. Le dimensioni del testo e dei pulsanti sono adattate alle caratteristiche degli smartphone.
+- Smartphone: Per iniziare un modello adattato alla visualizzazione su smartphone.<br>Un menu di navigazione a scomparsa è posizionato a sinistra e il contenuto principale in un attore [Schermo](../actor-types/display-screen.md) a pagina intera. Le dimensioni del testo e dei pulsanti sono adattate alle caratteristiche degli smartphone.
 - 3 parti: utilizzabile su tablet e PC, questo modello synapp è suddiviso in un menu di navigazione a sinistra, una sezione centrale di contenuti principali e una sezione a destra di contenuti secondari..
 - 1 view : La nuova applicazione operativa che utilizza i riflessi e gli insiemi definiti nel REDY.
 
