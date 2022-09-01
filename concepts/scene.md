@@ -1,110 +1,111 @@
 ---
-title: "Scène"
-parent: Concepts
+title: "La Scena"
+parent: Concetti
 nav_order: 3
 ---
 {% include table_of_content.html %}
 
 
-La scène est l'objet qui va définir chaque interface de votre synapp.
+La scena è l'oggetto di synapp che contiene gli altri oggetti del progetto e definisce il layout dell'interfaccia visualizzata.
 
-# Scène de démarrage
-La synapp démarre en affichant une première scène, c'est la **scène de démarrage**. Elle se définie au niveau de la liste des scènes dans Studio et elle est matérialisé par la présence de l'icône ![scène de démarrage](../assets/start-scene-icon.png).
+# Scena di avvio
+
+Quando si avvia il synapp, viene visualizzata una prima scena, la **scena di avvio**. È definita nell'elenco delle scene di Studio ed è materializzata dalla presenza dell' icona ![scène de démarrage](../assets/start-scene-icon.png).
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.png)
 
-# Affichage de scène
+# Visualizzazione della scena
 
-Les acteurs [boutons de navigation](./actor-types/input-nav-button.md) permettent de changer la scène présentée par la synapp.
+Gli attori [pulsanti di navigazione](./actor-types/input-nav-button.md) permettono di cambiare la scena presentata dal synapp.
 
-Aussi l'[acteur écran](./actor-types/display-screen.md) permet d'afficher une autre scène au sein d'une scène.
+L'attore [Schermo](./actor-types/display-screen.md) permette di visualizzare un'altra scena all'interno di una scena.
 
-Bien entendu, il est possible de commander les affichages de scènes par liaison ou script.
+Naturalmente, è possibile controllare la visualizzazione delle scene tramite collegamenti o script.
 
-# Champs d'une scène
+# Campi in una scena
 
-## Clé
+## Chiave
 
-Une scène est identifiée par sa clé. Elle doit être unique dans une synapp.
+Una scena è identificata dalla sua chiave. LA chiave deve essere univoca all'interno di un synapp.
 
-> ✔️ **CONSEIL**<br>
-Il est recommandé de donner définir la clé d'une scène qui correspond à ce qu'elle va afficher.
+> ✔️ **CONSGLIO**<br>
+Si raccomanda di nominare la chiave di una scena in modo che corrisponda a ciò che verrà visualizzato.
 
-## Nom
+## Nome
 
-De manière usuelle dans Studio, une scène est caractérisée par son nom. Il ne faut pas hésiter à bien le choisir pour illustrer ce qu'elle va afficher.
+Normalmente, in Studio, una scena è caratterizzata dal suo nome. Occorre sceglierlo bene per illustrare ciò che verrà visualizzato.
 
-## Exclusion
+## Esclusione
 
-Une scène peut être exclue de la publication dans une ULI. Cette scène ne sera présente que dans votre projet. Ceci peut etre pratique pour définir des scènes de test qui n'ont pas vocation à apparaître dans la synapp définitive.
+Una scena può essere esclusa dalla pubblicazione in una ULI. Questa scena sarà presente solo nel progetto. Può essere utile per definire scene di prova che non appariranno nel synapp finale.
 
-## Paramètres de scène
+## Impostazioni della scena
 
-Il est possible de définir des additionnelles pour paramétrer une scène. [voir les additionnelles](./additionals.md)
-Ces additionnelles sont accessibles par liaison et script, bien entendu.
+È possibile definire componenti aggiuntivi per configurare una scena. [vedi parametri aggiuntivi](./additionals.md)
+Questi componenti aggiuntivi sono ovviamente accessibili tramite collegamento e script
 
-Elles possèdent une option supplémentaire ici : la possibilité d'afficher le paramètre dans l'`URL` du navigateur. Ainsi, il est possible de paramétrer une scène directement depuis son adresse d'accès.
+In questo caso dispongono di un'opzione supplementare: la possibilità di visualizzare il parametro nell'`URL` del browser. In questo modo, è possibile impostare una scena direttamente dal suo indirizzo di accesso.
 
-## Les acteurs
+## Attori
 
-Les [acteurs](./actor/index.md) sont les éléments qui vont définir l'interface qu'est une scène. Ils sont définie comme une arborescence en partant d'un seul acteur : l'**acteur principale**.
+Gli [Attori](./actor/index.md) sono gli elementi che definiscono l'interfaccia di una scena. Vengono presentati come una struttura ad albero che parte dall' **attore principale**.
 
 ![SynApps](../assets/scene-actors.png)
 
-# Liste des scène
+# Elenco delle scene
 
-La liste des scène dans Studio est une arborescence de dossier dans lesquels sont rangé les scène du projet.
+L'elenco delle scene in Studio consiste in una struttura ad albero composta da cartelle in cui sono memorizzate le scene del progetto.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/scene/scene-start.png)
 
-La gestion des dossiers et scènes se réalise grace aux actions contenu dans le menu contextuel de chaque élément.
+La gestione delle cartelle e delle scene si effettua attraverso le azioni contenute nel menu contestuale di ciascun elemento.
 
-## Ajouter une scène
+## Aggiunta di una scena
 
-Pour ajouter une scène, il faut réaliser un clic droit sur un dossier pour afficher le menu contextuelle et choisir dans les options d'ajout la scène de base à ajouter.
-Il y a pour l'instant que deux scènes de base : une scène vide et le modèle de scène par défaut.
+Per aggiungere una scena, fare clic con il tasto destro del mouse su una cartella. Il menu contestuale consente di selezionare la scena di base da aggiungere tra le opzioni disponibili.
+Attualmente esistono solo due scene di base: una scena vuota e il modello di scena predefinito.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/scene/new-scene.png)
 
-### Copier/Coller de scène
+### Copia/Incolla della scena
 
-Il est possible de copier dans votre presse papier une scène grâce au menu contextuel.
+È possibile copiare una scena negli appunti utilizzando il menu contestuale.
 
-Ainsi vous pouvez coller cette scène, toujours grâce au menu, n'importe où :
-- dans un dossier de votre projet, elle sera dupliquée
-- dans un autre projet
-- dans un mail pour la partager.
-- dans un fichier pour l'archiver
-- ou, comme ici, en exemple.
+È possibile incollare ovunque questa scena, sempre utilizzando il menu:
+- in una cartella del progetto (verrà duplicata)
+- in un altro progetto
+- in un'e-mail per condividerla.
+- in un file da archiviare
+- o, come in questo caso, come esempio.
 
-> ⚠️ **ATTENTION**<br>
-> Vous copiez uniquement la scène, pas les éléments de librairie qu'elle utilise éventuellement.
+> ⚠️ **ATTENZIONE**<br>
+> Viene copiata solo la scena, non gli elementi della libreria che potrebbe utilizzare.
 
-## Ajouter un dossier
+## Aggiunta di una cartella
 
-De la même manière que les scènes, il est possible d'ajouter un nouveau dossier en affichant le menu du dossier dans lequel on veut l'ajouter.
-Vous trouverez l'action qui permet de changer le nom d'un dossier dans son menu contextuel.
+Come per le scene, è possibile aggiungere una nuova cartella visualizzando il menu della cartella a cui si desidera aggiungerla.
+L'azione che consente di modificare il nome di una cartella si trova nel suo menu contestuale.
 
-# Designer de scène
+# Designer di scena
 
-Dans Studio, lorsque vous cliquer sur une scène dans leur liste, vous afficherez le **designer** de scène. Cette interface vous permet de complètement définir la scène.
+In Studio, quando si fa clic su una scena nell'elenco, viene visualizzato il **Designer** della scena. Questa interfaccia consente di realizzare integralmente la scena.
 
-Dans le designer, vous allez pouvoir gérer les champs de la scène ainsi que l'arborescence d'acteur que la scène présente.
+Nel Designer è possibile gestire i campi della scena e l'albero degli attori che la scena presenta.
 
 ![SynApps](../assets/quick-start/designer-first-steps/02.png)
 
-- Au centre se trouve l'**aperçu** de la scène <span style="color: red;">**A**</span>.
-- En dessous de la liste des scènes, sur la gauche, vous trouverez le **plan des acteurs**  <span style="color: red;">**B**</span>.
-- Sur la gauche s'affiche l'**inspecteur** de l'objet que vous sélectionnerez dans le panneau de gauche  <span style="color: red;">**C**</span>.
+- Al centro viene visualizzata la **struttura** della scena <span style="color: red;">**A**</span>.
+- Sotto l'elenco delle scene, a sinistra, si trova la **mappa degli attori**  <span style="color: red;">**B**</span>.
+- A destra si trova l'**ispettore** dell'oggetto selezionato nel pannello di sinistra.  <span style="color: red;">**C**</span>.
 
-# Scènes remarquables
+# Esempi di Scene
 
-Dans ce qui suit, vous trouverez un ensemble de scènes remarquables que vous pouvez librement copier/coller dans vos créations.
+Di seguito si trovano una serie di scene che potranno essere copiare e incollare liberamente nelle vostre creazioni.
 
-## Hub choix de gabarit
-Voici une scène qui, une fois définie comme départ, permet d'automatiquement naviguer vers une scène faite pour le gabarit Desktop/Tablette ou vers une scène faite pour le gabarit Smartphone du projet. La bonne scène est choisie en fonction de la résolution de l'afficheur et de la présence des fonctions tactiles.
+## Hub scelta del formato
+Ecco una scena che, una volta impostata come scena d'avvio, naviga automaticamente nel progetto verso una scena realizzata per il modello Desktop/Tablet o verso una scena realizzata per il modello Smartphone. La scena corretta viene scelta in base alla risoluzione del display e alla presenza di funzioni touch.
 
-Les scènes cibles sont à définir dans des paramètres de la scène.
+Le scene di destinazione devono essere definite nei parametri della scena.
 
 
 
