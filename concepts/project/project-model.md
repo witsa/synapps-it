@@ -4,7 +4,7 @@ parent: "Progetto"
 grand_parent: Concetti
 ---
 
-# Modèle de projet
+# Modelli di progetto
 
 Lorsque vous créez un nouveau projet, vous devez choisir un modèle à partir duquel démarrer.
 
