@@ -1,6 +1,6 @@
 ---
-title: "Affichage | Ecran"
-parent: "Types d'acteur"
+title: "Visualizzazione | Schermo"
+parent: "Elenco attori"
 grand_parent: Concepts
 ---
 
@@ -8,13 +8,13 @@ grand_parent: Concepts
 
 {% include links_actor.md apiClass="Actor.Display.Screen" %}
 
-# Écran
+# Schermo
 
-Acteur qui permet d'afficher une autre scène.
+Attore che permette la visualizzazione di qualsiasi scena
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.display_screen_properties | sort: 'order' %}
 
@@ -24,19 +24,20 @@ Acteur qui permet d'afficher une autre scène.
 
 {% endfor %}
 
-## Dépassement de contenu
+## Superamento
 
 {% include property_overflow.md %}
 
 > ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_screen/showHide.PNG)
 
-La valeur par défaut est **Défilement**
+Il valore predefinito è **Automatico**
 
-# Champ d'information
+# Campo d'informazione
 
-## Scène affichée
-La scène affichée par l'acteur écran est stockée dans la propriété `displayedScene` disponible par liaison et par script.
+## Scena visualizzata
 
-# évènements spécifiques
+La scena visualizzata dall'attore Schermo è memorizzata nella proprietà `displayedScene` disponibile via collegamento o script.
 
-> 🚧 en cours de rédaction...
+# Eventi specifici
+
+> 🚧 in fase di redazione ... 
