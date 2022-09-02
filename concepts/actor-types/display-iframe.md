@@ -1,20 +1,18 @@
 ---
-title: "Affichage | IFrame"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Visualizzazione | IFrame"
+parent: "Tipologie di attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Iframe" %}
 
 # IFrame
 
-L'acteur Iframe permet d'intégrer une page web dans votre scène.
-
-La définition de l'URL est **jokerable**.
+L'attore Iframe consente di incorporare una pagina web nella scena.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.display_iframe_properties | sort: 'order' %}
 
@@ -24,53 +22,56 @@ La définition de l'URL est **jokerable**.
 
 {% endfor %}
 
-## Autoriser les scripts
+## Autorizzare gli script
 
-Cette propriété permet d'activer ou de désactiver le JavaScript du site web chargé par l'iFrame.
+Questa proprietà consente di attivare o disattivare il JavaScript del sito web caricato dall'iFrame.
+
 ## Traiter comme même origine
 
-Cette propriété permet de d'autoriser que le site web affiché de même origine soit considéré de la sorte.
+Questa proprietà permette di autorizzare come tali i siti web visualizzati della stessa origine.
 
-Si cette propriété est désactivée, les ressources du site d'origine seront donc inaccessible pour l'iFrame alors même qu'il est vraiment sur la même origine. De plus, le site à l'intérieur de l'iFrame aura une origine 'null' ce qui peut empêcher certaines requêtes et limiter certains accès.
+Se questa proprietà è disabilitata, le risorse del sito di origine saranno inaccessibili all'iFrame, anche se questo si trova sulla stessa origine. Inoltre, il sito all'interno dell'iFrame avrà un'origine "nulla" che potrebbe impedire alcune richieste e limitare alcuni accessi.
 
-*Pour en apprendre plus sur les origines et leurs fonctionnements :*
-La documentation MDN peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/Security/Same-origin_policy).
-## Autoriser les modales
+*Per saperne di più sulle origini e sul loro funzionamento:*
+La documentazione MDN è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/Security/Same-origin_policy).
 
-Cette propriété permet d'activer / désactiver toute les alertes systèmes qui pourraient survenir à la suite d'une action dans l'iFrame.
-## Autoriser les popups
+## Autorizza i modali
 
-Cette propriété permet d'activer / désactiver les popups lors de la navigation dans le site web de l'iFrame.
+Questa proprietà consente di attivare/disattivare tutti gli avvisi di sistema che possono verificarsi in seguito a un'azione nell'iFrame.
 
-> 📌 **REMARQUE**<br>
-> Cela peut avoir pour effet de désactiver certains formulaires de connexion.
+## Autorizza i popup
 
-## Autoriser les formulaires
+Questa proprietà consente di abilitare/disabilitare i popup durante la navigazione nel sito web dell'iFrame.
 
-Cette propriété permet d'activer / désactiver les formulaires lors de la navigation dans la Synapp.
+> 📌 **NOTA**<br>
+> Questo potrebbe comportare la disattivazione di alcuni moduli di accesso.
 
+## Autorizzare i formes
 
->⚠️ **ATTENTION**<br>
-> Si l'on désactive cette option, il ne sera plus possible d'utiliser les formulaires de connexion, les formulaires de contact, etc ...
+Questa proprietà consente di abilitare/disabilitare i formulari durante la navigazione nel Synapp.
 
 
-# Champs d'informations
+>⚠️ **ATTENZIONE**<br>
+> Se si disattiva questa opzione, non sarà possibile utilizzare i moduli di login, di contatto, ecc...
 
-## Contenu complété
+
+# Campi d'informazione
+
+## Contenuto completato
 
 {% include field_completed_content.md %}
 
-# Quelques exemples
+# Alcuni esempi
 
-## iframe vers REDY
+## iframe verso REDY
 
 <div class="code-example" markdown="1">
 
-Voici un exemple d'iFrame qui montre une page du REDY.
+Ecco un esempio di iFrame che mostra una pagina di un REDY.
 
 ![SynApps](../../assets/concepts/actor/display_iframe/iframe01.png)
 
-L'additionnelle *Chemin REDY* permet de définir le chemin vers la page, depuis la racine du REDY (ici, on affiche le tableau de bord).
+Il campo aggiuntivo *Chemin REDY* permette di definire il path verso la pagina, dalla radice del REDY (in questo caso viene visualizzato il Dashboard).
 
 </div>
 
