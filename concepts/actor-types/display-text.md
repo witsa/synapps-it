@@ -6,15 +6,15 @@ grand_parent: Concetti
 
 {% include links_actor.md apiClass="Actor.Display.Text" %}
 
-# Texte
+# Testo
 
-Acteur de base pour afficher du texte.
+Attore con funzione di visualizzazione del testo.
 
 {% include table_of_content.html %}
 
-Son contenu est **jokerable**.
+Il testo da visualizzare piò contenere stringhe **Jolly**.
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.display_text_properties | sort: 'order' %}
 
@@ -24,8 +24,8 @@ Son contenu est **jokerable**.
 
 {% endfor %}
 
-# Champs d'informations
+# Campi d'informazione
 
-## Contenu complété
+## Contenuto completato
 
 {% include field_completed_content.md %}
