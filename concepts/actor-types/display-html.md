@@ -1,16 +1,16 @@
 ---
-title: "Affichage | HTML"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Visualizzazione | HTML"
+parent: "Attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Html" %}
 
 # HTML
 
-L'acteur HTML permet d'intégrer du code HTML et CSS dans votre scène.
+L'attore HTML consente di incorporare codice HTML e CSS nella scena.
 
-C'est un acteur très pratique pour mettre en forme du texte, ou ajouter des classe CSS par exemple.
+È un attore molto utile ad esempio per la formattazione del testo o l'aggiunta di classi CSS.
 
 {% include table_of_content.html %}
 
