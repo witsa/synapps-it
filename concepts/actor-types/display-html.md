@@ -1,6 +1,6 @@
 ---
 title: "Visualizzazione | HTML"
-parent: "Attori"
+parent: "Tipologie di attori"
 grand_parent: Concetti
 ---
 
