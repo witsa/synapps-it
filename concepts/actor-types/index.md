@@ -1,6 +1,6 @@
 ---
-title: "Types d'acteur"
-parent: Concepts
+title: "Tipologie di attori"
+parent: Concetti
 has_children: true
 nav_order: 5
 ---
@@ -11,42 +11,41 @@ nav_order: 5
 
 {% include table_of_content.html %}
 
-# Types d'acteur
+# Tipologie di attori
 
-Chaque acteur possède un type qui va déterminer son comportement, sa spécificité.
+Ogni attore appartiene ad una tipologia che ne determina le caratteristiche e il comportamento.
 
-## Les Catégories d'acteur
+## Categorie di attori
 
-Les types d'acteur sont regroupés en catégorie.
+I tipi di attore sono raggruppati in categorie.
 
-- **Disposition**
+- **Layout**
 
-Les acteurs de disposition permettent d'agencer les autres acteurs et de construire l'arborescence.
+Gli attori di tipo Layout servono a organizzare in maniera ottimale gli altri attori all'interno dello schermo e a costruire la loro struttura gerarchica.
 
-Leur différentes spécificités permettent d'épouser toutes les possibilités de disposition d'interface
+Le loro caratteristiche specifiche consentono la realizzazione delle interfacce in tutte le possibili varianti di layout.
 
-Les acteurs de disposition forment le squelette de la scène et leur *imbrication* est un *principe de base* de Synapps. C'est ce qui permet de s'adapter au mode de fonctionnement des navigateurs et permet l'adaptabilité de l'interface à tout type de taille d'écran.
+Gli attori di Layout costituiscono lo scheletro della scena e la loro *nidificazione* è un *principio base* di Synapps. Questo è ciò che permette in particolare di adattarsi al funzionamento dei browser e di adattare l'interfaccia a qualsiasi tipo di dimensione dello schermo.
 
-- **Affichage**
+- **Visualizzazione**
 
-Les acteurs d'affichage sont dédiés à la présentation d'information ou même de scène.
+Gli attori di tipo Visualizzazione sono dedicati alla presentazione di informazioni o di scene.
 
-- **Interaction**
+- **Interazione**
 
-L'utilisateur va pouvoir interagir avec les acteurs d'interaction comme les boutons ou les zones de saisie.
+L'utente potrà utilizzare gli attori di interazione, come i pulsanti o i campi di input.
 
-- **Charts**
+- **Grafici**
 
-Ces acteurs sont dédiés à la représentation graphique de donnée. Pour l'instant, il en existe qu'un seul : la jauge.
+Questi attori sono dedicati alla rappresentazione grafica dei dati..
 
-- **Composites**
-
-Les composites sont des acteurs que vous pouvez créer à partir d'autres acteurs. Voir la partie dédiée aux [composites](./composite.md).
+- **Compositi**
+I compositi sono attori che si possono creare a partire da altri attori. Si veda la sezione dedicata ai [compositi](./composite.md).
 
 - **REDY**
 
-Les acteurs REDY sont disponibles dans un projet de synapp pour REDY et présente les interfaces et composant dédié à cette plateforme.
+Gli attori REDY sono disponibili in un progetto synapp dedicato a REDY e presentano le interfacce e i componenti specifici per questa piattaforma.
 
 <!-- - **HighWay**
 
-> A venir... -->
+> Prossimamente... -->
