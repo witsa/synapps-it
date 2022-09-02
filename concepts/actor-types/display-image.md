@@ -1,7 +1,7 @@
 ---
 title: "Visualizzazione | Immagine"
 parent: "Elenco attori"
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Image" %}
