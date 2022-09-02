@@ -1,6 +1,6 @@
 ---
-title: "Affichage | Image"
-parent: "Types d'acteur"
+title: "Visualizzazione | Immagine"
+parent: "Elenco attori"
 grand_parent: Concepts
 ---
 
