@@ -6,16 +6,16 @@ grand_parent: Concetti
 
 {% include links_actor.md apiClass="Actor.Input.ButtonList" %}
 
-# Liste de bouton
+# Elenco di pulsanti
 
-Liste de boutons pour faire un choix simple. La liste est construite dynamiquement à partir d'une liste d'[options](#options).
+Elenco di pulsanti per effettuare una scelta semplice. L'elenco viene costruito dinamicamente da un elenco di [opzioni](#options).
 
-**NOTE**
-Il n'est pas possible de sélectionner plusieurs boutons en même temps.
+**NOTA**
+LA scelta multipla non è consentita.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.input_button_list_properties | sort: 'order' %}
 
@@ -25,12 +25,12 @@ Il n'est pas possible de sélectionner plusieurs boutons en même temps.
 
 {% endfor %}
 
-# Informations
+# Informazioni
 
-## Texte sélectionné
-> 🚧 en cours de rédaction...
+## Testo selezionato
+> 🚧 in fase di redazione …
 
 
-# Évènements spécifiques
+# Eventi specifici
 
-> 🚧 en cours de rédaction...
+> 🚧 in fase di redazione …
