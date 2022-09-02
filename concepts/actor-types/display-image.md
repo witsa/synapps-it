@@ -8,11 +8,11 @@ grand_parent: Concepts
 
 # Image
 
-Un acteur qui permet d'afficher une image.
+Si tratta di un attore che consente di visualizzare un'immagine.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.display_picture_properties | sort: 'order' %}
 
