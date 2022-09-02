@@ -1,7 +1,7 @@
 ---
-title: "Interaction | Liste de bouton"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Elenco di pulsanti"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.ButtonList" %}
