@@ -1,5 +1,5 @@
 ---
-title: "Tipologie di attori"
+title: "Elenco attori"
 parent: Concetti
 has_children: true
 nav_order: 5
