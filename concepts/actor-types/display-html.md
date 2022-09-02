@@ -14,9 +14,7 @@ L'attore HTML consente di incorporare codice HTML e CSS nella scena.
 
 {% include table_of_content.html %}
 
-Son contenu est **jokerable**.
-
-## Propriétés spécifiques
+## Proprietà specifiche
 
 {% assign sorted = site.display_html_properties | sort: 'order' %}
 
@@ -26,16 +24,16 @@ Son contenu est **jokerable**.
 
 {% endfor %}
 
-# Champs d'informations
+# Campi informazione
 
-## Contenu complété
+## Contenuto completato
 
 {% include field_completed_content.md %}
 
-# Variantes
+# Varianti
 
-## Icône
+## Icone
 
-Une variante de l'acteur HTML offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+Una variante dell'attore HTML che offre la possibilità di inserire un'icona scelta tra quelle integrate in Synapps.
 
-Le contenu de l'acteur est complété par une additionnelle *icône*.
+Il contenuto dell'attore è completato da un parametro addizionale *icona*.
