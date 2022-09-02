@@ -35,92 +35,91 @@ E infine le unità di misura relative alle dimensioni del contenitore, dell'appa
 Il pixel è un'unità fissa, il che significa che per un determinato formato e scala, il pixel ha sempre la stessa dimensione. È un'unità facile da usare.
 
 > 💡 **CONSIGLIO**<br>
-> Toujours employer cette unité lors de montage d'acteurs qui se chevauchent comme les constructions de plan ou des dessins précis dans un acteur [Toile](./actor-types/layout-canvas.md). Ensuite, laisser faire un acteur [Boite à vue](./actor-types/layout-view-box.md) pour que l'ensemble s'adapte à n'importe quelle taille.
+> In genere si utilizza questa unità di misura all'interno di un attore [Canvas](./actor-types/layout-canvas.md) quando si gestiscono attori e/o immagini che si sovrappongono per creare uno sfondo o un disegno preciso . Una volta raggiunto l'obiettivo desiderato lasciate che sia un attore [Box di visualizzazione](./actor-types/layout-view-box.md) a gestire l'adattamento dell'insieme a qualsiasi dimensione di schermo.
 
-Le pixel est défini comme étant le plus petit élément de l'écran mais suffisamment grand pour être visible.
+Il pixel è definito come l'elemento più piccolo sullo schermo che è abbastanza grande da essere visibile.
 
-### Le centimètre `cm` et le pouce `in`
+### Centimetri `cm` e pollici `in`
 
-Le centimètre et le pouce sont proches des unités réelles tant que l'écran est suffisamment grand.
-Il sont très pratiques pour définir des tailles *organique*. Par exemple, pour s'assurer qu'un objet soit *touchable*, il est possible de lui donner une taille supérieure à `1cm`.
+Il centimetro e il pollice rappresentano unità di misura prossime alle dimensioni reali, a condizione che lo schermo sia sufficientemente grande.
+Sono molto utili per definire le dimensioni *organiche*. Ad esempio, per garantire che un oggetto sia *toccabile*, è sufficiente attribuire ad esso una dimensione superiore a `1cm`.
 
-> ⚠️ **ATTENTION**<br>
-> Le `cm` d'un écran de petite taille peut être plus petit qu'un vrai centimètre.
+> ⚠️ **ATTENZIONE**<br>
+> Il `cm` di un piccolo schermo può risultare più piccolo di un centimetro reale.
 
 
-### Le `em`
+### L'`em`
 
-`1em` fait la taille du texte de l'acteur. Rappelons que la taille du texte est une propriété héritée.
-Ainsi, si votre acteur a une taille de texte définie à `15px`, `1em` représente `15px`.
-Si le un acteur parent (de disposition, ou un composite, ...) a défini sa taille de texte à `30px`, `1em` représentera `30px` pour tous les acteurs enfants.
+`1em` è la dimensione del testo dell'attore. Occorre ricordare che la dimensione del testo è una proprietà ereditata.
+Quindi, se l'attore ha una dimensione del testo impostata a `15px`, `1em` rappresenta `15px`.
+Se l'attore padre (di un Layout, o di un Composito, ...) ha impostato la dimensione del testo a `30px`, `1em` rappresenterà `30px` per tutti gli attori figli.
 
 Cette unité est très pratique pour définir une taille de texte de référence tout en haut de votre arborescence d'acteurs et de définir des tailles relatives en dessous.
 Exemple:
 
-Imaginons que vous ayez l'arborescence suivante :
-- Acteur racine (Taille de texte : `20px`)
-  - Acteur A
-  - Acteur B (taille de texte : `2em`)
-    - Acteur 1 (taille de texte : `0.5em`)
-    - Acteur 2
-    - Acteur 3 (taille de texte : `1.5em`)
+Supponiamo di avere la seguente struttura ad albero:
+- Attore principale (dimensione del testo: `20px`)
+  - Attore A
+  - Attore B (dimensione del testo: `2em`)
+    - Attore 1 (dimensione del testo: `0,5em`)
+    - Attore 2
+    - Attore 3 (dimensione del testo: `1.5em`)
 
-Cela va se traduire effectivement par les tailles suivantes :
-- Acteur racine (Taille de texte : `20px`)
-  - Acteur A
-  - Acteur B (taille de texte *calculée* : `40px`)
-    - Acteur 1 (taille de texte *calculée* : `20px`)
-    - Acteur 2
-    - Acteur 3 (taille de texte *calculée* : `60px`)
+In questo modo si otterranno le seguenti dimensioni:
+- Attore principale (dimensione del testo: `20px`)
+  - Attore A
+  - Attore B (dimensione del testo *calcolata*: `40px`)
+    - Attore 1 (dimensione del testo *calcolata*: `20px`)
+    - Attore 2
+    - Attore 3 (dimensione del testo *calcolata*: `60px`)
 
-Si vous changez la taille de l'acteur racine, automatiquement, les autres acteurs suivent sans changer leur réglage.
+Se si modifica la taglia dell'attore radice, gli altri attori si adeguano automaticamente senza modificare le loro impostazioni.
 
 ![SynApps](../assets/concepts/sizes/sample-em.gif)
 
 
-> 💡 **ASTUCE**<br>
-> La démarche de renseigner quelques tailles en racine de votre interface et de définir les propriétés qui héritent en `em` est très pratique. Cela fait gagner un temps précieux pour ajuster les tailles et réaliser des modifications globales.
+> 💡 **CONSIGLIO**<br>
+> È molto utile definere delle grandezze nella radice della propria interfaccia per poi impostare le proprietà che ereditano in `em`. Si risparmia tempo prezioso quando si regolano le dimensioni e si apportano modifiche globali..
 
-### Le `rem`
+### Il `rem`
 
-L'unité `rem` est sensiblement la même que `em`. La seule différence est que la taille de référence est celle de la taille du texte définie sur le *corps* de la page `HTML` (son `body`). Dans Synapps, vous n'avez pas directement accès au réglage de cette taille qui est de 12px`. Mais il est possible de la changer par script ou par CSS.
+L'unità di misura `rem` è essenzialmente uguale a `em`. L'unica differenza è che la dimensione di riferimento è la dimensione del testo definita nel *corpo* della pagina `HTML. In Synapps, non si ha accesso diretto all'impostazione di questa dimensione, che è 12px. Ma è possibile modificarlo tramite script o CSS.
 
-### Le pourcentage `%`
+### La percentuale `%`
 
-Cette unité est le pourcentage de la grandeur du contenant. Elle n'est pas toujours facile à utiliser. En effet, il est parfois difficile de savoir de quelle dimension du contenant la référence est prise : la largeur ou la hauteur. En générale, lorsqu'il s'agit d'une grandeur verticale, la référence est prise sur la hauteur du contenant. Lorsqu'il s'agit d'une grandeur horizontale, la référence est la largeur du contenant. Si c'est vrai pour la hauteur, la largeur, la taille de texte, ce n'est pas vrai pour les marges intérieures et extérieures.
+Questa unità è la percentuale della taglia del contenitore. Non è sempre facile da usare. Infatti, a volte è difficile sapere da quale taglia del contenitore viene preso il riferimento: dalla larghezza o dall'altezza. In generale, quando si tratta di una dimensione verticale, il riferimento è preso dall'altezza del contenitore. Quando si tratta di una dimensione orizzontale, il riferimento è la larghezza del contenitore. Questo vale per l'altezza, la larghezza e la dimensione del testo, ma non per i margini interni ed esterni.
 
-### Le `vh` et le `vw`
+### Il `vh` e il `vw`
 
-Le `vh` est un pourcentage de la hauteur de la fenêtre de navigateur ou de l'écran pour un appareil nomade.
-Le `vw` est un pourcentage de la largeur de la fenêtre de navigateur ou de l'écran pour un appareil nomade.
+Il valore `vh` è una percentuale dell'altezza della finestra o dello schermo del browser per un dispositivo mobile.
+Il valore `vw` è una percentuale della larghezza della finestra o dello schermo del browser per un dispositivo mobile.
 
-Ainsi, un acteur qui fait `50vh` de hauteur et `33vw` de largeur fait la moitié de la fenêtre en largeur et le tier en hauteur.
+Quindi, un attore di `50vh` in altezza e `33vw` in larghezza è la metà della finestra in larghezza e un terzo in altezza.
 
-Ces deux unités permette de commencer à définir des tailles qui sont liées aux caractéristiques de la fenêtre ou écran.
+Queste due unità ci permettono di iniziare a definire le dimensioni in relazione alle caratteristiche della finestra o dello schermo.
 
-### Le `vmin` et le `vmax`
+### Il `vmin` e il `vmax`
 
-Le `vmin` est un pourcentage de la taille de la dimension de l'écran la plus petite des deux. C'est à dire, pour un écran plus large que haut, ce sera en pourcentage de la hauteur.
+Il valore `vmin' è una percentuale della dimensione più piccola delle due dimensioni dello schermo. Cioè, per uno schermo più largo che alto, sarà una percentuale dell'altezza.
 
-Le `vmax` est un pourcentage de la taille de la dimension de l'écran la plus grande des deux. C'est à dire, pour un écran plus large que haut, ce sera en pourcentage de la largeur.
+Il valore `vmax` è una percentuale della dimensione maggiore delle due dimensioni dello schermo. Cioè, per uno schermo più largo che alto, sarà una percentuale della larghezza.
 
-Ces deux unités s'avèrent être encore plus pratiques que les deux précédentes sur les appareils nomades notamment. En effet, quelque soit l'orientation de l'écran, si vous définissez une taille en `vmin` ou `vmax`, elle restera inchangée !
-Ainsi, vous pouvez définir des tailles de texte en `vmin` afin de vous assurez de sa lisibilité, quelque-soit l'orientation.
-
+Queste due unità sono ancora più funzionali delle precedenti, in particolare sui dispositivi mobili. Infatti, qualunque sia l'orientamento dello schermo, se si definisce una dimensione in `vmin` o `vmax`, questa rimarrà invariata!
+È quindi possibile impostare le dimensioni del testo in `vmin` per garantire la leggibilità, indipendentemente dall'orientamento.
 
 ![SynApps](../assets/concepts/sizes/sample-vmin.gif)
 
-## Instructions
+## Impostazioni automatiche
 
-Les propriétés de type *tailles* prennent aussi comme valeur des instructions. Elles ont des conséquences très variables en fonctions des cas.
+Le proprietà di tipo *Taglia* possono assumere come valore anche delle impostazioni automatiche. Il comportamento è molto variabili a seconda dei casi.
 
-- chaîne vide : en général, c'est une valeur par défaut qui neutralise la propriété.
-- `auto` : indique que le comportement doit être automatique. C'est la valeur neutre de la hauteur minimum par exemple.
-- `none` : indique que le comportement ne doit pas tenir compte de cette dimension. C'est la valeur par défaut de la hauteur maximum par exemple.
-- `inherit` : indique que la taille doit être héritée de l'ascendance de l'acteur.
+- stringa vuota: in generale, si tratta di un valore predefinito che disattiva la proprietà.
+- `auto`: indica che il comportamento deve essere automatico. Questo è il valore neutro per l'altezza minima, ad esempio.
+- `none`: indica che il comportamento non deve tenere conto di questa dimensione. Questo è il valore predefinito per l'altezza massima, ad esempio.
+- `inherit`: indica che la dimensione deve essere ereditata dal padre dell'attore.
 
-Les instructions suivantes ne sont pas reconnu encore par Studio mais sont fonctionnelles dans une synapp sur les propriétés *Hauteur* et *Largeur*:
+Le seguenti impostazioni non sono ancora riconosciute da Studio, ma sono funzionanti in in un synapp sulle proprietà *altezza* e *larghezza*:
 
-- `fit-content` : indique que l'acteur doit s'ajuster à son contenu.
-- `min-content` : indique que l'acteur doit s'ajuster à son plus petit élément.
-- `max-content` : indique que l'acteur doit s'ajuster à son plus grand élément.
+- `fit-content` : indica che l'attore deve adattarsi al suo contenuto.
+- `min-content` : indica che l'attore deve adattarsi all'elemento più piccolo.
+- `max-content` : indica che l'attore deve adattarsi all'elemento più grande.
