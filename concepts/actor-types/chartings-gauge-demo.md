@@ -1,35 +1,35 @@
 ---
-title: "Charts | Jauge"
-parent: "Types d'acteur"
+title: "Grafici | Indicatore"
+parent: "Tipologie di attori"
 grand_parent: Concepts
 ---
 
 {% include links_actor.md apiClass="Actor.Charting.GaugeDemo" %}
 
-# Jauge
+# Indicatore di valore
 
 ![SynApps](../../assets/concepts/actor/charting_gauge/gauge.png)
 
-L'acteur jauge permet de représenter graphiquement par un arc de cercle coloré, une valeur dans un intervalle.
+L'attore Indicatore viene utilizzato per rappresentare graficamente un valore in un intervallo mediante un arco colorato.
 
 {% include table_of_content.html %}
 
-## Personnalisation
+## Personalizzazione
 
-E' possibile personalizzare cambiando i colori
-- de l'aiguille
-- de l'arc avant l'aiguille
-- de l'arc après l'aiguille.
-La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc et sont étendue angulaire.
+E' possibile personalizzare la propria immagine cambiando i colori
+- dell' ago
+- dell'arco prima dell'ago
+- dell'arco dopo l'ago.
+La personalizzazione va oltre, consentendo di definire lo spessore dell'arco e la sua estensione angolare.
 
-## Quelques recommandations
+## Alcune raccomandazioni
 
-- Ne sortez pas la valeur de l'intervalle définie par les bornes sous peine de dysfonctionnement de la jauge.
-- Fixez sa largeur et sa hauteur pour éviter les problèmes de redimensionnement. Éventuellement, placez la ensuite dans une [Boite à vue](./layout-view-box.md).
+- Non uscire dall'intervallo definito dai limiti, altrimenti l'indicatore non funzionerà correttamente.
+- Fissare la larghezza e l'altezza per evitare problemi di ridimensionamento. Se necessario, posizionarlo successivamente in un [Box di visualizzazione](./layout-view-box.md).
 
-## Quelques exemples
+## Qualche esempio
 
-### Jauge épaisse sans aiguille
+### Indicatore spesso senza agoe
 
 <div class="code-example" markdown="1">
 
@@ -40,7 +40,7 @@ La personnalisation va plus loin en permettant de définir l'épaisseur de l'arc
 SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo1","properties":{"height":"200px","width":"350px","gaugeColor":"rgba(224, 224, 224, 0)","gaugeStartColor":"rgba(4, 207, 4, 1)","gaugeWidth":10}}
 ```
 
-### Jauge annulaire fine sans aiguille
+### Indicatore ad anello fine senza ago
 
 <div class="code-example" markdown="1">
 
@@ -51,13 +51,13 @@ SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo1","properti
 SYNAPPS-STUDIO-ACTOR|{"type":"charting/gauge-demo","key":"gauge-demo2","properties":{"height":"200px","width":"350px","gaugeColor":"rgba(224, 224, 224, 0)","gaugeStartColor":"rgba(207, 92, 4, 1)","gaugeWidth":1,"gaugeBackgroundColor":"rgba(194, 194, 194, 0)","gaugeAngle":360,"gaugeValue":80}}
 ```
 
-### Jauge annulaire fine sans aiguille avec un texte à l'intérieur
+### Indicatore ad anello fine senza ago con testo all'interno
 
 <div class="code-example" markdown="1">
 
 ![SynApps](../../assets/concepts/actor/charting_gauge/gauge03.gif)
 
-Vous noterez que le texte reste bien centré et contenu dans la jauge grâce à une boite à vue avec des marges intérieures
+Si noterà che il testo rimane ben centrato e contenuto nell'indicatore grazie a un riquadro di visualizzazione con margini interni.
 </div>
 
 ```
