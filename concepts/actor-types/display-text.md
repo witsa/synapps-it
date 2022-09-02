@@ -1,7 +1,7 @@
 ---
-title: "Affichage | Texte"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Visualizzazione | Testo"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Display.Text" %}
