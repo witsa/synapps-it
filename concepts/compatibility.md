@@ -24,7 +24,7 @@ Per i dispositivi mobili le versioni in tabella rappresentano la versione minima
 
 | Système    | Version |
 |------------|---------|
-| Android    | *Oreo* 8.0 |
+| Android    | *Oreo* 8.0 (o 6.0.1 se è possibile aggiornare chrome a >60) |
 | iOS        | 11.3    |
 
 
