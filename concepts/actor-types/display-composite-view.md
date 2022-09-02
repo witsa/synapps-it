@@ -1,6 +1,6 @@
 ---
 title: "Visualizzazione | Selezionatore composito"
-parent: "Tipologie di attori"
+parent: "Elenco attori"
 grand_parent: Concetti
 ---
 
