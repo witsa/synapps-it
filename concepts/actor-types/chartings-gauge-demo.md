@@ -1,7 +1,7 @@
 ---
 title: "Grafici | Indicatore"
 parent: "Tipologie di attori"
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Charting.GaugeDemo" %}
