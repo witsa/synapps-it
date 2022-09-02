@@ -1,20 +1,20 @@
 ---
-title: "Affichage | Vue de composite"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Visualizzazione | Selezionatore composito"
+parent: "Tipologie di attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Display.CompositeView" %}
 
-# Vue de composite
+# Selezionatore composito
 
-Cet acteur permet d'afficher un composite de manière dynamique.
+Questo attore permette di rappresentare un composito in modo dinamico.
 
-La propriété *Composite* permet de choisir parmi les composites définis dans le projet celui qu'on désire afficher.
+La proprietà *Tipo di composito* consente di scegliere il composito che si desidera visualizzare tra quelli definiti nel progetto
 
-Le composite en question est affiché avec ses propriétés par défaut.
+Il composito in questione viene visualizzato con le sue proprietà predefinite..
 
-> 💡 **ASTUCE**<br>
-> Si vous désirez passer des informations au composite, il faut utiliser le [ruissellement de contexte de donnée](../context.md).
+> 💡 **CONSIGLIO**<br>
+> Se si vogliono passare informazioni al composito, si deve usare il  [ruissellement de contexte de donnée](../context.md).
 
-Il faut considérer cet acteur comme un "outil" pour dynamiquement, en fonction de données d'une liaison, ou bien par script, afficher le bon composite.
+Questo attore deve essere visto come uno "strumento" per visualizzare dinamicamente, in base ai dati di un collegamento o tramite script, il composito corretto.
