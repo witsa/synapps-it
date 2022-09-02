@@ -26,7 +26,7 @@ L'attore Iframe consente di incorporare una pagina web nella scena.
 
 Questa proprietà consente di attivare o disattivare il JavaScript del sito web caricato dall'iFrame.
 
-## Traiter comme même origine
+## Trattare come stessa origine
 
 Questa proprietà permette di autorizzare come tali i siti web visualizzati della stessa origine.
 
