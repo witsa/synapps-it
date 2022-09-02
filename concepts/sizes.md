@@ -7,7 +7,7 @@ parent: Concetti
 
 # Taglie e dimensioni
 
-Le proprietà di tipo Taglia pendono come valore le dimensoni CSS. In questa sezione troverete una panoramica delle diverse unità di misura e le istruzioni necessarie per il loro utilizzo nelle vostre creazioni.
+Le proprietà di tipo Taglia possono assumere come valore le dimensoni CSS. In questa sezione troverete una panoramica delle diverse unità di misura e le istruzioni necessarie per il loro utilizzo all'interno di un progetto Synapp Studio.
 
 ## Grandezze e unità di misura
 
