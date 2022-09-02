@@ -1,20 +1,20 @@
 ---
-title: "Interaction | Bouton"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Pulsante"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in fase di redazione …
 
 {% include links_actor.md apiClass="Actor.Input.Button" %}
 
-# Bouton
+# Pulsante
 
-Acteur bouton poussoir.
+Attore Pulsante.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiches
 
 {% assign sorted = site.input_button_properties | sort: 'order' %}
 
@@ -24,7 +24,7 @@ Acteur bouton poussoir.
 
 {% endfor %}
 
-# Champs d'informations
+# Campi d'informazione
 
 ## Est Pressé ?
 
