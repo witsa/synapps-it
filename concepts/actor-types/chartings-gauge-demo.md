@@ -1,6 +1,6 @@
 ---
 title: "Grafici | Indicatore"
-parent: "Tipologie di attori"
+parent: "Elenco attori"
 grand_parent: Concetti
 ---
 
