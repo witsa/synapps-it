@@ -1,8 +1,8 @@
 ---
 title: "Visualizzazione | Schermo"
 parent: "Elenco attori"
-grand_parent: Concepts
----
+grand_parent: Concetti
+--.
 
 > 🚧 en cours de rédaction...
 
