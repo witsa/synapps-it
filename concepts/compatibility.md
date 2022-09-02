@@ -24,7 +24,7 @@ Per i dispositivi mobili le versioni in tabella rappresentano la versione minima
 
 | Système    | Version |
 |------------|---------|
-| Android    | *Marshmallow* 6.0.1 |
+| Android    | *Oreo* 8.0 |
 | iOS        | 11.3    |
 
 
