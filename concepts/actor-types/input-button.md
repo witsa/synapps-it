@@ -26,22 +26,22 @@ Attore Pulsante.
 
 # Campi d'informazione
 
-## Est Pressé ?
+## Premuto?
 
-Le champ d'information *Est pressé?* est un booléen qui est `true` lorsque le bouton est pressé et repasse à `false` lorsque le bouton est relâché, après un petit délai de relaxation.
+Il campo informativo *Premuto?* è un booleano che è `true` quando il pulsante è premuto e ritorna a `false` quando il pulsante viene rilasciato.
 
-## Contenu complété
+## Contenuto Completato
 
 {% include field_completed_content.md %}
 
-# Évènements spécifiques
+# Elementi Specifici
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso...
 
-# Variantes
+# Varianti
 
-## Icône
+## Icona
 
-La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
+La variante del pulsante attore offre la possibilità di aggiungere un'icona scelta tra quelle disponibili in Synapps.
 
-Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.
+Il contenuto del pulsante è completato da una *icona* e da un *testo* aggiuntivi.
