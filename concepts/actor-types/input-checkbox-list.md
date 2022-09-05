@@ -1,27 +1,27 @@
 ---
-title: "Interaction | Liste de Cases à cocher"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Elenco di caselle di controllo"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.CheckboxList" %}
 
-# Liste de cases à cocher
+# Elenco di caselle di controllo
 
-Acteur d'interaction qui permet d'afficher une liste de cases à cocher. Cette liste peut être une arborescence. L'acteur possède deux modes de sélection : simple et multiple.
+Attore di interazione che visualizza un elenco di caselle di controllo. Questo elenco può essere una struttura ad albero. L'attore dispone di due modalità di selezione: semplice e multipla.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Sélection
+## Selezione
 
-La propriété *Sélection* est une chaîne `JSON` qui contient la liste des valeurs sélectionnées. Dans le cas de la sélection simple, la liste ne contient qu'une seule valeur à la fois.
+La proprietà *Selezione* è una stringa `JSON` che contiene l'elenco dei valori selezionati. Nel caso l'opzione  `Scelta multipla` sia disattivata, è possibile l'attivazione di una sola scelta alla volta.
 
-Exemples en multi sélection:
+Esempi di multiselezione:
 
 <div class="code-example" markdown="1">
-les options 1 et 2 sont sélectionnées
+sono selezionate le opzioni 1 e 2
 </div>
 
 ```json
@@ -29,7 +29,7 @@ les options 1 et 2 sont sélectionnées
 ```
 
 <div class="code-example" markdown="1">
-Aucune valeur n'est sélectionnée :
+Nessun valore selezionato :
 </div>
 
 ```json
@@ -37,37 +37,37 @@ Aucune valeur n'est sélectionnée :
 ```
 
 <div class="code-example" markdown="1">
-Si la propriété *Tout est la valeur vide?* est activée, toutes les options sont sélectionnées :
+Se la proprietà *Tutto è un valore vuoto* è selezionata, tutte le opzioni sono selezionate:
 </div>
 
 ```json
 null
 ```
 
-En mode de sélection simple, le format de la sélection reste le meme.
+In modalità di selezione singola, il formato della selezione rimane invariato.
 
-Par exemple : `["value1"]` ou bien `[]`.
+Ad esempio: `["value1"]` ou bien `[]`.
 
-## Multi sélection
-La propriété *Multi sélection?* permet de définir si l'acteur est en mode sélection multiple ou non.
+## Selezione multipla
+La proprietà *Selezione multipla?* definisce se l'attore è in modalità di selezione multipla o meno.
 
-Dans le cas de la multi sélection, la propriété *Avec l'option Tout* permet de définir si l'option "Tout" est présente dans la liste. La propriété *Texte pour Tout* permet de définir le texte qui s'affiche dans l'option "Tout".
+In caso di multiselezione, la proprietà *Con opzione tutti* definisce se la scelta "Tutti" è presente nell'elenco. La proprietà *Testo per Tutto* consente di definire il testo che viene visualizzato nell'opzione "Tutto".
 
-## Les options
+## Le opzioni
 
-La propriété *Options* est une chaîne `JSON` qui contient un tableau d' options.
+La proprietà *Opzioni* è una stringa `JSON` che definisce l'insieme delle scelte possibili.
 
-Une option est un object `JSON` qui possède les propriétés suivantes :
+Ogni scelta dell'elenco è un oggetto `JSON` che ha le seguenti proprietà:
 
 | CHAMPS | DESCRIPTION | PAR DÉFAUT |
 |--------|-------------|------------|
-| `value` | La valeur de l'option. C'est son identifiant unique dans la liste. De préférence, la valeur est une chaîne de caractères. | - |
-| `text` | Le texte qui s'affiche à coté de la case à cocher. | - |
-| `disabled` | Indique si l'option doit apparaître désactivée. | `false` |
-| `options` | Un tableau d'options qui sera affiché sous la case à cocher pour fabriquer une arborescence. | `null` |
-| `collapsed` | Indique si la case à cocher doit enrouler ses options éventuelles. | `false` |
+| `value` | Il valore dell'opzione. Questo è il suo identificatore unico nell'elenco. Il valore è una stringa di caratteri. | - |
+| `text` | Il testo che appare accanto alla casella di controllo. | - |
+| `disabled` | Indica se l'opzione deve apparire disabilitata. | `false` |
+| `options` | Una serie di opzioni che verranno visualizzate sotto la casella di controllo per creare una struttura ad albero. | `null` |
+| `collapsed` | Indica se la casella di controllo deve nasconder o meno le sue sotto scelte. | `false` |
 
-Exemple :
+Esempio :
 
 <div class="code-example" markdown="1">
 
@@ -126,34 +126,33 @@ Exemple :
 ]
 ```
 
-## État de validation
+## Stato di malidazione
 
 {% include property_validation.md %}
 
-## Taille
+## Taglie
 
 {% include property_size.md %}
 
-# Champs d'information
+# Champi d'nformazione
+I seguenti campi di informazione sono molto utili per creare collegamenti o script, in quanto le proprietà dell'attore sono spesso stringhe JSON.
 
-Les champs d'information suivants sont très utiles pour réaliser des liaisons ou dans les scripts dans la mesure ou les propriétés de l'acteur ici sont souvent des chaines JSON.
+## Valore e valori
 
-## Valeur et Valeurs
+In modalità di selezione singola, il campo informativo *Valore* contiene semplicemente il valore selezionato. In modalità multiselezione, il campo informativo *Valori* contiene l'elenco dei valori selezionati in forma di array `Javascript`.
 
-En mode sélection simple, le champ d'information *Valeur* contient simplement la valeur sélectionnée. Dans le mode multi sélection, le champ d'information *Valeurs* contient la liste des valeurs sélectionnées sous forme de tableau `Javascript`.
+## Testo e Testi
 
-## Texte et Textes
+Come per i valori, il campo informativo *Testo* e *Testio* contiene rispettivamente il testo selezionato e la tabella dei testi selezionati.
 
-De la même manière que pour les valeurs, le champ d'information *Texte* et  *Textes* contient respectivement le texte sélectionné et le tableau des textes sélectionnés.
+## Tabella delle opzioni
 
-## Liste des options
+L'elenco delle opzioni è accessibile nel campo informativo *Tabella delle opzioni*..
 
-Le tableau des options est accessible dans le champ d'information *Liste des options*.
-
-# Événements
+# Eventi
 
 ## `onSelected`
 
-L'évènement `onSelected` est déclenché lorsque la sélection change.
+L'evento `onSelected` viene attivato quando la selezione cambia.
 
 > [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.CheckboxList.html#event:onSelected){:target="_blank"}
