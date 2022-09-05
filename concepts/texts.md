@@ -1,9 +1,9 @@
 ---
-title: "Librairie de textes [TODO]"
-parent: Concepts
+title: "Libreria testi [TODO]"
+parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 In corso di redazione ...
 
 ![SynApps](../assets/under-progress.gif)
 
