@@ -1,18 +1,18 @@
 ---
-title: "Interaction | Curseur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione| Cursore"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso di redazione...
 
 {% include links_actor.md apiClass="Actor.Input.Cursor" %}
 
-# Curseur
+# Cursore
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.input_cursor_properties | sort: 'order' %}
 
@@ -22,10 +22,10 @@ grand_parent: Concepts
 
 {% endfor %}
 
-# Informations
+# Informazioni
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso di redazione...
 
-# Évènements spécifiques
+# Elementi specifici
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso di redazione...
