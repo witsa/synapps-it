@@ -1,73 +1,73 @@
 ---
-title: "Interaction | Périodes"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Periodi"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.Period" %}
 
-# Périodes
+# Periodi
 
-L'acteur *Période* propose une sélection de périodes types et expose les bornes de date correspondantes à la période sélectionnée.
+L'attore *Periodi* presenta una selezione di periodi tipici ed espone i limiti delle date corrispondenti al periodo selezionato.
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_period/sample01.gif)
 
-L'acteur *Période* a beaucoup de similitudes avec l'acteur [*Liste de boutons*](./input-button-list.md) et propose la plupart de ses propriétés (*En ligne?*, *Taille*, *Mode*, ...).
+L'attore *Periodi* ha molte somiglianze con l'attore [*Elenco di pulsanti*] (./input-button-list.md) e possiede la maggior parte delle sue proprietà (*In riga*, *Dimensione*, *Modalità*, ...).
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Sélection
+## Selezione
 
-La propriété `Selection` reflète la valeur sélectionnée en cours.
+La proprietà `Selezione` riflette il valore correntemente selezionato.
 
-La valeur attendue est la `value` de l'une des périodes de l'acteur parmi :
+I valori possibilie sono rappresentati da uno dei tra :
 
 | - | - | - |
-| `all` | Tout |
-| `today` | Aujourd'hui |
-| `last24` | Dernières 24H |
-| `week` | Semaine en cours |
-| `weekprevious` | Semaine dernière |
-| `month` | Mois en cours |
-| `monthprevious` | Mois dernier |
-| `year` | Année en cours |
-| `yearprevious` | Année dernière |
+| `all` | Tutto |
+| `today` | Oggi |
+| `last24` | Ultime 24H |
+| `week` | Settimana in corso |
+| `weekprevious` | Settimana scorsa |
+| `month` | Mese in corso |
+| `monthprevious` | Mese scorso |
+| `year` | Anno in corso |
+| `yearprevious` | Anno scorso |
 
-## Taille
+## Dimensione
 
 {% include property_size.md %}
 
-## Périodes présentes
+## Periodi attuali
 
-Cette propriété permet de définir les périodes présentes et leur ordre d'apparition dans l'acteur sous la forme d'un tableau `JSON` des valeurs possible. Par ex:
+Questa proprietà consente di definire i periodi presenti e il loro ordine di apparizione nell'attore sotto forma di un array `JSON` di possibili valori. Ad esempio:
 ```json
 [ "today", "last24", "week", "weekprevious", "month", "monthprevious", "year", "yearprevious" ]
 ```
 
-# Champs d'information
+# Campi d'iformazione
 
-## Date de début
+## Data di inizio
 
-Ce champ contient la date de début (format ISO) de la période sélectionnée. S'il n'y a pas de période sélectionnée, ou que par définition, elle n'a pas de début, la valeur est `null`.
+Questo campo contiene la data di inizio (formato ISO) del periodo selezionato. Se non è stato selezionato alcun periodo, o se per definizione non ha inizio, il valore è `null`.
 
-## Date de fin
+## Data di fine
 
-Ce champ contient la date de fin (format ISO) de la période sélectionnée. S'il n'y a pas de période sélectionnée, ou que par définition, elle n'a pas de fin, la valeur est `null`.
+Questo campo contiene la data di fine (formato ISO) del periodo selezionato. Se non è stato selezionato alcun periodo, o se per definizione non ha una fine, il valore è `null`.
 
-## Texte sélectionné
+## Testo seezionato
 
-Le champ d'information *Texte sélectionné* contient le texte correspondant à l'option sélectionné.
+Il campo informativo *Testo selezionato* contiene il testo corrispondente all'opzione selezionata.
 
-## Liste des options
+## Elenco delle opzioni
 
-Le tableau des options est accessible dans le champ d'information *Liste des options*.
+La tabella delle opzioni è accessibile nel campo informativo *Elenco delle opzioni*.
 
-# Événements
+# Eventi
 
 ## `onSelected`
 
-L'évènement `onSelected` est déclenché lorsque la sélection change.
+L'evento `onSelected` viene attivato quando la selezione cambia.
 
 > [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.Period.html#event:onSelected){:target="_blank"}
