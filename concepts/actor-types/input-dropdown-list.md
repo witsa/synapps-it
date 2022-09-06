@@ -1,24 +1,24 @@
 ---
-title: "Interaction | Liste de choix déroulante"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Menu a tendina"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.DropdownList" %}
 
-# Liste de choix déroulante
+# Menu a tendina
 
-Acteur d'interaction qui permet d'afficher une liste de choix déroulante.
+AUn attore di interazione che visualizza un menu a tendina contenente una serie di scelte.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Sélection
+## Selezione
 
-La propriété *Sélection* est une chaîne qui la valeur qui correspond au choix dans la liste des options.
+La proprietà *selezione* è una stringa che contiene il valore corrispondente al valore scelto nell'elenco delle opzioni.
 
-Exemples:
+Esempio:
 
 <div class="code-example" markdown="1">
 l'option 1 est sélectionnée :
@@ -28,29 +28,29 @@ l'option 1 est sélectionnée :
 value1
 ```
 
-Aucune valeur n'est sélectionnée si la valeur est une chaîne vide.
+Se il valore è una stringa vuota, nessun valore è selezionato..
 
-## Valeur vide?
+## Valore vuoto?
 
-Un option *vide* peut être ajouté automatiquement en plus de la liste des options. Cela correspond à la valeur `` chaîne vide.
+È possibile aggiungere automaticamente alla lista anche l'opzione *Vuoto*. Corrisponde al valore ``stringa vuota.
 
-Si vous ajouter un texte dans la propriété *Texte pour vide*, il s'affichera dans la listes des options en premier à la place de la chaîne vide.
+Se si inserisce una stringa nella proprietà *Testo per vuoto*, questa verrà visualizzata per prima nell' elenco delle opzioni, al posto della stringa vuota.
 
-Le texte défini dans la propriété *Texte si vide* s'affichera dans l'acteur si rien n'est sélectionné.
+Il testo impostato nella proprietà *Testo se vuoto* verrà visualizzato nell'attore se non viene selezionato nulla.
 
-## Les options
+## Le opzioni
 
-La propriété *Options* est une chaîne `JSON` qui contient un tableau d'options.
+La proprietà *Opzioni* è una stringa `JSON` che definisce l'elenco delle scelte del menu a tendina.
 
-Une option est un object `JSON` qui possède les propriétés suivantes :
+Ogni opzione è un oggetto `JSON` che ha le seguenti proprietà:
 
-| CHAMPS | DESCRIPTION | PAR DÉFAUT |
+| CAMPI | DESCRIZION | IMPOSTAZIONE PREDEFINITA |
 |--------|-------------|------------|
-| `value` | La valeur de l'option. C'est son identifiant unique dans la liste. De préférence, la valeur est une chaîne de caractères. | - |
-| `text` | Le texte qui s'affiche à coté de la case à cocher. | - |
-| `disabled` | Indique si l'option doit apparaître désactivée. | `false` |
+| `value` | Il contenuto della scelta. Si tratta dell'identificativo univoco nell'elenco. Il valore è preferibilmente una stringa. | - |
+| `text` | Il testo che appare nel menu a tendina. | - |
+| `disabled` | Indica se l'opzione deve apparire disabilitata. | `false` |
 
-Exemple :
+Esempio:
 
 <div class="code-example" markdown="1">
 
@@ -76,28 +76,28 @@ Exemple :
 ]
 ```
 
-## État de validation
+## Stato della convalida
 
 {% include property_validation.md %}
 
-## Taille
+## Dimensione
 
 {% include property_size.md %}
 
-# Champs d'information
+# Campi informazione
 
-## Texte sélectionné
+## Testo selezionato
 
-Le champ d'information *Texte sélectionné* contient le texte correspondant à l'option sélectionné.
+Il campo informativo *Testo selezionato* contiene il testo corrispondente all'opzione selezionata.
 
-## Liste des options
+## Elenco delle opzioni
 
-Le tableau des options est accessible dans le champ d'information *Liste des options*.
+La tabella delle opzioni è accessibile nel campo informativo *Elenco delle opzioni*.
 
-# Événements
+# Eventi
 
 ## `onSelected`
 
-L'évènement `onSelected` est déclenché lorsque la sélection change.
+L'evento `onSelected` viene attivato quando la selezione cambia
 
 > [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.DropdownList.html#event:onSelected){:target="_blank"}
