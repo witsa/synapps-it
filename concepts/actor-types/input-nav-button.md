@@ -1,24 +1,24 @@
 ---
-title: "Interaction | Bouton de Navigation"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Bottone di Navigazione"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso di redazione ...
 
 {% include links_actor.md apiClass="Actor.Input.NavButton" %}
 
-# Bouton de Navigation
+# Pulsante di navigazione
 
-L'acteur bouton de navigation permet, en plus de toutes les possibilités de l'[acteur bouton](./input-button.md), de naviguer entre les scènes ainsi que de modifier la scène affichée dans un [acteur écran](./display-screen.md).
+L'attore pulsante di navigazione consente, oltre a tutte le possibilità dell'[attore pulsante](./input-button.md), di navigare tra le scene e di modificare la scena visualizzata in un [attore schermo](./display-screen.md).
 
-Ses propriétés sont similaires aux propriétés de l'acteur bouton et la documentation de ces propriétés peut être retrouvée à [cette adresse](./input-button.md).
+Le sue proprietà sono simili a quelle dell'attore pulsante descritte a [questo indirizzo](./input-button.md)..
 
-Ses propriétés supplémentaires sont listées ci-dessous.
+Le proprietà supplementari sono elencate di seguito.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
 {% assign sorted = site.input_nav_button_properties | sort: 'order' %}
 
@@ -28,14 +28,8 @@ Ses propriétés supplémentaires sont listées ci-dessous.
 
 {% endfor %}
 
-# Évènements spécifiques
+# Eventi specifici
 
 > 🚧 en cours de rédaction...
 
-# Variantes
 
-## Icône
-
-La variante de l'acteur bouton offrant la possibilité d'intégrer une icône choisie parmi les icônes intégrées à Synapps.
-
-Le contenu du bouton est complété par une additionnelle *icône* et une additionnelle *texte*.
