@@ -1,51 +1,50 @@
 ---
-title: "Interaction | Liste de choix"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Elenco di scelte"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.RadioList" %}
 
-# Liste de cases à cocher
+# Elenco di scelte
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_radio_list/sample01.gif)
 
-Acteur d'interaction qui permet d'afficher une liste de cases à cocher. Cette liste peut être une arborescence. L'acteur possède deux modes de sélection : simple et multiple.
+Un attore di interazione che visualizza un elenco di caselle di controllo. Questo elenco può essere una struttura ad albero.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
+## Selezoioen
 
-## Sélection
+La proprietà *selezione* è una stringa che contiene il valore corrispondente alla scelta fatta nell'elenco delle opzioni..
 
-La propriété *Sélection* est une chaîne qui la valeur qui correspond au choix dans la liste des options.
-
-Exemples:
+Esempio:
 
 <div class="code-example" markdown="1">
-l'option 1 est sélectionnée :
+E' stata selezionata l'opzione 1:
 </div>
 
 ```text
 value1
 ```
 
-Aucune valeur n'est sélectionnée si la valeur est une chaîne vide.
+Se il valore è una stringa vuota, non viene selezionato alcun valore.
 
-## Les options
+## Le opzioni
 
-La propriété *Options* est une chaîne `JSON` qui contient un tableau d'options.
+La proprietà *Opzioni* è una stringa `JSON` che contiene la matrice delle opzioni.
 
-Une option est un object `JSON` qui possède les propriétés suivantes :
+Un'opzione è un oggetto `JSON` che ha le seguenti proprietà:
 
-| CHAMPS | DESCRIPTION | PAR DÉFAUT |
+| CAMPI | DESCRIZIONE | IMPOSTAZIONE PREDEFINITA |
 |--------|-------------|------------|
-| `value` | La valeur de l'option. C'est son identifiant unique dans la liste. De préférence, la valeur est une chaîne de caractères. | - |
-| `text` | Le texte qui s'affiche à coté de la case à cocher. | - |
-| `disabled` | Indique si l'option doit apparaître désactivée. | `false` |
+| `value` |  Il valore dell'opzione. Questo è il suo identificatore unico nell'elenco. Di preferenza, il valore è una stringa. | - |
+| `text` | Il testo che appare accanto alla casella di controllo. | - |
+| `disabled` | Indica se l'opzione deve apparire disabilitata. | `false` |
 
-Exemple :
+Esempio:
 
 <div class="code-example" markdown="1">
 
@@ -70,28 +69,28 @@ Exemple :
 ]
 ```
 
-## État de validation
+## Stato della validazione
 
 {% include property_validation.md %}
 
-## Taille
+## Dimensione
 
 {% include property_size.md %}
 
-# Champs d'information
+# Campi d'informazione
 
-## Texte sélectionné
+## Testo selezionato
 
-Le champ d'information *Texte sélectionné* contient le texte correspondant à l'option sélectionné.
+Il campo informativo *Testo selezionato* contiene il testo corrispondente all'opzione selezionata.
 
-## Liste des options
+## lenco delle opzioni
 
-Le tableau des options est accessible dans le champ d'information *Liste des options*.
+La tabella delle opzioni è accessibile nel campo informativo *Elenco delle opzioni*.
 
-# Événements
+# Eventi
 
 ## `onSelected`
 
-L'évènement `onSelected` est déclenché lorsque la sélection change.
+L'evento `onSelected` viene attivato quando la selezione cambia.
 
 > [⚡ `onSelected`]({{ site.baseurl }}/script-api/Actor.Input.RadioList.html#event:onSelected){:target="_blank"}
