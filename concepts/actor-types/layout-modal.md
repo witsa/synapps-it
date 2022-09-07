@@ -1,7 +1,7 @@
 ---
-title: "Disposition | Modale"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Disposizione | Modale"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 
@@ -9,82 +9,82 @@ grand_parent: Concepts
 
 # Modale
 
-Acteur qui permet d'afficher une boite de dialogue ou un menu.
+Attore che consente di visualizzare una finestra di dialogo o un menu.
 
 ![SynApps](../../assets/concepts/actor/modal/sample-01.gif)
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Montrer ?
+## Mostra?
 
-La propriété *Montrer?* permet d'afficher/cacher la modale.
+La proprietà *Mostra?* permette di visualizzare/nascondere la modale.
 
-> 💡 **ASTUCE**<br>
-> Activer cette propriété dans le designer pour apercevoir le contenu de la modale ou pour régler son ancrage.
-
-
-## Ferme si on clique en ailleurs
-
-Cette propriété autorise/interdit la modale de se fermer si l'utilisateur clique en dehors de la modale.
-
-> ⚠️ **ATTENTION**<br>
-> Si vous n'autorisez pas ce comportement, vous avez obligatoirement besoin de définir un bouton pour fermer la modale.
-
-## Overlay transparent
-
-Active/désactive la présence d'un fond transparent opalescent derrière la modale.
+> 💡 **SUGGERIMENTO**<br>
+> Attivare questa proprietà nel designer per visualizzare il contenuto della modale o per regolarne la posizione..
 
 
-## Ancrage de la modale
+## Si chiude se si clicca altrove
 
-Par défaut, la modale va s'afficher au centre de l'écran. Vous pouvez définir un ancrage complètement différent.
+Questa proprietà consente/impedisce la chiusura della finestra modale se l'utente fa clic al di fuori di essa.
 
-Pour ancrer la modale, il y à trois points à observer :
-- *L'acteur attaché :* par défaut, aucun acteur n'est attaché à la modale. Mais si vous en définissez un, la modale se positionnera par rapport à lui.
-- *L'ancrage Horizontal/Vertical de la modale :* ces deux propriétés définissent un point sur la modale qui sera son ancre. C'est ce point qui sera ancré à celui de l'acteur attaché.
-- *L'ancrage Horizontal/Vertical de l'acteur attaché :* ces deux propriétés définissent un point sur l'acteur attaché qui sera son ancre. C'est ce point qui sera ancré à celui de la modale.
+> ⚠️ **ATTENZIONE**<br>
+Se non si consente questo modo di procedere, è necessario definire un pulsante per chiudere la finestra modale.
 
-Dans l'exemple ci dessous, la <span style="color: red;">**modale**</span> est attachée à un <span style="color: green;">**acteur bouton**</span> et son ancre est matérialisé par un cercle rouge, l'ancrage sur le bouton est vert :
+## Sovrapposizione trasparente
+
+Abilita/disabilita la presenza di uno sfondo opalescente trasparente dietro il modale.
+
+
+## Ancoraggio della modale
+
+Per impostazione predefinita, la finestra di dialogo viene visualizzata al centro dello schermo. È possibile definire un ancoraggio completamente diverso.
+
+Per ancorare il modale, ci sono tre punti da osservare:
+- *L'attore collegato:* per impostazione predefinita, nessun attore è collegato alla modale. Ma se se ne definisce uno, la finestra modale si posizionerà in relazione ad esso.
+- *Ancoraggio orizzontale/verticale della modale:* queste due proprietà definiscono un punto della modale che sarà il suo ancoraggio. È questo punto che verrà agganciato a quello dell'attore collegato.
+- *Ancoraggio orizzontale/verticale dell'attore collegato:* queste due proprietà definiscono un punto dell'attore collegato che sarà il suo ancoraggio. È questo punto che verrà ancorato a quello della modale.
+
+Nell'esempio seguente, la <span style="color: red;">**modale**</span> è collegata a un <span style="color: green;">**pulsante**</span> e il suo ancoraggio è materializzato da un cerchio rosso, mentre l'ancoraggio sul pulsante è verde:
 
 ![SynApps](../../assets/concepts/actor/modal/sample-02.gif)
 
 
 
-## Dépassement de contenu
+## Superamento dei contenuti
 
 {% include property_overflow.md %}
 
-La valeur par défaut est **Caché**
+Il valore predefinito è **Nascosto**.
 
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+> ✔️ **CONSIGLIO**<br>
+> Se il contenuto non è visibile, è molto probabile che sia a causa delle dimensioni ridotte dell'attore padre.
 
 
-# Événements
+# Eventi
 
 {% include events_layout.md %}
 
-# Usage
+# Uso
 
-La modale est un acteur de disposition qui n'accepte qu'**un seul enfant**. En général, vous y placerez un empilement qui contiendra l'interface de dialogue.
+Il modale è un attore di layout che accetta solo **un figlio**. In generale, vi si colloca un attore impilamento che contiene l'interfaccia di dialogo.
 
-> ✔️ **CONSEIL**<br>
-> Placez le plus souvent possible vos modales tout en bas de vos arborescence d'acteurs. Cela évitera que leur contenu gène l'affichage des autres acteurs dans le designer.
+> ✔️ **CONSIGLIO**<br>
+> Collocare il più spesso possibile le modali in fondo all'albero degli attori. In questo modo si evita che il loro contenuto interferisca con la visualizzazione di altri attori del designer.
 
-> ⚠️ **ATTENTION**<br>
-> N'oubliez pas de définir une taille pour votre modale. Sinon, elle ne s'affichera pas correctement.
+> ⚠️ **ATTENZIONE**<br>
+> Non dimenticare di impostare una dimensione per la modale altrimenti non verrà visualizzata correttamente.
+.
 
-# Réinitialisation des héritages de propriété
+# Annullamento dell'ereditarietà delle proprietà
 
-L'héritage des propriétés est brisé dans une modale. Il faudra redéfinir ces propriétés à l'intérieure.
+In un modale l'ereditarietà delle proprietà è interrotta. È necessario ridefinire queste proprietà internamente.
 
-Par exemple, si vous définissez une taille de texte de 10px sur l'acteur principal d'une scène, cela ne sera pas appliqué à la modale.
+Ad esempio, se si imposta una dimensione del testo di 10px sull'attore principale di una scena, tale dimensione non verrà applicata alla finestra modale.
 
-
-# Variantes
+# Varianti
 
 ## Modale au clic
 
-Cette variante de modale est préconfigurée pour indiquer l'acteur qui lorsqu'on cliquera dessus déclenchera son affichage et l'acteur qui déclenchera sa fermeture.
+Questa variante di modale è preconfigurata per indicare l'attore che attiverà la sua visualizzazione quando si fa clic e l'attore che attiverà la sua chiusura.
