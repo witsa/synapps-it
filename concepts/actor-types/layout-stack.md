@@ -1,45 +1,45 @@
 ---
-title: "Disposition | Empilement"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Disposizione | Impilamento"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 
 {% include links_actor.md apiClass="Actor.Layout.Stack" %}
 
-# Empilement
+# Impilamento
 
-Acteur qui permet de disposer ses acteurs enfants en les empilant, soit verticalement, soit horizontalement.
+Attore che consente di disporre gli attori figli in una pila, in verticale o in orizzontale.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Orientation
+## Orientamento
 
-L'empilement va disposer ses acteurs enfants suivant la règle donnée par la propriété de même *Orientation* :
+Lo stack disporrà i suoi attori figli secondo la regola data dalla proprietà *Orientamento*:
 
-- **Verticale** *(par défaut)* : Les acteurs enfants s'empilent les uns en dessous des autres, de haut en bas.
-- **Horizontale** : Les acteurs enfants s'empilent les uns à côté des autres, de gauche à droite.
+- **Verticale** *(predefinito)* : Gli attori figli sono impilati uno sotto l'altro, dall'alto verso il basso.
+- **Orizzontale** : Gli attori figli sono impilati l'uno accanto all'altro, da sinistra a destra.
 
-## Disposition
+## Layout
 
-Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../actor/category-disposition.md#catégorie-disposition-flexible)
+Vedere le regole di layout con le proprietà [allineamento verticale e orizzontale](../actor/category-disposition.md#catégorie-disposition-flexible)
 
-## Dépassement de contenu
+## Superamento dei contenuti
 
 {% include property_overflow.md %}
 
-La valeur par défaut est **Caché**
+Il valore predefinito è **Nascosto**.
 
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+> ✔️ **CONSIGLIO**<br>
+> Se il contenuto non è visibile, è molto probabile che sia a causa delle dimensioni ridotte dell'attore padre.
 
-# Événements
+# Eventi
 
 {% include events_layout.md %}
 
-# Usage
+# Uso
 
-L'empilement avec les règles de [disposition flexibles](../actor/category-disposition.md#catégorie-disposition-flexible) sont à la base de la construction d'interface qui peuvent s'adapter à n'importe quelle taille d'écran.
-Associées à la disposition par [Toile](./layout-canvas.md) et la [Boite à vue](./layout-view-box.md), ces acteurs permettent de construire n'importe quel type de gabarit.
+Le regole di impilamento con [layout flessibile](./actor/category-disposition.md#category-flexible-disposition) sono la base per costruire interfacce che si adattino a qualsiasi dimensione dello schermo.
+Combinati con il layout [Canvas](./layout-canvas.md) e con [Box di visualizzazione](./layout-view-box.md), questi attori possono essere usati per costruire qualsiasi tipo di schema.
