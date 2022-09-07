@@ -1,55 +1,55 @@
 ---
-title: "Interaction | Zone de texte"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interaione | Zona di testo"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextArea" %}
 
-# Zone de texte
+# Zona di testo
 
-L'acteur Zone de texte permet de renseigner du texte, il est généralement utilisé pour écrire du texte brut.
+L'attore Zona di testo viene utilizzato per inserire del testo e, in genere, è impiegato per scrivere del testo ordinario.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
-**Valeur**
+**Valore**
 
-La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'acteur.
+La proprietà specifica `Valore` consente di definire il contenuto corrente dell'attore.
 
-La valeur attendue est un une chaine de caractère.
+Il valore atteso è una stringa.
 
->📌 *REMARQUE*<br>
-> Il n'est pas possible de décorer le texte au sein de cet acteur, pour ajouter de la décoration au texte il est préférable d'utiliser un acteur HTML.
+>📌 *NOTA*<br>
+> Non è possibile formattare e personalizzare l'apparenza del testo all'interno di questo attore; per modificare il testo è meglio utilizzare un attore HTML.
 
-**Taille**
+**Dimensione**
 
 {% include property_size.md %}
 
-**Longueur Max**
+**Lunghezza massima**
 
-Permet de limiter la taille de la chaine de caractère de `Valeur`.
+Permette di limitare la dimensione della stringa `Valore`.
 
->📌 *REMARQUE*<br>
-> Le caractère vide 'espace' est comptabilisé comme tout autre caractère.
+>📌 *NOTA*<br>
+Il carattere vuoto "spazio" viene considerato come un qualsiasi altro carattere.
 
-**Mode de saisie**
+**Modalità input**
 
-Ce champ permet de conditionner le type de clavier qui s'affiche sur les appareils mobiles et tablettes.
+Questo campo consente di impostare il tipo di tastiera visualizzata sui dispositivi mobili e sui tablet.
 
-**Auto Completion?**
+**Completamento automatico?**
 
-Permet d'activer / désactiver la saisie automatique sur les navigateurs.
+Consente di attivare/disattivare il completamento automatico sui browser.
 
-**Lecture seule?**
+***Solo lettura?**
 
-Permet d'activer / désactiver la saisie de valeur dans le champ de saisie.
+Abilita/disabilita l'inserimento di valori nel campo di immissione.
 
 **État de validation**
 
-Permet de donner une décoration prédéfinie au champ de saisie.
+Permette di dare al campo di immissione una formattazione predefinita.
 
-**Actif**
+**Attivo?**
 
-Permet d'activer / désactiver le champ de saisie.
+Attiva/disattiva il campo di immissione.
