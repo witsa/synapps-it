@@ -1,38 +1,38 @@
 ---
-title: "Interaction | Images interrupteur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Immagine interruttore"
+parent: "elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchImage" %}
 
-# Images interrupteur
+# Immagine interruttore
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_switch_image/sample01.gif)
 
-Acteur d'interaction qui permet d'afficher un interrupteur à deux états en affichant alternativement des images.
+Attore di interazione che mostra un interruttore a due stati presentando alternativamente delle immagini.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Valeur
+## Valore
 
-Cette propriété permet de faire basculer l'interrupteur.
+Questa proprietà consente di commutare l'interruttore.
 
-## Texte pour vrai, texte pour faux
+## Testo per vero, testo per falso
 
-Ces deux propriétés permettent de définir les textes qui s'affichent dans l'interrupteur correspondant à la valeur `true` et à la valeur `false`.
+Queste due proprietà consentono di definire i testi che vengono visualizzati nell'interruttore in corrispondenza del valore `true` e del valore `false`..
 
-# Événements
+# Eventi
 
 ## `onSwitched`
 
-L'évènement `onSwitched` est déclenché lorsque l'acteur est basculé.
+L'evento `onSwitched` viene attivato quando l'attore cambia di stato
 
 > [⚡ `onSwitched`]({{ site.baseurl }}/script-api/Actor.Input.SwitchImage.html#event:onSwitched){:target="_blank"}
 
 
-# Astuces
+# Suggerimenti
 
-Cet acteur peut être très utile pour afficher un indicateur avec une image pour chaque état. Il suffit de bien choisir les deux images à afficher, désactiver l'acteur pour éviter qu'un clic de souris le fasse basculer.
+Questo attore può essere molto utile per visualizzare un indicatore con un'immagine per ogni stato. È sufficiente scegliere le due immagini da visualizzare e disattivare l'attore per evitare che un clic del mouse lo commuti.
