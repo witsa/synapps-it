@@ -1,33 +1,32 @@
 ---
-title: "Disposition | Toile"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Layout | Canvas"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.Canvas" %}
 
-# Toile
+# Canvas
 
-Acteur qui permet de disposer des acteurs enfants suivant des coordonnées.
+Attore che consente di disporre gli attori figli in base a delle coordinate.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Disposition
+## Disposizione
 
-Voir les règles de disposition avec les [propriétés de position (haute, basse, gauche et droite)](../actor/category-disposition.md#catégorie-disposition-dans-une-toile)
+Vedere le regole di disposizione con le [proprietà di posizione (alta, bassa, sinistra e destra)](../actor/category-disposition.md#catégorie-disposition-dans-une-toile)
 
-
-## Dépassement de contenu
+## Superamenti
 
 {% include property_overflow.md %}
 
-La valeur par défaut est **Caché**
+Il valore predefinito è **Nascosto**
 
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+> ✔️ **SUGGERIMENTO**<br>
+> Se il contenuto non è visibile, è molto probabile che sia a causa delle dimensioni ridotte dell'attore padre.
 
-# Événements
+# Eventi
 
 {% include events_layout.md %}
