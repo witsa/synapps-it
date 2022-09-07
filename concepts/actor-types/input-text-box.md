@@ -1,171 +1,168 @@
 ---
-title: "Interaction | Boite de saisie "
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Casella di input "
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.TextBox" %}
 
-# Boite de saisie
+# Casella di input
 
-L'acteur boite de saisie permet de créer des champs de saisies personnalisables.
+L'attore casella di input consente di creare campi di input personalizzabili.
 
 {% include table_of_content.html %}
 
-# Propriétés spécifiques
+# Proprietà specifiche
 
-L'acteur boite de saisie possède le champ `Type de saisie` qui va dicter le comportement de cet acteur en fonction du type sélectionné dont chaque choix sera détaillé plus bas.
+A seconda del tipo selezionato, il campo `Tipo di input' dell'attore Casella di input ne determina il comportamento. 
 
-Cependant, l'acteur possède 7 champs de saisies qui possèdent toujours le même comportement peut importe le `Type de saisie` :
-
-**Taille**
+**Dimensione**
 
 {% include property_size.md %}
 
-**Longueur Max**
+**Lunghezza massima**
 
-Permet de limiter la taille de la chaine de caractère de `Valeur`.
+Consente di limitare la dimensione della stringa `Valore`.
 
->📌 *REMARQUE*<br>
->Le caractère vide 'espace' est comptabilisé comme tout autre caractère.
+>📌 *NOTA*<br>
+>Il carattere "spazio" viene contabilizzato come un qualsiasi altro carattere.
 
-**Mode de saisie**
+**Modalità di input**
 
-Ce champ permet de conditionner le type de clavier qui s'affiche sur les appareils mobiles et tablettes.
+Si utilizza questo campo per determinare il tipo di tastiera visualizzata sui dispositivi mobili e sui tablet.
 
-**Auto Completion?**
+**Completamento automatico?**
 
-Permet d'activer / désactiver la saisie automatique sur les navigateurs.
+Consente di attivare/disattivare il completamento automatico sui browser.
 
-Ce champ est inutile pour les `Type de saisie` suivants : Mot de passe / Curseur / Couleur.
+Questo campo non è richiesto per i seguenti `Tipi di input`: Password / Cursore / Colore.
 
-**Lecture seule?**
+**Sola lettura?**
 
-Permet d'activer / désactiver la saisie de valeur dans le champ de saisie.
+Abilita/disabilita l'inserimento di valori nel campo.
 
-Ce champ est inutile pour les `Type de saisie` suivants : Curseur / Couleur.
+Questo campo non è richiesto per i seguenti "tipi di input": Cursore / Colore.
 
-**État de validation**
+**Stato della convalida**
 
-Permet de donner une décoration prédéfinie au champ de saisie.
+Permette di attribuire al campo di immissione una formattazione predefinita.
 
-**Actif**
+**Attivo?**
 
-Permet d'activer / désactiver le champ de saisie.
+Attiva/disattiva il campo di immissione.
 
-## Type de saisie
+## Tipo di input
 
-**TEXTE / MOT DE PASSE**
+**TESTO / PASSWORD
 
-*Valeur*
+*Valore*
 
-La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'acteur.
+La proprietà specifica `Valore` consente di definire il contenuto corrente dell'attore.
 
-- Pour `TEXTE` la valeur attendue est une chaine de caractère.
+- Per `TESTO' il valore atteso è una stringa.
 
-- Pour `MOT DE PASSE` la valeur attendue est une chaine de caractère et celle-ci ne sera pas affiché en clair au niveau du champ de saisie.
-
-*Texte si vide*
-
-La propriété spécifique `Texte si vide` permet de définir le texte à afficher lorsque le champ de saisie de l'acteur est vide.
-La valeur attendue est une chaîne de caractère.
-
-*Options*
-
-- Pour `TEXTE` UNIQUEMENT
-
-Permet de suggérer à l'utilisateur certaines options en dessous du champ de saisie lorsque le curseur est placé dans le champ de saisie.
-
-Pour suggérer des éléments, il est nécessaire de suivre la syntaxe qui suit :
-
-```["Un Texte","autre texte","un exemple"]```
-
-**NOMBRE**
-
-*Valeur*
-
-La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'acteur.
-
-La valeur attendue est un nombre.
+- Per `PASSWORD` il valore previsto è una stringa e non verrà visualizzato in chiaro nel campo di immissione.
 
 *Texte si vide*
 
-La propriété spécifique `Texte si vide` permet de définir le texte à afficher lorsque le champ de saisie de l'acteur est vide.
+La proprietà specifica `Testo se vuoto` consente di definire il testo da visualizzare quando il campo di input dell'attore è vuoto.
+Il valore atteso è una stringa.
 
-La valeur attendue est une chaîne de caractère.
+*Opzioni*
 
-*Valeur Min*
+- Solo per  `TESTO`
 
-Conditionne la valeur que doit prendre le `Nombre` en lui attribuant une borne négative.
+Permette di suggerire all'utente come complare il campo, quando il cursore viene posizionato nel campo di immissione.
 
-*Valeur Max*
+Per suggerire gli elementi, è necessario seguire la sintassi riportata di seguito:
 
-Conditionne la valeur que doit prendre le `Nombre` en lui attribuant une borne positive.
+```["Un Testo","un'altro testo","un esempio"]```
 
-*Pas entre deux valeur*
+**NUMERO**
 
-Permet de conditionner l'incrémentation de la `Valeur`.
+*Valore*
+
+La proprietà specifica `Value` è utilizzata per definire il contenuto corrente dell'attore.
+
+Il valore atteso è un numero.
+
+*Testo se vuoto*
+
+La proprietà specifica `Testo se vuoto` consente di definire il testo da visualizzare quando il campo di input dell'attore è vuoto.
+
+Il valore richiesto è una stringa.
+
+*Valore minimo*
+
+Limita il valore che il `Numero` può assumere, attribuendogli un limite inferiore.
+
+*Valore massimo*
+
+Limita il valore che il `Numero` può assumere, attribuendogli un limite superiore.
+
+*Passo tra due valori*
+
+Interviene sulla regola di incremento/decremento del `Valore`.
 
 *Options*
+Permette di suggerire all'utente come complare il campo, quando il cursore viene posizionato nel campo di immissione. Tuttavia, il valore suggerito deve essere coerente con il valore previsto nel campo `Valore`.
 
-Permet de suggérer à l'utilisateur certaines options de saisie en dessous du champ de saisie lorsque le curseur est placé dans le champ de saisie. Cependant, la valeur suggérée doit forcément respecter la valeur attendue dans le champ `Valeur`.
-
-Pour suggérer des éléments, il est nécessaire de suivre la syntaxe qui suit :
+Per suggerire gli elementi, è necessario seguire la sintassi riportata di seguito:
 
 ```["45","5000","1337"]```
 
-**CURSEUR**
+**CURSORE**
 
-*Valeur Min*
+*Valore minimo*
 
-Conditionne la valeur que doit prendre le `Curseur` en lui attribuant une borne négative.
+Condiziona il valore che il `Cursore` deve assumere, dandogli un limite inferiore.
 
-*Valeur Max*
+*Valore massimo*
 
-Conditionne la valeur que doit prendre le `Curseur` en lui attribuant une borne positive.
+Condiziona il valore che il `Cursore` deve assumere, dandogli un limite superiore.
 
-*Pas entre deux valeur*
+*Passo tra due valori*
 
-Permet de conditionner le pas du `Curseur`.
+Condiziona il passo del `Cursore`.
 
-**DATE**
+**DATA**
 
 *Valeur Min*
 
 Conditionne la valeur que doit prendre la `Date` en lui attribuant une borne négative.
 
-Il est possible depuis l'inspecteur d'ouvrir l'aide à la sélection d'une date.
+Dall'ispettore è possibile aprire la guida alla selezione della data.
 
-*Valeur Max*
+*Valore massimo*
 
-Conditionne la valeur que doit prendre la `Date` en lui attribuant une borne positive.
+Condiziona il valore che la `Data` dovrebbe assumere, dandogli un limite superiore.
 
-Il est possible depuis l'inspecteur d'ouvrir l'aide à la sélection d'une date.
-
-
-**HEURE**
-
-*Valeur Min*
-
-Conditionne la valeur que doit prendre l'`Heure` en lui attribuant une borne négative.
-
-Il est possible depuis l'inspecteur d'ouvrir l'aide à la sélection d'une horaire.
-
-*Valeur Max*
-
-Conditionne la valeur que doit prendre l'`Heure` en lui attribuant une borne positive.
-
-Il est possible depuis l'inspecteur d'ouvrir l'aide à la sélection d'une horaire.
+Dall'ispettore è possibile aprire la guida alla selezione della data.
 
 
-**COULEUR**
+**ORA**
 
-*Valeur*
+*Valore minimo*
 
-La propriété spécifique `Valeur` permet de définir la couleur de l'acteur.
+Condiziona il valore che deve assumere la variabile `ORA' dandole un limite inferiore.
 
-La valeur attendue est un code hexadécimal.
+Dall'ispettore è possibile aprire la guida alla selezione degli orari.
 
-Un outil permet de récupérer les codes hexadécimaux des couleur et est disponible [à cette adresse](https://htmlcolorcodes.com/fr/).
+*Valore massimo*
 
-Il est également possible de cliquer sur le bouton dans l'interface afin de choisir une couleur.
+Condiziona il valore che il `Ora' deve assumere, dandogli un limite superiore.
+
+Dall'ispettore è possibile aprire la guida alla selezione degli orari.
+
+
+**COLORE**
+
+*Valore*
+
+La proprietà specifica `Vallore` è utilizzata per definire il colore dell'attore
+
+Il valore atteso è un codice esadecimale.
+
+Uno strumento per recuperare i codici colore esadecimali è disponibile [a questo indirizzo](https://htmlcolorcodes.com).
+
+Per scegliere un colore è anche possibile fare clic sul pulsante dell'interfaccia.
