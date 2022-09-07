@@ -1,41 +1,41 @@
 ---
-title: "Interaction | Bouton interrupteur"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Interazione | Pulsante interruttore"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Input.SwitchButton" %}
 
-# Bouton interrupteur
+# Pulsante interruttore
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_switch_button/sample01.gif)
 
-Acteur d'interaction qui permet d'afficher un interrupteur à deux états.
+Un attore di interazione che consente di visualizzare un interruttore a due stati.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Valeur
+## Valore
 
-Cette propriété permet de faire basculer l'interrupteur.
+Questa proprietà consente di commutare l'interruttore.
 
 ## Texte pour vrai, texte pour faux
 
-Ces deux propriétés permettent de définir les textes qui s'affichent dans l'interrupteur correspondant à la valeur `true` et à la valeur `false`.
+Queste due proprietà consentono di definire i testi che vengono visualizzati nell'interruttore quando il valore è `true` o `false`.
 
-## Mode pour vrai, mode pour faux
+## Modalità per il vero, modalità per il falso
 
-Ces deux propriétés permettent de définir le mode de couleur de l'interrupteur correspondant à la valeur `true` et à la valeur `false`. Ce sont les mêmes mode que pour l'acteur [*bouton*](./input_button.md). La propriété *Outline* permet aussi de gérer les variantes de couleur.
+Queste due proprietà definiscono il modo colore dell'interruttore su `true` e `false`. Sono le stesse modalità dell'attore [*button*] (./input_button.md). La proprietà *Outline* consente anche di gestire le varianti di colore.
 
-## Taille
+## Dimensione
 
 {% include property_size.md %}
 
-# Événements
+# Eventi
 
 ## `onSwitched`
 
-L'évènement `onSwitched` est déclenché lorsque l'acteur est basculé.
+L'evento `onSwitched` viene attivato quando si cambia lo stato l'attore.
 
 > [⚡ `onSwitched`]({{ site.baseurl }}/script-api/Actor.Input.SwitchButton.html#event:onSwitched){:target="_blank"}
