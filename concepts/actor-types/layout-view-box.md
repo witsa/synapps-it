@@ -18,10 +18,10 @@ Attore che consente di disporre un attore figlio in modo da adattarlo alle sue d
 
 Il riquadro di visualizzazione disporrà i suoi attori figli secondo la regola data dalla proprietà *Tipo di visualizzazione*:
 
-- Visibile** *(predefinito)*: il riquadro di visualizzazione regolerà la dimensione del suo attore figlio in modo che sia completamente visibile nel riquadro di visualizzazione.
-- Riempito**: il riquadro di visualizzazione regolerà la dimensione del suo attore figlio in modo che riempia completamente il riquadro di visualizzazione.
+- **Visibile** *(predefinito)*: il box di visualizzazione regolerà la dimensione del suo attore figlio in modo che sia completamente visibile al suo interno.
+- **Piena**: il box di visualizzazione regolerà la dimensione del suo attore figlio in modo che riempia completamente lo spazio del riquadro.
 
-Nell'esempio seguente, il box di visualizzazione presenta un attore immagine di dimensioni maggiori.
+Nell'esempio seguente, il box di visualizzazione presenta un attore immagine di dimensioni maggiori del box stesso.
 
 ![SynApps](../../assets/concepts/actor/view-box/sample-01.gif)
 
