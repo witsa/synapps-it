@@ -1,12 +1,12 @@
 ---
-title: "REDY | Fournisseur de ressource"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Fornitore risorsa"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 
 {% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}
 
-# Fournisseur de resource
+# Fornitore risorse
 
-Acteur [fournisseur de variable](./redy-wos-variable-source.md) mais bloqué pour cibler uniquement les *ressources* d'un REDY.
+Medesimo concetto che per l'attore [Fornitore delle variabili](./redy-wos-variable-source.md) ma bloccato per indirizzare solo le *risorse* di un REDY.
