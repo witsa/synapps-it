@@ -1,13 +1,13 @@
 ---
 title: "REDY | Agenda"
-parent: "Types d'acteur"
-grand_parent: Concepts
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Agenda" %}
 
 # Agenda
 
-L'acteur Agenda affiche l'application d'agenda du REDY.
+L'attore Agenda visualizza la risorsa Agenda di un REDY.
 
-Ses propriétés permettent de définir la ressource agenda (chemin de la ressource) à afficher ainsi que la période de visualisation.
+Le proprietà permettono di selezionare la risorsa Agenda (percorso della risorsa) da visualizzare e il periodo di visualizzazione.
