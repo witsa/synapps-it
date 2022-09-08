@@ -1,84 +1,77 @@
 ---
-title: "REDY | Fournisseur de variable relative"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Fornitore varaibili relative"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosRelativeVariableSource" %}
 
-# Fournisseur de variable relative
+# Fornitore varaibili relative
 
-Cet acteur fournisseur de donnnée permet de compléter des acteurs [fournisseur de variable](./redy-wos-variable-source.md) ou [de ressource](./redy-resource-source.md) pour communiquer avec une *variable WOS* enfant d'un REDY.
+Questo attore fornitore di dati è usato a complemento degli attori [Fornitore variavili](./redy-wos-variable-source.md) o [Fornitore risorse](./redy-resource-source.md) per comunicare con una variabile *WOS* figlia di un REDY.
 
-Il permet ainsi de récupérer une variable enfant ou même d'écrire une valeur d'une variable enfant en ne renseignant uniquement que le *sous-chemin* par rapport à une autre variable (définie dans un autre fournisseur).
+Permette il recupero di una variabile figlia o anche la scrittura di un valore di una variabile figlia utilizzando solo il *sub-path* relativo a un'altra variabile (definita in un altro fornitore).
 
-La variable ou champ de variable qu'il récupère est stockée dans son information `Donnée`, comme pour les autres fournisseurs de donnée.
+La variabile o il campo di variabile che richiama è memorizzato nelle sue informazioni `Dati`, come per gli altri fornitori di dati.
 
-Il faut noter qu'il ne contient pas de paramètre de requête. En effet, c'est le fournisseur parent qui en est responsable.
-D'ailleurs, ce n'est pas lui non plus qui réalise les requêtes mais bien son fournisseur parent.
+Si noti che non contiene un parametro di query. Questo perché la responsabilità è del fornitore genitore che effettua la query.
 
-La donnée récupérée est disponible pour les liaisons ou par script.
+I dati recuperati sono disponibili tramite collegamento o script.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Clé parent
+## Chiave del padre
 
-Cette propriété permet de renseigner le fournisseur parent de l'acteur par sa clé. Vous aurez le choix parmi tous les fournisseurs de la même scène ou du même composite ainsi que ceux définis parmi les fournisseurs de donnée globaux.
+Questa proprietà permette di definire il fornitore padre dell'attore attraverso la sua chiave. È possibile scegliere tra tutti i provider della stessa scena o dello stesso composito e tra quelli definiti tra i provider di dati globali.
 
-Bien entendu, il sera tout a fait possible de choisir un autre fournisseur de variable relative aussi.
+È ovviamente possibile scegliere anche un altro fornitore di variabili relative.
 
-> 📌 **REMARQUE**<br>
-Quoi qu'il en soit, on trouvera un fournisseur normal en remontant dans l'ascendance des acteurs relatifs.
-
-Si vous fournissez par liaison ou par script un fournisseur dans le contexte de donnée de l'acteur et que la clé du parent reste vide, ce fournisseur sera utilisé comme parent. C'est très utile pour paramétrer un composite qui contient un fournisseur relatif mais pas de normal.
-
-## Chemin relatif
-
-Cette propriété va contenir un *chemin relatif* vers la variable à récupérer. C'est un chemin au sens REDY mais par rapport à un autre chemin par ex : `R00001` ou même `R00001.Output`.
-
-Le chemin de référence est une construction de tous les chemins en remontant dans les parents de l'acteur.
-
-Par exemple :
-
-- **Fournisseur 1** :
-  - Chemin : `easy.RESS.R00001`
-
-Ce fournisseur pointe sur la ressource `R00001`. Il réalisera les requêtes.
-
-- **Fournisseur relatif 1** :
-  - Parent : **Fournisseur 1**
-  - Chemin relatif : `Output`
-
-Ce fournisseur est relatif au premier. Il indique être intéressé par la variable enfant `Output` de ce qui est défini dans le fournisseur parent, ici, la ressource `R00001`. Le chemin en entier donne : `easy.RESS.R00001.Output`.
-
-- **Fournisseur relatif 2** :
-  - Parent : **Fournisseur relatif 1**
-  - champ : *Valeur*
-
-Finalement, ce fournisseur est relatif au *fournisseur relatif 1*. Il indique quant à lui être intéressé par le champ *Valeur* de ce qui résulte du fournisseur parent, ici, la variable `easy.RESS.R00001.Output`. Le chemin en entier donne encore : `easy.RESS.R00001.Output` mais c'est ça *valeur* qui sera inscrite dans la *donnée* de l'acteur.
+> 📌 **NOTA**<br>
+In ogni caso, un fornitore normale viene trovato andando a ritroso nell'ascendenza dei relativi attori.
 
 
+## Percorso relativo
 
-Comme pour les fournisseurs normaux, un explorateur de paramétrage de REDY aide à saisir ce sous chemin.
+Questa proprietà contiene un *percorso relativo* alla variabile da recuperare. È un percorso di tipo REDY, ma legato a un altro percorso, ad esempio : `R00001` o `R00001.Output`.
 
-## Champ de Variable REDY
+Il percorso di riferimento è una costruzione di tutti i percorsi rimontando i genitori dell'attore.
 
-Par défaut, c'est la variable toute entière qui est récupérée et placée dans le champ *Donnée*. Si vous voulez récupérer une partie de la variable, vous pouvez indiquer le nom du champ à récupérer parmi les possibilités que vous retrouverez [ici](./redy-wos-variable-source.md#champ-de-variable-redy).
+Esempio:campo
 
-Choisissez *Valeur* si vous voulez écrire dans ce champ. Ainsi, en vous liant avec l'écriture activée à la donnée de l'acteur, vous pourrez écrire dans la variable REDY et envoyer cette valeur automatiquement si la propriété *Écriture au changement* est activée. Sinon par script.
+- **Fornitore 1** :
+  - Cammino : `easy.RESS.R00001`
 
-## Mode de lecture
+Questo fornitore punta alla risorsa `R00001`. Esegue le interrogazioni.
 
-Cette propriété permet de renseigner comment le fournisseur principale doit aller chercher la cible de l'acteur. En effet, rappelons que c'est le fournisseur parent qui réalise les requêtes. Deux modes de lecture sont possibles :
+- **Fonitore relativo 1** :
+  - Genitore: **Fornitore 1**
+  - Cammino relativo: `Output`
 
-- **Une seule fois** Le fournisseur parent ne fournira la cible que la première fois. Puis, ses autres requêtes n'iront plus la rafraîchir.
-- **A chaque rafraîchissement** L'acteur raffraichira la cible à chaque fois que le fournisseur parent fera une requête.
+Questo fornitore è correlato al primo. Indica che è interessato alla variabile figlia `Output` di ciò che è definito nel provider padre, in questo caso la risorsa `R00001`. Il percorso completo è `easy.RESS.R00001.Output`
 
-## Écriture au changement?
+- **Fornitore relativo 2** :
+  - Parent : **Fonitore relativo 1**
+  - champ : *Value*
 
-Cette propriété active/désactive l'enregistrement de la valeur d'une variable dans le REDY si la *donnée* est modifiée par liaison ou par script. Il faut bien entendu que ce soit le *champ* ***Valeur*** qui soit inscrit dans la donnée.
+Il Fornitore relativo 2 è correlato al *fornitore relativo 1*. A sua volta indica che è interessato al campo *Value* di ciò che deriva dal provider padre, in questo caso la variabile `easy.RESS.R00001.Output`. Il percorso completo risulta dunque: `easy.RESS.R00001.Output`, ma è questo *Value* che verrà scritto nei *dati* dell'attore.
+
+Come per i normali provider, l'esploratore dei parametri REDY aiuta ad individuare il percorso.
+
+## Campo REDY
+Per impostazione predefinita, l'intera variabile viene recuperata e inserita nel campo *Data*. Se si vuole recuperare una parte della variabile, si può indicare il nome del campo da recuperare tra le possibilità che si trovano [qui](./redy-wos-variable-source.md#champ-de-variable-redy).
+
+## Modalità di lettura
+
+La proprietà è utilizzata per definire come il fornitore principale deve procedere per ottenere il dato. Ricordiamo infatti che è il fornitore padre a eseguire le richieste. Sono possibili due modalità di lettura:
+
+- **Solo una volta** Il dato viene letto una sola volta
+- **Ad ogni aggiornamento** L'attore aggiorna il dato ogni volta che il provider padre effettua una richiesta.
+
+## Scrittura su cambiamento?
+
+Questa proprietà abilita/disabilita la registrazione del valore di una variabile nel REDY se i *dati* vengono modificati dal collegamento o da script. Deve essere il *campo* ***Valore*** quello scritto nei dati.
 
 Aussi, pour déclencher l'enregistrement de la donnée changée dans le REDY, il faudra appeler la méthode [⚡ `write()`]({{ site.baseurl }}/script-api/REDY.Actor.WosRelativeVariableSource.html#method:write){:target="_blank"} de l'acteur.
 
