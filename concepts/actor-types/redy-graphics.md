@@ -1,29 +1,29 @@
 ---
-title: "REDY | Graphiques"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Grafico"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Graphics" %}
 
-# Graphique
+# Grafico
 
-L'acteur Graphique affiche l'application de graphique du REDY.
+L'attore Grafico permette la visualizzazione dell'applicazione grafica del REDY.
 
-# Propriétés
+# Proprietà
 
-## Préparation
+## Preparazione
 
-La propriété *Préparation* permet de définir celle que vous voulez afficher directement. C'est le *lebel* de la préparation qui est attendu ici.
+La proprietà *Preparazione* permette di definire quale Grafico tra quelli presenti ne l REDY si desidera visualizzare direttamente.
 
-## Trace/Flux
+## Tracce/Flussi
 
-La propriété *Trace/Flux* permet de définir la trace ou le flux à afficher directement dans Graphique.
+La proprietà *Tracce/Flussi* permette di stabilire le tracce o i flussi da visualizzare direttamente nel grafico.
 
-## Edition Permise?
+## Consenti modifica?
 
-Cette propriété permet d'activer ou de désactiver l'édition de préparation.
+Questa proprietà abilita o disabilita la modifica del modello grafico.
 
-## Montrer la légende?
+## Mostrare la legenda?
 
-Cette propriété permet d'activer ou de désactiver la légende.
+Questa proprietà consente di attivare o disattivare la legenda.
