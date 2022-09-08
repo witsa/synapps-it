@@ -51,6 +51,6 @@ Il box di visualizzazione è un attore molto utile per visualizzare contenuti di
 Ad esempio, è possibile creare in un attore Canvas, una visualizzazione complessa con elementi posizionati con precisione all'interno dello spaziol. Successivamente, si colloca l'attore Canvas in una box di visualizzazione, in modo che sia visibile a qualsiasi dimensione dello schermo.
 
 > ⚠️ **ATTENZIONE**<br>
-> Non si devono definire dimensioni con [unità] relative(../sizes.md) in attori che si trovano all'interno di un box di visualizzazione. .
+> Non si devono definire dimensioni con [unità relative](../sizes.md) in attori che si trovano all'interno di un box di visualizzazione. .
 >
 > **Utilizzare sempre unità fisse: `px`, `cm` et `in`.**
