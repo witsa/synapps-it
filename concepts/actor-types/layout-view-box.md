@@ -1,56 +1,56 @@
 ---
-title: "Disposition | Boite à vue"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "Disposizione | Box di visualizzazione"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="Actor.Layout.ViewBox" %}
 
-# Boite à vue
+# Box di visualizzazione
 
-Acteur qui permet de disposer un acteur enfant en l'adaptant à sa taille.
+Attore che consente di disporre un attore figlio in modo da adattarlo alle sue dimensioni.
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Type de vue
+## Tipo di visualizzazione
 
-La boite à vue va disposer son acteur enfant suivant la règle donnée par la propriété *Type de vue* :
+Il riquadro di visualizzazione disporrà i suoi attori figli secondo la regola data dalla proprietà *Tipo di visualizzazione*:
 
-- **Visible** *(par défaut)* : la boite à vue va adapter la taille de son acteur enfant pour qu'il soit entièrement visible dans la boite à vue.
-- **Rempli** : la boite à vue va adapter la taille de son acteur enfant pour qu'il la remplisse entièrement.
+- Visibile** *(predefinito)*: il riquadro di visualizzazione regolerà la dimensione del suo attore figlio in modo che sia completamente visibile nel riquadro di visualizzazione.
+- Riempito**: il riquadro di visualizzazione regolerà la dimensione del suo attore figlio in modo che riempia completamente il riquadro di visualizzazione.
 
-Dans l'exemple ci-dessous, la boite à vue présente un acteur image bien plus grand qu'elle.
+Nell'esempio seguente, il box di visualizzazione presenta un attore immagine di dimensioni maggiori.
 
 ![SynApps](../../assets/concepts/actor/view-box/sample-01.gif)
 
 
-## Disposition
+## Layout
 
-Voir les règles de disposition avec les [propriétés d'alignement vertical et horizontal](../actor/category-disposition.md#catégorie-disposition-flexible)
+Vedere le regole di layout con l'opzione [propriétés d'alignement vertical et horizontal](../actor/category-disposition.md#catégorie-disposition-flexible)
 
 
-## Dépassement de contenu
+## Superamenti
 
 {% include property_overflow.md %}
 
-La valeur par défaut est **Caché**
+Il valore predefinito è **Nascosto**.
 
-> ✔️ **CONSEIL**<br>
-> Si votre contenu n'est pas visible, il y a de bonne chance que ce soit à cause de la taille réduite de l'acteur parent.
+> ✔️ **CONSIGLIO**<br>
+> Se il contenuto non è visibile, è molto probabile che sia a causa delle dimensioni ridotte dell'attore padre.
 
-# Événements
+# Eventi
 
 {% include events_layout.md %}
 
-# Usage
+# Uso
 
-La boite à vue est un acteur très pratique pour afficher un contenu de taille fixe tout en s'assurant qu'il sera visible quelque soit la taille de l'écran.
+Il box di visualizzazione è un attore molto utile per visualizzare contenuti di dimensioni fisse per garantire che siano visibili indipendentemente dalle dimensioni dello schermo.
 
-Par exemple, vous pouvez construire tout une superposition d'un plan avec des éléments positionnés précisément par rapport à lui au pixel prés. Ensuite, vous le placerez dans une boite à vue pour qu'il soit visible quelque soit la taille de l'écran.
+Ad esempio, è possibile creare in un attore Canvas, una visualizzazione complessa con elementi posizionati con precisione all'interno dello spaziol. Successivamente, si colloca l'attore Canvas in una box di visualizzazione, in modo che sia visibile a qualsiasi dimensione dello schermo.
 
-> ⚠️ **ATTENTION**<br>
-> Ne définissez pas des tailles avec des [unites](../sizes.md) relatives dans les acteurs qui sont à l'intérieure d'une boite à vue. En effet, le résultat sera difficilement prévisible.
+> ⚠️ **ATTENZIONE**<br>
+> Non si devono definire dimensioni con [unità] relative(../sizes.md) in attori che si trovano all'interno di un box di visualizzazione. .
 >
-> **Utiliser toujours des unités fixes : `px`, `cm` et `in`.**
+> **Utilizzare sempre unità fisse: `px`, `cm` et `in`.**
