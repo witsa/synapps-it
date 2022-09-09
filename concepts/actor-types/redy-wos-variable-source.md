@@ -1,54 +1,54 @@
 ---
-title: "REDY | Fournisseur de variable"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Fornitore di variabili"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosVariableSource" %}
 
-# Fournisseur de variable
+# Fornitore di variabili
 
-Acteur qui permet de communiquer avec une *variable WOS* d'un REDY. Le fournisseur s'occupe de récupérer la variable déterminée par la propriété *Chemin* et va la placer dans le champ d'information *Donnée*. Il est possible d'indiquer plutôt un champ de la variable à placer dans la donnée de l'acteur.
+L'attore Fornitore di variabili permette il collegamento con una variabile *WOS* in un REDY. Il fornitore si occupa di recuperare il valore della variabile definita dalla proprietà *Percorso* e lo inserisce nel campo informativo *Dati*. In alternativa, è possibile indicare un *Campo* specifico.
 
-Aussi, l'acteur permet de définir la manière avec laquelle la variable est récupérée et rafraîchie et d'activer ou pas l'écriture dans sa valeur pour l'enregistrer dans le REDY.
+Inoltre, l'attore consente di definire il modo in cui si recupera e si aggiorna il valore della variabile e di attivare o meno la scrittura per permettere la modifica del valore nel REDY.
 
-La donnée récupérée est disponible pour les liaisons ou par script.
+Il dato recuperato è disponibile per i collegamenti o per gli script..
 
-L'acteur sert de fournisseur de base aux éventuels [fournisseurs de variable relative](./redy-wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointeraient dessus.
+L'attore serve come fornitore di base per qualsiasi [Fornitore di variabili relative](./redy-wos-relative-variable-source.md) o per i collegamenti di tipo [Fornitore di variabili](../binding.md#variable-provider) che puntano a lui..
 
 {% include table_of_content.html %}
 
-# Propriétés
+# Proprietà
 
-## Chemin
+## Percorso
 
-Cette propriété va contenir un *chemin* vers la variable à récupérer. C'est un chemin au sens REDY, par ex : `:easy.RESS.R00001` ou même `:easy.RESS.R00001.Output`.
+Questa proprietà indica il *percorso* verso la variabile da interrogare. Si tratta di un percorso secondo il metodo REDY, ad esempio `:easy.RESS.R00001` o anche `:easy.RESS.R00001.Output`.
 
-Un explorateur de paramétrage de REDY aide à saisir le chemin.
+L'esploratore della parametrizzazione REDY aiuta nell'inserimento del percorso.
 
 ![SynApps](../../assets/concepts/actor/redy-variable-source/sample-01.gif)
 
 
-## Champ de Variable REDY
+## Campo delle Variabili REDY
 
-Par défaut, c'est la variable toute entière qui est récupérée et placée dans le champ *Donnée*. Si vous voulez récupérer une partie de la variable, vous pouvez indiquer le nom du champ à récupérer parmi les possibilités suivantes :
-- **Label** Le label REDY de la variable du REDY. Par exemple : `R00003` ou `RunCount`.
-- **Nom** Le nom de la variable REDY. Par exemple : `Compteur 1`.
-- **Value** La valeur de la variable. Par exemple : `true`, `"un texte"` ou bien `23` en fonction du type de la variable.
-- **État** L'état si la variable est une ressource. Ce sera le texte de l'état comme défini dans le REDY. Par exemple : `"Veille"`, `"En Marche"`.
-- **Chemin** Le chemin entier de la variable REDY. Par exemple : `:easy.RESS.R00001` ou même `:easy.RESS.R00001.Output`.
-- **ID** L'ID interne de la variable REDY.
-- **Date** La date de la dernière mise à jour de la variable REDY.
-- **ID de classe** L'ID de la classe de la variable REDY.
-- **URL de l'icône** L'URL de l'icône de la variable REDY. Directement exploitable par exemple dans une liaison vers un [acteur image](./display-image.md).
-- **Lecture?** Si la variable est accessible par l'utilisateur actuelle en lecture. Tiens compte des groupes et du du niveau de l'utilisateur.
-- **Écriture?** Si la variable est accessible par l'utilisateur actuelle en écriture. Tiens compte des groupes et du du niveau de l'utilisateur.
-- **Nombre d'enfant** Le nombre d'enfant de la variable REDY.
-- **Enfants** Le liste des enfants de la variable REDY.
+Per impostazione predefinita, l'intera variabile viene recuperata e inserita nel campo *Data*. Se si desidera recuperare una parte della variabile, è possibile specificare il nome del campo da utilizzare scegliendo tra le seguenti possibilità:
+- **Label** L'etichetta della variabile REDY. Ad esempio: `R00003` o `RunCount`.
+- **Name** La descrisione della variabile REDY. Ad esempio: `Contatore 1`.
+- **Valore** Il valore della variabile. Ad esempio: `true`, `"Testo"` o `23`, a seconda del tipo di variabile.
+- **Stato** Lo stato se la variabile è una risorsa. Questo sarà il testo dello stato come definito in REDY. Ad esempio: ``ON'', ``Acceso''..
+- **Percorso** L'intero percorso della variabile REDY. Ad esempio: `:easy.RESS.R00001` o anche `:easy.RESS.R00001.Output`.
+- **ID** L'ID interno della variabile REDY.
+- **Data** La data dell'ultimo aggiornamento della variabile REDY.
+- **ID classe** Codice identificativo della classe a cui appartiene la variabile REDY.
+- **URL dell'icona** L'URL dell'icona della variabile REDY. Utilizzabile direttamente, ad esempio, in un collegamento a un [Attore immagine](./display-image.md).
+- **Lettura?** Indica se la variabile è accessibile dall'utente corrente in modalità lettura. Considerare il gruppo e il livello dell'utente.
+- **Scrittura?** Indica se la variabile è modificabile dall'utente corrente. Tiene conto dei gruppi e del livello dell'utente.
+- **Numero di figli** Il numero di figli presenti nella variabile REDY.
+- **Figli** L'elenco dei figli della variabile REDY.
 
-Choisissez *Valeur* si vous voulez écrire dans ce champ. Ainsi, en vous liant avec l'écriture activée à la donnée de l'acteur, vous pourrez écrire dans la variable REDY et envoyer cette valeur automatiquement si la propriété *Écriture au changement* est activée. Sinon par script.
+Se si desidera scrivere in questo campo, scegliere *Valore*. In questo modo, facendo una connessione con la scrittura abilitata ai dati dell'attore, si potrà scrivere sulla variabile REDY e inviare questo valore automaticamente se la proprietà *Scrittura su cambiamento* è attivata. Altrimenti, tramite script..
 
-## Mode
+## Modalità
 
 Cette propriété permet de définir le comportement de l'acteur à son arrivée dans la scène ou lorsque le *chemin* ou le *champ* de la variable cible sont modifiés.
 
