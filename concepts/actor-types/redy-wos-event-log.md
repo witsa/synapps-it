@@ -1,25 +1,25 @@
 ---
-title: "REDY | Journal des variables"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Giornale degli eventi"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.WosEventLog" %}
 
-# Journal des variables
+# Giornale degli eventi
 
-L'acteur *Journal des variables* affiche un tableau contenant  les évènements de journaux du REDY.
+L'attore *Giornale degli eventi* visualizza la matrice contenente gli eventi presenti nel giornale del REDY.
 
 
-# Propriétés
+# Proprietà
 
-## Rafraîchissement
+## Aggiornamento automatico?
 
-Le journal est mis à jour suivant un délai qui est paramétrable. Ce rafraîchissement peut être désactivé.
+Il registro viene aggiornato in base a un intervallo di tempo che può essere impostato. Il refresh può essere disabilitato.
 
-## Entête et pagination
+## Intestazione e paginazione
 
-Dans l'entête du tableau vous trouverez les définitions des colonnes. La liste des colonnes est paramétrable. C'est pour l'instant un tableau de clé en JSON :
+Nell'intestazione della tabella si trovano le definizioni delle colonne. L'elenco delle colonne è personalizzabile. Per il momento si tratta di una tabella di chiavi in JSON:
 
 ```json
 ["id", "ack", "icon", "date", "nod", "site", "state", "todo"]
@@ -27,38 +27,37 @@ Dans l'entête du tableau vous trouverez les définitions des colonnes. La liste
 
 | clé de colonne | Description |
 | ---- | ------|
-| `id` | Index de l'évènement |
-| `ack` | Acquittement |
-| `icon` | Icône de l'évènement |
-| `date` | Date de l'évènement |
-| `nod` | Variable à l'origine de l'évènement |
-| `site` | Site de l'élément à l'origine de l'évènement |
-| `state` | État de la ressource |
+| `id` | Indice evento |
+| `ack` | Acquisizione |
+| `icona` | Icona evento |
+| `data` | Date dell'evento |
+| `evento` | Risorsa all'origine dell'evento |
+| `sito` | Il sito dell'elemento che ha causato l'evento |
+| `stato` | Lo stato della risorsa |
 | `todo` | ? |
 
-Laissez vide la propriété *Colonnes* pour les afficher toutes.
+Lasciare la proprietà * Colonne* vuota per visualizzarle tutte.
 
-Une propriété permet de faire disparaître l'entête.
+E' possibile di attivare / disattivare la visualizzaizone dell'intestazione delle colonne.
 
+L'elenco degli eventi è impaginato, ovvero ne viene visualizzato solo un determinato numero alla volta. La navigazione da una pagina all'altra è affidata a dei pulsanti.
 
-La liste des évènements est paginée, c'est-à-dire que seul un nombre paramétrable est affichée en même temps. Des boutons permettent de naviguer de page en page.
+Una proprietà consente di rendere invisibili i pulsanti di paginazione.
 
-Une propriété permet de faire disparaître les boutons de pagination.
+## Filtri
 
-## Les filtres
+È possibile impostare il filtraggio degli eventi in base alla data, agli eventi in corso, agli attributi (gruppo, insieme, zona, ...) o per risorsa.
 
-Vous pouvez choisir de filtrer les évènements dans le temps, ne voir que les encours, par attributs (groupe, ensemble, zone, ...) ou même par variable.
-
-# Événements
+# Eventi
 
 ## `onRequestDone`
 
-L'évènement `onRequestDone` est déclenché lorsque l'acteur a terminé une requête vers le REDY pour obtenir ou rafraîchir la liste à afficher.
+L'evento `onRequestDone` viene attivato quando l'attore ha completato una richiesta al REDY per ottenere o aggiornare l'elenco da visualizzare.
 
 > [⚡ `onRequestDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosEventLog.html#event:onSelected){:target="_blank"}
 
-# Exemples
+# Esempi
 
-## Journal avec selection de période de temps :
+## giornale con selezione del periodo di tempo:
 
 > TODO
