@@ -50,31 +50,31 @@ Se si desidera scrivere in questo campo, scegliere *Valore*. In questo modo, fac
 
 ## Modalità
 
-Cette propriété permet de définir le comportement de l'acteur à son arrivée dans la scène ou lorsque le *chemin* ou le *champ* de la variable cible sont modifiés.
+Questa proprietà consente di definire il comportamento dell'attore nella scena o quando viene modificato il *percorso* o il *campo* della variabile ricercata.
 
-- **Automatique** Si toutes les conditions sons réunis, l'acteur va récupérer automatiquement la variable et la placer elle ou le *champ* dans la *donnée*.
-- **Manuel** L'acteur attend qu'on change de *mode* ou qu'un script le demande pour récupérer la variable et la placer elle ou le *champ* dans la *donnée*.
-- **Relatif** L'acteur se comportera comme dans le mode automatique dès qu'il a des [fournisseurs de variable relative](./redy-wos-relative-variable-source.md) ou liaisons de type [fournisseur de variable](../binding.md#fournisseur-de-variable) qui pointent dessus.
+- **Automatico** Se tutte le condizioni sono soddisfatte, l'attore recupera automaticamente la variabile.
+- **Manuale** L'attore attende un cambiamento di *modalità* o una richiesta da parte di uno script per recuperare la variabile.
+- **Relativo** Il comportamento dell'attore sarà quello della modalità automatica, a partire dal momento in cui ha un collegamento di tipo [Fornitore di variabile relativa](./redy-wos-relative-variable-source.md) o [fornitore di variabile] (../binding.md#variable-provider) che puntano ad esso.
 
-Dans tous les cas, ceci est complètement indépendant du mode de rafraîchissement de l'acteur.
+In ogni caso, questa modalità è completamente indipendente da quella di aggiornamento dell'attore.
 
 ## Auto rafraîchissement?
 
 Cette propriété active/désactive l'auto rafraîchissement de la variable ciblée.
 
-## Délai de rafraîchissement
+## Intervallo di aggiornamento
 
-Cette propriété définit le délai de rafraîchissement (en seconde) de la variable ciblée lorsque l'auto rafraîchissement est activé.
+Questa proprietà definisce il ritmo di aggiornamento (in secondi) della variabile target quando è attivato l'aggiornamento automatico.
 
 
-> ✔️ **CONSEIL**<br>
-> Évitez de définir des délais de rafraîchissement trop court. En dessous de 10 secondes, il faut vraiment s'interroger sur la pertinence d'un tel choix.
+> ✔️ **CONSIGLIO**<br>
+> Evitare di impostare tempi di aggiornamento troppo brevi. Al di sotto dei 10 secondi, occorre interrogarsi sulla pertinenza di una scelta di questo tipo..
 
 ## Écriture au changement?
 
-Cette propriété active/désactive l'enregistrement de la valeur d'une variable dans le REDY si la *donnée* est modifiée par liaison ou par script. Il bien entendu que le ce soit le *champ* ***Valeur*** qui soit inscrit dans la donnée.
+Questa proprietà abilita/disabilita la modifica del valore di una variabile nel REDY se il *dato* viene modificato attraverso il collegamento o lo scripting.
 
-# Événements
+# Eventi
 
 ## `onRequestDone`
 
@@ -84,33 +84,31 @@ L'évènement `onRequestDone` est déclenché à chaque fois que l'acteur a réa
 
 ## `onWriteDone`
 
-L'évènement `onWriteDone` est déclenché à chaque fois que l'acteur a réaliser une écriture vers le REDY.
+L'evento `onRequestDone` viene attivato ogni volta che l'attore ha fatto una richiesta per ottenere o aggiornare la variabile e il campo desiderati.
 
 > [⚡ `onWriteDone`]({{ site.baseurl }}/script-api/REDY.Actor.WosVariableSource.html#event:onWriteDone){:target="_blank"}
 
-# Informations
+# Informazioni
 
-## Donnée
+## Dati
 
-Vous trouverez dans ce champ la variable ou le champ de variable désigné par l'acteur.
+Questo campo contiene la variabile o il campo variabile designato dall'attore.
 
-Une liaison avec l'écriture activée permet de modifier la valeur de la variable REDY si l'acteur la désigne.
+## Interrogazione in corso?
 
-## Requête en cours ?
+Questa informazione consente di sapere se l'attore sta eseguendo una query.
 
-Cette information permet de savoir si l'acteur est en train de réaliser une requête.
+> 💡 **CONSIGLIO**<br>
+Per poter verificare l'esecuzione di un'interrogazione, legare il campo Visibile? di un attore a questo valore.
 
-> 💡 **ASTUCE**<br>
-Liez la visibilité d'une acteur sur cette information pour le visualiser lorsqu'il est en train de réaliser une requête.
+## Prima interrogazione eseguita?
 
-## Première requête réalisée ?
+Questo dato sarà vero dopo l'esecuzione di una prima query.
 
-Cette information sera vrai après avoir effectuer une première requête.
+# Uso
 
-# Usage
-
-Il est possible de créer des fournisseurs dans vos scènes ou composites. Vous pouvez également les créer de manière globale dans la sous-section [Projet / Fournisseurs de variable](../project/variable-source.md) pour en faire profiter toute votre synapp.
+I fornitori possono essere creati nelle scene o nei compositi. Si possono anche creare globalmente nella sottosezione [Progetto/Fornitori dati](../project/variable-source.md) per renderli disponibili a tutto il synapp.
 
 
-> ✔️ **CONSEIL**<br>
-> Essayez de mutualiser les fournisseurs de variable dans vos scènes et composites. Rappelez-vous que des requêtes de données sont réalisées pour chaque fournisseur de variable. Ce qui est responsable d'un trafic de données qui pourrait être important pour l'équipement qui exécute votre synapp. Ceci est particulièrement sensible pour les équipements nomades comme les smartphones et tablettes.
+> ✔️ **CONSIGLIO**<br>
+> Cercate di mutualizzare i fornitori variabili nelle scene e nei compositi. Ricordare per ogni fornitore di variabili vengono effettuate delle richieste di dati che potrebbero generare un traffico che potrebbe rivelarsi importante per il dispositivo su cui è in esecuzione la synapp. Questo aspetto è particolarmente sensibile per i dispositivi mobili come smartphone e tablet.
