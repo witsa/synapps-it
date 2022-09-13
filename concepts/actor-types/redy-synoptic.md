@@ -1,17 +1,17 @@
 ---
-title: "REDY | Synoptique"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Sinottico"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 {% include links_actor.md apiClass="REDY.Actor.Synoptic" %}
 
-# Synoptique
+# Sinottico
 
-L'acteur *Synoptique* affiche un synoptique du REDY. Dans une phase de transition entre la solution Synapps et les synoptiques, cet acteur joue un rôle important.
+L'attore *Sinottico* permette la visualizzazione di un sinottico presente nella parametrizzazione del REDY. Durante la fase di transizione dai sinottici alla soluzione Synapps, questo attore svolge un ruolo importante.
 
-> Placer un acteur synoptique dans une [boite à vue](./layout-view-box.md) est un bon moyen de l'afficher dans un écran de n'importe quelle taille.
+> Collocare un attore sinottico in un attore [box di visualizzazione] (./layout-view-box.md) è un buon modo per visualizzarlo all'nterno di uno schermo di qualsiasi dimensione.
 
-# Propriétés
+# Proprietà
 
-La propriété *Synoptique* permet de définir celui que vous désirez afficher dans l'acteur. La valeur attendue est le sous chemin du synoptique depuis `:easy.SYN`.
+La proprietà *Sinottico* consente di definire quale sinottico si desidera visualizzare nell'attore. Il valore atteso è il sottopercorso del sinottico da `:easy.SYN`.
