@@ -1,10 +1,10 @@
 ---
-title: "REDY | Filtre d'ensemble [TODO]"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Filtro insiemi [TODO]"
+parent: "Elenco filtri"
+grand_parent: Concetti
 ---
 
 
-> 🚧 en cours de rédaction...
+> 🚧 in corso di redazione ...
 
 ![SynApps](../../assets/under-progress.gif)
