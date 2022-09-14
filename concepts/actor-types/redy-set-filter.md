@@ -1,6 +1,6 @@
 ---
 title: "REDY | Filtro insiemi [TODO]"
-parent: "Elenco filtri"
+parent: "Elenco attori"
 grand_parent: Concetti
 ---
 
