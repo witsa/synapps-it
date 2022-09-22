@@ -1,7 +1,7 @@
 ---
 title: "REDY | Elenco degli stati [TODO]"
 parent: "Elenco attori"
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
 
