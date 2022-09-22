@@ -1,10 +1,10 @@
 ---
-title: "REDY | Filtre de groupe"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Filtro gruppo"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 ![SynApps](../../assets/under-progress.gif)
