@@ -1,49 +1,62 @@
 ---
-title: "Acteur"
-parent: Concepts
+title: "L'Attore"
+parent: Concetti
 has_children: true
 nav_order: 4
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 n progress...
 
 ![SynApps](../../assets/under-progress.gif)
 
 {% include table_of_content.html %}
 
-# Attore
+# L'Attore
 
 ## Definizione
 
-L'attore è l'elemento fondamentale dell'interfaccia. I numerosi tipi di attore e le loro specificità vi permetteranno di realizzare qualsiasi tipo di interfaccia, dai moduli ai dashboard..
+L'attore è l'elemento fondamentale dell'interfaccia. I numerosi tipi di attore e le loro caratteristiche permettono al realizzazione di qualsiasi tipo di interfaccia, dai moduli ai dashboard.
 
-Gli attori sono organizzati in una struttura ad albero che forma quella che è definita come [scena](../scena.md).
+Gli attori sono organizzati in una struttura ad albero e vanno a caratterizzare quella che è definita come [scena](../scena.md).
 
 ![SynApps](../../assets/concepts/actor/01.png)
 
 ![SynApps](../../assets/concepts/actor/02.png)
 
-## Categoria
+## Tipologia
 
-Un attore appartiene ad una categorie che ne determina il comportamento.
+Gli attori sono raggruppati secondo diverse tipologie in base alle caratteristiche che hanno in comune.
 
-- voir [les types d'acteur](../actor-types/)
+- vedere [Elenco attori](../actor-types/)
 
 ## Proprietà
 
 Gli attori possiedono una serie di proprietà comuni. Inoltre ogni attore presenta delle proprietà specifiche alla categoria a cui appartiene.
 
-Queste proprietà rappresentano lo stato dell'attore. Ne controllano l'aspetto e il comportamento.
+Le proprietà caratterizzano lo stato dell'attore. Ne controllano l'aspetto e il comportamento.
 
-Ogni proprietà ha un valore predefinito. Il valore è definito dallo [stile dell'attore](../actor-style.md).
+Ogni proprietà ha un valore predefinito che è definito dallo [stile dell'attore](../actor-style.md).
 
-Lo strumento *Ispettore dele proprietà* è la parte del *designer* che consente di impostare, programmare e collegare le proprietà di un attore.
+Lo strumento *Ispettore delle proprietà* è la parte del *designer* che consente di impostare, programmare e collegare le proprietà di un attore.
 
 ![SynApps](../../assets/concepts/actor/03.png)
 
+## Chiave dell'attore
+
+Un attore si identifica attraverso la sua Chiave. Si tratta di una stringa che deve essere unica nella scena o nel composito che contiene l'attore.
+
+È possibile modificare questa chiave tramite Ispettore degli attori.
+
+### Caratteri consentiti
+ - Sono ammessi tutti i caratteri alfanumerici.
+ - Tra i caratteri speciali è ammesso solo il trattino `-`.
+
+> ✔️ **CONSIGLIO**<br>
+Si consiglia di utilizzare la chiave degli attori per classificarli e descrivere al meglio il loro ruolo nella scena o nel composito.
+
 ### Categorie
 
-Nell'ispettore, le proprietà sono organizzate per categoria:
+Nell'ispettore, le proprietà sono organizzate per categorie:
 
 - [**Specifico**](../actor-types/index.md)
 
@@ -67,7 +80,7 @@ Proprietà relative alle dimensioni dell'attore.
 
 - [**Spazi**](./category-space.md)
 
-Les propriétés relatives à l'espacement entre les acteurs et les coins de la scène.
+Le proprietà relative alla distanza tra gli attori e gli angoli della scena..
 
 - [**Bordi**](./category-border.md)
 
@@ -81,66 +94,41 @@ Proprietà relative alle trasformazioni geometriche (scala, traslazione, rotazio
 
 Alcune proprietà possono ereditare il loro valore dalla proprietà di un genitore dell'attore. È il caso, ad esempio, della dimensione dei caratteri. È quindi possibile definire i valori di queste proprietà una volta per tutte all'inizio dell'albero degli attori, in modo che tutti i figli possano beneficiarne.
 
-### Evento di modifica
+## Eventi e ciclo di vita
 
-Quando il suo valore cambia, ogni proprietà genera un evento di modifica. Esistono 4 tipi di modifica:
-- **Aucune** Pas de modification particulière
-- **Style** Modification qui entraîne un calcul des styles CSS de l'acteur.
-- **Rendu** Modification qui entraîne un nouveau rendu de l'acteur.
-- **Gabarit** Modification qui entraîne un nouveau calcul de gabarit et rendu de toute la hiérarchie de l'acteur.
+Un attore genera degli eventi durante il suo intero ciclo di vita: dalla sua inizializzazione alla sua distruzione e inoltre dispone anche di eventi relativi al mouse, come il clic, il passaggio del mouse e così via. Infine, alcuni attori hanno eventi specifici relativi al loro modo di funzionare.
+Tutti questi eventi possono essere intercettati ed utilizzati all'interno di script..
 
-Il est possible d'intervenir par script sur le déclenchement d'un évènement de changement de valeur.
-- Voir la partie dédiées aux [Scripts](../scripts/)
-- Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
+- Per saperne di più sul [ciclo di vita dell'attore](./actor-life-cycle)
+-  Per saperne di più sugli [Script](../scripts/)
 
-## Clé d'acteur
+## Proprietà aggiuntive
 
-Un acteur est identifiable par sa clé. C'est une chaîne de caractère qui doit être unique dans la scène ou le composite qui contient l'acteur.
-
-Il est possible de changer cette clé dans l'inspecteur d'acteur.
-
-### Caractères autorisés
- - Tous les caractères alphanumériques sont autorisés.
- - Seul le tiret `-` est autorisé parmi les caractères spéciaux.
-
-> ✔️ **CONSEIL**<br>
-Il est recommandé de profiter des clés d'acteur pour les qualifier et mieux comprendre le rôle de chaque acteur et la structure de votre scène ou composite.
-
-## Les évènements et cycle de vie
-
-Un acteur va déclencher des évènements pendant toute sa durée de vie : de son initialisation à sa destruction. Il aura aussi des évènements de souris comme le click, le survol... Enfin, certains acteurs possèdent des évènements spécifiques à leur comportement.
-Tous ces évènements sont autant d'occasions d'intervenir et d'ajouter des comportements par script.
-
-- En savoir plus sur le [cycle de vie d'un acteur](./actor-life-cycle)
-- En savoir plus sur les [Scripts](../scripts/)
-
-## Les additionnelles
-
-Il est possible de définir des propriétés additionnelles sur un acteur. Une catégorie dans l'inspecteur est dédiée à leur gestion.
+È possibile definire proprietà aggiuntive per un attore. Una categoria dell'ispettore è dedicata alla loro gestione..
 
 ![SynApps](../../assets/concepts/actor/04.png)
 
-Les types de propriétés disponibles :
+Tipi di proprietà disponibili:
 
 ![SynApps](../../assets/concepts/actor/05.png)
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 
-Chaque additionnelle est identifiée par sa clé qui doit être unique pour un acteur donné.
+Ogni proprietà aggiuntiva è identificata attraverso la sua chiave che deve esser unica all'interno dell'attore.
 
-Lorsqu'une valeur d'additionnelle change, comme toute les autres propriétés, elle déclenche un type de d'évènement de modification. Par défaut c'est la *non modification* qui est lancé.
+Quando il valore di un componente aggiuntivo cambia, come tutte le altre proprietà, si attiva un evento di modifica. Per impostazione predefinita, viene attivato *Nessuno*.
 
-## Les liaisons
+## Link
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
-### Évènements de transformation
+### Eventi di trasformazione
 
-> voir [le cycle de vie d'un acteur](../scripts/actor-life-cycle.md)
+> Vedere [il ciclo di vita di un attore](../scripts/actor-life-cycle.md)
 
-## Le ruissellement de contexte
-> 🚧 en cours de rédaction...
+## Discesa dei contenuti
+> 🚧 in progress...
 
-## Les fournisseurs de donnée
-> 🚧 en cours de rédaction...
+## I fornitori di dati
+> 🚧 in progress...
