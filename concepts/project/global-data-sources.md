@@ -1,7 +1,7 @@
 ---
 title: "Fornitore di dati"
-parent: "progetto"
-grand_parent: concetti
+parent: "Progetto"
+grand_parent: Concetti
 nav_order: 8
 ---
 
