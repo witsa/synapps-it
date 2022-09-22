@@ -1,5 +1,5 @@
 ---
-title: "L'Attore"
+title: "L'attore"
 parent: Concetti
 has_children: true
 nav_order: 4
@@ -23,24 +23,6 @@ Gli attori sono organizzati in una struttura ad albero e vanno a caratterizzare 
 
 ![SynApps](../../assets/concepts/actor/02.png)
 
-## Tipologia
-
-Gli attori sono raggruppati secondo diverse tipologie in base alle caratteristiche che hanno in comune.
-
-- vedere [Elenco attori](../actor-types/)
-
-## Proprietà
-
-Gli attori possiedono una serie di proprietà comuni. Inoltre ogni attore presenta delle proprietà specifiche alla categoria a cui appartiene.
-
-Le proprietà caratterizzano lo stato dell'attore. Ne controllano l'aspetto e il comportamento.
-
-Ogni proprietà ha un valore predefinito che è definito dallo [stile dell'attore](../actor-style.md).
-
-Lo strumento *Ispettore delle proprietà* è la parte del *designer* che consente di impostare, programmare e collegare le proprietà di un attore.
-
-![SynApps](../../assets/concepts/actor/03.png)
-
 ## Chiave dell'attore
 
 Un attore si identifica attraverso la sua Chiave. Si tratta di una stringa che deve essere unica nella scena o nel composito che contiene l'attore.
@@ -61,6 +43,24 @@ Nell'ispettore, le proprietà sono organizzate per categorie:
 - [**Specifico**](../actor-types/index.md)
 
 Sono le proprietà specifiche del tipo di attore. Per i dettagli andare alla pagina [Tipi di attore] (../actor-types/index.md).
+
+## Tipologia
+
+Gli attori sono raggruppati secondo diverse tipologie in base alle caratteristiche che hanno in comune.
+
+- vedere [Elenco attori](../actor-types/)
+
+## Proprietà
+
+Gli attori possiedono una serie di proprietà comuni. Inoltre ogni attore presenta delle proprietà specifiche alla categoria a cui appartiene.
+
+Le proprietà caratterizzano lo stato dell'attore. Ne controllano l'aspetto e il comportamento.
+
+Ogni proprietà ha un valore predefinito che è definito dallo [stile dell'attore](../actor-style.md).
+
+Lo strumento *Ispettore delle proprietà* è la parte del *designer* che consente di impostare, programmare e collegare le proprietà di un attore.
+
+![SynApps](../../assets/concepts/actor/03.png)
 
 - [**Aspetto**](./category-aspect.md)
 
