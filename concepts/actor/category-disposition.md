@@ -1,15 +1,18 @@
 ---
-title: "Catégorie Disposition"
-parent: Acteur
-grand_parent: Concepts
+title: "Proprietà Layout"
+parent: L'attore
+grand_parent: Concetti
 nav_order: 3
 ---
 
 {% include table_of_content.html %}
 
-# Catégorie Disposition flexible
+Questa categoria ragruppa le proprietà relative al modo in cui l'attore si dispone all'interno di un attore di tipo Layout.
+I parametri presenti variano in funzione del tipo di attore nel quale è posizionato.
 
-Cette catégorie regroupe les propriétés relatives à la disposition de l'acteur dans une disposition flexible comme l'[empilement](../actor-types/layout-stack.md), la [boite à vue](../actor-types/layout-view-box.md) ou la [modale](../actor-types/layout-modal.md).
+# Proprietà Layout flessibile
+
+Questa categoria raggruppa le proprietà relative alla disposizione dell'attore in un layout flessibile come l'[impilamento](../actor-types/layout-stack.md), Il [Box di visualizzazione](../actor-types/layout-view-box.md) o la [modale](../actor-types/layout-modal.md).
 
 {% assign sorted = site.base_actor_properties | where: 'section', 'disposition_flex' | sort: 'order' %}
 
@@ -19,42 +22,42 @@ Cette catégorie regroupe les propriétés relatives à la disposition de l'acte
 
 {% endfor %}
 
-# Catégorie Disposition dans une toile
+# Proprietà Layaut in un Canvas
 
-Cette catégorie regroupe les propriétés relatives à la disposition de l'acteur dans une [toile](../actor-types/layout-canvas.md).
-
-
-Dans un acteur [toile](../actor-types/layout-canvas.md), les enfants directes sont disposés suivant des coordonnées relativement à ses 4 bords.
+Questa categoria raggruppa le proprietà relative alla disposizione dell'attore in un [canvas](../actor-types/layout-canvas.md).
 
 
-## Position haute
-La position haute permet de définir le décalage vertical du bord extérieur haut de l'acteur par rapport au bord intérieur haut de la toile parente. Les bords considérés ici sont :
-- bord interne pour la toile, c'est-à-dire qu'il comprend la potentielle marge intérieure haute
-- bord externe pour l'acteur enfant, c'est-à-dire qu'il comprend la potentielle marge extérieure haute.
+In un attore [canvas](../actor-types/layout-canvas.md), i figli diretti sono disposti secondo delle coordinate relative ai suoi 4 bordi.
 
-## Position gauche
-La position gauche permet de définir le décalage horizontal du bord extérieur gauche de l'acteur par rapport au bord intérieur gauche de la toile parente. Les bords considérés ici sont :
-- bord interne pour la toile, c'est-à-dire qu'il comprend la potentielle marge intérieure gauche
-- bord externe pour l'acteur enfant, c'est-à-dire qu'il comprend la potentielle marge extérieure gauche.
 
-## Position basse
-La position basse permet de définir le décalage vertical du bord extérieur haut de l'acteur par rapport au bord intérieur haut de la toile parente. Les bords considérés ici sont :
-- bord interne pour la toile, c'est-à-dire qu'il comprend la potentielle marge intérieure basse
-- bord externe pour l'acteur enfant, c'est-à-dire qu'il comprend la potentielle marge extérieure basse.
+## Posizione alta
+La posizione alta viene utilizzata per definire o scostamento verticale del bordo esterno superiore dell'attore rispetto al bordo interno superiore del canvas padre. I bordi considerati sono:
+- bordo interno del canvas, ossia include il potenziale margine interno alto
+- bordo esterno dell'attore figlio, cioè include il potenziale margine esterno alto.
 
-## Position droite
-La position droite permet de définir le décalage horizontal du bord extérieur droite de l'acteur par rapport au bord intérieur droite de la toile parente. Les bords considérés ici sont :
-- bord interne pour la toile, c'est-à-dire qu'il comprend la potentielle marge intérieure droite
-- bord externe pour l'acteur enfant, c'est-à-dire qu'il comprend la potentielle marge extérieure droite.
+## Posizione sinistra
+La posizione sinistra viene utilizzata per definire lo scostamento orizzontale del bordo esterno sinistro dell'attore rispetto al bordo interno sinistro del canvas padre. I bordi considerati sono:
+- bordo del canvas, cioè include il potenziale margine interno di sinistra.
+- bordo esterno dell' attore figlio, cioè include il potenziale margine esterno sinistro.
 
-> 📌 **REMARQUE**<br>
-Les positions haute et gauche sont celles qui sont changées lorsqu'on déplace l'acteur dans la toile en glissant la souris.
+## Posizione bassa
+La posizione bassa definisce lo scostamento verticale del bordo esterno superiore dell'attore rispetto al bordo interno superiore del canvas padre. I bordi considerati sono:
+- bordo interno del canvas, cioè include il potenziale margine interno inferiore
+- bordo esterno dell' attore figlio, cioè comprende il potenziale margine esterno basso.
 
-> 💡 **ASTUCE**<br>
-Si vous utilisez deux coordonnées opposées en même temps (haute/basse *ou* droite/gauche) et qu'il n'y a pas d'autres contraintes de taille, l'acteur va s'entendre pour faire respecter à ses bords les règles de position. Par exemple, pour étendre un acteur sur toute la surface d'une toile, vous pouvez définir toutes les positions à `0`. Ainsi, chaque bord sera collé au bord correspondant de la toile.
+## Posizione destra
+La posizione destra definisce lo scostamento orizzontale del bordo esterno destro dell'attore rispetto al bordo interno destro del canvas padre. I bordi considerati sono:
+- bordo interno del canvas, ovvero include il potenziale margine interno destro
+- bordo esterno dell'attore figlio, cioè comprende il potenziale margine esterno destro.
 
-## Liens
-> - Position haute : {% include actor_property_script.md propName="top" propPath="properties.top" scriptApiClass="Actor.BaseActorProperties" %}
-> - Position basse : {% include actor_property_script.md propName="bottom" propPath="properties.bottom" scriptApiClass="Actor.BaseActorProperties" %}
-> - Position gauche : {% include actor_property_script.md propName="left" propPath="properties.left" scriptApiClass="Actor.BaseActorProperties" %}
-> - Position droite : {% include actor_property_script.md propName="right" propPath="properties.right" scriptApiClass="Actor.BaseActorProperties" %}
+> 📌 **NOTA**<br>
+Le posizioni superiore e sinistra sono quelle che vengono modificate quando l'attore viene spostato con il mouse all'interno dell'attore canvas.
+
+> 💡 **CONSIGLIO**<br>
+Se si usano due coordinate opposte allo stesso tempo (alto/basso *o* destra/sinistra) e non ci sono altri vincoli di dimensione, l'attore accetta di far rispettare ai suoi bordi le regole di posizione. Per esempio, per distribuire un attore sull'intera superficie di un canvas, si possono impostare tutte le posizioni a `0`. In questo modo, ogni bordo verrà incollato al bordo corrispondente dell'attore canvas.
+
+## Link
+> - Posizione alta: {% include actor_property_script.md propName="top" propPath="properties.top" scriptApiClass="Actor.BaseActorProperties" %}
+> - Posizione bassa: {% include actor_property_script.md propName="bottom" propPath="properties.bottom" scriptApiClass="Actor.BaseActorProperties" %}
+> - Posizione sinistra: {% include actor_property_script.md propName="left" propPath="properties.left" scriptApiClass="Actor.BaseActorProperties" %}
+> - Position destra: {% include actor_property_script.md propName="right" propPath="properties.right" scriptApiClass="Actor.BaseActorProperties" %}
