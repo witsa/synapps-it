@@ -1,16 +1,16 @@
 ---
-title: "Catégorie Aspect"
-parent: Acteur
-grand_parent: Concepts
+title: "Proprietà Aspetto"
+parent: L'attore
+grand_parent: Concetti
 nav_order: 1
 ---
 
 {% include table_of_content.html %}
 
 
-# Catégorie Aspect
+# Proprietà Aspetto
 
-Cette catégorie regroupe les propriétés relatives à l'aspect de l'acteur.
+Questa categoria comprende le proprietà relative all'aspetto dell'attore..
 
 {% assign sorted = site.base_actor_properties | where: 'section', 'aspect' | sort: 'order' %}
 
