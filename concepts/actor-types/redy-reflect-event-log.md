@@ -1,10 +1,10 @@
 ---
-title: "REDY | Journal des reflets [TODO]"
-parent: "Types d'acteur"
-grand_parent: Concepts
+title: "REDY | Giornale dei riflessi [TODO]"
+parent: "Elenco attori"
+grand_parent: Concetti
 ---
 
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 ![SynApps](../../assets/under-progress.gif)
