@@ -1,9 +1,9 @@
 ---
-title: "Session [TODO]"
-parent: Concepts
+title: "Sessioni [TODO]"
+parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 ![SynApps](../assets/under-progress.gif)
 
