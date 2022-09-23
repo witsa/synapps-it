@@ -1,14 +1,14 @@
 ---
-title: "Magasin de donnée [TODO]"
+title: "Deposito dati [TODO]"
 parent: Scripts
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress
 
 ![SynApps](../assets/under-progress.gif)
 
 
-# Dans le Runtime
+# Nel Runtime
 
-# Dans Studio
+# In Studio
