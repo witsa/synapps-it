@@ -1,19 +1,19 @@
 ---
-title: "Exécuter un script à l'affichage"
+title: "Esecuzione di uno script alla visualizione"
 parent: Scripts
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
-# Exécuter un script à l'affichage
+# Esecuzione di uno script sul displayalla visualizzazione
 
-## Comment exécuter un script à l'affichage d'une scène ou d'un composite
+## Come eseguire uno script alla visualizzazione di una scena o di un composito
 
-Que ce soit pour une scène ou un composite, il est possible d'exécuter un script juste à son affichage.
+Sia per una scena che per un composito, è possibile eseguire uno script nel momento della sua visualizzazione.
 
-Pour cela, il suffit de définir ce script dans l'évènement `onPostInit` de l'acteur principale de la scène ou du composite.
+Per farlo, basta definire questo script nell'evento `onPostInit` dell'attore principale della scena o del composito.
 
-En effet, lorsqu'une scène ou un composite doit être affichée, l'arborescence des acteurs est construite. Lors de cette construction, les scripts `onInit` sont d'abord exécutés en parcourant l'arborescence des acteurs vers le bas. Puis l'évènement `onPostInit` est exécuté sur chaque acteur, en remontant l'arborescence. Ainsi, lorsque le tour de l'acteur principal est arrivé, tous les acteurs ont été déclarés, toutes les liaisons réalisées.
+Di fatto, quando una scena o un composito deve essere visualizzato, la costruzione avviene percorrendo l'albero degli attori. Durante questa costruzione, gli script `onInit` vengono eseguiti attraversando l'albero degli attori dall'alto verso il basso. Quindi l'evento `onPostInit` viene eseguito su ogni attore, risalendo l'albero. Così, quando arriva il turno dell'attore principale, tutti gli attori sono stati dichiarati, tutti i collegamenti creati.
 
-## liens connexes
+## Collegamento connessi
 
 - [Cycle de vie d'un acteur](../actor/actor-life-cycle.md)
