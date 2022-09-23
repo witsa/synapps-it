@@ -1,100 +1,100 @@
 ---
-title: "Cycle de vie d'un acteur"
+title: "Ciclo di vita di un attore"
 parent: Scripts
-grand_parent: Concepts
+grand_parent: Concetti
 ---
 
 {% include table_of_content.html %}
 
-# Cycle de vie d'un acteur
+# Ciclo di vita di un attore
 
-Tous les acteurs ont un cycle de vie lorsqu'il sont affiché puis supprimé d'une scène (c'est valable aussi avec un composite).
+Tutti gli attori hanno un ciclo di vita in cui vengono visualizzati e poi eliminati da una scena (questo vale anche per un composito).
 
-A chaque étape du cycle de vie, l'acteur subit des transformations et, parfois, des évènements sont déclenchés. Ces derniers offrent des occasions de d'exécuter des actions définies dans des scripts `Javascript`.
+In ogni fase del ciclo di vita, l'attore subisce trasformazioni che talvolta si traducono in eventi. Questi forniscono l'opportunità di eseguire azioni prestabilite mediante l'uso di script `Javascript`.
 
-Pour savoir quand et comment intervenir au bon moment sur un acteur, il est important de bien comprendre son cycle de vie dans une scène/composite.
+Per sapere quando e come intervenire al momento giusto su un attore, è importante capire il suo ciclo di vita in una scena/composizione.
 
-# Affichage d'une scène ou composite
+# Visualizzazione di una scena o di un composito
 
-Lorsqu'une scène ou un composite doit s'afficher, Le *Runtime* interprète sa définition de l'acteur principal. Il contient l'arborescence des acteurs qui composent la scène ou le composite. Il contient également toutes les définitions de scripts.
+Quando una scena o un composito viene visualizzato, il *Runtime* ne interpreta le caratteristiche a partire dall'attore principale che contiene la struttura degli attori che compongono la scena o il composito. Questo attore contiene anche tutte le definizioni degli script.
 
-Le *Runtime* va parcourir l'arborescence des acteurs en commençant par l'acteur principal. Il s'occupera ensuite de chaque enfant, de chaque enfant d'un acteur enfant, etc.
+Il *Runtime* attraverserà l'albero degli attori partendo dall'attore principale. Si occuperà quindi di ogni figlio, di ogni figlio di un attore figlio, ecc.
 
-Mais l'affichage de l'arborescence se passe en 3 passes :
+La visualizzazione della struttura ad albero avviene in 3 fasi:
 
-- L'initialisation
-- La post-initialisation
-- le premier rendu.
+- Inizializzazione
+- La post-inizializzazione
+- il primo rendering.
 
-Chaque passe à un role particulier et pendant laquelle des évènements sont déclenchés.
+Ogni passaggio ha un ruolo particolare durante il quale vengono attivati gli eventi.
 
-## Initialisation
+## Inizializzazione
 
-Pendant la phase d'initialisation, les acteurs sont parcouru en descendant dans l'arborescence pour être créé et initialisé.
+Durante la fase di inizializzazione, la struttura ad albero viene percorsa, dall'alto verso il basso, in modo da identificare gli attori che la compongono.
 
 ![SynApps](../../assets/concepts/life-cycle//init.gif)
 
-Dans cette phase l'acteur va initialiser ses propriétés, valoriser les propriétés définies dans son paramètre, créer ses éventuelles additionnelles et les valoriser.
+In questa fase, ogni attore inizializza le sue proprietà, valorizza le proprietà definite nei suoi parametri, crea eventuali proprietà aggiuntive e attribuisce loro un valore.
 
-Un évènement est ensuite déclenché : [`onInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onInit){:target="_blank"}.
+A questo punto viene generato un evento: [`onInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onInit){:target="_blank"}.
 
-A ce moment, tous les acteurs définis dans la scène ou le composite ne sont pas encore présents ni disponibles.
-Les [liaisons](../binding.md) ne sont toujours pas réalisées.
+In questo momento, potrebbe succedere che non tutti gli attori definiti nella scena o nel composito siano presenti o disponibili.
+I [collegamenti](../binding.md) non sono ancora stati completati.
 
-> ✔️ **CONSEIL**<br>
-> C'est donc une phase privilégiée pour compléter l'initialisation de l'acteur. Par exemple, changer par script des valeurs de propriétés. En effet, on ne risque pas de perdre en performance à cause d'exécution de liaison et leur conséquences puisqu'elles ne sont pas encore effective.
+> ✔️ **CONSIGLIO**<br>
+> Si tratta quindi di una fase preferenziale per completare l'inizializzazione dell'attore. Ad esempio, la modifica dei valori delle proprietà tramite script. Infatti, non esiste il rischio di perdere prestazioni a causa dell'esecuzione dei collegamenti e delle loro possibili implicazioni, in quanto non sono ancora operativi.
 
-> C'est le meilleur moment également pour définir des logiques métiers à attacher à l'acteur ou à la scène / composite.
+> Questo è anche il momento migliore per definire la logica operativa da collegare all'attore o alla scena/composito.
 
-En revanche, ce n'est pas le bon moment pour tenter d'accéder à d'autres acteurs puisqu'ils ne sont pas encore tous créés.
+Per contro, non è il momento giusto per cercare di accedere ad altri attori, poiché questi non sono ancora stati tutti creati.
 
-Ce n'est pas non plus le moment d'agir sur l'élément DOM correspondant à l'acteur : il n'est pas encore créé !
+Non è nemmeno il momento di agire sull'elemento DOM corrispondente all'attore: non è ancora stato creato!
 
-## Post-initialisation
+## Post-inizializzazione
 
-Une fois que tous l'arborescence est initialisée, le *Runtime* va exécuter la phase de post-initialisation, cette fois-ci en remontant dans cette arborescence.
+Una volta inizializzato l'intero albero, il *Runtime* eseguirà la fase di post-inizializzazione, questa volta risalendo l'albero.
 
 ![SynApps](../../assets/concepts/life-cycle//post-init.gif)
 
-Dans cette phase, l'acteur va placer l'élément DOM dans le flux HTML, créer ses liaisons, résoudre les sources de ces liaisons et les exécuter.
+In questa fase, l'attore inserisce l'elemento DOM nel flusso HTML, crea i suoi collegamenti, determina le fonti di questi collegamenti e li esegue.
 
-Un évènement est ensuite déclenché : [`onPostInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onPostInit){:target="_blank"}.
+Viene quindi generato un evento: [`onPostInit`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onPostInit){:target="_blank"}.
 
-> ✔️ **CONSEIL**<br>
-> C'est le bon moment pour agir dans l'élément DOM. Mais attention, le style CSS de l'acteur n'est pas encore défini ni ces classes CSS. Ce n'est pas le moment d'agir sur ces élément.
+> ✔️ **CONSIGLIO**<br>
+> Questo è il momento giusto per agire nell'elemento DOM. Ma attenzione, lo stile CSS dell'attore non è ancora definito, né lo sono le sue classi CSS. Non è il momento di agire su questi elementi.
 
-En revanche, tous les acteurs sont présents et disponibles mais certains acteurs ne sont pas encore post-initialisés.
+Tutti gli attori sono presenti e disponibili, ma alcuni non sono ancora post-inizializzati.
 
-## Premier rendu
+## Primo rendering
 
-Après que l'acteur principal soit post-initialisé, le *Runtime* va exécuter la phase de premier rendu.
+Dopo che l'attore principale è stato post-inizializzato, il *Runtime* eseguirà la prima fase di rendering.
 
-Elle consiste à parcourir l'arborescence en descendant.
+Questa operazione consiste nello ripercorrere la struttura ad albero degli attori, verso il basso
 
 ![SynApps](../../assets/concepts/life-cycle//first-render.gif)
 
-Plusieurs étapes vont être réalisées :
+Sono previste diverse azioni:
 
-A chaque acteur correspond un élément DOM dan le flux HTML. Des classes CSS sont définies en fonction du type d'acteur et du [style d'acteur](../actor-style.md) qu'il utilise. Une [classe unique]({{ site.baseurl }}/script-api/Actor.BaseActor.html#uniqClass){:target="_blank"} est aussi définie en fonction de la clé de l'acteur et de l'endroit où il se trouve. Elle très utile pour identifier l'acteur dans le DOM. Enfin, les classes définies dans la propriété *Classes* de l'acteur sont ajoutées.
+Ogni attore ha un elemento DOM corrispondente nel flusso HTML. Le classi CSS sono definite in base al tipo di attore e allo [stile dell'attore](../actor-style.md) che utilizza. Una [classe unica]({{ site.baseurl }}/script-api/Actor.BaseActor.html#uniqClass){:target="_blank"} è definita anche in base alla chiave e alla posizione dell'attore. È molto utile per identificare l'attore nel DOM. Infine, vengono aggiunte le classi definite nella proprietà *Classe* dell'attore.
 
-Le style CSS de l'élément est renseigné grâce au propriétés de l'acteur ainsi que par le [style d'acteur](../actor-style.md) qu'il utilise.
-C'est dans cette phase que ce style CSS est construit et renseigné sur l'élément DOM.
+Lo stile CSS dell'elemento viene compilato grazie alle proprietà dell'attore e allo [Stile dell'attore](../actor-style.md) che utilizza.
+È in questa fase che lo stile CSS viene costruito e inserito nell'elemento DOM..
 
-L'évènement [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"} est déclenché.
+Viene generato l'evento [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"}.
 
-> ✔️ **CONSEIL**<br>
-> C'est le moment de modifier le style CSS de l'élément DOM ou d'ajouter des classes CSS dessus par script.
+> ✔️ **CONSIGLIO**<br>
+> Questo è il momento di modificare lo stile CSS dell'elemento DOM o di aggiungervi classi CSS tramite script.
 
-Ensuite, un premier calcul de gabarit est réalisé sur l'acteur. Certain acteur ont besoin de cette étape pour s'afficher correctement, comme par exemple la [boite à vue](../actor-types/layout-view-box.md).
+Successivamente, viene eseguito un primo calcolo della sagoma sull'attore. Alcuni attori necessitano di questo passaggio per essere visualizzati correttamente, come ad esempio la [Box di visualizzazione](../actor-types/layout-view-box.md).
 
-Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} est déclenché. Dans le contexte de l'évènement, le champ `isFirstRender` est vrai. En effet, cette évènement est déclenché à chaque fois que l'acteur passe par l'étape de rendu, il est donc intéressant de savoir si c'est le premier rendu ou non.
-
-
-> ✔️ **CONSEIL**<br>
-> Cet évènement est le moment propice pour agir sur l'élément DOM ou à l'intérieur.
+Infine, viene generato l'evento [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"}. Nel contesto dell'evento, il campo `isFirstRender` è vero. Questo perché l'evento viene attivato ogni volta che l'attore passa attraverso la fase di rendering, quindi è interessante sapere se si tratta del primo rendering o meno.
 
 
-## Résumé
+> ✔️ **CONSIGLIO**<br>
+> Questo evento è il momento giusto per agire sull'elemento DOM o al suo interno.
+
+
+## RIASSUNTO
 
 <style>
 .table-wrapper td, .table-wrapper th {
@@ -113,59 +113,57 @@ Enfin, l'évènement [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.
 | Premier rendu | Création des classes CSS, du style CSS et du gabarit | Descendant | `onCssStyling`<br>`onRender(isFirstRender=true)` | Oui<br>Oui | Oui<br>Oui | Création<br>Oui | Non<br>Oui |
 
 
-# Ajout d'un acteur dynamiquement
+# Aggiunta dinamica di un attore
+Quando un attore viene aggiunto dopo la visualizzazione di una scena o di un composito, tutto si svolge come se fosse un attore principale. Il rendering di questo attore e dei suoi figli passa attraverso le stesse fasi:
+- Inizializzazione
+- Post-inizializzazione
+- Primo rendering
 
-Lorsqu'un acteur est ajouté après l'affichage d'une scène ou d'un composite, tout ce passe comme si c'était un acteur principale. Le rendu de cet acteur et de ses enfants passent les mêmes phases :
-- Initialisation
-- Post-initialisation
-- Premier rendu
+Una volta che l'attore è stato visualizzato, la struttura ad albero subirà una successione di cambiamenti di dimensioni. Quindi ci si aspetta che l'evento `onComputeLayout` venga eseguito su gran parte dell'ascendenza dell'attore aggiunto.
 
-Une fois que l'acteur est rendu, il va se passer déclencher une cascade de changement de taille dans l'arborescence. Il faut donc s'attendre à l’exécution de l'évènement `onComputeLayout` sur une bonne partie de l'ascendance de l'acteur ajouté.
+> ✔️ **CONSIGLIO**<br>
+> A causa di questo fenomeno di ricalcolo delle taglie dovuto all'inserimento di un attore in modo dinamico, nel caso di aggiunte multiple, è necessario tenere conto di questo tempo e ridurlo al minimo (aggiunta in un canvas, dimensioni fisse del contenitore, ritardo tra ogni aggiunta, aggiunta di attori in una volta sola).
+
+# Eliminazione di un attore
+
+Quando un attore viene cancellato, ad esempio quando si cambia una scena, i collegamenti vengono rimossi e anche l'elemento DOM viene rimosso dal flusso HTML. L'evento [`onDestroy`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onDestroy){:target="_blank"} viene generato.
 
 > ✔️ **CONSEIL**<br>
-> A cause de ce phénomène de recalcule des gabarits dû à l'insertion d'un acteur dynamiquement, dans le cas d'ajout massif, il est necessaire de prendre en compte ce temps voir le minimisé (ajout dans une toile, tailles du contenant fixes, délai entre chaque ajout, ajout d'acteurs en une seule fois).
-
-# Suppression d'un acteur
-
-Lors de la suppression d'un acteur par exemple lors d'un changement de scène, les liaisons vont être retirées, l'élément DOM va être retiré également du flux HTML. L'évènement [`onDestroy`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onDestroy){:target="_blank"} est déclenché.
-
-> ✔️ **CONSEIL**<br>
-> C'est le bon moment pour retirer des évènements sur l'élément DOM que vous auriez ajouté manuellement.
+> Questo è un buon momento per rimuovere gli eventi sull'elemento DOM che sono stati aggiunti manualmente.
 
 ![SynApps](../../assets/concepts/life-cycle/destroy.gif)
 
 
-Il faut savoir que la suppression d'une arborescence d'acteur est parcourue en montant.
+È importante notare che l'eliminazione di un albero di attori viene eseguita dal basso verso l'alto.
 
-| Phase | Description | Parcourt | Évènements | Liaisons | Présence du DOM | Style et Classes CSS | Gabarit calculé |
+| Fase | Descrizione | Percorso guidato | Eventi | Collegamenti | Presenza di DOM | Classi di stile e CSS | Modello calcolato |
 |:----:|:-----------|:-------:|:----------------------|:--------:|:--------:|:--------:|:-----------------:|
-| Destruction | Destruction des acteurs et Désactivation des liaisons | Montant | `onDestroy` | Oui | Oui | Oui | Oui |
+| Eliminazione | Eliminazionee |Eliminazione di attori e disattivazione di collegamenti | Importo | `onDestroy` | Sì | Sì | Sì | Sì | Sì |
 
 
-# Changement de valeur de propriété d'un acteur
+# Variazione del valore della proprietà di un attore
 
-Lors d'un changement de valeur de propriété ou d'une additionnelle d'un acteur, deux évènements sont déclenchés :
+Quando il valore della proprietà di un attore cambia o viene aggiunto, vengono attivati due eventi:
 
- - `onValueChanged` qui est déclenché pour une propriété donnée de l'acteur. La nouvelle valeur `newValue` et l'ancienne `oldValue` sont présentes dans le contexte de l'évènement.
- - `onPropertyChanged` qui est déclenché pour n'importe quelle propriété ou additionnelle de l'acteur. En plus de l'ancienne et nouvelle valeur, les champ `name` et `propertyPath` sont présents dans le contexte pour identifié la propriété ou l'additionnelle qui a changé.
+ - `onValueChanged` che viene attivato per una determinata proprietà dell'attore. Il nuovo `newValue` e il vecchio `oldValue` sono presenti nel contesto dell'evento.
+ - L'evento `onPropertyChanged` viene attivato per qualsiasi proprietà o componente aggiuntivo dell'attore. Oltre ai valori vecchi e nuovi, i campi `name` e `propertyPath` sono presenti nel contesto per identificare la proprietà o il complemento che è cambiato.
 
-Avant de déclenchement de ses deux évènements, un changement de valeur peut déclencher ce qu'on appelle un modification.
-Il existe 4 modifications possibles :
-- Aucune modification : dans ce cas, rien ne se passe. C'est la modification par défaut des additionnelle.
-- **Styles CSS** : dans ce cas, le style CSS de l'élément DOM est recalculé. L'évènement [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"} est déclenché une nouvelle fois.
-- **Rendu** : dans ce cas, un nouveau rendu globale est réalisé. Les évènements [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"}, [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onComputeLayout){:target="_blank"} et [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} sont déclenchés.
-- **Gabarit** : dans ce dernier cas, le gabarit de toute la ligne d'arborescence est recalculé. Ce qui va entraîner une série d'exécution de l'évènement [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onComputeLayout){:target="_blank"}.
+Prima che questi due eventi vengano generati, una variazione di valore può innescare quello che viene definito una modifica.
+Sono possibili 4 modifiche:
+- Nessuna modifica: in questo caso non succede nulla. Questa è la modifica predefinita per i componenti aggiuntivi.
+- **Stile CSS**: in questo caso, lo stile CSS dell'elemento DOM viene ricalcolato. L'evento [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"} viene nuovamente attivato.
+- **Rendering**: in questo caso, viene eseguito un nuovo rendering globale. Gli eventi [`onCssStyling`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onCssStyling){:target="_blank"}, [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor. BaseActor.html#event:onComputeLayout){:target="_blank"} e [`onRender`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onRender){:target="_blank"} vengono generati.
+- **Gabarit** : in quest'ultimo caso, viene ricalcolata l'intera sagoma della struttura di attori. Questo causerà l'esecuzione di una serie di eventi [`onComputeLayout`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:onComputeLayout){:target="_blank"}.
 
-Les propriétés spécifiques d'un acteur possèdent chacune leur type de modification. C'est à vous de définir la modification qu’entraîne le changement de valeur sur une additionnelle.
+Le proprietà specifiche di un attore prevedono ciascuna un proprio tipo di modifica. Spetta a voi definire la modifica che comporta la variazione di valore di una proprietà aggiuntiva.
 
 # Transformations de liaison
+È possibile intervenire sul valore che verrà scritto nella proprietà target di un [collegameto](../binding.md). L'evento [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} viene generato quando il valore sorgente di un vincolo è letto perché è cambiato o la sorgente è cambiata. Questo valore viene passato nel campo `value` del contesto dell'evento e, per impostazione predefinita, viene restituito direttamente dall'evento. È possibile trasformare questo valore per scrivere qualcos'altro nella proprietà di destinazione.
 
-Il est possible d'intervenir sur la valeur qui sera inscrite dans la propriété cible d'une [liaison](../binding.md). L'évènement [`onReadTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onReadTransform){:target="_blank"} se déclenche lorsque la valeur source d'une liaison est lue parce qu'elle a changé, ou que la source a changé. Cette valeur est passée dans le champ `value` du contexte de l'évènement et elle est par défaut directement retourné par l'évènement. Il est possible de transformer cette valeur pour écrire autre chose dans la propriété cible.
+> ✔️ **CONSIGLIO**<br>
+> Molto utile, ad esempio, per cambiare il tipo di valore: da un valore booleano a un colore.
 
-> ✔️ **CONSEIL**<br>
-> Très pratique par exemple pour changer le type de valeur : passer d'une valeur booléenne à une couleur.
+Allo stesso modo, se la scrittura è abilitata sul collegamento, una modifica del valore di destinazione attiverà la scrittura sul valore di origine. L'evento [`onWriteTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onWriteTransform){:target="_blank"} iene generato e consente di intervenire sul valore trasmesso.
 
-De la même manière, si l'écriture est activée sur la liaison, un changement de valeur de la cible va déclencher l'écriture dans la valeur source. L'évènement [`onWriteTransform`]({{ site.baseurl }}/script-api/Actor.BaseActor.html#event:additionals/[additionalName]/binding/onWriteTransform){:target="_blank"} se déclenche et permet d'intervenir sur la valeur transmise.
-
->⚠️ **ATTENTION**<br>
-> Dans le cas où vous réalisez une transformation en lecture sur une liaison dont l'écriture est activée, veillez à opérer la transformation inverse. Sinon quoi vous feriez entrer l'interface dans une boucle sans fin où l'écriture défait ce que fait la lecture.
+>⚠️ **ATTENZIONE**<br>
+> Se si esegue una trasformazione in lettura su un collegamento abilitato alla scrittura, assicurarsi di eseguire la trasformazione inversa. In caso contrario, l'interfaccia si troverebbe in un ciclo infinito in cui la scrittura annulla ciò che la lettura ha fatto.
