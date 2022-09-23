@@ -1,16 +1,16 @@
 ---
-title: "Catégorie Texte"
-parent: Acteur
-grand_parent: Concepts
+title: "Proprietà Testo"
+parent: L'attore
+grand_parent: Concetti
 nav_order: 2
 ---
 
 {% include table_of_content.html %}
 
 
-# Catégorie Texte
+# Proprietà Testo
 
-Cette catégorie regroupe les propriétés relatives au texte de l'acteur.
+I parametri relativi alla categoria Testo permettono di definire le caratteristiche del testo che appare nell'attore.
 
 {% assign sorted = site.base_actor_properties | where: 'section', 'text' | sort: 'order' %}
 
