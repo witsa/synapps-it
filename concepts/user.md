@@ -1,9 +1,9 @@
 ---
-title: "Utilisateur [TODO]"
-parent: Concepts
+title: "Utente [TODO]"
+parent: Concetti
 ---
 
-> 🚧 en cours de rédaction...
+> 🚧 in progress...
 
 ![SynApps](../assets/under-progress.gif)
 
