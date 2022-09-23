@@ -1,22 +1,22 @@
 ---
 title: "Scripts"
-parent: Concepts
+parent: Concetti
 has_children: true
 ---
 
 # Scripts
 
-Synapps Studio offre un environnement de développement complètement programmables.
+Synapps Studio offre un ambiente di sviluppo completamente programmabile.
 
-Le langage utilisé est le `Javascript`. Une API est fournie pour manipuler et accéder en l'ensemble des objets de votre synapp.
+Il linguaggio utilizzato è `Javascript`. Viene fornita un'API per manipolare e accedere a tutti gli oggetti del synapp
 
-Voir la [documentation des scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
+Vedere la [documentazione scripts]({{ site.baseurl }}/script-api/){:target="_blank"}
 
-## Scripts dans les évènements
+## Script negli eventi
 
-Synapps est un framework de développement évènementiel. C'est à dire que les acteurs et propriétés déclenches des évènements (`onClick`, `onPropertyChange`, etc.) qui permettent de lancer des scripts.
-Le [cycle de vie](./actor-life-cycle.md) d'un acteur produit des évènement. Mais chaque acteur peut avoir également des évènements spécifiques.
+Synapps è un framework di sviluppo guidato dagli eventi. Cioè, gli attori e le proprietà scatenano eventi (`onClick`, `onPropertyChange`, ecc.) che consentono l'esecuzione di script.
+Il [ciclo di vita](./actor-life-cycle.md) di un attore genera eventi. Ma ogni attore può anche avere eventi specifici.
 
-## Scripts dans les inclusions
+## Gli script nelle inclusioni
 
-Il est possible d'inclure un fichier `JavaScript` grâce aux [inclusions](../project/includes.md).
+È possibile includere un file `JavaScript` tramite un'[inclusione](../project/includes.md).
