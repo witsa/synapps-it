@@ -1,4 +1,4 @@
-> **Attention!** La version actuelle est en cours de validation et d'enrichissement par nos équipes.
+> **Attenzione!** La versione attuale è in corso di validazione e miglioramento da parte dei nostri team.
   <!-- Pour l'instant, il ne faut *en aucun cas* l'utiliser pour réaliser des projets commerciaux. -->
 
-> Pendant toute la phase d'**accès anticipé**, une clé d'agrément est requise pour activer Synapps Studio.
+> Durante l'intera fase di **accesso anticipato**, per attivare Synapps Studio è necessaria una chiave di accesso.
