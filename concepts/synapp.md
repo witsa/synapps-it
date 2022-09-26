@@ -4,11 +4,11 @@ parent: Concetti
 nav_order: 2
 ---
 
-Il synapp è l'applicazione HMI (Human-Machine Interface) vera e propria. Contiene le impostazioni essenziali per la sua esecuzione.
+Il synapp è un'applicazione HMI (Human-Machine Interface) vera e propria. Contiene le informazioni essenziali per la sua propria esecuzione.
 
 Il synapp possiede una propria identità, un nome e un'icona.
 
-È questo oggetto si occupa degli aspetti necessari alla visualizzazione della scena corrente e contiene tutti gli elementi dell'applicazione, come le librerie, i fornitori di dati, i compositi, ecc.
+È questo oggetto che si occupa degli aspetti necessari alla visualizzazione della scena corrente e contiene tutti gli elementi dell'applicazione, come le librerie, i fornitori di dati, i compositi, ecc.
 
 
 ![SynApps](../assets/scenes-nav.png)
