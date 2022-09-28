@@ -1,1 +1,1 @@
-Le champs d'information *contenu complété* est le texte résultant une fois les jokers remplacés par les valeurs des additionnelles.
+Il campo informativo *contenuto completato* è il testo risultante dopo che i caratteri jolly sono stati sostituiti con i valori dei componenti aggiuntivi.
