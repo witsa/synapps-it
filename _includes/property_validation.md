@@ -1,6 +1,6 @@
-L'acteur possède une propriété *état de validation* qui permet de présenter l'acteur dans des état de validation différents :
-- Valide : l'acteur est vert.
-- Invalide : l'acteur est rouge.
-- Normal : l'acteur est normale.
+L'attore ha una proprietà *Stato di convalida* che consente di presentare l'attore secondo diversi stili di validazione:
+- Valido: l'attore è verde.
+- Non valido: l'attore è rosso.
+- Normale: l'attore è normale.
 
-> Cette couleur prend le pas sur la propriété *couleur* qui est normalement utilisée pour définir la couleur du texte.
+> Questo colore sostituisce la proprietà *Colore*, normalmente utilizzata per definire il colore del testo..

@@ -1,8 +1,8 @@
-La propriété spécifique `Taille` permet de changer celle de l'acteur.
+La proprietà specifica `Dimensione' consente di modificare le dimensioni dell'attore.
 
-Cette propriété possède trois options :
-- Par défaut.
-- Grand.
-- Petit.
+Questa proprietà ha tre opzioni:
+- Predefinito.
+- Grande.
+- Piccolo.
 
-Seul le choix *par défaut* vous laisse la possibilité de modifier la taille du texte. Les autres options prennent le pas sur tout autre réglage.
+Solo la scelta *Predefinito* consente di modificare le dimensioni del testo. Le altre opzioni prevalgono su qualsiasi altra impostazione.

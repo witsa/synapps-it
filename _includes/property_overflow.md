@@ -1,27 +1,27 @@
-Les propriétés *Dépassement vertical* et *Dépassement horizontal* permettent de gérer le comportement de l'acteur vis à vis d'un dépassement éventuel de son contenu.
+Le proprietà *Superamento vericale* e *Superamento orizzontale* sono utilizzate per gestire il comportamento dell'attore rispetto a un possibile debordamento del suo contenuto.
 
-Si l'acteur dispose d'une taille figée *OU* est contraint par un autre élément (acteur parent par exemple), alors, les propriétés *Dépassement horizontal* et *Dépassement vertical* peuvent s'appliquer.
+Se l'attore ha una dimensione fissa *O* è vincolato da un altro elemento (ad esempio, l'attore genitore), è possibile applicare le proprietà *Superamento orizzontale* e *Superamento verticale*.
 
-Il existe quatre options pour chacune de ces propriétés :
-- **Caché**
+Per ciascuna di queste proprietà sono disponibili quattro opzioni:
+- **Nascosto**
 
-Le contenu qui ne dispose pas de suffisamment de place pour s'afficher ne sera pas visible et ses éléments ne seront pas accessibles.
+Il contenuto che non ha spazio sufficiente per essere visualizzato non sarà visibile e i suoi elementi non saranno accessibili.
 
-- **Visible**
+- **Visibile**
 
-Le contenu qui ne dispose pas de suffisamment de place est affiché en dehors de l'emplacement prévu pour l'acteur.
+Il contenuto che non ha spazio sufficiente viene visualizzato al di fuori dello spazio previsto per l'attore..
 
-Attention, si un autre acteur chevauche ce dépassement, la partie qui dépasse sera cachée par cet acteur.
+Si noti che se un altro attore si sovrappone a questo sconfinamento, la parte che eccede sarà nascosta da quell'attore.
 
-> Il faut noter que les deux propriétés doivent être `Visible` afin d'obtenir le comportement souhaité.
+> Si noti che entrambe le proprietà devono essere `Visibili` per ottenere il comportamento desiderato.
 
-- **Défilement**
+- **Scorrimento**
 
-Permet d'ajouter une *scrollbar* à l'acteur qui donne le moyen d'acceder au contenu qui dépassent.
+Permette di aggiungere una *barra di scorrimento* all'attore, che fornisce un mezzo per accedere al contenuto visualizzato.
 
-- **Automatique**
+- **Automatico**
 
-Affiche une *scrollbar* uniquement s'il existe un dépassement.
+Visualizza una *barra di scorrimento* solo se c'è un superamento.
 
-> ⚠️ **ATTENTION**<br>
-> Les options `Visible` et `Caché` ne sont pas compatibles entres elles.
+> ⚠️ **ATTENZIONE**<br>
+> Le opzioni `Visibile` e `Nascosto` non sono compatibili tra loro.
