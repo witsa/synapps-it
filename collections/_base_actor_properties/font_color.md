@@ -1,18 +1,18 @@
 ---
-title: Couleur de texte
-section: text
+title: Colore del testo
+section: testo
 propName: fontColor
 propPath: properties.fontColor
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété définit la couleur du texte.
+Questa proprietà definisce il colore del testo.
 
-La valeur par défaut est héritée d'un acteur parent qui en définit une ou, à défaut, de la couleur de base définit dans les [généralités de la synapp](/concepts/synapp#Généralités).
+Il valore predefinito è ereditato dall' attore genitore se ne definisce uno o, in mancanza di questo, dal colore di base definito nella pagina [Generale](/concepts/synapp#General)..
 
-Dans l'inspecteur, un sélecteur de couleur est disponible pour aider à définir la valeur de la propriété.
+Nell'ispettore è disponibile un selettore di colori che aiuta a impostare il valore della proprietà.
 
 {% include css_color_value.md %}
 
-**Pour vous aider :**
-- voir la documentation MDN pour les [valeur de couleur CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="_blank"}
+**Suggerimento:**
+- vedere la documentazione MDN per [valore colore CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="_blank"}
