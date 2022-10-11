@@ -10,10 +10,10 @@ nav_order: 1
 
 # Installazione di Synapps Studio
 
-Prima di tutto, è necessario installare una versione di Synapps Studio sul computer.
+L'installazione di Synapps Studio permette di ottenere l'ambiente di sviluppo necessario alla creazione e alla configurazione di un synapp. Prima di tutto, quindi, è necessario procedere alla sua installazione.
 
 
-Ultima versione: [1.1.2](https://github.com/witsa/synapps/releases/download/1.1.2/synapps-studio-setup.zip)
+Ultima versione: [1.1.3](https://github.com/witsa/synapps/releases/download/1.1.3/synapps-studio-setup.zip)
 
 - Scaricare il file zip.
 - Aprire il file zip ed eseguire il file synapps-studio-setup.exe
@@ -27,7 +27,7 @@ Ultima versione: [1.1.2](https://github.com/witsa/synapps/releases/download/1.1.
 
 
 # Prossima tappa
-Ora potete aprire Studio e [creare il vostro primo progetto](./first-project).
+Ora è possibile eseguire Synapps Studio e [creare il primo progetto](./first-project).
 
 --------------------
 

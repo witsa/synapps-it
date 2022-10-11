@@ -14,17 +14,18 @@ nav_order: 2
 
 ## Avvio di Synapps Studio
 
-Per aprire Synapps Studio per la prima volta, fare un doppio clic sull'icona creata sul computer (nel menu di *avvio* o sul desktop).
+Per aprire Synapps Studio per la prima volta, fare un doppio clic sull'icona creata sul computer (nel menu di *Avvio* o sul Desktop).
 
 ![SynApps](../assets/icon-studio.png)
 
 Viene visualizzata la finestra Synapps Studio:
+
 ![SynApps](../assets/quick-start/first-project/01.png)
 
 
 ## Accesso limitato
 
-> Durante l'intera fase di **accesso limitato**, per attivare Synapps Studio sarà necessaria una chiave di abilitazione.
+> Durante l'intera fase di **accesso limitato**, per attivare Synapps Studio sarà necessaria una chiave di attivazione.
 
 ![SynApps](../assets/quick-start/first-project/12.png)
 
@@ -32,30 +33,30 @@ Viene visualizzata la finestra Synapps Studio:
 
 ### Creazione del progetto *"Hello-World"*
 
-Procederemo creando un primo progetto d'esempio, dalla sua definizione alla sua installazione in un REDY-PC.
+Procederemo creando un primo progetto d'esempio, dalla sua definizione alla sua utilizzazione in un REDY-PC.
 
 Ma affrontiamo due elementi importanti:
 
 ### Concetto: il Synapp e il progetto
 
-Chiamiamo **synapp** un'applicazione costruita con Studio.
+Chiamiamo **synapp** un'applicazione costruita con Synapps Studio.
 
-Studio consente di creare un progetto che compila tutte le risorse per produrre e distribuire un'applicazione.
-Ogni synapp è il risultato di un progetto di Studio.
+Synapps Studio consente di creare un progetto che che contiene ed eseguie tutti gli oggetti necessari per produrre e distribuire un'applicazione.
+Ogni synapp è il risultato di un progetto di Synapps Studio.
 
-Si dovrebbe pensare a Studio come a uno strumento di editing video:
+Si dovrebbe pensare a Synapps Studio come a uno strumento di editing video:
 
 ![Répertoire de montage vidéo](../assets/quick-start/first-project/02.png)
 
 Un progetto raccoglie le diverse riprese video, la musica e altre risorse che vengono utilizzate per seguire uno scenario e produrre infine un film.
 
-Ogni progetto è contenuto in una *cartella di sistema* che contiene i file di impostazione dell'interfaccia, la documentazione, i file di programmazione, le immagini e i testi che consentono di costruire il synapp.
+I file di impostazione dell'interfaccia, la documentazione, i file di programmazione, le immagini e i testi che consentono di costruire il synapp di uno specifico progetto, sono raccolti e memorizzati da Synapps Studio in una *cartella di sistema* dedicata 
 
 ![Répertoire de projet](../assets/quick-start/first-project/03.png)
 
 ### Creazione del progetto
 
-Per creare il primo progetto, nel menu "File" fare clic su "Nuovo progetto...":
+Per creare un progetto, nel menu "File" fare clic su "Nuovo progetto...":
 
 ![SynApps](../assets/quick-start/first-project/04.png)
 
@@ -100,7 +101,7 @@ A questo punto viene visualizzata la sezione *Leggimi* del progetto, che funge d
 
 
 # Prossima tappa
-A questo punto è possibile procedere alla [prima esecuzione](./synapp-run) de la synapp du projet.
+E' possibile procedere alla [prima esecuzione](./synapp-run) de la synapp du projet.
 
 -------------------
 
