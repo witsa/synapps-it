@@ -1,21 +1,21 @@
 ---
-title: Epaisseur de la bordure
-section: border
+title: Spessore del bordo
+section: bordo
 propName: borderWidth
 propPath: properties.borderWidth
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
-Cette propriété permet de spécifier l'épaisseur de la bordure décorative de l'acteur.
+Questa proprietà consente di specificare lo spessore del bordo decorativo dell'attore.
 
-La valeur attendue est un nombre positif ou une chaine de caractères ( retrouvables dans la documentation ci-dessous ).
-L'unité par défaut est le pixel, cependant, cette unité peut être renseignée avec toute autre unité compatible.
+Il valore atteso è un numero positivo o una stringa di caratteri (si veda la documentazione qui sotto).
+L'unità predefinita è il pixel, ma è possibile sostituirla con qualsiasi altra unità compatibile.
 
-Il est possible de renseigner jusqu'à quatre valeurs dans le champ afin de définir différentes tailles en fonction du côté souhaité.
+Nel campo è possibile inserire fino a quattro valori per definire dimensioni diverse a seconda del lato.
 
-Règle :  `<Haut> <Droit> <Bas> <Gauche>`
+Regola: `<Alto> <Destra> <Basso> <Sinistra>`.
 
-Il est à noter que la taille de la bordure occupera de l'espace au sein de l'encadrement de l'acteur.
+Si noti che la dimensione del bordo occuperà spazio all'interno della cornice dell'attore.
 
-**Pour vous aider :**
-Il est possible de retrouver la documentation de l'épaisseur d'une bordure CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/border-width).
+**PConsiglio:**
+La documentazione relativa allo spessore di un bordo CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/border-width).

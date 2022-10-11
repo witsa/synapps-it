@@ -1,13 +1,13 @@
 ---
-title: Curseurs
-section: effects
+title: Cursori
+section: effetti
 propName: cursor
 propPath: properties.cursor
 scriptApiClass: Actor.BaseActorProperties
 order: 9
 ---
 
-Cette propriété permet de définir un curseur spécifique lors du survol de l'élément.
+Questa proprietà consente di definire un cursore specifico quando si passa sopra l'elemento.
 
-**Pour vous aider :**
-La documentation concernant les curseurs en CSS ainsi que la liste de tous les curseurs disponibles peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/cursor).
+**Consiglio:**
+La documentazione sui cursori in CSS e un elenco di tutti i cursori disponibili si trovano [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/cursor).

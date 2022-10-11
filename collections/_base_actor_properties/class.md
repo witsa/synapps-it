@@ -1,14 +1,14 @@
 ---
-title: Classes CSS
-section: aspect
+title: Classi CSS
+section: aspetto
 propName: classNames
 propPath: properties.classNames
 scriptApiClass: Actor.BaseActorProperties
 section: aspect
 order: 5
 ---
-Cette propriété permet d'ajouter à l'acteur des classes CSS, à séparer par une virgule `,`.
+Questa proprietà consente di aggiungere classi CSS all'attore, separate da una virgola `,`.
 
-Plusieurs classes bootstrap peuvent être ajoutée et sont consultables [à cette adresse](https://getbootstrap.com/docs/4.6/utilities/borders/).
+È possibile aggiungere diverse classi di bootstrap e sono disponibili [a questo indirizzo](https://getbootstrap.com/docs/4.6/utilities/borders/).
 
-Vous pouvez ajouter des classes CSS personnalisées soient en utilisant un fichier CSS inclus ([voir les Inclusions](../integrations.md)), soit à l'aide d'un [acteur Html](../actor_types/display-html.md) (voir [Comment ajouter des style CSS avec un acteur HTML]()).
+Si possono aggiungere classi CSS personalizzate sia utilizzando un file CSS incluso ([vedi Inclusioni](../integrations.md)), sia utilizzando un [attore Html](../actor_types/display-html.md) (vedere [Come aggiungere stili CSS con un attore HTML]()).

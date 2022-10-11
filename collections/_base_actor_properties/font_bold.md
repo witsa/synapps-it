@@ -1,19 +1,19 @@
 ---
-title: Epaisseur du texte
-section: text
+title: Spessore del testo
+section: testo
 propName: fontWeight
 propPath: properties.fontWeight
 scriptApiClass: Actor.BaseActorProperties
 order: 8
 ---
-Cette propriété définit l'épaisseur du texte.
+Questa proprietà definisce lo spessore del testo.
 
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Per impostazione predefinita, il valore eredita dall'attore in cui si trova.
 
-Il existe trois possibilités pour cette propriété :
- - Normal
- - Épais
- - Inherit (Qui prend la valeur fournie par un acteur dans lequel il se trouve)
+Esistono tre opzioni per questa proprietà:
+ - Normale
+ - Bold
+ - Inherit (prende il valore fornito da un attore in cui si trova)
 
-**Pour vous aider :**
-- voir la documentation MDN pour [l'épaisseur d'un texte CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight){:target="_blank"}
+**Suggerimento:**
+- si veda la documentazione MDN per [spessore del testo CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight){:target="_blank"}

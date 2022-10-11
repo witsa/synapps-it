@@ -8,21 +8,21 @@ order: 5
 ---
 Questa proprietà viene utilizzata per aggiungere un'ombra al bordo dell'attore.
 
-Cette propriété attend veux valeurs essentielles, et plusieurs valeurs optionnelles.
+Questa proprietà prevede due valori obbligatori e diversi valori opzionali.
 
-Exemple : ` box-shadow: A B C D E; `.
+Esempio: ` box-shadow: A B C D E; `.
 
-Dans cet exemple :
-- A (Obligatoire) : est la position X de l'ombre projetée.
-- B (Obligatoire) : est la position Y de l'ombre projetée.
-- C (Optionnelle) : Permet de contrôler le flou appliqué sur l'ombre ( Plus la valeur est élevée plus l'ombre sera floue).
-- D (Optionnelle) : Permet de contrôler la taille que va prendre l'ombre (Les valeurs négative diminuent la taille, tandis que les valeurs positives agrandissent la taille).
-- E (Optionnelle) : Permet de donner la couleur à l'ombre projetée (Par défaut noire).
+n questo esempio :
+- A (obbligatorio): è la posizione X dell'ombra proiettata.
+- B (richiesto): è la posizione Y dell'ombra proiettata.
+- C (opzionale) : Permette di controllare la sfocatura applicata all'ombra (più alto è il valore, più sfocata sarà l'ombra).
+- D (opzionale): Permette di controllare le dimensioni dell'ombra (i valori negativi diminuiscono le dimensioni, mentre i valori positivi le aumentano).
+- E (opzionale): Permette di impostare il colore dell'ombra proiettata (l'impostazione predefinita è nero).
 
-Les valeurs attendues pour les paramètres A,B,D sont des nombres positifs ou négatifs suivit de leur suffixe d'unité (`px,em`,etc ...)
-La valeur attendue pour le paramètres C est un nombre positif suivit de son suffixe d'unité (`px,em`,etc ...)
-La valeur attendue pour le paramètres E est une couleur ou un code RGB. Un aide pour la liste native des couleurs en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/color_value).
+I valori attesi per i parametri A, B, D sono numeri positivi o negativi seguiti dal loro suffisso unitario (`px, em`, ecc...).
+Il valore atteso per il parametro C è un numero positivo seguito dal suo suffisso unitario (`px,em`, ecc...).
+Il valore atteso per il parametro E è un colore o un codice RGB. La guida per l'elenco dei colori CSS nativi si trova [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/color_value).
 
 
-**Pour vous aider :**
-Il est possible de retrouver la documentation de l'attribut Bos-Shadow CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow).
+**Consiglio:**
+La documentazione dell'attributo CSS Bos-Shadow è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow).

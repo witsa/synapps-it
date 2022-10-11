@@ -1,15 +1,15 @@
 ---
-title: Style de la bordure
-section: border
+title: Stile bordo
+section: bordo
 propName: borderStyle
 propPath: properties.borderStyle
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété permet d'ajouter une bordure décorative au contenu de l'acteur.
+Questa proprietà consente di aggiungere un bordo decorativo al contenuto dell'attore.
 
-L'inspecteur propose quatre style de bordure différentes :
-- Ligne continue
-- Trait
-- Pointillés
-- Double ligne continue
+L'ispettore offre quattro diversi stili di bordo:
+- Linea continua
+- Linea tratteggiata
+- Linea punteggiata
+- Doppia linea continua

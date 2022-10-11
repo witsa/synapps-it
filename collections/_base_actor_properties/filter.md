@@ -1,23 +1,23 @@
 ---
-title: Filtre
-section: effects
+title: Filtro
+section: effetti
 propName: filter
 propPath: properties.filter
 scriptApiClass: Actor.BaseActorProperties
 order: 10
 ---
-Cette propriété permet d'ajouter un filter graphique à l'élément.
+Questa proprietà consente di aggiungere un filtro grafico all'elemento.
 
-La valeur attendue est la propriété avec une unité entre parenthèse précisant l'intensité du changement.
+Il valore atteso è la proprietà con un'unità tra parentesi che specifica l'intensità del cambiamento..
 
-**Image originale :**
+**Immagine originale:**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/firefox-logo.PNG)
 
-**Image avec le filtre 'blur(5px)' :**
+**Immagine con il filtro 'blur(5px)' :**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/firefox-logo-blurred.PNG)
 
 
-**Pour vous aider :**
-La documentation concernant les filtres en CSS ainsi que la liste et l'utilisation des différents filtres peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/cursor).
+**Consiglio:**
+La documentazione sui filtri CSS nonché l'elenco e l'uso dei diversi filtri sono disponibili [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/cursor).
