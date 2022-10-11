@@ -7,35 +7,35 @@ scriptApiClass: Actor.BaseActorProperties
 order: 8
 ---
 
-Cette propriété permet de définir des animations CSS sur l'acteur.
+Questa proprietà consente di definire animazioni CSS sull'attore.
 
-Pour déclarer une animation sur un acteur, il est nécessaire en premier lieu que l'animation CSS utilisée soit définie.
+Per dichiarare un'animazione su un attore, è necessario prima definire l'animazione CSS da utilizzare
 
-Pour cela, il est possible : 
-- d'utiliser une animation embarquée dans de CSS du runtime de Synapps ([voir outils CSS]())
-- de definir l'animation dans une inclusion CSS ([voir les inclusions]())
-- ou bien de créer un `Acteur HTML` qui contiendra la défintion de l'animation.
+A tal fine, è possibile : 
+- utilizzare un'animazione incorporata nel CSS del runtime Synapps ([vedi Strumenti CSS]())
+- definire l'animazione in un'inclusione CSS ([vedi inclusioni]())
+- o creare un `Attore HTML` che conterrà la definizione dell'animazione.
 
-Exemple avec un `Acteur HTML`.
+Esempio di `Attore HTML`.
 
-Le contenu de cet `Acteur HTML` doit être comme suit :
+Il contenuto di questo `Attore HTML` deve essere il seguente:
 ```html
 <style>
 
   @keyframes myAnimationName {
-    instructions de l'animation
+    introduzione all'animazione
   }
 
 </style>
 ```
 
-Cela permet ainsi de définir une animation qui a pour nom `myAnimationName` (à changer).
+Definisce un'animazione con il nome `myAnimationName` (da modificare).
 
-Cette animation pourra par la suite être utilisée par tout autre acteur grâce à son nom de la manière suivante :
+Tale animazione può essere utilizzata da qualsiasi altro attore, attraverso il suo nome, nel seguente modo:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/base_properties/animation/Animation.PNG)
 
 
 
-**Pour vous aider :**
-La documentation concernant les animations en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/animation).
+**Suggerimento:**
+La documentazione sulle animazioni CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/animation).

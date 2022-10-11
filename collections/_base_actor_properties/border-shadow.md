@@ -6,7 +6,7 @@ propPath: properties.borderShadow
 scriptApiClass: Actor.BaseActorProperties
 order: 5
 ---
-Cette propriété permet de donner une ombre à la bordure décorative de l'acteur.
+Questa proprietà viene utilizzata per aggiungere un'ombra al bordo dell'attore.
 
 Cette propriété attend veux valeurs essentielles, et plusieurs valeurs optionnelles.
 

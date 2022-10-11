@@ -6,15 +6,15 @@ propPath: properties.borderRound
 scriptApiClass: Actor.BaseActorProperties
 order: 4
 ---
-Cette propriété permet de donner une courbure à la bordure décorative de l'acteur.
+Questa proprietà consente di definire angoli arrotondati per il bordo dell'attore.
 
-La valeur attendue est un nombre entier positif suivit de l'unité désirée (en général le suffixe `px`)
-Cette propriété régit la valeur de l'attribut CSS `border-radius`.
+Il valore atteso è un numero intero positivo seguito dall'unità di misura desiderata (di solito il suffisso `px`)
+La proprietà regola il valore dell'attributo  CSS `border-radius`.
 
-> Il est possible de définir une courbure sur tous les coins de l'acteur.
-> Ex : `10px`. Ou bien des courbures différentes pour chaque coin : `10px 5px 20px 0px`.
+> È possibile definire una curvatura su tutti gli angoli dell'attore.
+> Es: `10px`, oppure arrotondament diversi per ogni angolo: `10px 5px 20px 0px`.
 >
-> Règle :  `<Haut gauche> <Haut droit> <Bas droit> <Bas gauche>`
+> Regola:  `<In alto a sinistra> <In alto a destra> <In basso a destra> <In basso a sinistra>`
 
-**Pour vous aider :**
-Il est possible de retrouver la documentation de l'attribut border-radius CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/border-radius).
+**Suggerimento:**
+La documentazione dell'attributo CSS border-radius è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/border-radius).

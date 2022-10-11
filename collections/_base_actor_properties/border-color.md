@@ -1,20 +1,20 @@
 ---
-title: Couleur de la bordure
-section: border
+title: Colre del bordo
+section: bordo
 propName: borderColor
 propPath: properties.borderColor
 scriptApiClass: Actor.BaseActorProperties
 order: 3
 ---
-Cette propriété permet de spécifier la couleur de la bordure décorative de l'acteur.
+Questa proprietà consente di specificare il colore del bordo dell'attore.
 
 {% include css_color_value.md %}
 
-Il est possible de renseigner jusqu'à quatre valeurs dans le champ afin de définir différentes couleurs en fonction du côté souhaité.
+È possibile inserire fino a quattro valori nel campo per definire colori diversi a seconda del lato.
 
-Par défaut, la valeur est `currentColor`. C'est une instruction CSS qui permet d'utiliser la couleur actuelle du texte. Ainsi, si vous changez la couleur du texte, par défaut, la couleur de la bordure, si elle est visible, suivra automatiquement.
+Il valore predefinito è `currentColor`. È un'istruzione CSS che consente di utilizzare il colore corrente del testo. Pertanto, se si modifica il colore di default del testo, il colore del bordo, se visibile, lo seguirà automaticamente..
 
 {% include css_color_value.md %}
 
-**Pour vous aider :**
-Il est possible de retrouver la documentation de la couleur d'une bordure CSS [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/border-color).
+**Suggerimento:**
+La documentazione del colore dei bordi CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/border-color).

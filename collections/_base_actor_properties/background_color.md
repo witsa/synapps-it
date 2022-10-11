@@ -6,15 +6,15 @@ propPath: properties.backgroundColor
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété définit la couleur de fond de l'acteur. La valeur est une couleur CSS. La valeur par défaut est la couleur spéciale `transparent`.
+Questa proprietà definisce il colore di sfondo dell'attore. Il valore è un colore CSS. Il valore predefinito è il colore speciale `trasparente`.
 
-Dans l'inspecteur, un sélecteur de couleur est disponible pour aider à définir la valeur de la propriété.
+Nell'ispettore è disponibile un selettore di colori che aiuta a impostare il valore della proprietà.
 
 {% include css_color_value.md %}
 
-**Pour vous aider :**
-- voir la documentation MDN pour [valeur de couleur CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="_blank"}
-- voir la documentation MDN pour [couleur de fond](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"}
+**Suggerimenti:**
+- vedere la documentazione MDN per [valore dei colori CSS](https://developer.mozilla.org/fr/docs/Web/CSS/color_value){:target="_blank"}
+- vedi la documentazione MDN per [colore di sfondo](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"}
 
-> **A noter**
-> La couleur du fond de la synapp peut être définie de manière globale dans la sous-section [Projet/Généralités](../project.md#généralités).
+> **Nota**
+> Il colore di sfondo del synapp può essere impostato globalmente nella sottosezione [Progetto/Generale](../project.md#généralités).
