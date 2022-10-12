@@ -1,17 +1,17 @@
 ---
-title: Taille du texte
-section: text
+title: Dimensione del testo
+section: testo
 propName: fontSize
 propPath: properties.fontSize
 scriptApiClass: Actor.BaseActorProperties
 order: 3
 ---
-Cette propriété définit la taille du texte.
+Questa proprietà definisce la dimensione del testo.
 
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Per impostazione predefinita, eredita direttamente dall'attore in cui si trova.
 
-La valeur attendue est un nombre positif avec une unité.
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+Il valore atteso è un numero positivo con un'unità.
+L'unità di misura può essere impostata direttamente al momento dell'immissione o tramite la guida situata nel pulsante delle impostazioni..
 
-**Pour vous aider :**
-- voir la documentation MDN pour [taille de police CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}
+**Consiglio:**
+- vedere la documentazione MDN per [Dimensione carattere CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}

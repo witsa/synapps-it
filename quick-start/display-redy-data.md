@@ -59,41 +59,41 @@ Ne campo **Cammino relativo** indicare quale risorsa deve andare a cercare nel R
 
 Si può notare che il percorso inserito è relativo al percorso definito in `resources`.
 
-In realtà, stiamo semplicemente dicendo al fornitore di dati `resources' che, oltre alla variabile `:easy.RESS`, deve recuperare anche la variabile `:easy.RESS.R00001`.
+In realtà, stiamo semplicemente dicendo al fornitore di dati `resources` che, oltre alla variabile `:easy.RESS`, deve recuperare anche la variabile `:easy.RESS.R00001`.
 
-In realtà, è lo stato della risorsa che ci interessa. È necessario precisarlo::
+In realtà, è lo stato della risorsa che ci interessa. È necessario precisarlo:
 
 ![Ressource](../assets/quick-start/display-redy-data/11.gif)
 
 
-Ecco, questo è tutto. Non resta che convalidare l'impostazione per vedere il risultato direttamente nell'anteprima.
+Non resta che convalidare l'impostazione per vedere il risultato direttamente nell'anteprima.
 
 ![Ressource](../assets/quick-start/display-redy-data/12.gif)
 
-## Fournisseur global
+## Fornitore globale
 
-Intéressons nous maintenant au fournisseur global `resources`. Rendez-vous dans la sous-section *Projet/Fournisseurs de données*.
+Vediamo ora il fornitore globale `resources`. Passare alla sottosezione *Progetto/Fornitore dati*.
 
 ![Ressource](../assets/quick-start/display-redy-data/13.gif)
 
-Vous trouverez ici un designer qui permet de gérer les fournisseurs de données pour toute votre synapp. Vous retrouvez le fournisseur global `resources` dans le plan des acteurs.
+Qui è possibile gestire i fornitori di dati per l'intera synapp. Il fornitore globale `resources' si trova nell'arborescenza' degli attori.
 
-Observez qu'il est paramétré pour rafraîchir les données qu'on lui demande toutes les *60 secondes*.
+Si noti che è impostato per aggiornare i dati richiesti ogni *60 secondi*.
 
-> 📌 **REMARQUE**<br> Vous apprendrez que son mode de récupération de données est *Relatif*, c'est à dire que tant personne ne lui demande de données, il ne récupère ni ne rafraîchit rien.
+> 📌 **NOTA**<br>La modalità di recupero dei dati è *relativa*, il che significa che finché nessuno fa richiesta di dati, il programma non recupera né aggiorna nulla.
 
 Pour en savoir plus sur les fournisseurs de données globaux, rendez-vous dans la section [**Fournisseurs de données**](../concepts/project/global-data-sources.md).
 
 Il est tout à fait possible de créer des fournisseurs de données directement dans une scène. Dans ce cas, il sont paramétrable, leur propriétés liable et accessible par script. ce qui donne un contrôle total sur leur utilisation.
 
-Pour en savoir plus, rendez-vous dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy-wos-variable-source.md).
+Per ulteriori informazioni sui fornitori di dati globali, consultare la sezione [**Fornitori di dati**].(../concepts/actor-types/redy-wos-variable-source.md).
 
-Bien d'autre champ sont accessibles par liaison (la valeur, le nom, ...). Pour en savoir plus, rendez-vous encore dans la section [**Fournisseurs de variable**](../concepts/actor-types/redy-wos-variable-source.md#champ-de-variable-redy).
+Molti altri campi sono accessibili tramite collegamento (il valore, il nome, ...). Per ulteriori informazioni, consultare la sezione [**Fornitori di variabili**](../concepts/actor-types/redy-wos-variable-source.md#champ-de-variable-redy).
 
 
 
-# Prochaine étape
-Maintenant, vous allez [commander une ressource dans le REDY](./command-redy.md).
+# Prossima tappa
+ora vediamo come [comandare una risorsa del REDY](./command-redy.md).
 
 ---------------------
 

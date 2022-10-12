@@ -135,7 +135,7 @@ In questo caso è possibile modificare il testo visualizzato dall'attore facendo
 
 ![SynApps](../assets/quick-start/designer-first-steps/17.png)
 
-Digitare `Hello World' invece di `Text'. Cliccare poi sul pulsante per salvare quanto inserito.
+Digitare `Hello World` invece di `Text`. Cliccare poi sul pulsante per salvare quanto inserito.
 
 > **Suggerimento** Scelta rapida da tastiera per salvare il testo inserito: **Ctrl+S**
 

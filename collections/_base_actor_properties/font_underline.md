@@ -1,19 +1,20 @@
 ---
-title: Soulignement du texte
-section: text
+title: Sottolineatura del testo
+section: testo
 propName: textDecoration
 propPath: properties.textDecoration
 scriptApiClass: Actor.BaseActorProperties
 order: 7
 ---
-Cette propriété définit la décoration du texte.
+Questa proprietà definisce la decorazione del testo.
 
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Per impostazione predefinita, il valore è ereditato dall'attore in cui si trova.
 
-Il existe trois possibilités pour cette propriété :
- - Normal
- - Souligné
- - Inherit (Qui prend la valeur fournie par un acteur dans lequel il se trouve)
+Ci sono tre possibilità per questa proprietà:
+ - Normale
+ - Sottolineato
+ - Inherit (che prende il valore fornito dall'attore in cui si trova)
 
-**Pour vous aider :**
-- voir la documentation MDN pour [la décoration d'un texte CSS](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"}
+
+**Suggerimento:**
+- vedere la documentazione MDN per [decorazione testuale CSS](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"}

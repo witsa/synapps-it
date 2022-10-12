@@ -1,19 +1,19 @@
 ---
-title: Style du texte
-section: text
+title: Stile del texte
+section: testo
 propName: fontStyle
 propPath: properties.fontStyle
 scriptApiClass: Actor.BaseActorProperties
 order: 6
 ---
-Cette propriété définit le style du texte.
+Questa proprietà definisce lo stile del testo.
 
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Per impostazione predefinita, il valore è ereditato dall'attore in cui si trova.
 
-Il existe trois possibilités pour cette propriété :
- - Normal
- - Italique
- - Inherit  (Qui prend la valeur fournie par un acteur dans lequel il se trouve)
+Ci sono tre opzioni per questa proprietà:
+ - Normale
+ - Corsivo
+- Inherit (che prende il valore fornito da un attore in cui si trova)
 
-**Pour vous aider :**
-- voir la documentation MDN pour [le style d'un texte CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-style){:target="_blank"}
+**Suggerimento:**
+- vedere la documentazione MDN per [lo stile di un testo CSS](https://developer.mozilla.org/fr/docs/Web/CSS/font-style){:target="_blank"}
