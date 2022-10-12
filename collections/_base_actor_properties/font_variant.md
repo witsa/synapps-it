@@ -6,13 +6,13 @@ propPath: properties.fontVariant
 scriptApiClass: Actor.BaseActorProperties
 order: 9
 ---
-Cette propriété définit la variation du texte.
+Questa proprietà definisce la variante di un testo.
 
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Per impostazione predefinita, il valore è ereditato dall'attore nel quale si trova.
 
 Ci sono quattro opzioni:
  - normal: preserva i caratteri scelti.
- - <span style="font-variant: small-caps">Capitale</span>: Mette in maiuscolo tutti i caratteri, ma mantiene le maiuscole definite più grandi..
+ - <span style="font-variant: small-caps">Capitale</span>: Mette in maiuscolo tutti i caratteri, ma mantiene le maiuscole definite più grandi.
  - <span style="font-variant: all-small-caps">Capitale</span> : Mette in maiuscolo tutti i caratteri.
  - Inherit (prende il valore fornito dall' attore in cui si trova)
 
