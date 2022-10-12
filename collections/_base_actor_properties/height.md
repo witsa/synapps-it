@@ -1,17 +1,17 @@
 ---
-title: Hauteur de l'acteur
-section: size
+title: Altezza dell'attore
+section: taglia
 propName: height
 propPath: properties.height
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
-Cette propriété permet de régler la hauteur de l'acteur.
+Questa proprietà viene utilizzata per impostare l'altezza dell'attore.
 
-La valeur attendue est un nombre entier positif.
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+Il valore atteso è un numero intero positivo.
+L'unità di misura dell'altezza può essere definita direttamente al momento dell'immissione del valore o tramite la guida situata nel pulsante delle impostazioni.
 
-Les deux champ "minimum" et "maximum" situé en dessous de la saisie de la valeur permettent de contraindre l'acteur à une hauteur minimum et une hauteur maximum.
+I due campi "minimo" e "massimo" sotto la voce del valore consentono di vincolare l'attore a un'altezza minima e massima.
 
-**Pour vous aider :**
-La documentation concernant la hauteur en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/height).
+**Suggerimento:**
+La documentazione sull'altezza nei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/height).

@@ -1,18 +1,18 @@
 ---
-title: Alignement horizontal
-section: disposition_flex
+title: Allineamento orizzontale
+section: disposizione_flex
 propName: horizontalAlignment
 propPath: properties.horizontalAlignment
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
-Cette propriété permet de régler l'alignement horizontal de l'acteur dans l'acteur parent.
+Questa proprietà consente di impostare l'allineamento orizzontale dell'attore all'interno dell'attore padre.
 
-Il existe quatre possibilités pour cette propriété :
+Ci sono quattro opzioni per questa proprietà:
  - Auto
- - Positionné à gauche de l'acteur parent
- - Positionné au centre de l'acteur parent
- - Positionné à droite de l'acteur parent
- - Occupe toute la place horizontale disponible ( Répartie entre tous les acteurs présents dans l'acteur parent )
+ - Posizionato a sinistra dell'attore padre
+ - Posizionato al centro dell'attore padre
+ - Posizionato a destra dell'attore padre
+ - Occupa tutto lo spazio orizzontale disponibile (distribuito tra tutti gli attori presenti nell'attore padre)
 
-(Cas spécial pour les modales, la disposition n'a aucune effet sur la position de la modale puisque cet acteur est positionné grâce aux ancres.)
+**Nota** Caso speciale per le modali: il layout non ha alcun effetto sulla posizione della modale, poiché questo attore è posizionato utilizzando gli ancoraggi).

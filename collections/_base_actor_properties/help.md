@@ -1,11 +1,11 @@
 ---
-title: Bulle d'aide
-section: effects
+title: Tooltip
+section: effetti
 propName: tooltip
 propPath: properties.tooltip
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété permet de définir une bulle d'aide lors du survol de l'acteur avec la souris.
+Questa proprietà consente di definire un tooltip quando il mouse passa sopra l'attore.
 
-Le texte renseigné dans le champ de la bulle d'aide s'affiche lorsque l'acteur est survolé avec la souris.
+Il testo inserito nel campo tooltip viene visualizzato quando si passa sopra l'attore con il mouse.

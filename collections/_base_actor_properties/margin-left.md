@@ -1,17 +1,17 @@
 ---
-title: Marge extérieure gauche
-section: space
+title: Margine esterno sinistro
+section: spazi
 propName: marginLeft
 propPath: properties.marginLeft
 scriptApiClass: Actor.BaseActorProperties
 order: 3
 ---
-Cette propriété permet de gérer la marge extérieure gauche de l'acteur.
+Questa proprietà viene utilizzata per gestire il margine esterno a sinistra dell'attore.
 
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+L'unità di misura può essere definita direttamente durante l'immissione o tramite la guida situata nel pulsante delle impostazioni.
 
-**Pour vous aider :**
-La documentation concernant les marges extérieures de CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/margin-left).
+**Suggerimento:**
+La documentazione sui margini esterni dei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/margin-left).
 
-> **Note :**
-> En fonction de la disposition de l'acteur dans son parent, cette marge peut être figée à `AUTO`.
+> **Nota:**
+> In funzione della disposizione dell'attore all' interno del suo genitore, questo margine può essere imposto su `AUTO`.

@@ -1,17 +1,17 @@
 ---
-title: Marge extérieure droite
-section: space
+title: Margine esterno destro
+section: spazi
 propName: marginRight
 propPath: properties.marginRight
 scriptApiClass: Actor.BaseActorProperties
 order: 4
 ---
-Cette propriété permet de gérer la marge extérieure droite de l'acteur.
+Questa proprietà viene utilizzata per gestire il margine esterno a destra dell'attore.
 
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+L'unità di misura può essere definita direttamente durante l'immissione o tramite la guida situata nel pulsante delle impostazioni.
 
-**Pour vous aider :**
-La documentation concernant les marges extérieures de CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/margin-right).
+**Suggerimento:**
+La documentazione sui margini esterni dei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/margin-right).
 
-> **Note :**
-> En fonction de la disposition de l'acteur dans son parent, cette marge peut être figée à `AUTO`.
+> **Nota:**
+> In funzione della disposizione dell'attore all' interno del suo genitore, questo margine può essere imposto su `AUTO`.

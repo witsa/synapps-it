@@ -1,16 +1,16 @@
 ---
-title: Hauteur de ligne
-section: text
+title: Altezza della linea
+section: testo
 propName: lineHeight
 propPath: properties.lineHeight
 scriptApiClass: Actor.BaseActorProperties
 order: 4
 ---
-Cette propriété définit la taille de la hauteur d'une ligne de texte.
-Par défaut, la valeur hérite de l'acteur dans lequel il se trouve.
+Questa proprietà definisce la dimensione dell'altezza di una riga di testo.
+Per impostazione predefinita, il valore è ereditato dall'attore in cui si trova.
 
-La valeur attendue est un nombre positif.
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+Il valore atteso è un numero positivo.
+L'unità di misura può essere impostata direttamente al momento dell'immissione o tramite la guida situata nel pulsante delle impostazioni.
 
-**Pour vous aider :**
-- voir la documentation MDN pour [hauteur d'une ligne de texte CSS](https://developer.mozilla.org/fr/docs/Web/CSS/line-height){:target="_blank"}
+**Suggerimento:**
+- vedere la documentazione MDN per [Altezza della linea di testo CSS](https://developer.mozilla.org/fr/docs/Web/CSS/line-height){:target="_blank"}
