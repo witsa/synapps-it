@@ -1,15 +1,13 @@
 ---
-title: Opacité
-section: aspect
+title: Opacità
+section: aspetto
 propName: opacity
 propPath: properties.opacity
 scriptApiClass: Actor.BaseActorProperties
 section: aspect
 order: 4
 ---
-Cette propriété définit l'opacité de l'acteur.
+Questa proprietà definisce il livello di trasparenza dell'attore e può variare tra 0% e 100%.
 
-Elle est définie de 0% à 100% et permet de gérer la transparence de l'acteur.
-
-**Pour vous aider :**
-Elle est gérée par la propriété opacity de CSS (voir la documentation MDN pour l'[oppacité](https://developer.mozilla.org/fr/docs/Web/CSS/opacity){:target="_blank"}).
+**Suggerimento:**
+È gestita dalla proprietà opacity dei CSS (si veda la documentazione MDN per la proprietà [opacity](https://developer.mozilla.org/fr/docs/Web/CSS/opacity){:target="_blank"}).

@@ -1,21 +1,21 @@
 ---
-title: Echelle
-section: effects
+title: Scala
+section: effetti
 propName: scaling
 propPath: properties.scaling
 scriptApiClass: Actor.BaseActorProperties
 order: 3
 ---
-Cette propriété permet de définir de modifier la taille de l'acteur.
+Questa proprietà consente di modificare le dimensioni dell'attore.
 
-La valeur attendue est un nombre positif OU négatif.
-Lorsque le nom est compris dans l'intervalle [-1,1], l'élément est réduit.
-Lorsque la valeur est négative, l'élément est inversé par symétrie centrale.
+Il valore atteso è un numero positivo o negativo.
+Con un valore compreso nell'intervallo [-1,1], l'elemento viene ridotto.
+Quando il valore è negativo, l'elemento è invertito per simmetria centrale.
 
-Dans l'inspecteur, le champ de saisie agit également comme un slider, permettant de changer la valeur en faisant glisser la souris vers la droite pour augmenter la valeur et vers la gauche pour diminuer la valeur.
+Nell'Inspector, il campo di immissione funge anche da cursore, consentendo di modificare il valore trascinando il mouse verso destra per aumentarlo e verso sinistra per diminuirlo..
 
-**Pour vous aider :**
-La propriété définie la valeur de la fonction 'scale()' en CSS dont la documentation est disponible [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/scale()).
+**Suggerimento:**
+La proprietà definisce il valore della funzione 'scale()' in CSS, la cui documentazione è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/scale()).
 
->⚠️ **ATTENTION**<br>
-Il n'est pas possible de renseigner deux valeurs comme montré dans la documentation CSS.
+>⚠️ **ATTENZIONE**<br>
+Non è possibile impostare due valori come indicato nella documentazione CSS.

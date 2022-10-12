@@ -6,7 +6,7 @@ propPath: properties.marginTop
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Questa proprietà viene utilizzata per gestire il margine esterno a sinistra dell'attore.
+Questa proprietà viene utilizzata per gestire il margine esterno superiore dell'attore.
 
 L'unità di misura può essere definita direttamente durante l'immissione o tramite la guida situata nel pulsante delle impostazioni.
 

@@ -1,21 +1,21 @@
 ---
-title: Angle de rotation
-section: effects
+title: Angolo di rotazione
+section: effetti
 propName: rotate
 propPath: properties.rotate
 scriptApiClass: Actor.BaseActorProperties
 order: 2
 ---
-Cette propriété permet de définir une rotation de l'acteur sur lui même.
+Questa proprietà permette di impostare una rotazione dell'attore su se stesso.
 
 
-La valeur attendue est un nombre positif OU négatif.
+Il valore atteso è un numero positivo o negativo.
 
-Dans l'inspecteur, le champ de saisie agit également comme un slider, permettant de changer la valeur en faisant glisser la souris vers la droite pour augmenter la valeur et vers la gauche pour diminuer la valeur.
+Nell'ispettore, il campo di immissione funge anche da cursore, consentendo di modificare il valore trascinando il mouse verso destra per aumentare la rotazione e verso sinistra per diminuirla.
 
-> **Indication :**
-> - Rotation inversée : 180° / -180°.
-> - Rotation perpendiculaire : 90° / -90°.
+> **Nota:**
+> - Rotazione inversa: 180° / -180°.
+> - Rotazione perpendicolare: 90° / -90°.
 
-**Pour vous aider :**
-La propriété définie la valeur de la fonction 'rotate()' en CSS dont la documentation est disponible [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/rotate()).
+**Suggerimento:**
+La proprietà definisce il valore della funzione 'rotate()' in CSS, la cui documentazione è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/rotate()).

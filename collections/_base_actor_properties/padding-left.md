@@ -1,14 +1,14 @@
 ---
-title: Marge intérieure gauche
-section: space
+title: Margine interno sinistro
+section: spazi
 propName: paddingLeft
 propPath: properties.paddingLeft
 scriptApiClass: Actor.BaseActorProperties
 order: 7
 ---
-Cette propriété permet de gérer la marge intérieure gauche de l'acteur.
+Questa proprietà consente di gestire il margine interno sinistro dell'attore.
 
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+L'unità di misura può essere definita direttamente durante l'immissione o tramite la guida situata nel pulsante delle impostazioni
 
-**Pour vous aider :**
-La documentation concernant les marges extérieures de CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/padding-left).
+**Suggerimento:**
+La documentazione sui margini interni dei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/padding-left).
