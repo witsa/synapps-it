@@ -30,7 +30,7 @@ Configurare la risorsa come in figura:
 
 ![Ressource](../assets/quick-start/display-redy-data/02.png)
 
-- Descriozione: `Setpoint di temperatura`
+- Descrizione: `Setpoint di temperatura`
 - Numero di decimali: `0`
 - Valori limite: tra `20` e `30`
 - Unità personalizzate: `°C`
@@ -53,7 +53,7 @@ Nel frattempo selezionalo nel campo *Chiave padre*.
 
 ![Ressource](../assets/quick-start/display-redy-data/09.gif)
 
-Ne campo **Cammino relativo** indicare quale risorsa deve andare a cercare nel REDY.
+Nel campo **Cammino relativo** indicare quale risorsa deve andare a cercare nel REDY.
 
 ![Ressource](../assets/quick-start/display-redy-data/10.gif)
 
@@ -82,9 +82,9 @@ Si noti che è impostato per aggiornare i dati richiesti ogni *60 secondi*.
 
 > 📌 **NOTA**<br>La modalità di recupero dei dati è *relativa*, il che significa che finché nessuno fa richiesta di dati, il programma non recupera né aggiorna nulla.
 
-Pour en savoir plus sur les fournisseurs de données globaux, rendez-vous dans la section [**Fournisseurs de données**](../concepts/project/global-data-sources.md).
+Per saperne di più sui fornitori di dati globali, consultare la sezione [**Fornitori di dati**](../concepts/project/global-data-sources.md).
 
-Il est tout à fait possible de créer des fournisseurs de données directement dans une scène. Dans ce cas, il sont paramétrable, leur propriétés liable et accessible par script. ce qui donne un contrôle total sur leur utilisation.
+È possibile creare fornitori di dati direttamente in una scena. In questo contesto possono essere customizzati, le loro proprietà possono essere collegate e vi si può accedere tramite script, in modo da avere un controllo totale sul loro utilizzo.
 
 Per ulteriori informazioni sui fornitori di dati globali, consultare la sezione [**Fornitori di dati**].(../concepts/actor-types/redy-wos-variable-source.md).
 
