@@ -6,10 +6,10 @@ propPath: properties.mode
 scriptApiClass: Actor.Input.ButtonProperties
 order: 3
 ---
-La propriété spécifique `Mode` va permettre de donner un style au bouton via l'ajout d'une classe Bootstrap.
+La proprietà specifica `Modalità` consente di attribuire uo stile al pulsante.
 
-Chaque classe possède son code couleur propre.
+Ogni classe ha un proprio codice colore.
 
-**Liste des options disponibles avec leurs exemples :**
+**Elenco delle opzioni disponibili con i relativi esempi:**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonsBootstrap.PNG)

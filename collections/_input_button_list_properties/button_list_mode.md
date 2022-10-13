@@ -6,7 +6,7 @@ propPath: properties.mode
 scriptApiClass: Actor.Input.ButtonListProperties
 order: 5
 ---
-La proprietà specifica `Modalità` consente di attribuire uo stile all'lenco di pulsanti.
+La proprietà specifica `Modalità` consente di attribuire uo stile all'elenco di pulsanti.
 
 Ogni classe ha un proprio codice colore.
 
