@@ -1,6 +1,6 @@
 ---
-title: Taille
-section: specifics
+title: Dimensione
+section: specifico
 propName: size
 propPath: properties.size
 scriptApiClass: Actor.Input.ButtonListProperties

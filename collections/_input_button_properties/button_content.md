@@ -1,18 +1,18 @@
 ---
-title: Contenu
-section: specifics
+title: Contenuto
+section: specifico
 propName: content
 propPath: properties.content
 scriptApiClass: Actor.input.ButtonProperties
 order: 1
 ---
 
-Jokerable
+Jolly
 {: .label }
 
-Cette propriété permet de définir du contenu HTML de l'acteur.
+Questa proprietà è utilizzata per definire il contenuto HTML dell'attore.
 
-**Exemple :**
+**Esempio**
 
 <div class="code-example" markdown="1">
 
@@ -22,29 +22,27 @@ Cette propriété permet de définir du contenu HTML de l'acteur.
 
 
 ```html
-Ceci est <i>un</i> <b style="background-color: red;">bouton</b>
+Questo è <i>un</i> <b style="background-color: red;">bottone</b>
 ```
 
 
-**Jokerable**
+**Caratteri Jolly**
 
-Il est possible de placer des jokers (ex.: {% raw %}`{{jokerKey}}`{% endraw %}) dans le contenu qui seront remplacés par la valeur d'additionnelles de même clé.
+È possibile inserire dei caratteri jolly (ad esempio, {% raw %}`{{jokerKey}}`{% endraw %}) nel contenuto. Questi saranno sostituiti dal valore dell'addizionale con chiave identica.
 
-Par exemple :
+Esempio:
 
 {% raw %}
 ```html
-Ceci est <i>un</i> <b style="background-color: {{theColor}};">bouton</b>.
+Questo è <i>un</i> <b style="background-color: {{theColor}};">bottone</b>.
 
 ```
 {% endraw %}
-Une additionnelle de clé `theColor` de type *couleur* remplacera le joker par sa valeur.
+Il valore del parametro addizionale `theColor` di tipo *colore* andrà a sostituire la stringa jolly.
 
 
 
-> 💡 **ASTUCE**<br>
-> S'il est possible d'ajouter du style CSS avec une balise HTML `<style>`, il n'est par contre pas possible d'ajouter du code Javascript.
-> Pour cela, il faut utiliser les évènements de l'acteur.
+> 💡 **Consiglio**<br>
+> Mentre è possibile aggiungere uno stile CSS con un tag HTML `<style>`, non è possibile aggiungere codice Javascript.
+> Per farlo, è necessario utilizzare gli eventi dell'attore..
 
-**Pour vous aider :**
-La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().

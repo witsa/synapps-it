@@ -1,11 +1,11 @@
 ---
-title: Selection
-section: specifics
+title: Selezione
+section: specifico
 propName: value
 propPath: properties.value
 scriptApiClass: Actor.Input.ButtonListProperties
 order: 1
 ---
-La propriété spécifique `Selection` reflète la valeur sélectionnée en cours.
+La proprietà specifica `Selezione` riflette il valore correntemente selezionato.
 
-La valeur attendue est la `value` de l'une des [options](#options) de l'acteur.
+Il valore atteso è il `valore` di una delle [opzioni](#opzioni) dell'attore.

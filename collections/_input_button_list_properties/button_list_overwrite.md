@@ -1,6 +1,6 @@
 ---
-title: Dépassement de texte
-section: specifics
+title: Superamento del testo
+section: specifico
 propName: textOverflow
 propPath: properties.textOverflow
 scriptApiClass: Actor.Input.ButtonListProperties
@@ -10,25 +10,25 @@ order: 6
 La propriété spécifique `Dépassement de texte` permet de gérer l'affichage du texte dans le cas ou la taille du conteneur ne suffit pas à afficher l'entièreté du texte.
 
 
-Il existe donc trois options pour cette propriété :
+Esistono quindi tre opzioni per questa proprietà:
 
-- Sans retour à la ligne.
-- Retour à la ligne.
-- Tronqué.
+- Senza interruzione di linea.
+- Ritorno alla linea.
+- Troncato.
 
-Voici des exemples pour chacun des exemples :
+Ecco alcuni esempi per ciascuno di essi:
 
-**Sans retour à la ligne**
+**Senza interruzione di linea**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonClassic.PNG)
 
-**Retour à la ligne**
+**Ritorno alla linea**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonOverwrite.PNG)
 
->⚠️ **ATTENTION**<br>
-La taille verticale de l'acteur est automatiquement adaptée à la taille du texte sauf si celle ci est fixée.
+>⚠️ **ATTENZIONE**<br>
+La dimensione verticale dell'attore viene adattata automaticamente alla dimensione del testo, a meno che non sia fissa.
 
-**Tronqué**
+**Troncato**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonTruncat.PNG)

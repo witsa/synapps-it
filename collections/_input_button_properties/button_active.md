@@ -1,15 +1,15 @@
 ---
-title: Actif
-section: specifics
+title: Attivo
+section: specifico
 propName: isActive
 propPath: properties.isActive
 scriptApiClass: Actor.Input.ButtonProperties
 order: 6
 ---
-La propriété spécifique `Actif` permet de gérer l'activation du bouton.
+La proprietà specifica `Attivo` viene utilizzata per gestire l'attivazione del pulsante.
 
-Lorsque la propriété est désactivée, le bouton concerné n'est pas cliquable par l'utilisateur.
-Les événements hormis ceux du cycle de vie de l'acteur sont de ce fait désactivées.
+Quando la proprietà è disabilitata, il pulsante in questione non è cliccabile dall'utente.
+Gli eventi diversi da quelli del ciclo di vita dell'attore sono quindi disabilitati.
 
 
-Lorsque la propriété est activée, le bouton fonctionne normalement et tous ses événements sont activés.
+Quando la proprietà è attivata, il pulsante funziona normalmente e tutti i suoi eventi sono attivati.
