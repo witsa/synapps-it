@@ -6,11 +6,11 @@ grand_parent: Concetti
 
 # Modelli di progetto
 
-Lorsque vous créez un nouveau projet, vous devez choisir un modèle à partir duquel démarrer.
+Quando si crea un nuovo progetto, deve essere scelto un modello da cui partire..
 
 ## I modelli
 
-Studio consente di creare un nuovo progetto synapp a partire da modelli predefiniti. I modelli predefiniti sono disponibili una volta terminata l'installazione.
+Synapps Studio consente di creare un nuovo progetto synapp a partire da modelli predefiniti. I modelli predefiniti sono disponibili una volta terminata l'installazione.
 
 - Predefinito: Perfetto per iniziare un progetto quasi da zero.
 - Tablet / Desktop: Per iniziare con un modello di synapp adattato alla visualizzazione su tablet e PC.<br>Un menu di navigazione è posizionato a sinistra e il contenuto principale in un attore [Schermo](../actor-types/display-screen.md) al centro.

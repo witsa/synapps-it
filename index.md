@@ -13,9 +13,9 @@ Documentazione della soluzione Synapps
 
 ![En progression](assets/under-progress.gif)
 
-> 🚧 en cours de rédaction
+> 🚧 La redazione della documentazione Synapps è in corso
 >
-> Progression **90%**
+> Avanzamento al **90%**
 
 ------
 

@@ -1,14 +1,14 @@
 ---
-title: Transition
-section: effects
+title: Transizione
+section: effetti
 propName: transition
 propPath: properties.transition
 scriptApiClass: Actor.BaseActorProperties
 order: 7
 ---
-Cette propriété permet de définir la transition entre deux états d'un élément.
+Questa proprietà viene utilizzata per definire il tipo di transizione tra due stati di un elemento.
 
-La valeur attendue respecte le format suivant : `propriété temps`.
+Il valore atteso ha il seguente formato: `time property`.
 
-**Pour vous aider :**
-La documentation concernant les transitions en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/transition).
+**Suggerimento**
+La documentazione sulle transizioni nei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/transition).

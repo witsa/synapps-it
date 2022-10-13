@@ -7,25 +7,25 @@ scriptApiClass: Actor.Display.IframeProperties
 order: 1
 ---
 
-Jokerable
+Caratteri Jolly
 {: .label }
 
-Cette propriété permet de renseigner une URL d'un élément à afficher dans l'acteur.
+Questa proprietà consente di inserire l'URL di un elemento da visualizzare nell'attore.
 
-Cet élément doit être une adresse qui référence une ressource WEB ou plus fréquemment une page WEB de n'importe quel site WEB accessible.
+Questo elemento deve essere un indirizzo che rimanda a una risorsa WEB o, più frequentemente, a una pagina WEB di un sito WEB accessibile.
 
-> ⚠️ **ATTENTION**<br>
-> Il faut noter que certains sites WEB interdisent l'accès au travers d'une iFrame.
+> ⚠️ **ATTENZIONE**<br>
+> Si noti che alcuni siti web vietano l'accesso attraverso un iFrame.
 
-**Jokerable**
+**Accetta caratteri Jolly**
 
-Il est possible de placer des jokers (ex.: {% raw %}`{{jokerKey}}`{% endraw %}) dans la définition de l'URL qui seront remplacés par la valeur d'additionnelles de même clé.
+È possibile inserire dei caratteri jolly (ad esempio, {% raw %}`{{jokerKey}}`{% endraw %}) nella definizione dell'URL, che saranno sostituiti dal valore di addizionali con la stessa chiave.
 
-Par exemple :
+Esempio:
 
 {% raw %}
 ```URL
-https://www.wit.fr/{{section}}/
+https://www.wit-italia.com/{{section}}/
 ```
 {% endraw %}
 Une additionnelle de clé `section` de type *texte* remplacera le joker par sa valeur.

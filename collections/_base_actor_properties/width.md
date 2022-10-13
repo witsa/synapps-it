@@ -1,19 +1,17 @@
 ---
-title: Largeur de l'acteur
-section: size
+title: Larghezza dell'attore
+section: taglie
 propName: width
 propPath: properties.width
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété permet de régler la largeur de l'acteur.
+Questa proprietà viene utilizzata per impostare la larghezza dell'attore.
 
-La valeur attendue est un nombre entier positif.
-L'unité de taille peut être soit définie directement lors de la saisie soit définie grâce à l'aide située dans sur le bouton des réglages.
+Il valore atteso è un numero intero positivo.
+L'unità di misura può essere definita direttamente al momento dell'immissione del valore o tramite la guida situata nel pulsante delle impostazioni.
 
-Les deux champ "minimum" et "maximum" situé en dessous de la saisie de la valeur permettent de contraindre l'acteur à une largeur minimum et une largeur maximum.
+I due campi "minimo" e "massimo", situati sotto la voce del valore, consentono di vincolare l'attore a una larghezza minima e massima.
 
-(Cas spécial des modales à définir)
-
-**Pour vous aider :**
-La documentation concernant la largeur en CSS peut être trouvée [à cette adresse](https://developer.mozilla.org/fr/docs/Web/CSS/width).
+**Suggerimento**
+La documentazione sulla larghezza nei CSS è disponibile [a questo indirizzo](https://developer.mozilla.org/fr/docs/Web/CSS/width).

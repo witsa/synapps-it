@@ -17,7 +17,7 @@ L'attore Indicatore viene utilizzato per rappresentare graficamente un valore in
 ## Personalizzazione
 
 E' possibile personalizzare la propria immagine cambiando i colori
-- dell' ago
+- dell'ago
 - dell'arco prima dell'ago
 - dell'arco dopo l'ago.
 La personalizzazione va oltre, consentendo di definire lo spessore dell'arco e la sua estensione angolare.

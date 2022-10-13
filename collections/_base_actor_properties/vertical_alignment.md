@@ -1,18 +1,18 @@
 ---
-title: Alignement vertical
-section: disposition_flex
+title: Allineamento verticale
+section: disposizione_flex
 propName: verticalAlignment
 propPath: properties.verticalAlignment
 scriptApiClass: Actor.BaseActorProperties
 order: 1
 ---
-Cette propriété permet de régler l'alignement vertical de l'acteur dans l'acteur parent.
+Questa proprietà consente di impostare l'allineamento verticale dell'attore nell'attore padre.
 
-Il existe quatre possibilités pour cette propriété :
+Ci sono quattro possibilità per questa proprietà:
  - Auto
- - Positionné en haut de l'acteur parent
- - Positionné au centre de l'acteur parent
- - Positionné en bas de l'acteur parent
- - Occupe toute la place verticale disponible ( Répartie entre tous les acteurs présents dans l'acteur parent )
+- Posizionato nella parte superiore dell'attore padre
+ - Posizionato al centro dell'attore padre
+- Posizionato nella parte inferiore dell'attore padre
+ - Occupa tutto lo spazio verticale disponibile (distribuito tra tutti gli attori presenti nell'attore padre)
 
-(Cas spécial pour les modales : la disposition n'a aucune effet sur la position de la modale puisque cet acteur est positionné grâce aux ancres.)
+(Caso speciale per le modali: il layout non ha effetto sulla posizione della modale, poiché questo attore è posizionato tramite gli ancoraggi).

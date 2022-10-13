@@ -1,5 +1,5 @@
 ---
-title: "Interazione| Cursore"
+title: "Interazione | Cursore"
 parent: "Elenco attori"
 grand_parent: Concetti
 ---
