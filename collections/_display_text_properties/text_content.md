@@ -1,47 +1,46 @@
 ---
-title: Contenu
-section: specifics
+title: Contenuto
+section: specifico
 propName: content
 propPath: properties.content
 scriptApiClass: Actor.Display.TextProperties
 order: 1
 ---
 
-Jokerable
+Jolly
 {: .label }
 
 
-La propriété spécifique `contenu` permet de rédiger du texte que l'acteur affichera dans la scène.
+La proprietà specifica `contenuto` consente di specificare il testo che l'attore visualizzerà nella scena.
 
 
-***Exemple :***
+***Esempio:***
 
-**Cas de base :**
+**Caso semplice**
 
-Contenu basique de l'acteur :
+Contenuto di base dell'attore:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/BaseC.PNG)
 
-Résultat du contenu de l'acteur :
+Risultato:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/BaseT.PNG){: width="450" }
 
 
-**Jokerable**
+**Jolly**
+È possibile inserire dei caratteri jolly nel contenuto., Questi saranno sostituiti dal valore dell'addizionale che presenta la stessa chiave.
 
-Il est possible de placer des jokers dans le contenu qui seront remplacés par la valeur d'additionnelles de même clé.
-
-Contenu avec le joker {% raw %}`{{cle}}`{% endraw %} :
+Contenuto con Jolly {% raw %}`{{chiave}}`{% endraw %} :
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/AddiC.PNG)
 
-Résultat dans l'inspecteur avec l'ajout automatique d'une additionnelle renseignée avec un texte :
+Risultato nell'Ispettore con l'aggiunta automatica di unaddizionale che contiene un testo:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/AddiI.PNG)
 
-Résultat du contenu de l'acteur texte :
+Risultato del contenuto dell'attore di testo:
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/display_text/AddiT.PNG){: width="450" }
 
-**Pour vous aider :**
-La documentation concernant les jokers et leurs utilisations peut être trouvée [à cette adresse]().
+**Suggerimento:**
+La documentazione sui caratteri jolly e sul loro utilizzo è disponibile [a questo indirizzo].().

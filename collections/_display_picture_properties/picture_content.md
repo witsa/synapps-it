@@ -6,9 +6,9 @@ propPath: properties.content
 scriptApiClass: Actor.Display.ImageProperties
 order: 1
 ---
-Cette propriété permet de définir l'image à afficher de l'acteur.
+Questa proprietà consente di impostare l'immagine da visualizzare dell'attore.
 
-Pour ajouter une image, il y a trois options :
-- Glisser une image directement dans la zone prévue à cet effet.
-- Cliquer sur la zone de dépôt afin d'accéder à l'explorateur d'image et sélectionner l'image souhaitée.
-- Se lier à un image d'un autre acteur ou à une image de la librairie.
+Per aggiungere un'immagine, sono disponibili tre opzioni:
+- Trascinare un'immagine direttamente nella zona di rilascio.
+- Fare clic sulla zona di rilascio per accedere all'esploratore di immagini e selezionare l'immagine desiderata.
+- Collegamento a un'immagine di un altro attore o a un'immagine della libreria.

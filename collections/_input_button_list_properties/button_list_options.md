@@ -1,37 +1,36 @@
 ---
-title: Options
-section: specifics
+title: Opzioni
+section: specifico
 propName: options
 propPath: properties.options
 scriptApiClass: Actor.Input.ButtonListProperties
 order: 4
 ---
-La propriété spécifique `Options` permet de renseigner les boutons avec le format JSON.
+La proprietà specifica `Opzioni` consente di popolare i pulsanti tramite il formato JSON.
 
-Il y a trois paramètres à renseigner afin de créer un nouveau bouton via le format JSON :
-- value (OBLIGATOIRE):
+Per creare un nuovo pulsante tramite il formato JSON, è necessario specificare tre parametri:
+- value (obbligatorio):
 <br>
-Renseigne la valeur du bouton.
+Immettere il valore del pulsante.
 <br>
-La valeur attendue est une chaine de caractère.
+Il valore atteso è una stringa.
 
-- text (OBLIGATOIRE):
+- text (obbligatorio):
 <br>
-Renseigne le texte qui est affiché sur le bouton.
+Inserire il testo che verrà visualizzato sul pulsante.
 <br>
-La valeur attendue est une chaine de caractère.
+Il valore atteso è una stringa.
 
-- disabled (OPTIONNEL):
+- disabled (opzionale):
 <br>
-Permet d'activer / désactiver le bouton.
+Attiva/disattiva il bottone.
 <br>
-La valeur attendue est un booléen (true/false).
+Il valore atteso è un booleano (true/false).
 <br>
-Si cette option n'est pas précisée, la valeur par défaut est `False`.
+Se questa opzione non viene specificata, il valore predefinito è `False`.
 
-**EXEMPLE**
-Voici une liste de 3 boutons, dont le dernier est désactivé :
-
+**Esempio**
+Ecco un elenco di 3 pulsanti, l'ultimo dei quali è disabilitato:
 ```
 [
   {

@@ -28,9 +28,9 @@ Résultat :
     </p>
 </div>
 
-**Jokerable**
+**Jolly**
 
-È possibile inserire stringhe Jolly (ex.: {% raw %}`{{jokerKey}}`{% endraw %}) nel codice. La stringa verrà sostituita dal valore del parametro aggiuntico con chiave identica.
+È possibile inserire stringhe Jolly (ex.: {% raw %}`{{Jolly}}`{% endraw %}) nel codice. La stringa verrà sostituita dal valore del parametro aggiuntico con chiave identica.
 
 Esempio:
 

@@ -7,7 +7,7 @@ scriptApiClass: Actor.Display.IframeProperties
 order: 1
 ---
 
-Caratteri Jolly
+Jolly
 {: .label }
 
 Questa proprietà consente di inserire l'URL di un elemento da visualizzare nell'attore.

@@ -1,15 +1,15 @@
 ---
-title: En ligne
-section: specifics
+title: In riga
+section: specifico
 propName: isInline
 propPath: properties.isInline
 scriptApiClass: Actor.Input.ButtonListProperties
 
 order: 3
 ---
-La propriété spécifique `En ligne?` permet de changer l'orientation d'empilement de la liste de boutons.
+La proprietà specifica `In riga' consente di modificare l'orientamento di impilamento dell'elenco dei pulsanti.
 
-Lorsque cette propriété est activée, la liste est affichée sur une seule ligne, les boutons *côte à côte*.
+Quando questa proprietà è attivata, l'elenco viene visualizzato in un'unica riga, con i pulsanti *accanto*.
 
 
-A l'inverse, lorsqu'elle est désactivée, les boutons s'affichent sur une seule colonne, les uns en dessous des autres.
+Al contrario, quando è disattivato, i pulsanti vengono visualizzati in un'unica colonna, uno sotto l'altro.

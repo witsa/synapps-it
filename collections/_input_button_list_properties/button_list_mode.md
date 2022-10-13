@@ -1,15 +1,15 @@
 ---
-title: Mode
-section: specifics
+title: Modo
+section: specifico
 propName: mode
 propPath: properties.mode
 scriptApiClass: Actor.Input.ButtonListProperties
 order: 5
 ---
-La propriété spécifique `Mode` permet d'assigner des classes bootstrap à l'ensemble de la liste de bouton.
+La proprietà specifica `Modalità` consente di attribuire uo stile all'lenco di pulsanti.
 
-Chaque classe possède son code couleur propre.
+Ogni classe ha un proprio codice colore.
 
-**Liste des options disponibles avec leurs exemples :**
+**Elenco delle opzioni disponibili con i relativi esempi:**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/buttonsBootstrap.PNG)

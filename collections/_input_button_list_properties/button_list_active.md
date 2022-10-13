@@ -1,17 +1,17 @@
 ---
-title: Actif
-section: specifics
+title: Attivo
+section: specifico
 propName: isActive
 propPath: properties.isActive
 scriptApiClass: Actor.Input.ButtonListProperties
 
 order: 7
 ---
-La propriété spécifique `Actif?` permet d'activer / désactiver toute interaction avec la liste de tous les boutons.
+La proprietà specifica `Attivo?' consente di attivare/disattivare qualsiasi interazione con l'elenco dei pulsanti.
 
 
-Lorsque la propriété est désactivée, la liste de boutons concernée n'est pas cliquable par l'utilisateur.
-Les événements d'interaction sont de ce fait désactivés.
+Quando la proprietà è disattivata, l'elenco di pulsanti corrispondente non è cliccabile dall'utente.
+Gli eventi di interazione sono quindi disattivati.
 
 
-Lorsque la propriété est activée, la liste de boutons fonctionne normalement et tous ses événements sont activés.
+Quando la proprietà è abilitata, l'elenco dei pulsanti funziona normalmente e tutti i suoi eventi sono abilitati.
