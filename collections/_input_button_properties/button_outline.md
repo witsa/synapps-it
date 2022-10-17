@@ -1,22 +1,22 @@
 ---
-title: Outline
-section: specifics
+title: Profilo
+section: specifico
 propName: outline
 propPath: properties.outline
 scriptApiClass: Actor.Input.ButtonProperties
 order: 4
 ---
-La propriété spécifique `Outline` va permettre de donner un style de couleur inversée au bouton de l'acteur.
+La proprietà specifica `Profilo` consente di stilizzare il pulsante dell'attore con un colore inverso.
 
-La couleur de fond de bouton devient la couleur de la police.
-Et la couleur de la police devient la couleur du fond.
+Il colore di sfondo del pulsante diventa il colore del carattere.
+Il colore del carattere diventa il colore di sfondo.
 
-***Exemple :***
+***Esempio:***
 
-**Un bouton avec le mode `succès` et outline désactivé :**
+**Un pulsante con modalità `successo` e profilo disabilitato:**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/succesNormal.PNG)
 
-**Un bouton avec le mode `succès` et outline activé :**
+**Un pulsante con modalità `successo` e profilo attivo:**
 
 ![SynApps]( {{ site.baseurl }}/assets/concepts/actor/input_button/succesOutline.PNG)
