@@ -1,13 +1,13 @@
 ---
-title: Changement en glissant
-section: specifics
+title: Cambiamento a scorrimento
+section: specifico
 propName: isSlideValued
 propPath: properties.isSlideValued
 scriptApiClass: Actor.input.CursorProperties
 order: 8
 ---
-La propriété spécifique `Changement en glissant` permet de définir le rafraîchissement de la valeur lorsque l'utilisateur déplace le curseur.
+La proprietà specifica `Cambiamento a scorrimento` consente di definire l'aggiornamento del valore quando l'utente sposta il cursore.
 
-Lorsque cette propriété est activée, le changement se fait directement lorsque le curseur a changé de position.
+Quando questa proprietà è abilitata, la modifica viene effettuata direttamente quando il cursore cambia posizione.
 
-Si elle est désactivée, le changement de valeur ne sera effectué que lorsque l'utilisateur déplace et relâche le curseur.
+Se è disattivata, la modifica del valore avverrà solo quando l'utente sposta e rilascia il cursore..

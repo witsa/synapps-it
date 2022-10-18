@@ -1,12 +1,12 @@
 ---
-title: Indicateur
-section: specifics
+title: Indicatore
+section: specifico
 propName: withTooltips
 propPath: properties.withTooltips
 scriptApiClass: Actor.input.CursorProperties
 order: 9
 ---
-La propriété spécifique `Avec indicateur?` permet d'activer une bulle d'aide montrant la valeur de l'acteur au dessus du curseur si celui-ci est un curseur horizontal et sur la gauche si celui-ci est un curseur vertical.
+La proprietà specifica `Con indicatore` consente di attivare un tooltip che mostra il valore dell'attore sopra il cursore se si tratta di un cursore orizzontale e a sinistra se si tratta di un cursore verticale..
 
->⚠️ **ATTENTION**<br>
-Il est nécessaire de garder suffisamment de place en hauteur (pour les curseurs horizontaux) et en largeur (pour les curseurs verticaux) pour l'affichage de cet indicateur.
+>⚠️ **ATTENZIONE**<br>
+Per visualizzare questo indicatore è necessario mantenere uno spazio sufficiente in altezza (per i cursori orizzontali) e in larghezza (per i cursori verticali).

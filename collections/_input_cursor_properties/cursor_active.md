@@ -1,11 +1,11 @@
 ---
-title: Actif
-section: specifics
+title: Activo
+section: specifico
 propName: isActive
 propPath: properties.isActive
 scriptApiClass: Actor.input.CursorProperties
 order: 10
 ---
-La propriété spécifique `Actif?` permet d'activer ou de désactiver le curseur.
+La proprietà specifica `Attivo?' consente di attivare o disattivare il cursore.
 
-Si le curseur est désactivé, aucune interaction n'est possible avec celui-ci.
+Non saràè possibile interagire con il cursore se questo è disattivato.

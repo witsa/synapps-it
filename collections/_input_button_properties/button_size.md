@@ -1,6 +1,6 @@
 ---
-title: Taille
-section: specifics
+title: Dimensione
+section: specifico
 propName: size
 propPath: properties.size
 scriptApiClass: Actor.Input.ButtonProperties
@@ -9,9 +9,10 @@ order: 2
 
 {% include property_size.md %}
 
-**Attention**
+**Attenzione**
 
-Il est à noter que la taille du bouton dépend de plusieurs paramètres dont :
-- La place disponible par rapport à son acteur parent.
-- La place disponible par rapport aux autres acteurs.
-- La taille de son contenu.
+Si noti che la dimensione del pulsante dipende da diversi parametri, tra cui :
+- Lo spazio disponibile in relazione all'attore padre.
+- Lo spazio disponibile in relazione agli altri attori.
+- La dimensione del suo contenuto.
+

@@ -1,9 +1,9 @@
 ---
-title: Renversé
-section: specifics
+title: Invertito
+section: specifico
 propName: reverse
 propPath: properties.reverse
 scriptApiClass: Actor.input.CursorProperties
 order: 6
 ---
-La propriété spécifique `Renversé?` permet d'inverser la position du slider de l'acteur en effectuant une rotation sur lui même de 180°.
+La proprietà specifica " Invertito" consente di invertire la posizione del cursore dell'attore ruotandolo di 180°.
