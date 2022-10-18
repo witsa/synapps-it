@@ -1,15 +1,15 @@
 ---
-title: Valeur
+title: Valore
 section: input
 propName: value
 propPath: properties.value
 scriptApiClass: Actor.Input.CursorProperties
 order: 0
 ---
-La propriété spécifique `Valeur` permet de définir la valeur actuelle de l'acteur curseur.
+La proprietà specifica `Valore` è utilizzata per definire il valore corrente dell'attore cursore.
 
-Le champ attend un nombre positif ou négatif compris dans l'intervalle des valeurs `Valeur min.` et `Valeur max.`.
-Le champ de saisie possède également la fonctionnalité slider, permettant de sélectionner la valeur en faisant glisser la souris sur le champs de saisie de la valeur.
+Il campo si aspetta un numero positivo o negativo all'interno dell'intervallo dei valori `Valore minimo' e `Valore massimo'.
+Il campo di immissione ha anche la funzione di cursore, che consente di selezionare il valore trascinando il mouse.
 
->⚠️ **ATTENTION**<br>
-Il est possible de définir manuellement la valeur en dessous et au dessus de la limite lors de la saisie, cependant, il est conseillé de rentrer une valeur comprise entre l'intervalle définie.
+>⚠️ **ATTENZIONE**<br>
+Al momento dell'immissione è possibile impostare manualmente il valore al di sotto e al di sopra del limite, tuttavia è consigliabile inserire un valore all'interno dell'intervallo definito.

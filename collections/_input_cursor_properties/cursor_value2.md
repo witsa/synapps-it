@@ -1,16 +1,16 @@
 ---
-title: Valeur 2
+title: Valore 2
 section: input
 propName: value
 propPath: properties.value
 scriptApiClass: Actor.Input.CursorProperties
 order: 1
 ---
-La propriété spécifique `Valeur2` permet de définir la seconde valeur actuelle de l'acteur curseur.
+La proprietà specifica `Valore 2` è utilizzata per definire il secondo valore corrente dell'attore cursore.
 
-Le champ attend un nombre positif ou négatif compris dans l'intervalle des valeurs `Valeur min.` et `Valeur max.`.
-Elle ne peut être non plus inférieure à la valeur de l'acteur curseur.
-Le champ de saisie possède également la fonctionnalité slider, permettant de sélectionner la valeur en faisant glisser la souris sur le champs de saisie de la valeur.
+Il campo si aspetta un numero positivo o negativo all'interno dell'intervallo dei valori `Valore minimo` e `Valore massimo`.
+Non può neppure essere inferiore al campo `Valore` dell'attore.
+Il campo di immissione ha anche la funzione di cursore, che consente di selezionare il valore trascinando il mouse .
 
->⚠️ **ATTENTION**<br>
-Il est possible de définir manuellement la valeur en dessous et au dessus de la limite lors de la saisie, cependant, il est conseillé de rentrer une valeur comprise entre l'intervalle définie.
+>⚠️ **ATTENZIONE**<br>
+Al momento dell'immissione è possibile impostare manualmente il valore al di sotto e al di sopra del limite, tuttavia è consigliabile inserire un valore all'interno dell'intervallo definito.
