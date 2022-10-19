@@ -60,7 +60,7 @@ Synapps Studio permette  di:
 
 Per iniziare a utilizzare lo strumento e a comprendere i concetti della soluzione, è disponibile una [guida introduttiva](./quick-start)..
 
-## Rejoignez la communauté des créateurs Synapps Studio
+##  Entrare a far parte della comunità di utilizzatori di Synapps Studio
 
 Le caratteristiche di Studio incoraggiano la condivisione di
 delle proprie creazioni. 
