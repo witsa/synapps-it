@@ -12,9 +12,9 @@ Per attivare un secondo cursore sull'attore occorre disabilitare questa propriet
 
 In questo modo si aggiungerà all'attore una proprietà `Valore 2`, che funziona come la proprietà specifica `Valore` e consente di impostare un intervallo.
 
-Si un second curseur est présent, la propriété spécifique `Valeur` devient la borne inférieure et la propriété spécifique `Valeur 2` devient la borne supérieure.
+Se è presente un secondo cursore, la proprietà specifica `Valore` diventa il limite inferiore e la proprietà specifica `Valore 2` diventa il limite superiore.
 
-Il est à noter que la borne inférieure ne peut pas dépasser la borne supérieure et inversement.
+Si noti che il limite inferiore non può superare il limite superiore e viceversa..
 
 Vengono visualizzate anche due nuove proprietà specifiche: :
 <br>

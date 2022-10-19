@@ -1,5 +1,5 @@
 ---
-title: Activo
+title: Attivo
 section: specifico
 propName: isActive
 propPath: properties.isActive

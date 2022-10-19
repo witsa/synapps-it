@@ -1,5 +1,5 @@
 ---
-title: Colore della bassa
+title: Colore della barra
 section: specifico
 propName: barColor
 propPath: properties.barColor

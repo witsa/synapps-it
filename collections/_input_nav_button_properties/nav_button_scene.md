@@ -1,38 +1,38 @@
 ---
-title: Scène
-section: specifics
+title: Scena
+section: specifico
 propName: displaySceneKey
 propPath: properties.displaySceneKey
 scriptApiClass: Actor.Input.NavButtonProperties
 order: 1
 ---
-La propriété spécifique `Scène` permet de définir la scène vers laquelle le bouton va rediriger l'utilisateur.
+La proprietà specifica `Chiave di Scena` consente di definire la scena a cui il pulsante reindirizzerà l'utente.
 
-Dans l'inspecteur, une aide référence toutes les scènes du projet vers lesquelles il est possible d'être redirigé.
+Nell' ispettore, viene fatto riferimento a tutte le scene del progetto a cui è possibile essere reindirizzati.
 
-Il y a deux cas de figure lors de la selection d'une scène.
+Esistono due possibilità quando si seleziona una scena.
 
-- Le champ `clé de l'acteur écran` est laissé vide :
+- Il campo Chiave dell'attore `Schermo` è lasciato vuoto:
 <br>
-Le bouton va entraîner une navigation vers la scène sélectionnée.
+Il pulsante permette di passare alla scena selezionata..
 
-- Le champ `clé de l'acteur écran` est renseigné avec la clé d'un acteur écran :
+- Il campo `Chiave dell' attore schermo` viene valorizzato con la chiave di un attore schermo:
 <br>
-Le bouton va entraîner un changement d'affichage de l'acteur écran qui affichera la scène renseignée dans la propriété `scène`.
+Il pulsante consente di modificare la visualizzazione dell'attore Schermo in base alla scena specificata nella proprietà `Chiave di Scena`.
 
-**Modification des paramètres d'une scène grâce au bouton de navigation**
+**Modifica dei parametri di una scena con il tasto di navigazione**
 
-Lors de la sélection de la propriété `Scène`, si la scène sélectionnée possède un ou des paramètre(s) de scène, une aide va apparaître en dessous de la selection.
+Quando si seleziona la proprietà `Scena`, se la scena selezionata contiene uno o più parametri, viene visualizzata una guida sotto la selezione.
 
-Cette aide va permettre de renseigner une valeur différente à un paramètre de la scène afin de changer cette valeur.
+Questa guida permetterà di impostare un valore diverso a un parametro della scena.
 
-Il suffit que la valeur de ce paramètre de scène soit lié à un autre élément d'un acteur pour que celui-ci change également.
+Se il valore di questo parametro della scena è collegato a un altro elemento di un attore, anche quest'ultimo cambierà.
 
-Il est à noter que ceci peut être effectué sur la scène sur laquelle se trouve le bouton de navigation, ainsi, à l'aide du bouton, il est donc possible de changer des paramètres de la scène courante.
+Si noti che questa operazione può essere eseguita sulla scena in cui si trova il pulsante di navigazione, quindi è possibile modificare i parametri della scena corrente utilizzando il pulsante..
 
-**Exemple**
+**Esempio**
 
-Ci dessous, l'exemple d'une scène qui possède deux boutons qui font changer un paramètre de scène dont la valeur est liée à celle d'un acteur texte.
+Di seguito è riportato un esempio di scena con due pulsanti che modificano un parametro della scena il cui valore è collegato a quello di un attore di testo.
 
 {% raw %}
 ```
@@ -40,5 +40,5 @@ SYNAPPS-STUDIO-SCENE|{"config":{"key":"scene1","name":"Scène 1","additionalDefs
 ```
 {% endraw %}
 
->⚠️ **ATTENTION**<br>
-> Si vous désirez commander les paramètres d'une scène à travers un acteur écran, n'oublier pas de créer les additionnelles correspondantes sur celui-ci également, sinon, aucune action ne sera transmise
+>⚠️ **ATTENZIONE**<br>
+> Se si vogliono controllare i parametri di una scena attraverso un attore schermo, non bisogna dimenticare di creare i parametri aggiuntivi corrispondenti anche su questo, altrimenti non verrà trasmessa alcuna azione.

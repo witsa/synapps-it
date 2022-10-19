@@ -1,12 +1,11 @@
 ---
-title: Clé de l'acteur écran
-section: specifics
+title: Chiave dell'attore schermo
+section: specifico
 propName: screenKey
 propPath: properties.screenKey
 scriptApiClass: Actor.Input.NavButtonProperties
 order: 2
 ---
-La propriété spécifique `Clé de l'acteur écran` permet de sélectionner un acteur écran afin de changer la scène qu'il affiche.
+La proprietà specifica `Chiave attore schermo` consente di selezionare un attore schermo per cambiare la scena che visualizza.
 
-Dans l'inspecteur, une aide est disponible pour la saisie de la clé de l'acteur écran.
-Cette aide liste tous les acteurs écrans de la scène courante.
+L'ispettore presenta una lista che elenca tutti gli attori di tipo Schermo definiti nella scena corrente.
